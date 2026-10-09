@@ -1,0 +1,21 @@
+# Dados grandes
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Arquivos intermediários
+pipeline/*.parquet
+
+# Temporários
+*.tmp
+*.zip
+
+# Python
+__pycache__/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Credenciais
+.env
+*.key
