@@ -4,6 +4,7 @@
 
 [![Open Notebook 1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-process-data-science/blob/main/notebooks/01_selecao_unidade_estudo.ipynb)
 [![Open Notebook 2 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-process-data-science/blob/main/notebooks/02_tratamento_dados.ipynb)
+[![Open Notebook 3A in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-process-data-science/blob/main/notebooks/03A_modelagem_preditiva_co2.ipynb)
 
 Projeto desenvolvido para a disciplina **IND2622 — Ciência de Dados e Modelos de Processos de Negócio**, com foco na integração entre **dados horários de operação e emissões**, **representação do processo operacional**, **Process Mining** e **modelagem preditiva de CO₂**.
 
@@ -41,9 +42,10 @@ Até o momento, o projeto contempla:
 - representação da direção e intensidade das mudanças de carga;
 - construção de variáveis de memória e trajetória;
 - análise exploratória por PCA;
-- preparação da base para **segmentação em ciclos, Process Mining e modelagem preditiva**.
+- preparação da base para **segmentação em ciclos, Process Mining e modelagem preditiva**;
+- **Notebook 3A implementado**, comparando carga instantânea versus carga + contexto e trajetória operacional.
 
-A continuação do projeto será organizada em duas frentes complementares: **modelagem preditiva de CO₂** e **análise de processos operacionais**.
+A próxima frente específica da disciplina será a **análise de processos operacionais no Notebook 3B**, com segmentação em ciclos, Event Log, trajetórias e variantes.
 
 ## Fonte dos dados
 
@@ -218,7 +220,8 @@ co2-cems-process-data-science/
 ├── .gitignore
 ├── notebooks/
 │   ├── 01_selecao_unidade_estudo.ipynb
-│   └── 02_tratamento_dados.ipynb
+│   ├── 02_tratamento_dados.ipynb
+│   └── 03A_modelagem_preditiva_co2.ipynb
 ├── data/
 │   ├── raw/
 │   ├── interim/
@@ -241,6 +244,7 @@ Os notebooks atualmente disponíveis devem ser executados na ordem:
 
 1. **Notebook 1 — seleção da unidade de estudo**
 2. **Notebook 2 — tratamento e preparação dos dados**
+3. **Notebook 3A — modelagem preditiva de CO₂**
 
 O Notebook 1 utiliza uma chave da API da EPA armazenada como segredo do Google Colab com o nome `EPA_API_KEY`. A chave não é armazenada no repositório.
 
@@ -256,17 +260,11 @@ Para execução local:
 pip install -r requirements.txt
 ```
 
-## Próximas etapas
+## Próxima etapa
 
-A continuação do projeto será organizada em duas frentes complementares.
+O **Notebook 3A — modelagem preditiva de CO₂** já foi incorporado ao repositório. Ele compara carga instantânea versus carga + contexto operacional com a mesma arquitetura de MLP, split temporal e métricas MAE, RMSE e R².
 
-### Notebook 3A — modelagem preditiva de CO₂
-
-- construir e validar os cenários preditivos;
-- comparar carga instantânea versus carga + contexto operacional;
-- avaliar MAE, RMSE e R²;
-- analisar valores observados versus previstos;
-- verificar se a informação de trajetória melhora a estimação horária de CO₂.
+A próxima etapa específica de Ciência de Dados e Processos é:
 
 ### Notebook 3B — análise de processos operacionais
 
@@ -279,7 +277,7 @@ A continuação do projeto será organizada em duas frentes complementares.
 - calcular indicadores por ciclo;
 - comparar comportamento de carga e emissões entre execuções.
 
-A integração entre as duas frentes permitirá avaliar o processo operacional tanto como **objeto de caracterização** quanto como **fonte de informação para a modelagem preditiva**.
+A integração entre o Notebook 3A e o futuro Notebook 3B permitirá avaliar o processo operacional tanto como **objeto de caracterização** quanto como **fonte de informação para a modelagem preditiva**.
 
 ## Autores
 
