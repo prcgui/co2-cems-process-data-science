@@ -1,0 +1,16 @@
+indicador,valor
+MAE Cenário A,67.25079145514215
+MAE Cenário B,61.61018772560067
+RMSE Cenário A,70.90103135186635
+RMSE Cenário B,67.04005241950057
+R² Cenário A,0.8779073116683141
+R² Cenário B,0.8908425852025378
+Redução de MAE A para B,8.387416129227113
+Redução de RMSE A para B,5.4455892372067005
+Variação de R²,0.012935273534223635
+Horas em que B foi melhor,794.0
+Percentual de horas em que B foi melhor,69.4055944055944
+Viés médio A,67.0359276537595
+Viés médio B,60.88512172360188
+Ganho de MAE nas primeiras 6 h após startup,26.150940869003485
+Ganho de MAE em rampas intensas,-14.094294524067633
