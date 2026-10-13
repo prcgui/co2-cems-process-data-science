@@ -52,6 +52,8 @@ Os arquivos brutos e intermediários de grande volume não são versionados nest
 
 ## Unidade selecionada
 
+> Caracterização técnica detalhada da unidade: [relatorio_caracterizacao_tecnica_iatan_unit2.md](outputs/reports/relatorio_caracterizacao_tecnica_iatan_unit2.md)
+
 A unidade selecionada foi:
 
 - **Facility:** Iatan
