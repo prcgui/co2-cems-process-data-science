@@ -365,6 +365,53 @@ A auditoria multianual não deve, portanto, limitar-se a comparar erros de model
 
 ---
 
+## 11.5. Contexto histórico e possível mudança no regime de operação
+
+A extração histórica da Iatan Unit 2 mostrou variação expressiva no número anual de horas em operação. Em 2017 foram observadas aproximadamente **8.505 horas operacionais**, enquanto em 2023 e 2024 esse total caiu para aproximadamente **4.316** e **4.401 horas**, respectivamente. Essa diferença sugere uma possível mudança no regime de utilização da unidade ao longo do tempo.
+
+A redução das horas operacionais não deve ser interpretada automaticamente como falha técnica ou indisponibilidade. O período de 2023 e 2024 coincide com mudanças relevantes no contexto econômico e operacional do sistema elétrico regional.
+
+No **Southwest Power Pool, SPP**, a participação do carvão na geração caiu de **33% em 2022 para 27% em 2023**, enquanto a geração eólica respondeu por **37%** da energia produzida e o gás natural em ciclo combinado aumentou de 13% para 17%. O próprio Market Monitoring Unit do SPP relaciona essa mudança, em parte, à redução dos preços do gás natural em 2023. [12]
+
+Em 2024, a transformação do mix continuou. O SPP reportou aproximadamente **38% da produção de energia a partir de vento**, **28,4% de gás natural** e **24,7% de carvão**. O relatório anual de mercado também registrou preço médio de gás de **US$ 1,81/MMBtu** no hub Panhandle Eastern, 16% inferior ao valor de 2023. [13][14]
+
+O comportamento regional é coerente com a tendência observada em escala nacional. A U.S. Energy Information Administration registrou queda de aproximadamente **19% na geração a carvão entre 2022 e 2023**, ao mesmo tempo em que o preço médio do gás natural Henry Hub caiu mais de 60%. A EIA associa a redução da geração a carvão, entre outros fatores, à maior competitividade do gás natural e à expansão de outras fontes de geração. [15]
+
+A própria **Evergy** já havia declarado em seu planejamento integrado de recursos que suas usinas a carvão tenderiam a **operar menos horas à medida que sua geração fosse deslocada por recursos renováveis de menor custo**, mantendo as unidades fósseis despacháveis como suporte para períodos de baixa disponibilidade renovável ou demanda elevada. [16]
+
+Existe também um contexto regulatório de longo prazo favorável à incorporação de fontes renováveis. O Renewable Energy Standard do Missouri estabelece que, desde 2021, pelo menos **15% das vendas de eletricidade das utilities abrangidas pela norma** sejam atendidas por recursos renováveis elegíveis ou mecanismos equivalentes previstos na legislação. [17]
+
+Esses elementos não demonstram que uma política específica tenha causado diretamente a redução das horas da Iatan Unit 2 em 2023 e 2024. Até o momento, não foi identificada evidência de uma determinação regulatória específica para reduzir a operação dessa unidade. A interpretação mais adequada é que sua utilização pode estar sendo influenciada por uma combinação de:
+
+- disponibilidade e manutenção da própria planta;
+- preços relativos de carvão e gás natural;
+- maior participação de geração eólica e outras renováveis;
+- condições de demanda e preços do mercado atacadista;
+- decisões de despacho do SPP;
+- estratégia de descarbonização e planejamento de recursos da Evergy;
+- políticas energéticas que alteram a composição do portfólio de geração.
+
+### Implicação para Process Mining
+
+Essa possível mudança de regime deve ser tratada como hipótese a ser testada na análise de processos.
+
+Uma unidade originalmente concebida para operação predominantemente de base pode, ao longo do tempo, assumir comportamento mais flexível, com maior proporção de períodos OFF, mais ciclos de partida e parada, mudanças na permanência em determinadas faixas de carga e diferentes padrões de ramp-up e ramp-down.
+
+O Process Mining deverá, portanto, comparar os anos e períodos históricos quanto a:
+
+- número de ciclos operacionais;
+- duração dos ciclos;
+- frequência de startups e shutdowns;
+- tempo médio em operação contínua;
+- permanência em baixa, média e alta carga;
+- intensidade e frequência das rampas;
+- variantes de trajetória operacional;
+- emissões associadas a cada variante.
+
+Essa análise permitirá verificar se a redução de horas observada em anos recentes corresponde apenas a menor utilização quantitativa ou se representa uma **mudança estrutural no processo operacional**.
+
+Se forem identificadas variantes distintas entre períodos, essa informação também deverá ser considerada na modelagem preditiva, pois dados históricos oriundos de regimes de despacho diferentes podem não possuir o mesmo valor para prever períodos futuros.
+
 ## 12. Implicações para o Notebook 03A.04
 
 A caracterização física da Iatan modifica e fortalece o desenho do experimento de generalização temporal.
@@ -560,3 +607,21 @@ https://www.epa.gov/power-sector/ecmps-reporting-instructions
 
 [11] U.S. Environmental Protection Agency. **Monitor Plan Management API, OpenAPI Specification**.  
 https://api.epa.gov/easey/monitor-plan-mgmt/swagger
+
+[12] Southwest Power Pool, Market Monitoring Unit. **2023 Annual State of the Market Report**. Wind represented 37% of total generation in 2023; coal fell from 33% in 2022 to 27% in 2023; combined-cycle gas increased from 13% to 17%.  
+https://www.spp.org/documents/71645/2023%20annual%20state%20of%20the%20market%20report%20v2.pdf
+
+[13] Southwest Power Pool. **2025 State of the Grid Report**, reporting the 2024 energy production mix: wind 38.0%, natural gas 28.4% and coal 24.7%.  
+https://spp.org/Documents/73919/SPP%20State%20of%20the%20Grid%20Report%20May%202025.pdf
+
+[14] Southwest Power Pool, Market Monitoring Unit. **2024 Annual State of the Market Report**. Average Panhandle Eastern natural gas price of US$ 1.81/MMBtu in 2024, 16% below 2023.  
+https://www.spp.org/documents/73953/2024_annual_state_of_the_market_report.pdf
+
+[15] U.S. Energy Information Administration. **U.S. coal-fired electricity generation decreased in 2022 and 2023**, May 10, 2024. Coal-fired generation fell approximately 19% from 2022 to 2023 while the average Henry Hub natural gas spot price declined by more than 60%.  
+https://www.eia.gov/todayinenergy/detail.php?id=62043
+
+[16] Evergy, Inc. **Evergy Files Kansas Integrated Resource Plan**, May 28, 2021. The company states that its coal plants are expected to run fewer hours as their energy is displaced by lower-cost renewable resources, while remaining available as dispatchable generation.  
+https://investors.evergy.com/news-releases/news-release-details/evergy-files-kansas-integrated-resource-plan
+
+[17] Missouri Revisor of Statutes. **RSMo Section 393.1030, Renewable Energy Portfolio Requirements**. The standard establishes a renewable portfolio requirement of no less than 15% beginning in 2021 for covered electric utilities.  
+https://revisor.mo.gov/main/OneSection.aspx?bid=36065&section=393.1030
