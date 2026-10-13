@@ -1,17 +1,32 @@
-# CO₂ CEMS Process Data Science
+# Análise e Modelagem de Emissões de CO₂ em Termelétrica a Carvão
+
+## Uma abordagem orientada a processos
 
 [![Open Notebook 1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-process-data-science/blob/main/notebooks/01_selecao_unidade_estudo.ipynb)
 [![Open Notebook 2 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prcgui/co2-cems-process-data-science/blob/main/notebooks/02_tratamento_dados.ipynb)
 
-Análise de dados operacionais e de emissões de uma unidade termelétrica a carvão, com ênfase na **representação do processo operacional a partir de dados horários**.
+Projeto desenvolvido para a disciplina **IND2622 — Ciência de Dados e Modelos de Processos de Negócio**, com foco na integração entre **dados horários de operação e emissões**, **representação do processo operacional**, **Process Mining** e **modelagem preditiva de CO₂**.
 
-O projeto utiliza dados públicos da **U.S. Environmental Protection Agency (EPA)**, provenientes do ecossistema **CEMS/CAMPD**, para selecionar uma unidade de estudo, auditar e tratar a série temporal, construir atributos operacionais e organizar informações capazes de representar estados, transições e trajetória do processo.
+O estudo utiliza dados públicos da **U.S. Environmental Protection Agency (EPA)**, provenientes do ecossistema **CEMS/CAMPD**, para analisar uma unidade termelétrica a carvão ao longo de 2025.
 
-## Questão orientadora
+A proposta parte da ideia de que uma termelétrica não deve ser observada apenas como uma coleção de registros horários independentes. Ao longo do tempo, a unidade percorre estados, transições e trajetórias operacionais que podem ser reconstruídos a partir dos dados e utilizados tanto para **caracterizar o processo** quanto para **avaliar sua contribuição à estimação das emissões horárias de CO₂**.
 
-> **Como dados horários de operação e emissões podem ser estruturados para descrever estados, transições e ciclos operacionais de uma unidade termelétrica a carvão?**
+## Pergunta de pesquisa
 
-A proposta parte da ideia de que uma termelétrica não deve ser observada apenas como uma coleção de registros independentes. Ao longo do tempo, a unidade liga, desliga, altera carga e percorre diferentes condições operacionais. Por isso, a série horária pode ser interpretada também como registro de um processo.
+> **Como o contexto e as trajetórias operacionais podem contribuir para caracterizar e estimar as emissões horárias de CO₂ de uma termelétrica a carvão?**
+
+## Objetivo geral
+
+> **Investigar se o conhecimento do processo operacional de uma termelétrica contribui para a caracterização das emissões horárias de CO₂ e para a precisão de sua estimação.**
+
+## Estratégia analítica
+
+O trabalho articula quatro níveis de análise:
+
+1. **Série horária:** registros de timestamp, Operating Time, carga e CO₂.
+2. **Ciclo operacional:** segmentação entre startup e shutdown, com identificação por cycle_id.
+3. **Caracterização do processo:** duração, carga média, número de transições e CO₂ acumulado por ciclo.
+4. **Análise e modelagem:** descoberta de trajetórias e variantes, comparação entre ciclos e estimação horária de CO₂.
 
 ## Escopo atual
 
@@ -19,15 +34,16 @@ Até o momento, o projeto contempla:
 
 - seleção reprodutível da unidade de estudo;
 - avaliação da qualidade e completude dos dados;
-- tratamento de valores ausentes associado ao estado OFF;
+- tratamento de valores ausentes associados ao estado OFF;
 - análise exploratória de outliers;
 - engenharia de atributos orientada ao processo;
 - identificação de startups e shutdowns;
 - representação da direção e intensidade das mudanças de carga;
+- construção de variáveis de memória e trajetória;
 - análise exploratória por PCA;
-- preparação da base para análises posteriores.
+- preparação da base para **segmentação em ciclos, Process Mining e modelagem preditiva**.
 
-A próxima extensão específica para a abordagem de processos será deliberadamente enxuta: **segmentar a operação em ciclos startup → shutdown e calcular indicadores por ciclo**, como duração, carga média, número de transições e emissão total de CO₂.
+A continuação do projeto será organizada em duas frentes complementares: **modelagem preditiva de CO₂** e **análise de processos operacionais**.
 
 ## Fonte dos dados
 
@@ -100,7 +116,7 @@ A série foi enriquecida com variáveis que representam não apenas a condição
 - hora do dia;
 - mês.
 
-Essa estrutura permite descrever a dinâmica da unidade e constitui a base para a identificação de ciclos operacionais.
+Essa estrutura permite representar estado, memória, direção e trajetória operacional, preparando os dados tanto para a análise de processos quanto para a modelagem preditiva.
 
 ## Qualidade dos dados
 
@@ -145,7 +161,7 @@ Os loadings indicam uma leitura coerente:
 
 ## Leitura do processo operacional
 
-A base já permite identificar elementos típicos de um processo:
+A base já permite identificar elementos típicos do processo:
 
 - **estado OFF**;
 - **startup**;
@@ -154,9 +170,46 @@ A base já permite identificar elementos típicos de um processo:
 - **redução de carga**;
 - **shutdown**.
 
-A etapa específica de processo deverá associar cada sequência completa entre uma partida e uma parada a um identificador de ciclo, permitindo calcular indicadores e comparar o comportamento entre ciclos sem exigir a criação de uma segunda infraestrutura de dados.
+A etapa de processos deverá reorganizar essa informação em um **Event Log**, no qual:
 
-## Estrutura do repositório
+- **case_id** representa uma execução do processo;
+- **timestamp** preserva a ordem temporal;
+- **activity** representa o estado ou a transição operacional.
+
+Essa estrutura permitirá reconstruir o **processo AS-IS**, identificar trajetórias e variantes observadas, medir seu desempenho e comparar diferentes ciclos operacionais.
+
+## Process Mining
+
+Após a construção do Event Log, o Process Mining será utilizado para identificar quais trajetórias efetivamente ocorreram nos dados.
+
+A análise deverá considerar:
+
+- variantes de ciclo;
+- frequência das trajetórias;
+- duração dos ciclos;
+- comportamento de carga;
+- transições operacionais;
+- emissões associadas;
+- comparação entre diferentes execuções.
+
+A informação extraída do processo será relacionada ao problema preditivo central:
+
+> **A informação do processo melhora a estimação do CO₂?**
+
+## Modelagem preditiva
+
+A etapa preditiva deverá comparar modelos construídos com diferentes níveis de informação operacional.
+
+A lógica experimental prevê:
+
+- um cenário de referência baseado na carga instantânea;
+- um cenário enriquecido com informações de contexto e trajetória operacional;
+- comparação por métricas de regressão;
+- análise do ganho obtido com a inclusão da informação de processo.
+
+A modelagem deverá ser mantida comparável entre os cenários para que a diferença de desempenho possa ser associada ao conjunto de informações fornecido ao modelo.
+
+## Estrutura atual do repositório
 
 ```text
 co2-cems-process-data-science/
@@ -184,7 +237,7 @@ co2-cems-process-data-science/
 
 ## Executar os notebooks
 
-Os notebooks devem ser executados na ordem:
+Os notebooks atualmente disponíveis devem ser executados na ordem:
 
 1. **Notebook 1 — seleção da unidade de estudo**
 2. **Notebook 2 — tratamento e preparação dos dados**
@@ -203,16 +256,30 @@ Para execução local:
 pip install -r requirements.txt
 ```
 
-## Próxima etapa
+## Próximas etapas
 
-A continuação planejada é pequena e orientada ao processo:
+A continuação do projeto será organizada em duas frentes complementares.
 
-1. utilizar os startups e shutdowns já detectados;
-2. atribuir um `cycle_id` a cada ciclo operacional completo;
-3. calcular poucos indicadores por ciclo;
-4. comparar os ciclos sob a ótica de duração, carga, transições e emissões.
+### Notebook 3A — modelagem preditiva de CO₂
 
-Essa extensão aproveita diretamente toda a preparação já realizada e muda a unidade de leitura da **hora isolada** para o **ciclo operacional**.
+- construir e validar os cenários preditivos;
+- comparar carga instantânea versus carga + contexto operacional;
+- avaliar MAE, RMSE e R²;
+- analisar valores observados versus previstos;
+- verificar se a informação de trajetória melhora a estimação horária de CO₂.
+
+### Notebook 3B — análise de processos operacionais
+
+- identificar ciclos completos entre startup e shutdown;
+- atribuir cycle_id / case_id;
+- construir o Event Log;
+- definir atividades operacionais;
+- aplicar Process Mining;
+- identificar trajetórias e variantes;
+- calcular indicadores por ciclo;
+- comparar comportamento de carga e emissões entre execuções.
+
+A integração entre as duas frentes permitirá avaliar o processo operacional tanto como **objeto de caracterização** quanto como **fonte de informação para a modelagem preditiva**.
 
 ## Autores
 
