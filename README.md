@@ -351,11 +351,6 @@ Para execução local:
 pip install -r requirements.txt
 ```
 
-## Apresentação
-
-Vídeo do trabalho:
-
-https://youtu.be/EUEqmm9nRHQ
 
 ## Autores
 
