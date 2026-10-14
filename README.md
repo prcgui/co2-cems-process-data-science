@@ -24,6 +24,7 @@ A unidade piloto é a **Iatan Unit 2**, Facility ID 6065, Missouri, com série h
 | 03A.01 | [03A.01_modelagem_preditiva_co2.ipynb](notebooks/03A.01_modelagem_preditiva_co2.ipynb) | Enriquecimento da representação temporal | [Abrir no Colab](https://colab.research.google.com/drive/1DVjl1v-wgQgWWtIyfE_bkCAdiVVjqJuW) |
 | 03A.02 | [03A.02_comparacao_modelos_gradient_boosting.ipynb](notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb) | Comparação MLP x XGBoost e validação temporal | [Abrir no Colab](https://colab.research.google.com/drive/1BRbZkilK4omkxV7QjMbx3uPYkI7acsNY) |
 | 03A.03 | [03A.03_otimizacao_pareada_xgboost.ipynb](notebooks/03A.03_otimizacao_pareada_xgboost.ipynb) | Busca pareada A x B e efeito da trajetória | [Abrir no Colab](https://colab.research.google.com/drive/1wbDqQxBoOi4qURULPh9EFTnNXpFUhgYj) |
+| 03A.04 | [03A.04_volume_dados_generalizacao_temporal_iatan.ipynb](notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb) | Histórico ampliado e generalização temporal do Cenário A | [Abrir no Colab](https://colab.research.google.com/drive/1AvnuJ-wPYravlkuZ1C0_-TWD80VWrz4m) |
 
 ## Estratégia analítica
 
@@ -236,23 +237,59 @@ Interpretação atual:
 
 O efeito em rampas intensas permanece como hipótese para investigação com maior histórico.
 
-## Continuidade da linha preditiva
+## Notebook 03A.04: histórico ampliado e generalização temporal
 
-Antes de considerar qualquer modelo como definitivo, a análise permanecerá concentrada na Iatan.
+O Notebook 03A.04 ampliou a série temporal da Iatan Unit 2 e avaliou o valor preditivo do histórico para o **Cenário A**, baseado exclusivamente na carga instantânea:
 
-Questões seguintes:
+`CO₂(t) = f(P(t))`
 
-- efeito do aumento do volume histórico;
-- estabilidade dos erros entre anos;
-- previsão de período futuro completamente fora da amostra;
-- drift da relação carga e CO₂;
-- modelo estático versus atualização periódica;
-- reavaliação de startups e rampas;
-- métricas absolutas e normalizadas de erro.
+A delimitação temporal adotada foi:
 
-Notebook planejado:
+- **2010:** período parcial de commissioning, excluído da amostra principal;
+- **2011–2022:** histórico operacional de referência;
+- **2023–2024:** regime operacional distinto, preservado para análises específicas, mas excluído da amostra principal;
+- **2025:** período futuro de avaliação.
 
-`03A.04_volume_dados_generalizacao_temporal_iatan.ipynb`
+A decisão sobre 2023 e 2024 foi baseada em indicadores operacionais antes da comparação preditiva. O detalhamento está em [03A04_delimitacao_amostra_historica.md](outputs/reports/03A04_delimitacao_amostra_historica.md).
+
+### Generalização 2011–2022 para 2025
+
+O modelo treinado exclusivamente com **83.832 observações de 2011 a 2022** foi avaliado nas **6.249 horas operacionais válidas de 2025**.
+
+| Métrica | Resultado |
+|---|---:|
+| MAE | 50,2740 |
+| RMSE | 68,4650 |
+| R² | 0,8894 |
+| NMAE | 8,65% |
+| Bias | -33,9686 |
+
+O resultado demonstra que o padrão histórico de carga e emissão mantém capacidade relevante de transferência temporal para 2025, embora existam deslocamentos entre períodos e degradação localizada do erro.
+
+### Valor incremental do histórico
+
+Em seguida, foi realizada uma comparação pareada no mesmo conjunto de teste de novembro e dezembro de 2025.
+
+| Modelo | MAE | RMSE | R² | NMAE |
+|---|---:|---:|---:|---:|
+| Jan–Out/2025 | 23,3470 | 28,5786 | 0,9802 | 3,97% |
+| 2011–2022 + Jan–Out/2025 | **20,2454** | **25,1240** | **0,9847** | **3,44%** |
+
+A incorporação do histórico reduziu o MAE em **13,28%** e o RMSE em **12,09%**. O modelo com histórico apresentou menor erro absoluto em **65,30%** das horas avaliadas.
+
+Portanto, o histórico de 2011 a 2022 não apenas permite generalização para 2025, mas também acrescenta informação quando combinado com dados recentes do próprio ano.
+
+O relatório consolidado está em [03A04_relatorio_valor_preditivo_historico.md](outputs/reports/03A04_relatorio_valor_preditivo_historico.md).
+
+## Próxima etapa da linha preditiva
+
+Nos experimentos anteriores, conduzidos com uma base temporal mais restrita, as variáveis de trajetória operacional não apresentaram ganho global robusto em relação ao uso exclusivo da carga instantânea.
+
+Como o histórico ampliado aumenta a quantidade e a diversidade das condições operacionais disponíveis para treinamento, a próxima pergunta é:
+
+> **Com histórico ampliado, a inclusão de variáveis de trajetória operacional melhora a previsão de CO₂ em relação ao uso exclusivo da carga instantânea?**
+
+A próxima etapa comparará Cenário A e Cenário B sob o mesmo protocolo temporal.
 
 # Linha de processos
 
@@ -322,7 +359,8 @@ co2-cems-process-data-science/
 │   ├── 03A_modelagem_preditiva_co2.ipynb
 │   ├── 03A.01_modelagem_preditiva_co2.ipynb
 │   ├── 03A.02_comparacao_modelos_gradient_boosting.ipynb
-│   └── 03A.03_otimizacao_pareada_xgboost.ipynb
+│   ├── 03A.03_otimizacao_pareada_xgboost.ipynb
+│   └── 03A.04_volume_dados_generalizacao_temporal_iatan.ipynb
 ├── data/
 │   ├── raw/
 │   ├── interim/
