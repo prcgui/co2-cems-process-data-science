@@ -281,6 +281,19 @@ Portanto, o histórico de 2011 a 2022 não apenas permite generalização para 2
 
 O relatório consolidado está em [03A04_relatorio_valor_preditivo_historico.md](outputs/reports/03A04_relatorio_valor_preditivo_historico.md).
 
+## Arquivos-chave do Notebook 03A.04
+
+Para facilitar a navegação pelos resultados desta etapa:
+
+- [Notebook 03A.04](notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb)
+- [Relatório de delimitação da amostra histórica](outputs/reports/03A04_delimitacao_amostra_historica.md)
+- [Relatório do valor preditivo do histórico](outputs/reports/03A04_relatorio_valor_preditivo_historico.md)
+- [Tabela de generalização 2011–2022 para 2025](outputs/tables/03A04_generalizacao_2011_2022_para_2025.csv)
+- [Comparação pareada: 2025 versus histórico + 2025](outputs/tables/03A04_comparacao_2025_vs_historico_2025.csv)
+- [Síntese das evidências do histórico](outputs/tables/03A04_sintese_evidencias_historico.csv)
+- [Figura de comparação dos erros](outputs/figures/03A04_comparacao_2025_vs_historico_2025_erros.png)
+- [Séries observada e previstas](outputs/figures/03A04_comparacao_2025_vs_historico_2025_series.png)
+
 ## Próxima etapa da linha preditiva
 
 Nos experimentos anteriores, conduzidos com uma base temporal mais restrita, as variáveis de trajetória operacional não apresentaram ganho global robusto em relação ao uso exclusivo da carga instantânea.
