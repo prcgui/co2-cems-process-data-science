@@ -1,0 +1,17 @@
+year,role,included_primary_training,justification
+2010,commissioning_partial_year,False,Ano parcial associado ao commissioning e à entrada em operação comercial da unidade.
+2011,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2012,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2013,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2014,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2015,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2016,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2017,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2018,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2019,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2020,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2021,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2022,historical_reference,True,Período histórico principal utilizado para representar o regime operacional de referência.
+2023,distinct_operational_regime,False,"Ano completo preservado para análise de drift e Process Mining, mas retirado do treinamento principal por apresentar regime operacional distinto do período histórico de referência."
+2024,distinct_operational_regime,False,"Ano completo preservado para análise de drift e Process Mining, mas retirado do treinamento principal por apresentar regime operacional distinto do período histórico de referência."
+2025,future_generalization_target,False,Ano futuro reservado como alvo do experimento de generalização temporal.
