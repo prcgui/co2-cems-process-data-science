@@ -1,0 +1,3 @@
+temporal_block,timestamp_start,timestamp_end,n_records,first_year,last_year,duration_days
+1,2011-01-01,2022-12-31 23:00:00,105192,2011,2022,4382.958333333333
+2,2025-01-01,2025-12-31 23:00:00,8760,2025,2025,364.9583333333333

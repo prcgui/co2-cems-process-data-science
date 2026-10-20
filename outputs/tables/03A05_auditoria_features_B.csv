@@ -1,0 +1,8 @@
+feature,dtype,missing_total,missing_operating
+load_current_mw,float64,1,1
+load_lag_1h,float64,3,2
+delta_load_1h,float64,4,3
+abs_delta_load_1h,float64,4,3
+load_mean_previous_3h,float64,2,1
+operating_time_lag_1h,float64,2,1
+hours_since_startup,int64,0,0

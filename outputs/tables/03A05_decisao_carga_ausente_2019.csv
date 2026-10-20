@@ -1,0 +1,2 @@
+timestamp,year,issue,operating_time,co2_mass_short_tons,decision,justification,feature_handling,comparison_rule
+2019-07-11 14:00:00,2019,Gross Load (MW) ausente durante operação,1.0,798.6,Preservar NaN e não realizar imputação,"Ausência isolada de carga em série histórica extensa, com continuidade temporal e operação estável nas horas vizinhas. A imputação introduziria valor não observado sem necessidade.",Construir as features normalmente e identificar posteriormente as observações sem vetor completo.,Cenários A e B utilizarão a mesma amostra comum de observações elegíveis.
