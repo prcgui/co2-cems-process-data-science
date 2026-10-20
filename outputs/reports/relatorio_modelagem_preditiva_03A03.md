@@ -55,6 +55,45 @@ A métrica primária de seleção foi o **MAE médio dos cinco folds**.
 O holdout histórico de novembro e dezembro não participou da
 seleção dos hiperparâmetros.
 
+### Fundamentação metodológica da otimização
+
+**Random Search (busca aleatória de hiperparâmetros).**
+O `ParameterSampler` sorteia combinações do espaço de busca
+previamente definido. O uso de `random_state=SEED` permite
+reproduzir a seleção das configurações candidatas. Ao contrário
+de uma busca exaustiva (*Grid Search*), não é necessário testar
+todas as combinações possíveis. Neste experimento, o número
+de árvores (`n_estimators`) é otimizado explicitamente; não se
+utiliza *early stopping* durante a busca.
+
+**Walk-forward temporal cross-validation with an expanding
+training window (validação cruzada temporal com janela expansiva).**
+Os cinco folds avançam cronologicamente: o treinamento começa
+em janeiro e incorpora progressivamente novos meses, enquanto
+cada validação utiliza o mês imediatamente posterior ao fim da
+respectiva janela de treino. Essa estrutura evita embaralhar
+observações futuras com dados passados e distingue o procedimento
+de uma validação cruzada aleatória do tipo `KFold`.
+
+**Paired experimental design (desenho experimental pareado).**
+Os dois cenários utilizam as mesmas observações elegíveis, o
+mesmo conjunto de configurações candidatas, os mesmos folds
+e a mesma métrica de avaliação. Assim, as diferenças entre A
+e B são examinadas sob condições experimentais comparáveis,
+com a representação das variáveis como principal contraste.
+Entretanto, a melhor configuração é selecionada separadamente
+para cada cenário, a partir do MAE médio de validação. Portanto,
+o pareamento não significa que os modelos finais precisem ter
+hiperparâmetros idênticos, nem constitui um teste formal de
+significância estatística.
+
+**Final refit (reajuste final).** Após a seleção dos
+hiperparâmetros, os modelos são novamente treinados com todo
+o período de desenvolvimento, de janeiro a outubro. Os meses
+de novembro e dezembro são utilizados apenas na avaliação
+histórica posterior, com a ressalva de já terem sido observados
+em etapas anteriores da pesquisa.
+
 ---
 
 ## 4. Configurações selecionadas
@@ -255,8 +294,8 @@ O ganho observado durante rampas intensas indica, entretanto,
 que a trajetória operacional pode possuir valor localizado em
 regimes dinâmicos específicos.
 
-Essa hipótese deverá ser novamente testada quando períodos
-históricos adicionais forem incorporados à análise.
+A persistência desse possível benefício em outros períodos
+permanece indeterminada neste notebook.
 
 ---
 
@@ -291,319 +330,29 @@ da precisão do modelo.
 
 ---
 
-## 13. Decisão metodológica
-
-A próxima etapa da pesquisa permanecerá concentrada na
-**Iatan Unit 2**.
-
-Antes de avaliar transferência entre diferentes unidades ou
-usinas, será investigada de forma mais rigorosa a capacidade de
-**generalização temporal intraplanta**.
-
-O objetivo passa a ser responder:
-
-> **Até que ponto é possível construir, para a Iatan Unit 2, um
-> modelo robusto capaz de prever períodos futuros e manter seu
-> desempenho quando o horizonte histórico e as condições
-> operacionais se modificam?**
-
-Por esse motivo, nenhum dos modelos obtidos até este notebook
-será denominado **modelo final da Iatan**.
-
-O melhor A-XGBoost identificado no Notebook 3A.02 permanece como
-modelo de referência, mas sua capacidade de generalização ainda
-deverá ser submetida a novos experimentos.
-
----
-
-## 14. Estratégia 1: efeito do volume de dados
-
-A primeira extensão investigará se a quantidade de histórico
-disponível influencia sistematicamente o desempenho.
-
-Serão incorporados, quando disponíveis, anos adicionais da série
-horária da Iatan Unit 2.
-
-Serão construídos experimentos com janelas crescentes de
-treinamento.
-
-Exemplo conceitual:
-
-- histórico curto;
-- histórico intermediário;
-- um ano;
-- dois anos;
-- três anos ou mais.
-
-Para cada tamanho de histórico serão calculadas as mesmas métricas
-de desempenho.
-
-O objetivo será construir uma **curva de aprendizado temporal**:
-
-`erro = f(volume de dados históricos)`
-
-Essa análise permitirá distinguir duas situações.
-
-### Situação A
-
-O erro continua diminuindo conforme novos dados são adicionados.
-
-Nesse caso, o modelo ainda pode estar limitado pela quantidade
-de informação disponível.
-
-### Situação B
-
-O erro entra em um platô mesmo após a inclusão de mais dados.
-
-Nesse caso, novos anos provavelmente produzirão ganhos marginais
-pequenos, indicando possível limitação das features, do algoritmo
-ou da própria previsibilidade do fenômeno.
-
----
-
-## 15. Estratégia 2: teste verdadeiramente fora da amostra
-
-Será reservado um período posterior que não poderá participar de:
-
-- seleção de features;
-- construção de thresholds;
-- escolha de hiperparâmetros;
-- escolha de arquitetura;
-- comparação entre variantes;
-- qualquer decisão metodológica.
-
-Esse período será utilizado exclusivamente após o congelamento
-do modelo.
-
-Exemplo conceitual:
-
-`Treino e desenvolvimento -> anos anteriores`
-
-`Teste final -> período futuro completamente não observado`
-
-Esse experimento permitirá avaliar a capacidade real de
-generalização temporal.
-
----
-
-## 16. Estratégia 3: validação temporal entre anos
-
-Além de um único teste final, serão avaliadas múltiplas divisões
-temporais.
-
-Exemplo:
-
-- anos iniciais -> ano seguinte;
-- anos iniciais + 1 -> ano seguinte;
-- anos iniciais + 2 -> ano seguinte;
-- e assim sucessivamente.
-
-Essa estratégia permitirá verificar se o desempenho é estável
-entre diferentes anos ou se determinados períodos apresentam
-dificuldade significativamente maior.
-
-A análise deverá incluir:
-
-- MAE;
-- RMSE;
-- R²;
-- métricas de erro normalizadas;
-- comparação das métricas entre anos.
-
----
-
-## 17. Estratégia 4: modelo estático versus atualização periódica
-
-Serão comparadas duas estratégias de utilização prática.
-
-### Modelo estático
-
-O modelo é treinado até determinada data e permanece congelado
-durante todo o período seguinte.
-
-Essa estratégia simula um cenário de implantação em que o modelo
-não recebe atualização contínua.
-
-### Modelo com atualização periódica
-
-O modelo é recalibrado à medida que novas observações históricas
-se tornam disponíveis.
-
-Poderão ser avaliadas atualizações:
-
-- mensais;
-- trimestrais;
-- anuais.
-
-A comparação permitirá responder se o sistema exige
-retreinamento frequente ou se a relação entre operação e emissão
-permanece suficientemente estável ao longo do tempo.
-
----
-
-## 18. Estratégia 5: estabilidade da relação carga e CO₂
-
-Será investigado se a relação observada entre carga e emissão
-permanece estável entre anos.
-
-A relação de interesse é:
-
-`CO₂(t) = f(P(t))`
-
-Serão comparadas distribuições e curvas carga-emissão de
-diferentes períodos históricos.
-
-Mudanças relevantes podem indicar:
-
-- drift operacional;
-- alteração de eficiência;
-- mudança na composição ou qualidade do combustível;
-- envelhecimento ou manutenção dos equipamentos;
-- mudanças de estratégia operacional;
-- mudanças não representadas pelas features atuais.
-
-Essa análise será necessária para determinar se um único modelo
-é suficiente ao longo do tempo.
-
----
-
-## 19. Estratégia 6: reavaliar a trajetória com maior histórico
-
-A conclusão obtida no Notebook 3A.03 refere-se principalmente
-ao ano de 2025.
-
-Portanto, a hipótese de que a trajetória operacional apresenta
-pequeno valor incremental também deverá ser testada novamente
-quando novos anos forem incorporados.
-
-Será avaliado se:
-
-- a vantagem pequena de B na validação temporal permanece;
-- o desempenho inferior de B no holdout se repete;
-- o ganho observado durante rampas intensas é reproduzível;
-- startups apresentam comportamento semelhante em diferentes
-  anos.
-
-Caso o benefício da trajetória apareça repetidamente apenas em
-regimes transitórios, poderá ser investigada posteriormente uma
-estratégia específica para esses períodos.
-
----
-
-## 20. Estratégia 7: caracterização detalhada dos erros
-
-Antes da escolha definitiva do modelo intraplanta, os erros serão
-avaliados em diferentes condições.
-
-Entre as análises previstas estão:
-
-- erro por mês;
-- erro por ano;
-- erro por faixa de carga;
-- erro em baixa carga;
-- erro em carga intermediária;
-- erro em alta carga;
-- erro após startups;
-- erro em rampas;
-- distribuição dos resíduos;
-- presença de viés de superestimação ou subestimação;
-- identificação das observações com maiores erros.
-
-Também serão incorporadas métricas relativas ou normalizadas,
-para que a magnitude do MAE possa ser interpretada em relação
-à escala real das emissões.
-
----
-
-## 21. Critério para encerramento da etapa intraplanta
-
-A etapa de modelagem da Iatan somente será considerada
-suficientemente consolidada quando for possível responder, com
-evidência empírica, às seguintes perguntas:
-
-1. O modelo melhora quando mais anos de dados são utilizados?
-
-2. Qual quantidade de histórico é suficiente para estabilizar
-   o desempenho?
-
-3. O modelo mantém precisão em períodos futuros completamente
-   não observados?
-
-4. O desempenho é estável entre diferentes anos?
-
-5. Existe drift relevante na relação entre carga e emissão?
-
-6. A trajetória operacional continua apresentando baixo valor
-   incremental quando a análise é ampliada?
-
-7. Em quais condições operacionais o modelo apresenta seus
-   maiores erros?
-
-8. O modelo precisa ser atualizado periodicamente para manter
-   desempenho satisfatório?
-
-Somente depois dessas respostas será selecionado um
-**modelo final intraplanta para a Iatan Unit 2**.
-
----
-
-## 22. Etapa posterior: generalização entre unidades
-
-A generalização para outras unidades termelétricas permanece como
-objetivo posterior da pesquisa.
-
-Entretanto, essa etapa somente será iniciada depois da
-caracterização da generalização temporal dentro da própria Iatan.
-
-A sequência metodológica passa a ser:
-
-### Etapa A
-
-Compreender e validar profundamente a previsão dentro da
-Iatan Unit 2.
-
-### Etapa B
-
-Verificar se o modelo consegue prever períodos futuros da mesma
-unidade.
-
-### Etapa C
-
-Avaliar estabilidade, drift e efeito do volume de dados.
-
-### Etapa D
-
-Definir o modelo intraplanta de referência.
-
-### Etapa E
-
-Somente então investigar transferência e generalização para
-outras unidades e instalações.
-
-Essa sequência evita confundir duas dificuldades distintas:
-
-- generalização ao longo do tempo;
-- generalização entre diferentes sistemas físicos.
-
-A primeira deverá ser compreendida antes da segunda.
-
----
-
-## 23. Próximo experimento
-
-O próximo notebook deverá investigar prioritariamente o
-**efeito do volume histórico de dados sobre o desempenho
-preditivo da Iatan Unit 2**.
-
-Nome previsto:
-
-`03A.04_volume_dados_generalizacao_temporal_iatan.ipynb`
-
-A pergunta central será:
-
-> **A ampliação do histórico de treinamento melhora de forma
-> consistente a capacidade de prever emissões futuras de CO₂ da
-> Iatan Unit 2?**
-
-Esse experimento iniciará a transição entre a avaliação realizada
-em 2025 e uma análise efetiva de robustez temporal do modelo.
+## 13. Limitações e direcionamento da investigação subsequente
+
+Este notebook avaliou o ganho incremental das variáveis de trajetória
+operacional para a Iatan Unit 2, a partir dos dados de 2025, com
+otimização pareada do XGBoost. Os resultados não demonstraram
+superioridade global consistente do Cenário B sobre o Cenário A.
+A melhora observada nas rampas intensas permanece uma evidência
+exploratória restrita ao subconjunto avaliado.
+
+O desempenho nos cinco folds variou entre meses, e novembro e
+dezembro de 2025 já haviam sido utilizados em experimentos
+anteriores. Portanto, esta análise **não constitui uma avaliação
+final e independente da generalização temporal**, tampouco define
+um modelo definitivo para a unidade.
+
+Uma questão permaneceu sem resposta ao término do experimento:
+**qual é o efeito da quantidade de histórico de treinamento sobre
+o erro de previsão e sua estabilidade entre períodos?** Essa
+limitação motivou o Notebook 3A.04, voltado à avaliação do volume
+de dados históricos e da generalização temporal na própria Iatan
+Unit 2.
+
+A identificação dessa questão não implica assumir outras etapas
+experimentais. Investigações adicionais dependem dos resultados
+obtidos, de sua pertinência para a pergunta de pesquisa e das
+condições efetivas de análise.
