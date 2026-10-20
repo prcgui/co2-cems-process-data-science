@@ -1,0 +1,2 @@
+issue,affected_period_start,affected_period_end,n_affected_operating_hours,decision,justification,comparison_rule
+Tempo desde startup desconhecido no início do histórico,2011-01-01,2011-01-11 09:00:00,250,Excluir as observações da amostra comum A x B,O histórico começa com a unidade já ligada e não permite conhecer o startup anterior. A exclusão preserva a interpretação física de hours_since_startup sem necessidade de imputação.,A exclusão será aplicada igualmente aos Cenários A e B.
