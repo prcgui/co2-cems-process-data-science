@@ -1,0 +1,17 @@
+etapa,indicador,cenario_A,cenario_B,valor,ganho_B_vs_A_pct,observacao
+Amostra,Horas operacionais disponíveis,,,90082.0,,2011 a 2022 e 2025.
+Amostra,Horas da amostra comum A x B,,,89830.0,,Mesmas observações utilizadas pelos dois cenários.
+Amostra,Histórico comum 2011 a 2022,,,83581.0,,Após critérios de elegibilidade da comparação.
+Amostra,Teste final nov-dez/2025,,,1144.0,,Teste pareado.
+Validação outubro/2025,Árvores selecionadas,498.0,721.0,,,Complexidade definida por early stopping.
+Validação outubro/2025,MAE,59.912427360643136,53.71860700388542,,10.338122873029311,"Resultado de validação, não resultado final."
+Validação outubro/2025,RMSE,75.48362166188026,67.69900474883117,,10.312988091535063,B apresentou melhor desempenho em outubro.
+Teste global,MAE,20.151419005413988,21.1719865784345,,-5.06449482662397,Ganho negativo indica pior desempenho de B.
+Teste global,RMSE,25.065266220558023,26.577858364597994,,-6.034614317399004,B apresentou maior RMSE.
+Teste global,R2,0.9847408903252829,0.9828436650475074,-0.0018972252777754717,,Valor representa a variação B menos A.
+Teste global,NMAE (%),3.423958965401702,3.5973651900701986,,-5.06449482662397,NMAE utiliza o mesmo denominador para os dois cenários.
+Teste global,Bias,-10.346744499393276,-2.5503327508606275,75.35135084267155,,Valor adicional representa redução percentual da magnitude do bias em B.
+Teste global,Horas com menor erro de B (%),,50.96153846153846,-1.0205675730205077,,Valor adicional representa redução média pareada do erro absoluto.
+Contexto,"Primeiras 6 h após startup, MAE",11.728783042399089,10.451706706237793,30.0,10.888395936259666,Amostra pequena. B não apresentou menor erro na maioria das horas.
+Contexto,"Rampas intensas, MAE",24.057700155095535,18.54911714122092,258.0,22.897379958856426,Principal contexto com benefício consistente da trajetória.
+Contexto,"Demais horas, MAE",19.254376063129865,22.341563622064044,857.0,-16.03369306183763,Esse grupo representa a maior parte do teste e determina a piora global de B.

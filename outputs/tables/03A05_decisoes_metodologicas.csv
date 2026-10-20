@@ -1,0 +1,11 @@
+ordem,tema,decisao,justificativa
+1,Período histórico,Utilizar 2011 a 2022 como histórico de referência.,2010 corresponde ao período inicial de entrada em operação e não foi utilizado como referência. Os anos de 2023 e 2024 foram previamente caracterizados como regime operacional distinto do intervalo empírico observado em 2011 a 2022.
+2,Preservação das horas OFF,Manter horas OFF durante a construção das variáveis temporais.,As horas OFF são necessárias para reconstruir transições OFF para ON e identificar startups.
+3,Carga ausente em 2019,Preservar o NaN da carga durante operação e não realizar imputação.,Foi identificado um único registro de carga ausente durante operação. A imputação criaria um valor não observado. As linhas sem vetor completo de features foram excluídas da amostra pareada.
+4,Blocos temporais,Calcular lags e médias móveis separadamente nos blocos 2011 a 2022 e 2025.,Essa regra impede que dezembro de 2022 seja utilizado artificialmente como passado imediato de janeiro de 2025.
+5,Início de 2011,Excluir da comparação A x B as 250 horas iniciais em operação com idade do startup desconhecida.,A série começa com a unidade já ligada. Não existe informação anterior suficiente para determinar o tempo real desde o startup.
+6,Comparação pareada,Utilizar exatamente as mesmas observações para os Cenários A e B.,A diferença entre os cenários deve decorrer das features utilizadas e não de diferenças na composição da amostra.
+7,Seleção de complexidade,Utilizar outubro de 2025 como validação para early stopping.,"Cada representação pode exigir número diferente de árvores, mas ambas utilizam o mesmo período de validação e os mesmos hiperparâmetros estruturais."
+8,Refit final,"Após selecionar o número de árvores, reincorporar outubro ao treinamento e remover o early stopping.",A complexidade já havia sido selecionada. O treinamento final utiliza todas as observações permitidas até outubro de 2025.
+9,Teste temporal,Avaliar A e B nas mesmas 1.144 horas de novembro e dezembro de 2025.,Esse período não foi usado no ajuste nem na seleção de complexidade dentro do 03A.05.
+10,Rampas intensas,Definir rampa intensa por |delta P| maior ou igual ao P90 calculado no treinamento.,O limiar é determinado sem utilizar a distribuição do conjunto de teste e mantém o critério empregado nas análises anteriores.
