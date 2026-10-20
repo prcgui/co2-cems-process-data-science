@@ -82,3 +82,47 @@ A análise por contexto verifica se a informação de trajetória é particularm
 - 03A_scaler_X_A.joblib
 - 03A_scaler_X_B.joblib
 - 03A_scaler_y.joblib
+
+## 10. Fundamentação metodológica da inteligência artificial
+
+### 10.1. Classificação da técnica de IA
+
+O problema consiste em **aprendizado supervisionado de regressão** (*supervised regression*), pois se estima uma variável-resposta numérica contínua, a massa horária de CO₂, a partir de exemplos históricos com entradas e alvos conhecidos. A técnica utilizada é uma **rede neural artificial feedforward** (*feedforward artificial neural network*), especificamente um **Perceptron Multicamadas** (*Multilayer Perceptron, MLP*).
+
+A hierarquia conceitual é: **Inteligência Artificial → Machine Learning → Aprendizado Supervisionado → Regressão → Redes Neurais Artificiais → Redes Feedforward → MLP**.
+
+### 10.2. Arquitetura e funcionamento da MLP
+
+Os dois cenários usam a mesma configuração de camadas ocultas: **Dense(64, ReLU) → Dense(32, ReLU) → Dense(1, linear)**. Camadas *Dense* realizam combinações afins parametrizadas; a ativação *ReLU* introduz não linearidade; a saída linear é compatível com um alvo contínuo. O Cenário A usa uma variável de entrada, enquanto B usa sete; consequentemente, o número total de parâmetros treináveis difere entre cenários.
+
+### 10.3. Retropropagação e otimização
+
+O treinamento minimiza o **erro quadrático médio (Mean Squared Error, MSE)**. O cálculo dos gradientes é realizado por **retropropagação do erro (*backpropagation*) internamente pelo TensorFlow/Keras**, sem implementação manual desse algoritmo neste notebook. O **otimizador Adam (*Adam optimizer*)** emprega os gradientes para atualizar os parâmetros. O **EarlyStopping** monitora `val_loss` e, com `restore_best_weights=True`, recupera os pesos correspondentes à melhor época de validação; isso limita treinamento desnecessário e pode reduzir sobreajuste, sem garantir sua eliminação.
+
+### 10.4. Normalização sem vazamento de dados
+
+A técnica aplicada é a **normalização Min–Max (*min-max scaling*)**. Os parâmetros de escala são ajustados exclusivamente no conjunto de treino (`fit_transform`) e aplicados sem novo ajuste à validação e ao teste (`transform`). Há transformações separadas para as entradas de A, para as entradas de B e para o alvo. As métricas de erro são calculadas após retorno das previsões à unidade original do CO₂. Valores fora da amplitude observada no treino podem ser transformados para fora do intervalo de zero a um.
+
+### 10.5. Divisão temporal e avaliação fora da amostra
+
+A separação de janeiro a setembro para treino, outubro para validação e novembro a dezembro para teste é denominada **temporal holdout**, uma partição cronológica fixa. A validação apoia a escolha da época por EarlyStopping e o teste permanece reservado para a avaliação final **fora da amostra (*out-of-sample evaluation*)**. Este protocolo não corresponde a divisão aleatória nem a validação cruzada temporal *walk-forward*.
+
+### 10.6. Comparação controlada dos conjuntos de variáveis
+
+O desenho A versus B é uma **comparação controlada de conjuntos de features (*controlled feature-set comparison*) com lógica de ablação aditiva** (*feature ablation logic*): o Cenário A usa apenas carga instantânea; o B mantém essa entrada e adiciona memória e trajetória operacional. São mantidos os mesmos períodos, a configuração das camadas ocultas e as condições básicas de treinamento. Como o número de entradas e parâmetros aumenta em B, a comparação não isola perfeitamente todos os efeitos de capacidade, tampouco constitui prova causal. A conclusão empírica é condicionada aos resultados observados no teste.
+
+### 10.7. Técnicas de modelagem e avaliação utilizadas
+
+| Etapa | Técnica explicitada | Aplicação efetiva |
+|---|---|---|
+| Formulação | Aprendizado supervisionado de regressão | Estimar massa horária de CO₂ |
+| Modelo de IA | Feedforward ANN / MLP | Rede densa com duas camadas ocultas |
+| Treinamento | Backpropagation e Adam | Gradientes internos ao TensorFlow/Keras; atualização de pesos por Adam |
+| Função objetivo | Mean Squared Error, MSE | Perda de treinamento e validação |
+| Controle de treinamento | EarlyStopping | Recuperação dos pesos da melhor época de validação |
+| Pré-processamento | Train-only min-max scaling | Ajuste dos scalers somente no treino |
+| Divisão da amostra | Temporal holdout | Treino, validação e teste cronológicos |
+| Comparação | Controlled feature-set comparison | A como baseline e B com trajetória operacional |
+| Avaliação | Temporal out-of-sample evaluation | MAE, RMSE e R² no conjunto de teste |
+
+**Delimitação:** esta seção nomeia procedimentos já presentes no código; não afirma a execução de técnicas adicionais como *walk-forward validation*, otimização de hiperparâmetros ou teste formal de significância. A comparação deve ser interpretada conforme as métricas e a análise por contexto efetivamente calculadas.

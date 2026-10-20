@@ -6,9 +6,9 @@
 A unidade utilizada nesta fase foi carregada automaticamente a
 partir do resultado do processo de seleção realizado no Notebook 1.
 
-**Unidade:** Iatan — Unit 2  
-**Facility ID:** 6065  
-**Estado:** MO  
+**Unidade:** Iatan — Unit 2
+**Facility ID:** 6065
+**Estado:** MO
 **Ano:** 2025
 
 O notebook de tratamento não possui dependência explícita da
@@ -67,6 +67,11 @@ Foram identificados:
 - **0 outliers de carga**;
 - **3 outliers de CO₂**.
 
+Esse critério é conhecido como **Tukey's fences (regra de Tukey)**:
+limite inferior Q1 − 1,5 × IQR e limite superior Q3 + 1,5 × IQR.
+Trata-se de uma triagem estatística exploratória e univariada,
+sem equivaler a um teste formal ou à confirmação de erros nos dados.
+
 Nenhuma observação foi automaticamente removida.
 
 A decisão foi baseada no fato de que, em um processo industrial,
@@ -99,6 +104,22 @@ As principais features criadas foram:
 - hora do dia;
 - mês.
 
+Do ponto de vista metodológico, `shift(1)` constrói
+**lagged features (variáveis defasadas)**, como P(t−1) e o
+Operating Time da hora anterior. Já `shift(1).rolling(...)`
+constrói uma **rolling-window feature (estatística em janela móvel)**:
+a média de carga das três horas anteriores, sem incluir a hora
+corrente no histórico. A defasagem anterior à média móvel
+reduz o risco de **look-ahead bias (antecipação de informação)**
+e de vazamento temporal nessa variável.
+
+A identificação de startups e shutdowns corresponde a
+**state-transition event detection (detecção de eventos por
+transição de estado)**: as transições OFF → ON e ON → OFF são
+reconhecidas por regras determinísticas, sem treinamento de
+um classificador. O primeiro registro não gera transição
+inferida porque não se conhece o estado da hora anterior.
+
 Foram identificados:
 
 - **38 startups**;
@@ -114,8 +135,17 @@ informações sobre trajetória e estado operacional.
 
 ## 6. PCA exploratória
 
-Foi aplicada Análise de Componentes Principais (PCA) como
-técnica exploratória de feature extraction.
+Foi aplicada Análise de Componentes Principais (PCA), conforme
+a técnica de feature extraction estudada na disciplina.
+
+Antes da PCA, as variáveis foram submetidas à
+**z-score standardization (padronização por escore z)**,
+implementada com `StandardScaler`, de forma que cada variável
+é centralizada por sua média e dividida pelo desvio-padrão.
+Isso evita predomínio artificial de variáveis por suas escalas.
+O ajuste nesta etapa utiliza a amostra exploratória e as
+componentes não integram os modelos preditivos; seu eventual
+uso supervisionado exigiria ajuste apenas no conjunto de treino.
 
 A PCA utilizou sete variáveis operacionais e foi aplicada
 somente às horas em que a unidade estava operando.
@@ -177,7 +207,7 @@ A PCA permanece, portanto, como ferramenta exploratória.
 
 ## 8. Definição da base experimental
 
-Para as análises posteriores das emissões de CO₂ foram mantidas
+Para a futura modelagem das emissões de CO₂ foram mantidas
 somente as horas em que a unidade estava operando.
 
 A base experimental possui:
@@ -208,23 +238,29 @@ As sete features operacionais consideradas nesta fase são:
 Como os dados constituem uma série temporal, não foi utilizada
 divisão aleatória entre treino e teste.
 
+Esse protocolo denomina-se **temporal holdout**, isto é,
+separação cronológica em conjuntos fixos e não sobrepostos
+para treinamento, validação e teste. Não corresponde a uma
+validação cruzada temporal walk-forward, que empregaria
+múltiplas origens de avaliação.
+
 A ordem cronológica foi preservada:
 
 ### Treino
 
-Janeiro a setembro de 2025  
+Janeiro a setembro de 2025
 **4,894 observações**
 (**78.32%**)
 
 ### Validação
 
-Outubro de 2025  
+Outubro de 2025
 **211 observações**
 (**3.38%**)
 
 ### Teste
 
-Novembro e dezembro de 2025  
+Novembro e dezembro de 2025
 **1,144 observações**
 (**18.31%**)
 
@@ -239,7 +275,7 @@ observações anteriores.
 ## 10. Normalização Min–Max
 
 As variáveis explicativas foram preparadas utilizando
-normalização Min–Max.
+normalização Min–Max, técnica abordada na disciplina.
 
 O scaler foi ajustado exclusivamente utilizando o conjunto de
 treino.
@@ -263,17 +299,26 @@ essas observações apresentaram valores além do intervalo mínimo
 ou máximo observado durante o treinamento.
 
 
+## 10.1. Distinção entre os métodos de escalonamento
+
+A padronização z-score foi aplicada exclusivamente no contexto
+da PCA exploratória; a normalização Min–Max foi aplicada à
+preparação de entradas para modelagem, com ajuste apenas no
+treino. São técnicas diferentes e com finalidades diferentes,
+embora ambas modifiquem a escala das variáveis.
+
+
 ## 11. Resultado do pré-processamento
 
 O fluxo de preparação dos dados foi:
 
-**Auditoria dos dados  
-→ tratamento de valores faltantes  
-→ análise de outliers  
-→ feature engineering  
-→ PCA exploratória  
-→ seleção da base operacional  
-→ divisão temporal  
+**Auditoria dos dados
+→ tratamento de valores faltantes
+→ análise de outliers
+→ feature engineering
+→ PCA exploratória
+→ seleção da base operacional
+→ divisão temporal
 → normalização Min–Max.**
 
 As técnicas foram aplicadas de acordo com a natureza dos dados
@@ -292,5 +337,32 @@ Por exemplo:
 - a divisão treino/teste foi adaptada para respeitar a natureza
   temporal dos dados.
 
-Com isso, a base encontra-se preparada para análises posteriores
-de Ciência de Dados e para a caracterização do processo operacional.
+## 12. Técnicas de pré-processamento e validação temporal
+
+A preparação dos dados emprega as seguintes técnicas estatísticas,
+de engenharia de atributos e de validação temporal:
+
+- **Tukey's fences:** detecção exploratória de outliers usando
+  1,5 × IQR, sem exclusão automática de observações;
+- **Lagged features:** variáveis defasadas de uma hora via
+  `shift(1)`;
+- **Rolling-window features:** média móvel das três horas
+  anteriores via `shift(1).rolling(...)`;
+- **State-transition event detection:** identificação de
+  startups e shutdowns pelas passagens OFF/ON e ON/OFF;
+- **Z-score standardization:** padronização com `StandardScaler`
+  antes da PCA exclusivamente exploratória;
+- **Temporal holdout:** divisão cronológica fixa de 2025 em
+  treino, validação e teste;
+- **Min-Max sem data leakage:** scaler ajustado apenas no treino
+  e reutilizado nos períodos seguintes.
+
+Essas técnicas compõem o pré-processamento e a preparação
+da base operacional para os experimentos preditivos subsequentes.
+Este notebook não treina, por si só, um modelo de IA. A avaliação
+de modelos deve respeitar a separação cronológica entre
+treinamento, validação e teste.
+
+
+Com isso, a base encontra-se preparada para a futura etapa de
+modelagem das emissões horárias de CO₂.

@@ -114,3 +114,47 @@ regimes, incluindo ponderação de erros ou modelos especializados.
 
 Nenhuma dessas alternativas será aplicada automaticamente antes
 da análise dos resultados obtidos neste notebook.
+
+
+## 11. Fundamentação metodológica das técnicas de modelagem e avaliação
+
+### 11.1. Aprendizado supervisionado, regressão e arquitetura da IA
+
+O problema é formulado como **supervised regression**, com CO₂ horário como variável-alvo contínua. O Cenário C utiliza uma **Multilayer Perceptron (MLP)**, uma rede neural artificial do tipo **feedforward** com camadas densas, ReLU nas camadas ocultas e saída linear. O treinamento é realizado por **backpropagation**, calculada internamente pelo TensorFlow/Keras, e os pesos são ajustados pelo **otimizador Adam**, com **MSE** como função de perda. Não se trata de uma rede neural recorrente: a memória do processo é fornecida pelas features temporais construídas explicitamente.
+
+### 11.2. Engenharia de variáveis temporais (temporal feature engineering)
+
+- **Lagged features**: `shift(n)` cria defasagens observacionais de carga e de rampas, incluindo `P(t−2)`, `P(t−3)` e `P(t−6)`.
+- **Rolling-window features**: `shift(1).rolling(...)` seguido de média, desvio padrão, mínimo e máximo resume janelas de observações anteriores à hora atual.
+- **Look-ahead bias prevention**: aplicar `shift(1)` antes de `rolling(...)` impede que a própria hora `t` integre estatísticas destinadas a descrever apenas o histórico; essa é uma medida de prevenção de **temporal data leakage**.
+- **Representação temporal operacional**: histórico ON/OFF, fase após startup, aceleração e direção das rampas descrevem regimes de operação.
+- **Ressalva**: `shift(n)` representa `n` linhas e só pode ser interpretado como `n` horas quando a frequência temporal estiver efetivamente regular.
+
+A carga da própria hora `P(t)` permanece como entrada. Assim, o experimento é de **estimação contemporânea de CO₂** e não demonstra capacidade de previsão antecipada a partir de dados exclusivamente anteriores à hora prevista.
+
+### 11.3. Comparação controlada dos conjuntos de features
+
+O estudo de B para C é uma **controlled feature-set comparison**, com lógica de **ablação incremental**: acrescentam-se variáveis temporais mantendo a arquitetura geral da MLP, os principais parâmetros de treinamento e a divisão cronológica. Como o Cenário B provém do Notebook 3A, a interpretação de diferenças deve considerar eventuais diferenças na amostra efetivamente elegível entre os experimentos; não se pressupõe pareamento completo sem verificação explícita.
+
+### 11.4. Protocolo temporal e prevenção de vazamento
+
+A separação cronológica do conjunto de dados é um **temporal holdout**: janeiro a setembro para treinamento, outubro para validação, novembro e dezembro para teste. A normalização Min-Max é ajustada somente ao treino e depois aplicada à validação e ao teste. O limiar de rampas intensas (P90) também é estimado exclusivamente no treino. Esses controles reduzem riscos de **data leakage**. Como o período de teste já foi examinado em trabalhos anteriores, futuras decisões de desenvolvimento não devem tratá-lo como teste inteiramente cego.
+
+### 11.5. Distribution shift e risco de extrapolação
+
+A comparação das médias das features entre treino e teste, juntamente com a proporção de valores do teste fora dos limites mínimo e máximo de treinamento, constitui um **diagnóstico descritivo de distribution shift e extrapolation risk**. Esse procedimento não é um teste formal de **covariate shift** ou **concept drift** e não comprova alteração na relação entre variáveis operacionais e emissões. Conclusões mais fortes exigiriam procedimentos específicos adicionais.
+
+### 11.6. Síntese das técnicas empregadas
+
+| Técnica | Aplicação no Notebook 3A.01 | Limite de interpretação |
+|---|---|---|
+| Supervised regression / MLP feedforward | Estima CO₂ a partir das features operacionais | Não constitui RNN nem previsão antecipada obrigatoriamente |
+| Temporal feature engineering | Constrói memória operacional explícita | Exige coerência da ordenação temporal |
+| Lagged features | `shift(n)` | Linhas não equivalem necessariamente a horas se houver lacunas |
+| Rolling-window features | `shift(1).rolling(...)` | As estatísticas descrevem somente períodos passados |
+| Look-ahead bias prevention | `shift(1)` nas janelas históricas | Não elimina automaticamente todas as possibilidades de leakage |
+| Temporal holdout | Treino, validação e teste cronológicos | Teste já conhecido dos experimentos anteriores |
+| Controlled feature-set comparison | Comparação B versus C mantendo arquitetura | A equivalência de amostras deve ser avaliada |
+| Distribution shift (descritivo) | Médias e limites das features no teste | Não prova covariate shift nem concept drift |
+
+A interpretação dos resultados deve considerar que o experimento avalia a estimação contemporânea das emissões, que o período de teste foi reutilizado após o Notebook 3A e que o diagnóstico de alterações na distribuição das entradas é descritivo, não uma comprovação formal de *covariate shift* ou *concept drift*.

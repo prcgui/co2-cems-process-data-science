@@ -4,8 +4,8 @@
 ## 1. Objetivo da etapa de seleção
 
 O objetivo desta primeira fase do estudo foi selecionar uma
-unidade termelétrica a carvão adequada para a análise integrada
-do comportamento operacional e das emissões horárias de CO₂.
+unidade termelétrica a carvão adequada para o desenvolvimento
+de um modelo de estimação das emissões horárias de CO₂.
 
 A unidade deveria possuir dados horários ao longo de 2025,
 monitoramento de CO₂ por CEMS e comportamento operacional
@@ -14,6 +14,36 @@ de estados e transições de operação.
 
 A seleção foi realizada a partir dos dados disponibilizados pela
 U.S. Environmental Protection Agency (EPA).
+
+
+## 1.1. Mapa metodológico da fase de seleção
+
+A fase de seleção combina quatro procedimentos metodológicos
+principais, cada um aplicado a uma parte específica do pipeline:
+
+1. **Rule-based screening, ou triagem baseada em regras:** usado
+   para reduzir a população inicial por critérios determinísticos
+   de elegibilidade.
+
+2. **Exploratory Data Analysis, EDA, ou Análise Exploratória de
+   Dados:** usada para caracterizar qualidade, cobertura,
+   distribuição da carga, variabilidade e comportamento
+   operacional das unidades.
+
+3. **State-transition event detection, ou detecção de eventos por
+   transição de estado:** usada para identificar startups pela
+   transição OFF para ON e shutdowns pela transição ON para OFF.
+
+4. **Criteria-based multi-criteria screening, ou triagem
+   multicritério baseada em critérios:** usada para avaliar
+   conjuntamente múltiplos atributos e apoiar a escolha final da
+   unidade de estudo.
+
+A quarta técnica não corresponde a uma aplicação formal de MCDA
+ou MCDM, pois não utiliza pesos, função de utilidade, matriz de
+decisão ou método matemático formal de agregação. As regras de
+triagem e de detecção de eventos também não constituem modelos de
+machine learning.
 
 
 ## 2. Etapa 1 — Configuração e acesso aos dados
@@ -54,6 +84,13 @@ Após essa filtragem foram identificadas:
 
 Essa etapa reduz o universo da base da EPA às unidades
 tecnologicamente compatíveis com o objeto do estudo.
+
+Metodologicamente, esse procedimento corresponde a uma
+**triagem baseada em regras, rule-based screening**. A população
+inicial é reduzida por critérios determinísticos e explícitos,
+sem utilização de um algoritmo de aprendizado de máquina para
+definir a elegibilidade das unidades. Essa característica torna
+a seleção rastreável e reproduzível.
 
 
 ## 5. Etapa 4 — Associação aos Monitoring Plans
@@ -149,6 +186,12 @@ necessários ao estudo.
 As unidades foram avaliadas segundo critérios de qualidade dos
 dados e diversidade de comportamento operacional.
 
+Essa etapa corresponde a uma **Análise Exploratória de Dados,
+Exploratory Data Analysis, EDA**, aplicada à caracterização das
+unidades antes da modelagem. A EDA permite examinar cobertura,
+distribuições, variabilidade, estados operacionais e eventos de
+transição sem ainda ajustar um modelo preditivo.
+
 Foram considerados, entre outros:
 
 - cobertura dos dados de CO₂;
@@ -159,6 +202,14 @@ Foram considerados, entre outros:
 - amplitude da carga;
 - variabilidade da carga;
 - intensidade das variações horárias de potência.
+
+Os eventos de startup e shutdown foram identificados por
+**detecção de eventos por transição de estado, state-transition
+event detection**. O estado operacional atual é comparado ao
+estado da hora anterior, de forma que a transição OFF para ON é
+classificada como startup e a transição ON para OFF como
+shutdown. Trata-se de uma regra temporal determinística, não de
+um classificador treinado.
 
 Após os critérios de qualidade, permaneceram:
 
@@ -173,6 +224,13 @@ número de transições.
 ## 12. Etapa 11 — Comparação aprofundada das finalistas
 
 Três unidades foram selecionadas para uma análise mais detalhada:
+
+Essa comparação constitui uma **EDA comparativa**, na qual
+estatísticas descritivas, distribuições e trajetórias operacionais
+são examinadas em conjunto para verificar se os indicadores
+agregados representam adequadamente o comportamento temporal das
+finalistas. A análise é exploratória e descritiva, sem pretensão
+de estabelecer causalidade.
 
 1. George Neal North — Unit 3;
 2. Iatan — Unit 2;
@@ -279,6 +337,14 @@ ranking. Foram avaliados conjuntamente qualidade, completude,
 transições operacionais, distribuição da carga e intensidade das
 rampas.
 
+Metodologicamente, essa decisão pode ser descrita como uma
+**triagem multicritério baseada em critérios, criteria-based
+multi-criteria screening**. Vários atributos são considerados de
+forma conjunta para apoiar a decisão final. Contudo, o
+procedimento não corresponde a uma técnica formal de MCDA ou
+MCDM, pois não foram definidos pesos, função de utilidade, matriz
+de decisão ou método formal de agregação, como AHP ou TOPSIS.
+
 
 ## 15. Dataset final desta fase
 
@@ -311,15 +377,47 @@ períodos em que `Operating Time = 0`.
 
 O procedimento realizado pode ser resumido como:
 
-**421 candidatas iniciais  
-→ 303 candidatas com os critérios estruturais e CEMS  
-→ 299 unidades com dados horários  
-→ 156 unidades com qualidade adequada  
-→ 3 finalistas  
+**421 candidatas iniciais
+→ 303 candidatas com os critérios estruturais e CEMS
+→ 299 unidades com dados horários
+→ 156 unidades com qualidade adequada
+→ 3 finalistas
 → 1 unidade selecionada: Iatan — Unit 2.**
 
 Com isso, encerra-se a fase de seleção da unidade.
 
 As etapas seguintes do trabalho poderão se concentrar na
-caracterização dos estados, transições e ciclos operacionais,
-relacionando-os às emissões horárias de CO₂.
+caracterização dos estados operacionais e na posterior modelagem
+das emissões horárias de CO₂.
+
+
+## 16.1. Fundamentação metodológica das técnicas empregadas
+
+O procedimento implementado neste notebook utiliza quatro
+conceitos metodológicos principais:
+
+1. **Rule-based screening, ou triagem baseada em regras:**
+   aplicação de critérios determinísticos de elegibilidade para
+   reduzir a população inicial de unidades.
+
+2. **Exploratory Data Analysis, EDA, ou Análise Exploratória de
+   Dados:** caracterização descritiva da qualidade, cobertura,
+   distribuição da carga, variabilidade e comportamento
+   operacional das unidades antes da modelagem preditiva.
+
+3. **State-transition event detection, ou detecção de eventos por
+   transição de estado:** identificação de startups pela transição
+   OFF para ON e de shutdowns pela transição ON para OFF, a partir
+   da comparação entre estados operacionais consecutivos.
+
+4. **Criteria-based multi-criteria screening, ou triagem
+   multicritério baseada em critérios:** avaliação conjunta de
+   múltiplos atributos para apoiar a escolha da unidade de estudo.
+   O procedimento não constitui uma técnica formal de MCDA ou
+   MCDM, pois não utiliza pesos ou método matemático formal de
+   agregação dos critérios.
+
+Essas técnicas documentam a lógica de seleção e permitem que a
+escolha da unidade seja reproduzida, auditada e posteriormente
+fundamentada teoricamente de forma independente da implementação
+do código.

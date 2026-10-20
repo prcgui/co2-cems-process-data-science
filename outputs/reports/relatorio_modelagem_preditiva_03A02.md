@@ -304,3 +304,31 @@ A próxima etapa responderá:
 Essa comparação permitirá avaliar o valor incremental das
 informações de trajetória sem confundir esse efeito com diferenças
 de arquitetura ou de grau de otimização dos modelos.
+
+---
+
+## 13. Fundamentação metodológica dos modelos e da validação temporal
+
+### 13.1. Aprendizado supervisionado para regressão e GBRT
+
+O problema consiste em estimar a massa horária de CO₂, uma variável-alvo contínua, a partir das características operacionais disponíveis. Portanto, a tarefa é de **aprendizado supervisionado para regressão** (*supervised regression*).
+
+O XGBoost (*Extreme Gradient Boosting*) é utilizado como implementação de **gradient-boosted regression trees (GBRT)**. Não é uma árvore de decisão isolada: trata-se de um **ensemble sequencial de árvores de regressão**, cujas contribuições são combinadas em uma única predição. A função objetivo `reg:squarederror` orienta o ajuste para erro quadrático; profundidade, taxa de aprendizado, amostragem e regularização limitam a complexidade do modelo.
+
+### 13.2. Validação walk-forward com janela expansiva
+
+Os cinco folds constituem uma **walk-forward validation with an expanding training window** (*expanding-window time-series cross-validation*). A janela de treinamento aumenta ao longo dos meses e cada validação recai sobre o mês seguinte, preservando a ordem temporal. Isso é diferente de um *K-fold* aleatório, que pode misturar passado e futuro.
+
+O conjunto de validação de cada fold também é utilizado pelo **early stopping** para definir a complexidade efetiva do ensemble. Consequentemente, os resultados da validação temporal caracterizam o desempenho durante o desenvolvimento, sem representar um teste independente completamente cego. Novembro e dezembro permanecem como **holdout temporal histórico de comparação**, visto que já foram examinados nos experimentos anteriores.
+
+### 13.3. Early stopping e configuração de referência
+
+A configuração do XGBoost foi mantida fixa nesta etapa, sem *random search* ou outra busca de hiperparâmetros. O **early stopping** acompanha o RMSE de validação e interrompe o treinamento quando novas árvores deixam de proporcionar melhora conforme o critério especificado. Dessa maneira, o número efetivo de árvores é condicionado ao período de validação de cada ajuste, mantendo os demais parâmetros de referência.
+
+### 13.4. Comparações controladas de algoritmos e variáveis
+
+A comparação entre MLP e XGBoost utiliza, dentro de cada cenário, o mesmo conjunto de variáveis de entrada. A comparação dos Cenários A, B e C, por sua vez, mantém o XGBoost como família de modelo, alterando a representação da operação. Esse desenho ajuda a distinguir **efeito da família de algoritmo** e **valor incremental das variáveis de trajetória**, sem atribuir causalidade à diferença observada nas métricas.
+
+### 13.5. Importância por ganho das variáveis
+
+A importância das *features* é calculada pelo critério **gain** (`importance_type="gain"`), correspondente à melhoria média da função objetivo nas divisões que empregam cada variável. Essa medida descreve a utilização das variáveis pelas árvores treinadas, mas **não** identifica efeitos causais e **não** equivale a uma análise SHAP.
