@@ -25,6 +25,7 @@ A unidade piloto é a **Iatan Unit 2**, Facility ID 6065, Missouri, com série h
 | 03A.02 | [03A.02_comparacao_modelos_gradient_boosting.ipynb](notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb) | Comparação MLP x XGBoost e validação temporal | [Abrir no Colab](https://colab.research.google.com/drive/1BRbZkilK4omkxV7QjMbx3uPYkI7acsNY) |
 | 03A.03 | [03A.03_otimizacao_pareada_xgboost.ipynb](notebooks/03A.03_otimizacao_pareada_xgboost.ipynb) | Busca pareada A x B e efeito da trajetória | [Abrir no Colab](https://colab.research.google.com/drive/1wbDqQxBoOi4qURULPh9EFTnNXpFUhgYj) |
 | 03A.04 | [03A.04_volume_dados_generalizacao_temporal_iatan.ipynb](notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb) | Histórico ampliado e generalização temporal do Cenário A | [Abrir no Colab](https://colab.research.google.com/drive/1AvnuJ-wPYravlkuZ1C0_-TWD80VWrz4m) |
+| 03A.05 | [03A.05_trajetoria_operacional_historico_ampliado.ipynb](notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb) | Efeito da trajetória operacional com histórico ampliado e análise de regimes | [Abrir no Colab](https://colab.research.google.com/drive/1e3QA1-eq5hdaynapAQqBNFdqBlW4grJY) |
 
 ## Estratégia analítica
 
@@ -294,15 +295,29 @@ Para facilitar a navegação pelos resultados desta etapa:
 - [Figura de comparação dos erros](outputs/figures/03A04_comparacao_2025_vs_historico_2025_erros.png)
 - [Séries observada e previstas](outputs/figures/03A04_comparacao_2025_vs_historico_2025_series.png)
 
-## Próxima etapa da linha preditiva
+## Notebook 03A.05: trajetória operacional com histórico ampliado
 
-Nos experimentos anteriores, conduzidos com uma base temporal mais restrita, as variáveis de trajetória operacional não apresentaram ganho global robusto em relação ao uso exclusivo da carga instantânea.
+A linha preditiva incorporou uma comparação controlada dos modelos **XGBoost A (carga instantânea)** e **B (carga e trajetória operacional)**, utilizando o histórico operacional de 2011–2022 e dados de janeiro a outubro de 2025 para treinamento. Os modelos foram avaliados nas mesmas horas de novembro e dezembro de 2025.
 
-Como o histórico ampliado aumenta a quantidade e a diversidade das condições operacionais disponíveis para treinamento, a próxima pergunta é:
+| Métrica | Cenário A | Cenário B |
+|---|---:|---:|
+| MAE (short tons de CO₂ por registro horário) | **20,1514** | 21,1720 |
+| NMAE | **3,4240%** | 3,5974% |
+| Ganho global de MAE de B sobre A | Referência | **−5,06%** |
 
-> **Com histórico ampliado, a inclusão de variáveis de trajetória operacional melhora a previsão de CO₂ em relação ao uso exclusivo da carga instantânea?**
+O Cenário B não melhorou o MAE global. Contudo, apresentou **redução de 22,90% do MAE nas rampas intensas** e ganho agregado nas primeiras seis horas após startup. Nas demais horas, B apresentou MAE aproximadamente **16,03% maior**, prejudicando o desempenho agregado.
 
-A próxima etapa comparará Cenário A e Cenário B sob o mesmo protocolo temporal.
+Esses achados mostram que a **informação de trajetória operacional pode ser útil em determinados contextos do processo, sem necessariamente melhorar a estimação em todas as horas**. A avaliação é descritiva e não demonstra causalidade.
+
+Arquivos associados: [notebook 03A.05](notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb), [relatório completo](outputs/reports/03A05_relatorio_trajetoria_operacional_historico_ampliado.md), [resultados finais](outputs/tables/03A05_resultado_final_A_B.csv), [erros por contexto](outputs/tables/03A05_comparacao_contextos_operacionais.csv), [síntese das evidências](outputs/tables/03A05_sintese_evidencias_trajetoria_historico.csv), [ganhos por contexto](outputs/figures/03A05_ganho_trajetoria_por_contexto.png) e [distribuição dos ganhos horários](outputs/figures/03A05_distribuicao_ganho_horario_B_vs_A.png).
+
+## Síntese da linha preditiva até o Notebook 03A.05
+
+A investigação mostrou que o desempenho das estimativas de emissões depende da família algorítmica, da composição temporal do histórico e do regime operacional. No Notebook 03A.04, a incorporação de 2011–2022 aos dados recentes reduziu o MAE do Cenário A em **13,28%** na comparação com o treinamento baseado apenas em janeiro a outubro de 2025.
+
+A inclusão de variáveis de trajetória não apresentou ganho global consistente nos experimentos XGBoost, mas revelou valor informativo em rampas intensas. Essas constatações são específicas da Iatan Unit 2 e das amostras avaliadas. Novembro e dezembro de 2025 constituem um período de comparação histórica, pois já haviam sido utilizados em análises anteriores.
+
+A linha de processos mantém objetivos próprios, apresentados a seguir. Seus resultados e seus eventuais desenvolvimentos não são presumidos pelos experimentos preditivos.
 
 # Linha de processos
 
@@ -373,7 +388,8 @@ co2-cems-process-data-science/
 │   ├── 03A.01_modelagem_preditiva_co2.ipynb
 │   ├── 03A.02_comparacao_modelos_gradient_boosting.ipynb
 │   ├── 03A.03_otimizacao_pareada_xgboost.ipynb
-│   └── 03A.04_volume_dados_generalizacao_temporal_iatan.ipynb
+│   ├── 03A.04_volume_dados_generalizacao_temporal_iatan.ipynb
+│   └── 03A.05_trajetoria_operacional_historico_ampliado.ipynb
 ├── data/
 │   ├── raw/
 │   ├── interim/
@@ -392,11 +408,7 @@ Os notebooks devem ser executados na ordem apresentada no início deste README.
 
 O Notebook 1 utiliza uma chave da API da EPA armazenada como segredo do Google Colab com o nome `EPA_API_KEY`.
 
-A pasta persistente no Google Drive é:
-
-```text
-/content/drive/MyDrive/co2-cems-process-data-science
-```
+Os notebooks utilizam os diretórios de trabalho definidos em suas células de configuração no Google Drive. As bases horárias brutas e intermediárias, por seu volume, não são versionadas neste repositório.
 
 Para execução local:
 
