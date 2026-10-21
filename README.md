@@ -260,6 +260,13 @@ O efeito em rampas intensas permanece como hipótese para investigação com mai
 
 ## Notebook 03A.04: histórico ampliado e generalização temporal
 
+**Procedimentos metodológicos empregados.** O Cenário A utiliza **aprendizado supervisionado para regressão** com **Extreme Gradient Boosting (XGBoost)**, da família *gradient-boosted regression trees (GBRT)*, tendo a carga elétrica instantânea como única variável preditora. A etapa começa pela **auditoria e delimitação da amostra histórica por indicadores operacionais**, com 2011–2022 como período principal e 2023–2024 identificados como **regimes operacionais distintos** a partir de horas em operação, distribuição da carga e startups. Trata-se de **caracterização descritiva de *process drift*** e de diagnóstico de **possível *concept drift***, não de detecção estatística formal de mudança na relação carga–emissão.
+
+A avaliação do volume histórico emprega ***rolling-origin temporal backtesting with multiple training-window lengths***: anos-alvo de **2021 a 2025**, com **janelas retrospectivas de 1, 2, 3, 5 e 10 anos**, comparação de erros entre anos e seleção de complexidade por ***early stopping*** em validação cronológica. As janelas possuem extensões alternativas predefinidas; **não** correspondem todas a uma única janela de treinamento expansiva. O protocolo também inclui **teste de generalização *out-of-time*** (treino em 2011–2022, avaliação em 2025), **reajuste final (*final refit*)** após a seleção do número de árvores e **experimento controlado e pareado de disponibilidade do histórico** (*paired controlled experiment on training-history availability*), comparando janeiro–outubro de 2025 com 2011–2022 acrescido do mesmo período recente. São calculados **MAE, RMSE, R², NMAE, bias e diferenças horárias de erro**. Novembro e dezembro de 2025 são *holdout* temporal da comparação, mas não avaliação inteiramente cega do conjunto da pesquisa.
+
+**Documentação:** [Notebook 03A.04](notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb) · [Relatório de delimitação da amostra histórica](outputs/reports/03A04_delimitacao_amostra_historica.md) · [Relatório metodológico e resultados 03A.04](outputs/reports/03A04_relatorio_valor_preditivo_historico.md).
+
+
 O Notebook 03A.04 ampliou a série temporal da Iatan Unit 2 e avaliou o valor preditivo do histórico para o **Cenário A**, baseado exclusivamente na carga instantânea:
 
 `CO₂(t) = f(P(t))`
@@ -316,6 +323,13 @@ Para facilitar a navegação pelos resultados desta etapa:
 - [Séries observada e previstas](outputs/figures/03A04_comparacao_2025_vs_historico_2025_series.png)
 
 ## Notebook 03A.05: trajetória operacional com histórico ampliado
+
+**Procedimentos metodológicos empregados.** Regressão supervisionada com **XGBoost/GBRT** nos Cenários A (carga instantânea) e B (carga, memória e trajetória operacional), mantendo os **mesmos hiperparâmetros estruturais**. No Cenário B, a ***temporal feature engineering*** utiliza ***lagged features*** (`shift(1)`), ***rolling-window features*** e indicadores de transições operacionais. O agrupamento em ***temporal blocks*** impede que o final de 2022 seja interpretado como imediatamente anterior ao início de 2025, reduzindo o risco de ***look-ahead bias*** e de continuidade temporal artificial. A auditoria de qualidade identificou uma carga ausente em 2019, **preservada sem imputação**, e o tempo desde startup semanticamente desconhecido no início do histórico; as observações não elegíveis foram retiradas igualmente dos dois cenários.
+
+A avaliação segue um ***paired experimental design on a common eligible sample*** (*desenho experimental pareado em amostra comum*): A e B utilizam as mesmas observações, o mesmo alvo e a mesma partição cronológica. O número de árvores é selecionado separadamente por ***early stopping*** em **outubro de 2025** (RMSE de validação; paciência de 50 rodadas), seguido de ***final refit*** com 2011–2022 e janeiro–outubro de 2025. A comparação em **novembro–dezembro de 2025** utiliza ***temporal holdout*** histórico e **análise pareada de erros hora a hora**, incluindo MAE, RMSE, R², NMAE e bias. A ***context-stratified error analysis*** examina startups, **rampas intensas definidas pelo P90 calculado no treino**, demais horas e casos extremos. Esta etapa **não** executa *Random Search*, *walk-forward cross-validation*, teste formal de significância, modelo híbrido ou análise causal; tampouco demonstra previsão antecipada sem conhecimento da carga da própria hora.
+
+**Documentação:** [Notebook 03A.05](notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb) · [Relatório metodológico e resultados 03A.05](outputs/reports/03A05_relatorio_trajetoria_operacional_historico_ampliado.md).
+
 
 A linha preditiva incorporou uma comparação controlada dos modelos **XGBoost A (carga instantânea)** e **B (carga e trajetória operacional)**, utilizando o histórico operacional de 2011–2022 e dados de janeiro a outubro de 2025 para treinamento. Os modelos foram avaliados nas mesmas horas de novembro e dezembro de 2025.
 
