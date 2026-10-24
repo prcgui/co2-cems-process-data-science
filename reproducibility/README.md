@@ -107,8 +107,14 @@ Os resultados se referem a uma única unidade. A seleção de 2011 a 2022 foi ex
 
 As comparações A/B e por contexto são descritivas, sem teste formal de significância ou identificação causal. O alvo é a massa de CO₂ em short tons por registro horário. O modelo utiliza a carga da própria hora; sua avaliação corresponde à estimação condicionada a essa informação. As amostras de 03A.04 e 03A.05 têm critérios de elegibilidade diferentes e seus resultados não devem ser interpretados como uma única comparação pareada entre etapas.
 
-## Atualização da documentação em 24 de outubro de 2026
+## Primeira atualização documental de 24 de outubro de 2026
 
-As oito versões documentadas dos notebooks incorporam referências e comentários metodológicos. A [matriz de fundamentação](../docs/fundamentacao_metodologica.md) explicita o alcance das fontes e as decisões do protocolo. Foram comparadas as árvores sintáticas das células Python antes e depois da atualização e as saídas armazenadas; ambas permaneceram iguais em cada repositório.
+Na primeira atualização, as oito versões dos notebooks receberam referências e comentários metodológicos. A [matriz de fundamentação](../docs/fundamentacao_metodologica.md) explicita o alcance das fontes e as decisões do protocolo. Foram comparadas as árvores sintáticas das células Python antes e depois da atualização e as saídas armazenadas; ambas permaneceram iguais em cada repositório.
 
-Os hashes de código e de notebook presentes nos registros de execução anteriores identificam as versões efetivamente executadas naquela reprodução. A inclusão de comentários e células Markdown modifica o hash integral dos arquivos, sem modificar as instruções computacionais. A [verificação desta atualização documental](../outputs/reproducibility/documentation_update_2026-10-24.json) registra essa correspondência. Os registros anteriores de execução e os dados e resultados científicos foram preservados.
+Os hashes de código e de notebook presentes nos registros de execução anteriores identificam as versões efetivamente executadas naquela reprodução. Naquela etapa, a inclusão de comentários e células Markdown modificou o hash integral dos arquivos, sem modificar as instruções computacionais. A [verificação desta atualização documental](../outputs/reproducibility/documentation_update_2026-10-24.json) registra essa correspondência. Os registros anteriores de execução e os dados e resultados científicos foram preservados.
+
+## Verificação da aplicação dos métodos
+
+As técnicas citadas foram conferidas por confronto com as fontes, extração das funções dos notebooks, cálculos independentes e consulta aos modelos e resultados preservados. O [relatório técnico e os scripts](methods/README.md) registram cada verificação e suas condições. Também foram corrigidas as alegações de suficiência de 30 configurações, de isolamento exclusivo dos efeitos e de independência global do teste.
+
+A verificação posterior corrigiu também a borda final de faixas de carga no diagnóstico de 03A.04. Esta é a única alteração de cálculo nesta revisão e não muda os resultados do recorte observado. O registro anterior de atualização documental descreve sua própria versão; o [registro das correções posteriores](../outputs/reproducibility/methods/corrections_manifest.json) identifica a nova mudança.

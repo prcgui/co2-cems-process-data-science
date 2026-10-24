@@ -1,0 +1,1211 @@
+{
+  "audit_date_utc": "2026-10-24T18:38:41.334921+00:00",
+  "notebook_commit": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+  "cell_numbering": "1-based, incluindo células Markdown",
+  "scope": [
+    "03A.02",
+    "03A.03",
+    "03A.04",
+    "03A.05"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "xgboost": "3.4.1",
+    "xgboost_build": "CPU wheel, same library version as reproduction; no GPU used",
+    "scikit_learn": "1.8.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "notebooks": {
+    "03A.02": {
+      "path": "notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "sha256": "e091842fd2539fcb1e88069d30c539573e1f7b3f40d5c0bbe70668dae979104b"
+    },
+    "03A.03": {
+      "path": "notebooks/03A.03_otimizacao_pareada_xgboost.ipynb",
+      "sha256": "ae930fbd595b9969ac1c60bb1b75f1978cb0f9ab6752f10d76fd38da4bd87f04"
+    },
+    "03A.04": {
+      "path": "notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+      "sha256": "695f7fef4cb6ec715200f8e31ff146f3261698fea22f71754b6e52c03baa180e"
+    },
+    "03A.05": {
+      "path": "notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "sha256": "e84939a5dfb6f0c60be13b186dab3a1d1c1ddf03b4621604456ec77331dc98ad"
+    }
+  },
+  "preserved_input_zip": {
+    "path": "Pacote_Reproducao_CO2_2026-10-24.zip",
+    "sha256": "e33dcd62a9882fb89f64d184f5edabff18da22e8c05e0af45c73a1df982af968"
+  },
+  "research_models_retrained": 0,
+  "research_models_loaded_for_inference": 2,
+  "synthetic_models_trained": 6,
+  "checks": [
+    {
+      "id": "constructors",
+      "method": "Instanciação das funções e dicionários reais, sem ajuste.",
+      "code_cells": {
+        "03A.02": [
+          14,
+          16
+        ],
+        "03A.03": [
+          11,
+          13
+        ],
+        "03A.04": [
+          3,
+          11,
+          16
+        ],
+        "03A.05": [
+          3
+        ]
+      },
+      "conditions": "None abaixo significa parâmetro não explicitado; não foi atribuído retroativamente ao experimento.",
+      "results": {
+        "03A.02_reference": {
+          "objective": "reg:squarederror",
+          "colsample_bytree": 0.8,
+          "early_stopping_rounds": 50,
+          "enable_categorical": true,
+          "eval_metric": "rmse",
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5,
+          "missing": "NaN",
+          "n_estimators": 3000,
+          "n_jobs": -1,
+          "random_state": 42,
+          "reg_alpha": 0.0,
+          "reg_lambda": 1.0,
+          "subsample": 0.8
+        },
+        "03A.03_first_candidate": {
+          "objective": "reg:squarederror",
+          "colsample_bytree": 0.65,
+          "enable_categorical": true,
+          "eval_metric": "mae",
+          "gamma": 0.05,
+          "learning_rate": 0.08,
+          "max_depth": 5,
+          "min_child_weight": 8,
+          "missing": "NaN",
+          "n_estimators": 1200,
+          "n_jobs": -1,
+          "random_state": 42,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.85,
+          "tree_method": "hist",
+          "verbosity": 0
+        },
+        "03A.04_backtest": {
+          "objective": "reg:squarederror",
+          "colsample_bytree": 0.8,
+          "early_stopping_rounds": 50,
+          "enable_categorical": true,
+          "eval_metric": "rmse",
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5,
+          "missing": "NaN",
+          "n_estimators": 3000,
+          "n_jobs": -1,
+          "random_state": 42,
+          "reg_alpha": 0.0,
+          "reg_lambda": 1.0,
+          "subsample": 0.8
+        },
+        "03A.04_selection": {
+          "objective": "reg:squarederror",
+          "colsample_bytree": 0.8,
+          "early_stopping_rounds": 50,
+          "enable_categorical": true,
+          "eval_metric": "rmse",
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5,
+          "missing": "NaN",
+          "n_estimators": 3000,
+          "n_jobs": -1,
+          "random_state": 42,
+          "reg_alpha": 0.0,
+          "reg_lambda": 1.0,
+          "subsample": 0.8
+        },
+        "03A.04_final_example": {
+          "objective": "reg:squarederror",
+          "colsample_bytree": 0.8,
+          "enable_categorical": true,
+          "eval_metric": "rmse",
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5,
+          "missing": "NaN",
+          "n_estimators": 123,
+          "n_jobs": -1,
+          "random_state": 42,
+          "reg_alpha": 0.0,
+          "reg_lambda": 1.0,
+          "subsample": 0.8
+        },
+        "03A.05_selection": {
+          "objective": "reg:squarederror",
+          "colsample_bytree": 0.8,
+          "early_stopping_rounds": 50,
+          "enable_categorical": true,
+          "eval_metric": "rmse",
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5,
+          "missing": "NaN",
+          "n_estimators": 3000,
+          "n_jobs": -1,
+          "random_state": 42,
+          "reg_alpha": 0.0,
+          "reg_lambda": 1.0,
+          "subsample": 0.8
+        }
+      },
+      "passed": true,
+      "conclusion": "Objetivo quadrático e regularização L2 são efetivamente passados. A referência usa L1=0; a busca varia L1, L2 e gamma. RMSE/MAE de seleção não substituem o objetivo quadrático."
+    },
+    {
+      "id": "chen_leaf_weights",
+      "method": "Conferência numérica da equação (5) de Chen e Guestrin.",
+      "code_cells": {
+        "03A.03": [
+          13
+        ]
+      },
+      "conditions": "Caso sintético de quatro observações, uma árvore, intercepto 5, eta=1, lambda=1, alpha=gamma=0, sem subamostragem. g=pred-y e h=1, correspondentes a metade do erro quadrático.",
+      "results": {
+        "expected_leaf_weights": [
+          -2.6666666666666665,
+          2.6666666666666665
+        ],
+        "actual_leaf_weights": [
+          -2.66666675,
+          2.66666675
+        ],
+        "max_prediction_difference": 3.178914393942023e-07,
+        "initial_data_loss": 34.0,
+        "final_data_loss_plus_L2": 12.666665945509177
+      },
+      "passed": true,
+      "conclusion": "Pesos e predições coincidem com a minimização regularizada da formulação original nas condições declaradas."
+    },
+    {
+      "id": "regularization_api",
+      "method": "Teste de soft threshold L1 e bloqueio de divisão por gamma.",
+      "code_cells": {
+        "03A.03": [
+          11,
+          13
+        ]
+      },
+      "conditions": "Mesmo caso sintético; L1=2 em um teste; gamma=1e6 no outro. Sem inferência sobre ganhos de Iatan.",
+      "results": {
+        "L1_predictions": [
+          3.0,
+          3.0,
+          7.0,
+          7.0
+        ],
+        "large_gamma_produces_single_leaf": true
+      },
+      "passed": true,
+      "conclusion": "Os parâmetros de regularização da busca têm efeito verificável na API utilizada. L1 é documentado pela biblioteca, não pela equação (2) de Chen."
+    },
+    {
+      "id": "additive_and_squared_objective",
+      "method": "Soma das árvores e equivalência ao gradiente/hessiana quadráticos explícitos.",
+      "code_cells": {
+        "03A.03": [
+          13
+        ]
+      },
+      "conditions": "Três árvores sintéticas com eta=.03; mesmo intercepto, regularização e estrutura.",
+      "results": {
+        "n_trees": 3,
+        "max_additive_difference": 1.1912670938585279e-07,
+        "max_custom_objective_difference": 0.0
+      },
+      "passed": true,
+      "conclusion": "A implementação realiza construção aditiva e o objetivo reg:squarederror coincide com g=pred-y, h=1. Isso verifica o mecanismo aplicado, não os benchmarks de Friedman ou Chen."
+    },
+    {
+      "id": "early_stopping_prediction",
+      "method": "Comportamento real de best_iteration e predict.",
+      "code_cells": {
+        "03A.02": [
+          14,
+          16,
+          21
+        ],
+        "03A.05": [
+          15,
+          18
+        ]
+      },
+      "conditions": "Exemplo sintético que provoca parada; paciência reduzida a 5 apenas para o teste da API.",
+      "results": {
+        "best_iteration_zero_based": 0,
+        "selected_trees": 1,
+        "trees_stored": 6,
+        "default_equals_selected_iteration_range": true,
+        "max_full_vs_selected_difference": 7.680468559265137
+      },
+      "passed": true,
+      "conclusion": "Somar 1 a best_iteration é correto. predict usa automaticamente a melhor iteração, embora a árvore armazenada possa incluir rodadas posteriores."
+    },
+    {
+      "id": "paired_random_search",
+      "method": "Reexecução da amostragem e da classificação reais, usando as 300 métricas salvas.",
+      "code_cells": {
+        "03A.03": [
+          8,
+          11,
+          13,
+          16,
+          17,
+          18
+        ]
+      },
+      "conditions": "Não houve novo treinamento dos 300 modelos. Todas as nove dimensões usam listas; sorteio finito sem reposição.",
+      "results": {
+        "space_size": 1250000,
+        "draws": 30,
+        "unique_candidates": 30,
+        "coverage_percent": 0.0024,
+        "same_seed_exact_candidates": true,
+        "all_saved_parameters_match": true,
+        "saved_fit_rows": 300,
+        "complete_config_scenario_fold_product": true,
+        "best_A": "CFG_10",
+        "best_B": "CFG_28",
+        "saved_best_config_file": {
+          "A": {
+            "subsample": 0.85,
+            "reg_lambda": 5.0,
+            "reg_alpha": 0.5,
+            "n_estimators": 200,
+            "min_child_weight": 5,
+            "max_depth": 6,
+            "learning_rate": 0.01,
+            "gamma": 0.25,
+            "colsample_bytree": 1.0
+          },
+          "B": {
+            "subsample": 1.0,
+            "reg_lambda": 10.0,
+            "reg_alpha": 0.5,
+            "n_estimators": 200,
+            "min_child_weight": 3,
+            "max_depth": 6,
+            "learning_rate": 0.01,
+            "gamma": 0.5,
+            "colsample_bytree": 1.0
+          }
+        }
+      },
+      "passed": true,
+      "conclusion": "A busca aleatória pareada foi aplicada corretamente. A ordenação usa MAE médio, seguido por RMSE médio e desvio padrão do MAE. Trinta tentativas são um orçamento, não demonstração de suficiência."
+    },
+    {
+      "id": "2025_temporal_splits",
+      "method": "Divisões reais dos notebooks aplicadas aos Parquets preservados.",
+      "code_cells": {
+        "03A.02": [
+          6,
+          7,
+          11,
+          17,
+          20,
+          21,
+          28
+        ],
+        "03A.03": [
+          5,
+          8,
+          16,
+          21
+        ]
+      },
+      "conditions": "Mesma base elegível e mesmos timestamps entre A/B/C; folds junho-outubro; teste novembro-dezembro.",
+      "results": {
+        "common_eligible_rows": 6249,
+        "folds": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 2669,
+              "start": "2025-01-01 16:00:00",
+              "end": "2025-05-31 23:00:00",
+              "timestamp_sha256": "31ebf5827d9309b3664623b79fbb127a6b877c4e7e6862de13ade62bf5873abf",
+              "duplicates": 0
+            },
+            "validation": {
+              "n": 635,
+              "start": "2025-06-01 00:00:00",
+              "end": "2025-06-30 23:00:00",
+              "timestamp_sha256": "6288127755973ea7d3ac9990fabdb10a68437b6a4719f79b0aaee1e99ba5e82e",
+              "duplicates": 0
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 3304,
+              "start": "2025-01-01 16:00:00",
+              "end": "2025-06-30 23:00:00",
+              "timestamp_sha256": "5d3679e65a28c785777dceee5ed9ada416ce8dec4e198e20d7c2420739b789ef",
+              "duplicates": 0
+            },
+            "validation": {
+              "n": 674,
+              "start": "2025-07-01 00:00:00",
+              "end": "2025-07-31 23:00:00",
+              "timestamp_sha256": "a7a0ff2608b6e2831414de21398b975dc9d764fe6e1c528bffb3735e120411eb",
+              "duplicates": 0
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 3978,
+              "start": "2025-01-01 16:00:00",
+              "end": "2025-07-31 23:00:00",
+              "timestamp_sha256": "2639ae2df5bf1c446a7017d3d5c99f529d3d46b3311397d698a8d279878e229b",
+              "duplicates": 0
+            },
+            "validation": {
+              "n": 433,
+              "start": "2025-08-01 00:00:00",
+              "end": "2025-08-31 23:00:00",
+              "timestamp_sha256": "713cf9e7b5bb17bbbce4b7bfc7d13d6dd9e259de0a429e208236a39ec3614580",
+              "duplicates": 0
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 4411,
+              "start": "2025-01-01 16:00:00",
+              "end": "2025-08-31 23:00:00",
+              "timestamp_sha256": "e04d4a308e80570d8e2837b0bbee7d4423c89033c3e7627e9c850fef5a2083e2",
+              "duplicates": 0
+            },
+            "validation": {
+              "n": 483,
+              "start": "2025-09-01 00:00:00",
+              "end": "2025-09-30 23:00:00",
+              "timestamp_sha256": "ba4e8807bc16242c9c21635574698913c925dc86d4ebe976d8ec80bf141d7dcd",
+              "duplicates": 0
+            }
+          },
+          {
+            "fold": 5,
+            "train": {
+              "n": 4894,
+              "start": "2025-01-01 16:00:00",
+              "end": "2025-09-30 23:00:00",
+              "timestamp_sha256": "3f41db2ea9f542646cb5109bd98355f83a5a72963c3c16116db23d10c3114d14",
+              "duplicates": 0
+            },
+            "validation": {
+              "n": 211,
+              "start": "2025-10-01 00:00:00",
+              "end": "2025-10-31 23:00:00",
+              "timestamp_sha256": "794526e1068b0440d1433e8aeb4627360421ae9807af81b198d966cc4fffc03b",
+              "duplicates": 0
+            }
+          }
+        ],
+        "reference_train": {
+          "n": 4894,
+          "start": "2025-01-01 16:00:00",
+          "end": "2025-09-30 23:00:00",
+          "timestamp_sha256": "3f41db2ea9f542646cb5109bd98355f83a5a72963c3c16116db23d10c3114d14",
+          "duplicates": 0
+        },
+        "reference_validation": {
+          "n": 211,
+          "start": "2025-10-01 00:00:00",
+          "end": "2025-10-31 23:00:00",
+          "timestamp_sha256": "794526e1068b0440d1433e8aeb4627360421ae9807af81b198d966cc4fffc03b",
+          "duplicates": 0
+        },
+        "reference_test": {
+          "n": 1144,
+          "start": "2025-11-01 00:00:00",
+          "end": "2025-12-31 23:00:00",
+          "timestamp_sha256": "c8f1048a5ebff0365498444dffe443410973be3aa70a5137e44bcdb331572085",
+          "duplicates": 0
+        },
+        "search_refit": {
+          "n": 5105,
+          "start": "2025-01-01 16:00:00",
+          "end": "2025-10-31 23:00:00",
+          "timestamp_sha256": "1bca1d542dd7d280620680c457cb7b757433bc1f769cdbc4c06aed214953909a",
+          "duplicates": 0
+        },
+        "search_test": {
+          "n": 1144,
+          "start": "2025-11-01 00:00:00",
+          "end": "2025-12-31 23:00:00",
+          "timestamp_sha256": "c8f1048a5ebff0365498444dffe443410973be3aa70a5137e44bcdb331572085",
+          "duplicates": 0
+        }
+      },
+      "passed": true,
+      "conclusion": "Não há sobreposição temporal de linhas. A referência usa janeiro-setembro para ajuste; a busca reajusta janeiro-outubro. Os escores dos folds participam do desenvolvimento e o teste já era conhecido no projeto."
+    },
+    {
+      "id": "saved_xgboost_inference",
+      "method": "Inferência dos modelos B/C realmente preservados, com a base reconstruída.",
+      "code_cells": {
+        "03A.02": [
+          6,
+          7,
+          20,
+          21
+        ]
+      },
+      "conditions": "Somente load_model e predict; tolerância absoluta 1e-4, relativa 1e-6 para serialização/versão CPU.",
+      "results": [
+        {
+          "scenario": "B",
+          "model_member": "originais_preservados/outputs/models/03A02_xgboost_B.json",
+          "sha256": "9e28d97af93815033c4e7407f45afe06fac078d9e81196b043bfd5416637fd32",
+          "objective": "reg:squarederror",
+          "n_test": 1144,
+          "best_iteration": 126,
+          "trees_stored": 177,
+          "max_prediction_difference": 3.046874996925908e-05
+        },
+        {
+          "scenario": "C",
+          "model_member": "originais_preservados/outputs/models/03A02_xgboost_C.json",
+          "sha256": "f26b3334f91f4328d3d80a5d39105bbf82a4ed42cf0a37f64063f9b8c83e7f05",
+          "objective": "reg:squarederror",
+          "n_test": 1144,
+          "best_iteration": 115,
+          "trees_stored": 166,
+          "max_prediction_difference": 3.0371093771464075e-05
+        }
+      ],
+      "passed": true,
+      "conclusion": "Os modelos preservados reproduzem as previsões salvas no teste, sem retreino."
+    },
+    {
+      "id": "historical_backtest_splits",
+      "method": "Validador anual real e laços reais de datas, interrompidos antes do fit.",
+      "code_cells": {
+        "03A.04": [
+          3,
+          7,
+          11
+        ]
+      },
+      "conditions": "Os 16 anuais coincidem com o manifesto da reprodução; 25 divisões conferidas com a tabela original. Nenhuma predição sintética substitui resultado do estudo.",
+      "results": {
+        "annual_inputs": [
+          {
+            "year": 2010,
+            "n": 2208,
+            "sha256": "90b16dd1f36a94266dd14487f27a1667eb5c0eba4f77ac6d11660ecddbfc71a5",
+            "manifest_matches": true
+          },
+          {
+            "year": 2011,
+            "n": 8760,
+            "sha256": "2c4e5a56f27d5e2d8705f3794be8c5c6ad35796603b25cf52db4895732614ceb",
+            "manifest_matches": true
+          },
+          {
+            "year": 2012,
+            "n": 8784,
+            "sha256": "14ad2841a0a53621376b1c185a10d670b9eaf5586809a86833516c7c3d1efa0d",
+            "manifest_matches": true
+          },
+          {
+            "year": 2013,
+            "n": 8760,
+            "sha256": "fb9efe3fb26ae2f64cabac992ac15e89697dd5aaa07d7514a2cd7b8a8c8cc8f3",
+            "manifest_matches": true
+          },
+          {
+            "year": 2014,
+            "n": 8760,
+            "sha256": "a0bb1b7a1aabf2127ec5c719653ec55f03987eb3d13c597b638774d903823b7e",
+            "manifest_matches": true
+          },
+          {
+            "year": 2015,
+            "n": 8760,
+            "sha256": "993177cedca522727a553333a68596d4aa2d171a8a2a925805513bb623ce929c",
+            "manifest_matches": true
+          },
+          {
+            "year": 2016,
+            "n": 8784,
+            "sha256": "0f21ef2cdf6c3aaa32c7092d8e923200cf727f47ff770cd2b4b3803541231158",
+            "manifest_matches": true
+          },
+          {
+            "year": 2017,
+            "n": 8760,
+            "sha256": "bfee86bcce2c16ceea63447ae8e13bb4d4fc67f3c6cf5ce6446937d68a4734fb",
+            "manifest_matches": true
+          },
+          {
+            "year": 2018,
+            "n": 8760,
+            "sha256": "ba4eeac154de369e28b52a7ac7bd2ff699e131f77a8a4635402db26a83872764",
+            "manifest_matches": true
+          },
+          {
+            "year": 2019,
+            "n": 8760,
+            "sha256": "d0997abc0c2d5640ae78e476823344ce81e7ac0613cbcdc04bc1eccf09a0ff3b",
+            "manifest_matches": true
+          },
+          {
+            "year": 2020,
+            "n": 8784,
+            "sha256": "b08fc4ffd2f2cb55cbfed503225c0d847d304ba9a1365bc0d720dd4dc4c6b5bd",
+            "manifest_matches": true
+          },
+          {
+            "year": 2021,
+            "n": 8760,
+            "sha256": "1ca232f870fe1a7942f71c80d418bacc9ee6eb83c33d352ad450c5cdecdac6d0",
+            "manifest_matches": true
+          },
+          {
+            "year": 2022,
+            "n": 8760,
+            "sha256": "7b96de2c5c1e8eec4ce0c3cb1b8e46f47de3e14c061639c9cec6c846257b2c58",
+            "manifest_matches": true
+          },
+          {
+            "year": 2023,
+            "n": 8760,
+            "sha256": "fb361c343f14113cd00b786636fe3eca4f3b1728a0deb89c365bdee71eccb5f8",
+            "manifest_matches": true
+          },
+          {
+            "year": 2024,
+            "n": 8784,
+            "sha256": "99ba81a43aa3adb49ed5363c6e507ebbe0b7ce5e1452786c12a5c1aeb2893cda",
+            "manifest_matches": true
+          },
+          {
+            "year": 2025,
+            "n": 8760,
+            "sha256": "c200de7a9e1a4d2e1448c3ab4fd092abeae5788ca500ecb47010a952a300b1fb",
+            "manifest_matches": true
+          }
+        ],
+        "history_rows": 133704,
+        "backtest_splits": [
+          {
+            "target_year": 2021,
+            "history_years": 1,
+            "n_train": 5474,
+            "n_validation": 1092,
+            "n_test": 6703,
+            "train_start": "2020-01-01 00:00:00",
+            "train_end": "2020-09-21 23:00:00",
+            "validation_start": "2020-11-08 01:00:00",
+            "validation_end": "2020-12-31 23:00:00",
+            "test_start": "2021-01-01 00:00:00",
+            "test_end": "2021-12-31 23:00:00"
+          },
+          {
+            "target_year": 2021,
+            "history_years": 2,
+            "n_train": 13175,
+            "n_validation": 1092,
+            "n_test": 6703,
+            "train_start": "2019-01-01 00:00:00",
+            "train_end": "2020-09-21 23:00:00",
+            "validation_start": "2020-11-08 01:00:00",
+            "validation_end": "2020-12-31 23:00:00",
+            "test_start": "2021-01-01 00:00:00",
+            "test_end": "2021-12-31 23:00:00"
+          },
+          {
+            "target_year": 2021,
+            "history_years": 3,
+            "n_train": 18462,
+            "n_validation": 1092,
+            "n_test": 6703,
+            "train_start": "2018-01-01 00:00:00",
+            "train_end": "2020-09-21 23:00:00",
+            "validation_start": "2020-11-08 01:00:00",
+            "validation_end": "2020-12-31 23:00:00",
+            "test_start": "2021-01-01 00:00:00",
+            "test_end": "2021-12-31 23:00:00"
+          },
+          {
+            "target_year": 2021,
+            "history_years": 5,
+            "n_train": 33049,
+            "n_validation": 1092,
+            "n_test": 6703,
+            "train_start": "2016-01-01 00:00:00",
+            "train_end": "2020-09-21 23:00:00",
+            "validation_start": "2020-11-08 01:00:00",
+            "validation_end": "2020-12-31 23:00:00",
+            "test_start": "2021-01-01 00:00:00",
+            "test_end": "2021-12-31 23:00:00"
+          },
+          {
+            "target_year": 2021,
+            "history_years": 10,
+            "n_train": 69760,
+            "n_validation": 1092,
+            "n_test": 6703,
+            "train_start": "2011-01-01 00:00:00",
+            "train_end": "2020-09-21 23:00:00",
+            "validation_start": "2020-11-08 01:00:00",
+            "validation_end": "2020-12-31 23:00:00",
+            "test_start": "2021-01-01 00:00:00",
+            "test_end": "2021-12-31 23:00:00"
+          },
+          {
+            "target_year": 2022,
+            "history_years": 1,
+            "n_train": 5257,
+            "n_validation": 1446,
+            "n_test": 6277,
+            "train_start": "2021-01-01 00:00:00",
+            "train_end": "2021-09-29 14:00:00",
+            "validation_start": "2021-10-01 00:00:00",
+            "validation_end": "2021-12-31 23:00:00",
+            "test_start": "2022-01-01 00:00:00",
+            "test_end": "2022-12-28 02:00:00"
+          },
+          {
+            "target_year": 2022,
+            "history_years": 2,
+            "n_train": 11823,
+            "n_validation": 1446,
+            "n_test": 6277,
+            "train_start": "2020-01-01 00:00:00",
+            "train_end": "2021-09-29 14:00:00",
+            "validation_start": "2021-10-01 00:00:00",
+            "validation_end": "2021-12-31 23:00:00",
+            "test_start": "2022-01-01 00:00:00",
+            "test_end": "2022-12-28 02:00:00"
+          },
+          {
+            "target_year": 2022,
+            "history_years": 3,
+            "n_train": 19524,
+            "n_validation": 1446,
+            "n_test": 6277,
+            "train_start": "2019-01-01 00:00:00",
+            "train_end": "2021-09-29 14:00:00",
+            "validation_start": "2021-10-01 00:00:00",
+            "validation_end": "2021-12-31 23:00:00",
+            "test_start": "2022-01-01 00:00:00",
+            "test_end": "2022-12-28 02:00:00"
+          },
+          {
+            "target_year": 2022,
+            "history_years": 5,
+            "n_train": 33316,
+            "n_validation": 1446,
+            "n_test": 6277,
+            "train_start": "2017-01-01 00:00:00",
+            "train_end": "2021-09-29 14:00:00",
+            "validation_start": "2021-10-01 00:00:00",
+            "validation_end": "2021-12-31 23:00:00",
+            "test_start": "2022-01-01 00:00:00",
+            "test_end": "2022-12-28 02:00:00"
+          },
+          {
+            "target_year": 2022,
+            "history_years": 10,
+            "n_train": 68564,
+            "n_validation": 1446,
+            "n_test": 6277,
+            "train_start": "2012-01-01 00:00:00",
+            "train_end": "2021-09-29 14:00:00",
+            "validation_start": "2021-10-01 00:00:00",
+            "validation_end": "2021-12-31 23:00:00",
+            "test_start": "2022-01-01 00:00:00",
+            "test_end": "2022-12-28 02:00:00"
+          },
+          {
+            "target_year": 2023,
+            "history_years": 1,
+            "n_train": 4914,
+            "n_validation": 1363,
+            "n_test": 4316,
+            "train_start": "2022-01-01 00:00:00",
+            "train_end": "2022-09-22 00:00:00",
+            "validation_start": "2022-10-17 04:00:00",
+            "validation_end": "2022-12-28 02:00:00",
+            "test_start": "2023-01-06 20:00:00",
+            "test_end": "2023-12-19 01:00:00"
+          },
+          {
+            "target_year": 2023,
+            "history_years": 2,
+            "n_train": 11617,
+            "n_validation": 1363,
+            "n_test": 4316,
+            "train_start": "2021-01-01 00:00:00",
+            "train_end": "2022-09-22 00:00:00",
+            "validation_start": "2022-10-17 04:00:00",
+            "validation_end": "2022-12-28 02:00:00",
+            "test_start": "2023-01-06 20:00:00",
+            "test_end": "2023-12-19 01:00:00"
+          },
+          {
+            "target_year": 2023,
+            "history_years": 3,
+            "n_train": 18183,
+            "n_validation": 1363,
+            "n_test": 4316,
+            "train_start": "2020-01-01 00:00:00",
+            "train_end": "2022-09-22 00:00:00",
+            "validation_start": "2022-10-17 04:00:00",
+            "validation_end": "2022-12-28 02:00:00",
+            "test_start": "2023-01-06 20:00:00",
+            "test_end": "2023-12-19 01:00:00"
+          },
+          {
+            "target_year": 2023,
+            "history_years": 5,
+            "n_train": 31171,
+            "n_validation": 1363,
+            "n_test": 4316,
+            "train_start": "2018-01-01 00:00:00",
+            "train_end": "2022-09-22 00:00:00",
+            "validation_start": "2022-10-17 04:00:00",
+            "validation_end": "2022-12-28 02:00:00",
+            "test_start": "2023-01-06 20:00:00",
+            "test_end": "2023-12-19 01:00:00"
+          },
+          {
+            "target_year": 2023,
+            "history_years": 10,
+            "n_train": 66738,
+            "n_validation": 1363,
+            "n_test": 4316,
+            "train_start": "2013-01-01 00:00:00",
+            "train_end": "2022-09-22 00:00:00",
+            "validation_start": "2022-10-17 04:00:00",
+            "validation_end": "2022-12-28 02:00:00",
+            "test_start": "2023-01-06 20:00:00",
+            "test_end": "2023-12-19 01:00:00"
+          },
+          {
+            "target_year": 2024,
+            "history_years": 1,
+            "n_train": 4235,
+            "n_validation": 81,
+            "n_test": 4401,
+            "train_start": "2023-01-06 20:00:00",
+            "train_end": "2023-09-19 07:00:00",
+            "validation_start": "2023-12-15 13:00:00",
+            "validation_end": "2023-12-19 01:00:00",
+            "test_start": "2024-01-09 00:00:00",
+            "test_end": "2024-12-30 13:00:00"
+          },
+          {
+            "target_year": 2024,
+            "history_years": 2,
+            "n_train": 10512,
+            "n_validation": 81,
+            "n_test": 4401,
+            "train_start": "2022-01-01 00:00:00",
+            "train_end": "2023-09-19 07:00:00",
+            "validation_start": "2023-12-15 13:00:00",
+            "validation_end": "2023-12-19 01:00:00",
+            "test_start": "2024-01-09 00:00:00",
+            "test_end": "2024-12-30 13:00:00"
+          },
+          {
+            "target_year": 2024,
+            "history_years": 3,
+            "n_train": 17215,
+            "n_validation": 81,
+            "n_test": 4401,
+            "train_start": "2021-01-01 00:00:00",
+            "train_end": "2023-09-19 07:00:00",
+            "validation_start": "2023-12-15 13:00:00",
+            "validation_end": "2023-12-19 01:00:00",
+            "test_start": "2024-01-09 00:00:00",
+            "test_end": "2024-12-30 13:00:00"
+          },
+          {
+            "target_year": 2024,
+            "history_years": 5,
+            "n_train": 31482,
+            "n_validation": 81,
+            "n_test": 4401,
+            "train_start": "2019-01-01 00:00:00",
+            "train_end": "2023-09-19 07:00:00",
+            "validation_start": "2023-12-15 13:00:00",
+            "validation_end": "2023-12-19 01:00:00",
+            "test_start": "2024-01-09 00:00:00",
+            "test_end": "2024-12-30 13:00:00"
+          },
+          {
+            "target_year": 2024,
+            "history_years": 10,
+            "n_train": 64699,
+            "n_validation": 81,
+            "n_test": 4401,
+            "train_start": "2014-01-01 00:00:00",
+            "train_end": "2023-09-19 07:00:00",
+            "validation_start": "2023-12-15 13:00:00",
+            "validation_end": "2023-12-19 01:00:00",
+            "test_start": "2024-01-09 00:00:00",
+            "test_end": "2024-12-30 13:00:00"
+          },
+          {
+            "target_year": 2025,
+            "history_years": 1,
+            "n_train": 3398,
+            "n_validation": 1003,
+            "n_test": 6249,
+            "train_start": "2024-01-09 00:00:00",
+            "train_end": "2024-09-30 23:00:00",
+            "validation_start": "2024-10-01 00:00:00",
+            "validation_end": "2024-12-30 13:00:00",
+            "test_start": "2025-01-01 16:00:00",
+            "test_end": "2025-12-31 23:00:00"
+          },
+          {
+            "target_year": 2025,
+            "history_years": 2,
+            "n_train": 7714,
+            "n_validation": 1003,
+            "n_test": 6249,
+            "train_start": "2023-01-06 20:00:00",
+            "train_end": "2024-09-30 23:00:00",
+            "validation_start": "2024-10-01 00:00:00",
+            "validation_end": "2024-12-30 13:00:00",
+            "test_start": "2025-01-01 16:00:00",
+            "test_end": "2025-12-31 23:00:00"
+          },
+          {
+            "target_year": 2025,
+            "history_years": 3,
+            "n_train": 13991,
+            "n_validation": 1003,
+            "n_test": 6249,
+            "train_start": "2022-01-01 00:00:00",
+            "train_end": "2024-09-30 23:00:00",
+            "validation_start": "2024-10-01 00:00:00",
+            "validation_end": "2024-12-30 13:00:00",
+            "test_start": "2025-01-01 16:00:00",
+            "test_end": "2025-12-31 23:00:00"
+          },
+          {
+            "target_year": 2025,
+            "history_years": 5,
+            "n_train": 27260,
+            "n_validation": 1003,
+            "n_test": 6249,
+            "train_start": "2020-01-01 00:00:00",
+            "train_end": "2024-09-30 23:00:00",
+            "validation_start": "2024-10-01 00:00:00",
+            "validation_end": "2024-12-30 13:00:00",
+            "test_start": "2025-01-01 16:00:00",
+            "test_end": "2025-12-31 23:00:00"
+          },
+          {
+            "target_year": 2025,
+            "history_years": 10,
+            "n_train": 62249,
+            "n_validation": 1003,
+            "n_test": 6249,
+            "train_start": "2015-01-01 00:00:00",
+            "train_end": "2024-09-30 23:00:00",
+            "validation_start": "2024-10-01 00:00:00",
+            "validation_end": "2024-12-30 13:00:00",
+            "test_start": "2025-01-01 16:00:00",
+            "test_end": "2025-12-31 23:00:00"
+          }
+        ],
+        "all_counts_and_dates_match_saved_table": true
+      },
+      "passed": true,
+      "conclusion": "Treino, validação no trimestre anterior e ano-alvo são disjuntos. As janelas variam quantidade, antiguidade e composição dos dados; seu melhor MAE por ano é diagnóstico retrospectivo."
+    },
+    {
+      "id": "history_selection_and_refits",
+      "method": "Filtros reais de 2011-2022, validação em 2022 e acréscimo de dados de 2025.",
+      "code_cells": {
+        "03A.04": [
+          9,
+          11,
+          13,
+          14,
+          16
+        ]
+      },
+      "conditions": "Cortes de histórico são constantes explícitas. Indicadores com referência 2025 e backtests precedem a delimitação no notebook; não se atribui independência global ao ano-alvo.",
+      "results": {
+        "primary_training_sample": {
+          "n": 83832,
+          "start": "2011-01-01 00:00:00",
+          "end": "2022-12-28 02:00:00",
+          "timestamp_sha256": "42e90aa2d8e8e0c30b2d0e44e19f9f6308276c2a09f7ae674c70d06749728320",
+          "duplicates": 0
+        },
+        "development_train": {
+          "n": 82576,
+          "start": "2011-01-01 00:00:00",
+          "end": "2022-10-21 14:00:00",
+          "timestamp_sha256": "df897400f968cb4568084408d10bf3f4e05b1e33e81755e2abd1e0dd80f5459a",
+          "duplicates": 0
+        },
+        "validation_2022": {
+          "n": 1256,
+          "start": "2022-10-21 15:00:00",
+          "end": "2022-12-28 02:00:00",
+          "timestamp_sha256": "040e656c024108cbc7b2745f2630611149951770ef5767c24dd4468114708d8e",
+          "duplicates": 0
+        },
+        "generalization_target": {
+          "n": 6249,
+          "start": "2025-01-01 16:00:00",
+          "end": "2025-12-31 23:00:00",
+          "timestamp_sha256": "d7305885bcce56f9302547fa6cda8898677f75063512a9265697bface601b8b0",
+          "duplicates": 0
+        },
+        "recent_train_initial": {
+          "n": 4894,
+          "start": "2025-01-01 16:00:00",
+          "end": "2025-09-30 23:00:00",
+          "timestamp_sha256": "3f41db2ea9f542646cb5109bd98355f83a5a72963c3c16116db23d10c3114d14",
+          "duplicates": 0
+        },
+        "validation_2025": {
+          "n": 211,
+          "start": "2025-10-01 00:00:00",
+          "end": "2025-10-31 23:00:00",
+          "timestamp_sha256": "794526e1068b0440d1433e8aeb4627360421ae9807af81b198d966cc4fffc03b",
+          "duplicates": 0
+        },
+        "test_2025": {
+          "n": 1144,
+          "start": "2025-11-01 00:00:00",
+          "end": "2025-12-31 23:00:00",
+          "timestamp_sha256": "c8f1048a5ebff0365498444dffe443410973be3aa70a5137e44bcdb331572085",
+          "duplicates": 0
+        },
+        "recent_train_final": {
+          "n": 5105,
+          "start": "2025-01-01 16:00:00",
+          "end": "2025-10-31 23:00:00",
+          "timestamp_sha256": "1bca1d542dd7d280620680c457cb7b757433bc1f769cdbc4c06aed214953909a",
+          "duplicates": 0
+        },
+        "history_plus_recent_final": {
+          "n": 88937,
+          "start": "2011-01-01 00:00:00",
+          "end": "2025-10-31 23:00:00",
+          "timestamp_sha256": "e9fc398068e0e2cdbbc06d80c745be2eaa523487eba3265c6515cbfb1824c00e",
+          "duplicates": 0
+        }
+      },
+      "passed": true,
+      "conclusion": "A aplicação dos cortes e reajustes é coerente. A exclusão exploratória de 2023/2024 não equivale a um critério confirmatório definido antes dos resultados e deve continuar explicitada como limitação."
+    },
+    {
+      "id": "final_paired_sample_and_refit",
+      "method": "Reexecução da elegibilidade e dos filtros reais; construção dos modelos finais sem fit.",
+      "code_cells": {
+        "03A.05": [
+          3,
+          9,
+          12,
+          15,
+          18
+        ]
+      },
+      "conditions": "A/B usam as mesmas linhas e respostas; vetores com 1/7 entradas. Seleção RMSE em outubro e reajuste com outubro incorporado.",
+      "results": {
+        "unknown_startup_age_hours": 250,
+        "common_rows": 89830,
+        "splits": {
+          "train_selection_common": {
+            "n": 88475,
+            "start": "2011-01-15 22:00:00",
+            "end": "2025-09-30 23:00:00",
+            "timestamp_sha256": "72a6aa8a00331169e16a6a857306939f7f37d0e91f39d4f793d4292255c9ac11",
+            "duplicates": 0
+          },
+          "validation_common": {
+            "n": 211,
+            "start": "2025-10-01 00:00:00",
+            "end": "2025-10-31 23:00:00",
+            "timestamp_sha256": "794526e1068b0440d1433e8aeb4627360421ae9807af81b198d966cc4fffc03b",
+            "duplicates": 0
+          },
+          "train_final_common": {
+            "n": 88686,
+            "start": "2011-01-15 22:00:00",
+            "end": "2025-10-31 23:00:00",
+            "timestamp_sha256": "1150b5beca9cf776dba83e3fe25a3f7da75416c19522bc6638c294ed60627ee6",
+            "duplicates": 0
+          },
+          "test_common": {
+            "n": 1144,
+            "start": "2025-11-01 00:00:00",
+            "end": "2025-12-31 23:00:00",
+            "timestamp_sha256": "c8f1048a5ebff0365498444dffe443410973be3aa70a5137e44bcdb331572085",
+            "duplicates": 0
+          }
+        },
+        "all_saved_frames_match_exactly": true,
+        "selected_trees": {
+          "A": 498,
+          "B": 721
+        },
+        "early_stopping_removed_before_refit": true,
+        "same_final_parameters_except_trees": {
+          "objective": "reg:squarederror",
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_alpha": 0.0,
+          "reg_lambda": 1.0,
+          "eval_metric": "rmse",
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "passed": true,
+      "conclusion": "Pareamento, exclusões, datas, 498/721 árvores e retirada do early stopping são aplicados corretamente. A comparação envolve modelos ajustados pela mesma regra, com complexidades próprias."
+    },
+    {
+      "id": "preserved_metrics",
+      "method": "Função de métricas real aplicada às previsões preservadas.",
+      "code_cells": {
+        "03A.05": [
+          3,
+          18
+        ]
+      },
+      "conditions": "Sem treinamento. Confere também identidade e ordem dos 1.144 timestamps.",
+      "results": {
+        "recomputed": {
+          "A": {
+            "MAE": 20.151419005413988,
+            "MedianAE": 17.385278167724596,
+            "RMSE": 25.065266220558023,
+            "R2": 0.9847408903252829,
+            "NMAE_pct": 3.423958965401702,
+            "Bias": -10.346744499393276
+          },
+          "B": {
+            "MAE": 21.1719865784345,
+            "MedianAE": 17.855572509765636,
+            "RMSE": 26.577858364597994,
+            "R2": 0.9828436650475074,
+            "NMAE_pct": 3.5973651900701986,
+            "Bias": -2.5503327508606275
+          }
+        },
+        "all_metric_columns_match_saved_table": true
+      },
+      "passed": true,
+      "conclusion": "As métricas finais correspondem às predições preservadas. Nenhum resultado numérico precisou ser corrigido nestas verificações."
+    }
+  ],
+  "all_checks_passed": true,
+  "conclusion": "Os mecanismos examinados são coerentes com o uso de boosting quadrático regularizado, busca aleatória pareada e divisão temporal descritos. As verificações não encontraram erro numérico que exija alterar resultados. São necessárias correções documentais das alegações de suficiência da busca, isolamento exclusivo de efeitos e independência global do teste. A seleção exploratória do histórico e o teste reutilizado permanecem limitações do desenho.",
+  "limits": [
+    "Não foram reexecutados os 300 ajustes da busca nem os 25 backtests.",
+    "O teste numérico sintético verifica a operação matemática e a API, não a qualidade preditiva de todos os modelos de Iatan.",
+    "As árvores finais de 03A.05 foram conferidas pelas seleções e resultados preservados; não houve novo treinamento para procurar outro resultado.",
+    "Datas disjuntas dentro de cada ajuste não tornam independente uma pesquisa que já consultou o período de teste."
+  ],
+  "source_evidence": [
+    {
+      "key": "FRIEDMAN_2001",
+      "source_url": "https://doi.org/10.1214/aos/1013203451",
+      "read_url": "https://www.researchgate.net/profile/Jerome-Friedman/publication/2424824_Greedy_function_approximation_A_gradient_boosting_machine/links/6589e1ae0bb2c7472b0fc00e/Greedy-function-approximation-A-gradient-boosting-machine.pdf",
+      "source_location": "p. 1190, equação (2); p. 1193, Algoritmo 1; p. 1194, seção 4.1.",
+      "verified_short_quote": "forward stagewise additive modeling",
+      "passage_paraphrase": "O procedimento adiciona aprendizes sucessivos à função preditiva; para perda quadrática, os pseudorresíduos correspondem aos resíduos observados. O fundamento é aditivo, não uma exigência de reproduzir a configuração dos experimentos do autor.",
+      "implementation_mapping": "XGBRegressor é a implementação aplicada. O teste additive_and_squared_objective reconstrói a predição somando os valores das árvores e compara o objetivo nativo ao gradiente quadrático explícito.",
+      "conditions": "Exemplo sintético com intercepto e hiperparâmetros declarados; a regularização e o mecanismo de construção de árvores seguem XGBoost. Não é reprodução literal de todo o Algoritmo 1 nem de benchmarks de Friedman.",
+      "conclusion": "Fundamento aplicado corretamente nos mecanismos verificados; não há exigência de implementar outra biblioteca de boosting."
+    },
+    {
+      "key": "CHEN_GUESTRIN_2016",
+      "source_url": "https://www.kdd.org/kdd2016/papers/files/rfp0697-chenAemb.pdf",
+      "source_location": "PDF p. 2, seções 2.1-2.2 e equações (1)-(3); PDF p. 3, equações (4)-(7).",
+      "verified_short_quote": "The second term Ω penalizes the complexity of the model",
+      "passage_paraphrase": "A predição soma árvores. A função objetivo acrescenta penalização gamma por folha e lambda/2 vezes a soma dos pesos quadráticos. Para uma estrutura fixada, o peso ótimo é menos a soma dos gradientes dividida pela soma das hessianas acrescida de lambda.",
+      "mathematical_test": "l(y,p)=0.5*(p-y)^2; g=p-y; h=1; w=-G/(H+lambda). Com y=[0,2,8,10], p0=5, dois grupos de duas observações e lambda=1, os pesos esperados são -8/3 e +8/3.",
+      "implementation_mapping": "constructors verifica os parâmetros realmente passados; chen_leaf_weights compara a solução analítica com uma árvore da função real build_xgb_from_config. regularization_api verifica L1 e gamma como parâmetros da biblioteca.",
+      "conditions": "O teste analítico fixa eta=1 e remove subamostragem; a soma sequencial verifica eta=.03. reg_alpha é uma extensão da API e não foi atribuído à equação (2). O algoritmo hist da biblioteca atual não é equiparado a todas as otimizações do artigo de 2016.",
+      "conclusion": "Objetivo, penalização L2 e construção aditiva apresentam correspondência matemática verificável. Os hiperparâmetros do estudo são escolhas próprias."
+    },
+    {
+      "key": "BERGSTRA_BENGIO_2012",
+      "source_url": "https://jmlr.org/papers/v13/bergstra12a.html",
+      "read_url": "https://jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf",
+      "source_location": "p. 282, equações (2)-(4); p. 283, introdução e definição de busca aleatória; p. 284, Figura 1.",
+      "verified_short_quote": "random search as a substitute and baseline",
+      "passage_paraphrase": "Configurações são sorteadas e comparadas por desempenho de validação. O texto fundamenta a alternativa à grade e discute orçamentos experimentais; não prescreve trinta candidatos nem garante que esse número seja suficiente para qualquer tarefa.",
+      "implementation_mapping": "03A.03 célula 11 usa ParameterSampler uma vez, com nove listas, 30 candidatos e semente 42; células 16-18 aplicam a lista comum a A/B e classificam pelas médias de cinco folds. paired_random_search recompõe sorteio, cobertura, métricas agregadas e vencedores.",
+      "conditions": "A implementação usa sorteio sem reposição de uma grade discreta finita, conforme a API. É uma aplicação da estratégia de busca aleatória; não reprodução literal dos sorteios i.i.d. ou dos benchmarks da fonte.",
+      "conclusion": "Busca e pareamento corretos. Remover a alegação de busca suficientemente ampla, pois os resultados não demonstram suficiência do orçamento."
+    },
+    {
+      "key": "CAWLEY_TALBOT_2010",
+      "source_url": "https://jmlr.org/papers/volume11/cawley10a/cawley10a.pdf",
+      "source_location": "p. 2080, seção 1; pp. 2094-2095, seção 5; pp. 2102-2103, seção 5.3 e conclusão.",
+      "verified_short_quote": "model selection must be treated as an integral part of the model fitting process",
+      "passage_paraphrase": "A seleção também pode sobreajustar um critério estimado em amostra finita. A avaliação de generalização precisa considerar a seleção como parte do procedimento completo, incluindo decisões que antecedem o ajuste final.",
+      "implementation_mapping": "Os filtros impedem que novembro/dezembro entrem nos fits finais. Entretanto, a mesma amostra foi avaliada em etapas anteriores e 2025 integra diagnósticos de 03A.04 antes da delimitação histórica. Outubro e os cinco folds são usados para seleção, não constituem avaliações externas independentes dessa seleção.",
+      "conditions": "A auditoria distingue isolamento das linhas de um fit de independência de todo o percurso. Não declara avaliação aninhada implementada nem transforma a inversão de ranking em prova de viés de magnitude conhecida.",
+      "conclusion": "A separação computacional funciona; a aplicação do princípio requer manter a limitação de reutilização do teste e corrigir comentários que prometem independência global."
+    },
+    {
+      "key": "CERQUEIRA_TORGO_MOZETIC_2020",
+      "source_url": "https://link.springer.com/article/10.1007/s10994-020-05910-7",
+      "read_url": "https://kt.ijs.si/igor_mozetic/papers/CerTorMoz-TimeSer-MACH-20.pdf",
+      "source_location": "pp. 1999-2002, seções 2.1-2.3; p. 2004, seção 3.1; pp. 2018-2020, seções 5-6.",
+      "verified_short_quote": "Choosing an appropriate performance estimation method usually depends on the characteristics of the data set.",
+      "passage_paraphrase": "A escolha do procedimento de avaliação depende das características temporais e da estacionariedade. O estudo compara procedimentos em previsão autoregressiva um passo à frente; suas conclusões não equivalem a uma prescrição universal de um único protocolo.",
+      "implementation_mapping": "As cinco validações mensais são posteriores ao treino e a janela de treino cresce. Os 25 backtests avançam o ano-alvo e comparam cinco janelas históricas fixadas. Os testes reconstruíram as divisões e conferiram datas e contagens nos dados disponíveis.",
+      "conditions": "O caso Iatan estima CO2(t) usando carga atual e passada. Transfere-se o cuidado com avaliação temporal, não o problema de previsão autoregressiva ou o benchmark completo da fonte. Não foi presumida estacionariedade nem executado teste para estabelecê-la.",
+      "conclusion": "Os procedimentos temporais declarados estão implementados de forma coerente. As comparações permanecem descritivas e dependentes do protocolo de seleção."
+    },
+    {
+      "key": "SCIKIT_PARAMETER_SAMPLER_1_8",
+      "source_url": "https://scikit-learn.org/1.8/modules/generated/sklearn.model_selection.ParameterSampler.html",
+      "source_location": "Descrição inicial de ParameterSampler; parâmetros param_distributions, n_iter e random_state.",
+      "passage_paraphrase": "Quando todas as dimensões são listas, o sorteio é sem reposição; a semente controla a reprodução da sequência.",
+      "implementation_mapping": "Versão 1.8.0 executada. Os 30 candidatos foram recompostos exatamente, sem duplicatas, e coincidem com as configurações registradas para os dois cenários."
+    },
+    {
+      "key": "XGBOOST_API",
+      "source_url": "https://xgboost.readthedocs.io/en/stable/parameter.html",
+      "read_url": "https://xgboost.readthedocs.io/en/stable/python/python_api.html",
+      "source_location": "Parameters for Tree Booster; Learning Task Parameters; XGBRegressor, early_stopping_rounds, best_iteration e predict.",
+      "passage_paraphrase": "reg:squarederror usa perda quadrática; reg_lambda e reg_alpha controlam L2 e L1. best_iteration começa em zero, e a predição padrão de um modelo com early stopping usa a melhor iteração. A API distingue métrica monitorada de objetivo de treinamento.",
+      "version_note": "Documentação estável consultada: 3.4.2. Testes executados com a versão CPU 3.4.1, mesma versão principal do ambiente de reprodução do projeto. O comportamento relevante foi verificado numericamente nessa versão, sem depender apenas da documentação mais recente.",
+      "implementation_mapping": "Os testes constructors, regularization_api e early_stopping_prediction verificam os parâmetros e o comportamento nas funções reais extraídas dos notebooks."
+    }
+  ]
+}

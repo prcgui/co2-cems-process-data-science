@@ -1,0 +1,1974 @@
+{
+  "checked_at_utc": "2026-10-24T18:45:19.038187+00:00",
+  "scope": "Equações e aplicação dos métodos no código público corrigido; execução de funções e trechos reais sobre casos analíticos independentes e reapuração de tabelas/predições preservadas. Não houve treinamento de modelos.",
+  "notebook_version": "Arquivos públicos utilizados nesta execução, identificados individualmente pelos hashes SHA-256 registrados no resultado.",
+  "optional_manifest_verified": false,
+  "cell_numbering": "Inicia em 1 e conta todas as células, inclusive Markdown.",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "executable_name": "python3",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit_learn": "1.8.0"
+  },
+  "input_layout": {
+    "repo": "Raiz pública configurada por --repo; padrão: diretório atual.",
+    "notebooks": "notebooks/ ou diretório --notebooks.",
+    "monitoring_script": "reproducibility/monitoring/audit_monitoring.py ou arquivo --monitoring-script.",
+    "tables": "outputs/tables/ e reproducibility/monitoring/outputs/plan_system_component_history.csv.",
+    "manifest": "Opcional, configurado somente por --manifest."
+  },
+  "dependencies_installed_for_verification": [],
+  "methods": {
+    "iqr_nist": {
+      "status": "aplicada corretamente",
+      "source": {
+        "author": "NIST/SEMATECH",
+        "locator": "1.3.3.7, Box plots with fences, itens 3 a 6; 1.3.5.17, introdução, item 2",
+        "urls": [
+          "https://www.itl.nist.gov/div898/handbook/eda/section3/boxplot.htm",
+          "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm"
+        ]
+      },
+      "formula": "IQR=Q3-Q1; limite inferior=Q1-1,5 IQR; superior=Q3+1,5 IQR; máscara estrita fora das cercas em horas ON.",
+      "checks": {
+        "independent_quartiles_and_fences": {
+          "q1": 2.5,
+          "q3": 7.5,
+          "iqr": 5.0,
+          "lower_limit": -5.0,
+          "upper_limit": 15.0
+        },
+        "boundary_fixture_fences": [
+          -6,
+          10
+        ],
+        "flagged_values": [
+          -7,
+          11
+        ],
+        "boundary_values_retained": [
+          -6,
+          10
+        ],
+        "all_11_rows_and_original_values_preserved": true,
+        "missing_and_off_rows_not_flagged": true
+      },
+      "conclusion": "A função e as máscaras reais concordam com as cercas de 1,5 IQR. Quantis usam interpolação linear do Pandas; valores ausentes não entram no cálculo. A rotina só acrescenta indicadores: não exclui nem altera os registros originais.",
+      "correction": null
+    },
+    "pca_jolliffe": {
+      "status": "aplicada corretamente",
+      "source": {
+        "author": "Jolliffe e Cadima (2016)",
+        "locator": "§2(a), p. 3; §2(c)(i), pp. 5 a 6, eqs.(2.7) e (2.8)",
+        "url": "https://doi.org/10.1098/rsta.2015.0202",
+        "doi": "10.1098/rsta.2015.0202"
+      },
+      "checks": {
+        "rows_after_on_and_missing_filter": 158,
+        "rank": 6,
+        "variance_ratio": [
+          0.42619324161610683,
+          0.16849907917157225,
+          0.14400363666980598,
+          0.1373583189352799,
+          0.12375817031434798,
+          0.00018755329288725302,
+          -1.318748998615655e-16
+        ],
+        "subspace_projector_errors": {
+          "1": 1.210337104935226e-15,
+          "2": 3.744082086431455e-15,
+          "5": 1.3853481067099243e-15,
+          "6": 1.3759786965225586e-13
+        },
+        "max_score_error_after_sign_alignment": 1.0769163338864018e-14,
+        "synthetic_components_for_90pct": 5,
+        "saved_table_components_for_90pct": 5,
+        "downstream_PCA_identifier_references": [],
+        "changing_PCA_outputs_does_not_change_predictor_dataset": true
+      },
+      "conclusion": "PCA real concorda com eigendecomposição independente da matriz de correlação, inclusive subespaços, sinais, escores e proporções de variância. StandardScaler usa desvio com divisor n; a diferença n/(n-1) apenas escala os autovalores, sem mudar eixos ou proporções. A PCA anual é exploratória: suas saídas não alimentam os modelos. Portanto, esse ajuste sobre 2025 inteiro não causa vazamento no preditor.",
+      "correction": null
+    },
+    "minmax_scaler": {
+      "status": "aplicada corretamente",
+      "source": {
+        "author": "scikit-learn 1.8.0",
+        "locator": "MinMaxScaler, transformação e inverse_transform; Common pitfalls, §11.2",
+        "urls": [
+          "https://scikit-learn.org/1.8/modules/generated/sklearn.preprocessing.MinMaxScaler.html",
+          "https://scikit-learn.org/1.8/common_pitfalls.html"
+        ]
+      },
+      "checks": {
+        "scenarios": {
+          "A": {
+            "n_features": 1,
+            "fitted_rows": 4,
+            "test_min_scaled": -6.666666666666666,
+            "test_max_scaled": 66.33333333333333,
+            "future_values_do_not_refit_scaler": true
+          },
+          "B": {
+            "n_features": 7,
+            "fitted_rows": 4,
+            "test_min_scaled": -6.666666666666666,
+            "test_max_scaled": 66.33333333333334,
+            "future_values_do_not_refit_scaler": true
+          },
+          "C": {
+            "n_features": 24,
+            "fitted_rows": 4,
+            "test_min_scaled": -6.666666666666667,
+            "test_max_scaled": 66.33333333333334,
+            "future_values_do_not_refit_scaler": true
+          }
+        },
+        "target_train_range": [
+          20,
+          80
+        ],
+        "inverse_inputs": [
+          -0.5,
+          0,
+          1,
+          1.5
+        ],
+        "inverse_outputs": [
+          -10.000000000000002,
+          20.0,
+          80.0,
+          110.0
+        ],
+        "constant_training_feature_supported_in_C": true,
+        "actual_partition_sizes": {
+          "train": 4,
+          "validation": 2,
+          "test": 2
+        }
+      },
+      "conclusion": "As instruções reais de A/B/C ajustam escalas apenas ao treino e aplicam transform aos demais subconjuntos. Extremos futuros não alteram os parâmetros aprendidos; valores fora de [0,1] são preservados conforme clip=False. As inversas reais recuperam unidades originais antes das métricas, inclusive fora da amplitude de treino.",
+      "correction": null
+    },
+    "metrics_and_r2": {
+      "status": "aplicada corretamente",
+      "sources": [
+        {
+          "author": "Hyndman e Koehler (2006)",
+          "locator": "§2 e §2.1, pp. 7 e 8 do manuscrito autoral",
+          "url": "https://robjhyndman.com/papers/mase.pdf"
+        },
+        {
+          "author": "scikit-learn 1.8.0",
+          "locator": "§3.4.6.1, R² não ajustado; §§3.4.6.2 e 3.4.6.3",
+          "url": "https://scikit-learn.org/1.8/modules/model_evaluation.html"
+        }
+      ],
+      "checks": {
+        "actual_functions": [
+          {
+            "notebook": "03A_modelagem_preditiva_co2.ipynb",
+            "cell": 16,
+            "function": "regression_metrics",
+            "cases_passed": 7
+          },
+          {
+            "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+            "cell": 16,
+            "function": "regression_metrics",
+            "cases_passed": 7
+          },
+          {
+            "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+            "cell": 13,
+            "function": "regression_metrics",
+            "cases_passed": 7
+          },
+          {
+            "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+            "cell": 3,
+            "function": "regression_metrics",
+            "cases_passed": 7
+          },
+          {
+            "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+            "cell": 11,
+            "function": "metrics_03A04",
+            "cases_passed": 7
+          },
+          {
+            "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+            "cell": 16,
+            "function": "calculate_metrics",
+            "cases_passed": 7
+          },
+          {
+            "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+            "cell": 3,
+            "function": "regression_metrics",
+            "cases_passed": 7
+          }
+        ],
+        "known_reference_example": {
+          "MAE": 1.75,
+          "RMSE": 1.9364916731037085,
+          "R2": 0.5714285714285714,
+          "MedianAE": 1.5,
+          "Bias": -0.25,
+          "NMAE_pct": 50.0,
+          "NMAE_%": 50.0,
+          "WAPE_%": 50.0
+        },
+        "paired_summary_example": {
+          "contexto": "fixture",
+          "n": 5,
+          "MAE_A": 4.0,
+          "MAE_B": 4.8,
+          "ganho_B_vs_A_pct": -19.999999999999996,
+          "RMSE_A": 4.0,
+          "RMSE_B": 6.0,
+          "ganho_RMSE_B_vs_A_pct": -50.0,
+          "Bias_A": 4.0,
+          "Bias_B": 0.0,
+          "B_win_pct": 80.0,
+          "mean_AE_reduction_B": -0.8,
+          "median_AE_reduction_B": 1.0
+        },
+        "saved_MLP_rows": 1144,
+        "saved_MLP_recomputation": {
+          "A": {
+            "recomputed": {
+              "MAE": 67.25079385751748,
+              "RMSE": 70.90103450079778,
+              "R2": 0.8779073008232953
+            },
+            "difference_from_saved_table": {
+              "MAE": 2.4023753297797157e-06,
+              "RMSE": 3.1489314267219015e-06,
+              "R2": -1.0845018882932322e-08
+            }
+          },
+          "B": {
+            "recomputed": {
+              "MAE": 61.61018770541959,
+              "RMSE": 67.0400523936728,
+              "R2": 0.8908425852866455
+            },
+            "difference_from_saved_table": {
+              "MAE": -2.0181076365588524e-08,
+              "RMSE": -2.5827773697528755e-08,
+              "R2": 8.41077207880403e-11
+            }
+          }
+        },
+        "final_XGBoost_table_R2_NMAE_identities_verified": true,
+        "all_four_saved_context_gain_identities_verified": true
+      },
+      "conclusion": "MAE, RMSE e R² das sete funções e do cenário C coincidem com cálculos independentes. Viés é observado menos estimado: sobrestimação dá sinal negativo. Ganho e redução pareada positivos favorecem B. A inversa precede as métricas da MLP; 1.144 previsões preservadas reproduzem a tabela dentro da precisão de serialização. NMAE é normalização pela média do alvo, não MASE ou MAPE. R² constante segue o padrão force_finite da API.",
+      "scope": "Os erros finais do XGBoost foram verificados por identidades das tabelas e testes das funções; suas predições individuais não estão nesses CSVs. Não se executou treinamento.",
+      "correction": null
+    },
+    "drift_gama": {
+      "status": "aplicada corretamente; correção da borda verificada no notebook público",
+      "source": {
+        "author": "Gama et al. (2014)",
+        "locator": "§2.1, pp. 3 a 4 do manuscrito aceito, eq.(2); Fig.1, p. 5",
+        "url": "https://eprints.bournemouth.ac.uk/22491/1/ACM%20computing%20surveys.pdf"
+      },
+      "source_role": "Orientação conceitual para distinguir mudanças de P(X) e P(y|X). A distância entre medianas por faixa, ponderada pelas frequências de 2025, é um diagnóstico construído neste estudo; não é um detector de Gama reproduzido.",
+      "checks": {
+        "same_conditional_relation_slope_intercept": [
+          2,
+          5
+        ],
+        "curve_distance_despite_unchanged_conditional_relation": 20,
+        "max_saved_curve_distance_recalculation_error": 3.552713678800501e-15,
+        "all_15_years_saved_bin_counts_equal_scenario_counts": true,
+        "observed_max_load_mw": 957.0,
+        "current_data_original_upper_edge_mw": 1000.0,
+        "current_data_corrected_upper_edge_mw": 1000.0,
+        "current_data_bin_edges_identical": true,
+        "current_data_bin_edges_mw": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          400.0,
+          450.0,
+          500.0,
+          550.0,
+          600.0,
+          650.0,
+          700.0,
+          750.0,
+          800.0,
+          850.0,
+          900.0,
+          950.0,
+          1000.0
+        ],
+        "saved_14_year_similarity_ranking_matches_recomputed_distances": true,
+        "boundary_probe_rows": 60,
+        "original_binned_rows": 40,
+        "corrected_binned_rows": 60,
+        "actual_public_notebook_retains_all_boundary_rows": true,
+        "actual_public_formula_matches_corrected_expression": true,
+        "boundary_metric_before_after": {
+          "fixture": "60 observações por ano; cargas 10, 50 e 100 MW com 20 observações cada. Em 2025, y=2x+5; em 2024, somente as observações de 100 MW recebem +20.",
+          "original_common_bins": 2,
+          "corrected_common_bins": 3,
+          "original_curve_mae": 0.0,
+          "corrected_curve_mae": 6.666666666666666,
+          "original_curve_nmae_pct": 0.0,
+          "corrected_curve_nmae_pct": 5.970149253731344
+        },
+        "sample_decision_consumed_drift_columns": [
+          "year",
+          "operating_pct",
+          "n_startups",
+          "n_shutdowns",
+          "load_mean",
+          "load_p05",
+          "load_p95"
+        ],
+        "correction_preserves_nonboundary_case": true
+      },
+      "conclusion": "A orientação de Gama é usada corretamente: os indicadores são descritivos e não constituem prova de mudança de P(CO2|carga). Um contraexemplo executado mantém y=2x+5 e produz distância 20 apenas por mudança das cargas dentro das faixas. As 15 distâncias anuais publicadas foram reapuradas e todas as contagens fecham. A fórmula corrigida do notebook público inclui o máximo mesmo quando ele é múltiplo exato de 50 MW; a falha anterior foi reproduzida somente em fixture isolada.",
+      "correction": {
+        "location": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb, célula 9, max_bin_edge",
+        "original": "max_bin_edge = float(np.ceil(max_load / LOAD_BIN_WIDTH) * LOAD_BIN_WIDTH)",
+        "current_source_exact": "max_bin_edge = float((np.floor(max_load / LOAD_BIN_WIDTH) + 1) * LOAD_BIN_WIDTH)",
+        "verified_current_formula": "max_bin_edge = float((np.floor(max_load / LOAD_BIN_WIDTH) + 1) * LOAD_BIN_WIDTH)",
+        "reason": "pd.cut(..., right=False) exclui valores iguais à última borda. A borda final deve ser estritamente maior que o máximo.",
+        "observed_dataset_effect": "Melhoria preventiva neste recorte: máximo observado de 957 MW, borda original e corrigida de 1.000 MW e vetores de bordas idênticos. As contagens fecham em todos os 15 anos. Nenhuma distância, ordenação, tabela, figura ou conclusão muda com essa substituição nos dados utilizados.",
+        "directly_dependent_tables": [
+          "outputs/tables/03A04_curvas_carga_co2_por_ano.csv",
+          "outputs/tables/03A04_drift_anual_cenario_A.csv",
+          "outputs/tables/03A04_similaridade_curva_vs_2025.csv"
+        ],
+        "affected_columns_in_annual_table_if_boundary_occurs": [
+          "n_common_bins",
+          "reference_observations",
+          "curve_mae_vs_2025",
+          "curve_nmae_vs_2025_pct"
+        ],
+        "directly_dependent_figures": [
+          "outputs/figures/03A04_curvas_carga_co2_anuais.png",
+          "outputs/figures/03A04_distancia_curva_vs_2025.png"
+        ],
+        "unaffected_paths": [
+          "Indicadores anuais de utilização, carga, partidas, intensidade e regressão linear, calculados antes das faixas.",
+          "Decisão exploratória de 2023/2024, que não utiliza distâncias por faixa; outputs/tables/03A04_decisao_amostral_2023_2024.csv e outputs/reports/03A04_delimitacao_amostra_historica.md.",
+          "Treinamento, atributos, divisão temporal, predições, métricas e relatórios dos modelos; a faixa load_bin não integra as matrizes preditoras."
+        ],
+        "article_effect": "Nenhuma alteração numérica ou de conclusão. O artigo não publica as distâncias por faixa; os indicadores operacionais do apêndice são calculados fora desse agrupamento. A interpretação descritiva de Gama permanece correta.",
+        "applied_to_notebook": true
+      }
+    },
+    "epa_inclusive_intervals": {
+      "status": "aplicada corretamente",
+      "source": {
+        "author": "EPA (2024)",
+        "locator": "§8.2, p. impressa 61, p. 66 do PDF; Begin Date/Hour e End Date/Hour",
+        "url": "https://www.epa.gov/system/files/documents/2024-12/ecmps_monitoring_plan_reporting_instructions-12202024.pdf"
+      },
+      "checks": {
+        "closed_interval_mask": [
+          false,
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "point_interval_verified": true,
+        "open_end_and_NaT_verified": true,
+        "adjacent_intervals_union_verified": true,
+        "invalid_hours_and_reversed_intervals_rejected": true,
+        "preserved_system_component_records_checked": 26,
+        "implicit_hour_assumptions_in_saved_records": 0,
+        "closed_interval_boundaries": [
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2018-01-04 14:00:00",
+            "verified_inclusive": true
+          },
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2017-08-28 09:00:00",
+            "verified_inclusive": true
+          },
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2024-09-18 09:00:00",
+            "verified_inclusive": true
+          },
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2018-01-04 14:00:00",
+            "verified_inclusive": true
+          },
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2017-08-28 09:00:00",
+            "verified_inclusive": true
+          },
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2024-09-18 09:00:00",
+            "verified_inclusive": true
+          },
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2018-01-04 14:00:00",
+            "verified_inclusive": true
+          },
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2024-09-18 09:00:00",
+            "verified_inclusive": true
+          },
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2017-08-28 09:00:00",
+            "verified_inclusive": true
+          },
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2024-09-18 09:00:00",
+            "verified_inclusive": true
+          },
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2017-08-28 09:00:00",
+            "verified_inclusive": true
+          },
+          {
+            "begin": "2010-10-01 00:00:00",
+            "end": "2018-01-04 14:00:00",
+            "verified_inclusive": true
+          }
+        ]
+      },
+      "conclusion": "A comparação inclusiva corresponde à última hora ativa definida pela EPA. As funções reais incluem início e término, excluem as horas vizinhas, preservam intervalos ainda ativos e ignoram intervalos inválidos. Os 26 registros preservados de associação sistema/componente foram novamente convertidos e tiveram suas fronteiras verificadas; nenhum exigiu hora presumida.",
+      "correction": null
+    }
+  },
+  "source_hashes_sha256": {
+    "notebooks/01_selecao_unidade_estudo.ipynb": "32b398d1f47bdf170159afef67c9b584ccf245d55c78ae81234a5ebc9a24c4bd",
+    "notebooks/02_tratamento_dados.ipynb": "24fabafb8f16992bb22cc1266e55f5d4c308a99162919f8abcc95546f6e797c6",
+    "notebooks/03A.01_modelagem_preditiva_co2.ipynb": "5a8b10ffc4677aa5f025f496c9ed8f9aefb24e58b3b05362808a2f51eb282e42",
+    "notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb": "32bb264323bfa6346c803c35c0ae82c6c97f7ad3e209bd148855213063a10158",
+    "notebooks/03A.03_otimizacao_pareada_xgboost.ipynb": "b8c8bc4d5e7424c6a489d4b94a80e114d4665007ed1ff9a87fd71215a9d9a54e",
+    "notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb": "1be51060a3932883bac8fdf8f78f48ea3399ea4fd78fe070c8575b720d5cfa2c",
+    "notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb": "5e7da1134d2d871b2c4ce06a4154cd4212b3703eaac2cb78835470392df14dce",
+    "notebooks/03A_modelagem_preditiva_co2.ipynb": "a8d35e65c4054423994e4dbf395eadb6de871ae0af9093db814e7d0d92c63990",
+    "repo/outputs/tables/pca_variance_explained.csv": "0d1807b55a4f23757dedf0b6dcc0af004de66626797719cb9cf95c50a02c92e8",
+    "repo/outputs/tables/03A_previsoes_teste.csv": "876bfa1b284fa58b455ad52981ce27e8b227298136a1c16490848c08aca6a332",
+    "repo/outputs/tables/03A_comparacao_modelos.csv": "452d820617e2ede4f91369dc13bb0a91f7f37e49bb79469d604ab3efb346f081",
+    "repo/outputs/tables/03A05_resultado_final_A_B.csv": "d064b74eb949f27ac8b56f9b574e766e256b445f237b8bb4e14cf2170cda121f",
+    "repo/outputs/tables/03A05_comparacao_contextos_operacionais.csv": "8e04c5eb0d643fc662da75a0ffd190fdd982e1db14a0d0fef500ed67d4fd6583",
+    "repo/outputs/tables/03A04_curvas_carga_co2_por_ano.csv": "f2505ce4b1e679d5b3e1374b2999116a1bb166a9e3412700694f340d61a03ee2",
+    "repo/outputs/tables/03A04_drift_anual_cenario_A.csv": "a5270151f533c86d7bde9c4d098b3135f82b428a26656c96b1c1cce61f2630bf",
+    "repo/outputs/tables/03A04_resumo_operacional_anual.csv": "138aa3c765c553e200bb44767a0674aa737905865c49fff74220be64d409b1e5",
+    "repo/outputs/tables/03A04_similaridade_curva_vs_2025.csv": "692e512f9bd15fa093b324e1cf5ffe488aac009e9fae5c220f7824bd2394b8f8",
+    "repo/reproducibility/monitoring/audit_monitoring.py": "b8dbf41b88603e7a4813a217e427b5c2ba497977cd5df0ce9cf1365aa85ccf38",
+    "repo/reproducibility/monitoring/outputs/plan_system_component_history.csv": "294fedb9b6b149c22031100b8ec689a2255a2b4456593bd68d475228a393a425"
+  },
+  "source_files_unchanged": true,
+  "executed_actual_code_fragments": [
+    {
+      "location": "02_tratamento_dados.ipynb:célula 7:calculate_iqr_limits",
+      "original_cell_lines": [
+        [
+          102,
+          141
+        ]
+      ],
+      "selected_ast_sha256": "62daaed6fa08a143a3934e8492939e7ceeff3cb59da0cb2d505927963547e4ed"
+    },
+    {
+      "location": "02_tratamento_dados.ipynb:célula 7:sinalização",
+      "original_cell_lines": [
+        [
+          80,
+          85
+        ],
+        [
+          102,
+          141
+        ],
+        [
+          148,
+          150
+        ],
+        [
+          153,
+          153
+        ],
+        [
+          156,
+          177
+        ],
+        [
+          180,
+          183
+        ],
+        [
+          190,
+          192
+        ],
+        [
+          195,
+          195
+        ],
+        [
+          198,
+          219
+        ],
+        [
+          222,
+          225
+        ],
+        [
+          232,
+          264
+        ],
+        [
+          280,
+          283
+        ],
+        [
+          285,
+          288
+        ],
+        [
+          291,
+          318
+        ],
+        [
+          341,
+          368
+        ],
+        [
+          371,
+          381
+        ],
+        [
+          384,
+          394
+        ]
+      ],
+      "selected_ast_sha256": "94dc0350d57d771bae4bc67b887eb308ad1210d9cdebd741cd246890498b6cce"
+    },
+    {
+      "location": "02_tratamento_dados.ipynb:célula 11:PCA",
+      "original_cell_lines": [
+        [
+          91,
+          107
+        ],
+        [
+          114,
+          123
+        ],
+        [
+          139,
+          141
+        ],
+        [
+          144,
+          150
+        ],
+        [
+          175,
+          181
+        ],
+        [
+          184,
+          186
+        ],
+        [
+          238,
+          238
+        ],
+        [
+          241,
+          243
+        ],
+        [
+          257,
+          257
+        ],
+        [
+          260,
+          262
+        ],
+        [
+          269,
+          271
+        ],
+        [
+          274,
+          277
+        ],
+        [
+          280,
+          303
+        ],
+        [
+          327,
+          336
+        ]
+      ],
+      "selected_ast_sha256": "8b4f4ad37060c87c74dedcf596c1325c7657270e9382c5037b8b073dbef77269"
+    },
+    {
+      "location": "02_tratamento_dados.ipynb:célula 13:atributos originais",
+      "original_cell_lines": [
+        [
+          186,
+          195
+        ],
+        [
+          208,
+          224
+        ],
+        [
+          227,
+          229
+        ],
+        [
+          236,
+          242
+        ],
+        [
+          245,
+          253
+        ],
+        [
+          320,
+          322
+        ],
+        [
+          324,
+          326
+        ],
+        [
+          329,
+          338
+        ],
+        [
+          341,
+          358
+        ],
+        [
+          361,
+          370
+        ],
+        [
+          377,
+          382
+        ],
+        [
+          384,
+          389
+        ],
+        [
+          392,
+          397
+        ],
+        [
+          399,
+          404
+        ],
+        [
+          407,
+          412
+        ],
+        [
+          414,
+          419
+        ],
+        [
+          426,
+          473
+        ],
+        [
+          476,
+          488
+        ],
+        [
+          548,
+          548
+        ],
+        [
+          551,
+          556
+        ],
+        [
+          559,
+          564
+        ],
+        [
+          567,
+          572
+        ],
+        [
+          579,
+          587
+        ],
+        [
+          590,
+          598
+        ],
+        [
+          601,
+          609
+        ]
+      ],
+      "selected_ast_sha256": "756f1d7fc9b59bbe9e4de72a3290312ff4c02bea47c28af6431c50d9dc2ebe68"
+    },
+    {
+      "location": "02_tratamento_dados.ipynb:célula 13:teste de independência da PCA",
+      "original_cell_lines": [
+        [
+          186,
+          195
+        ],
+        [
+          208,
+          224
+        ],
+        [
+          227,
+          229
+        ],
+        [
+          236,
+          242
+        ],
+        [
+          245,
+          253
+        ],
+        [
+          320,
+          322
+        ],
+        [
+          324,
+          326
+        ],
+        [
+          329,
+          338
+        ],
+        [
+          341,
+          358
+        ],
+        [
+          361,
+          370
+        ],
+        [
+          377,
+          382
+        ],
+        [
+          384,
+          389
+        ],
+        [
+          392,
+          397
+        ],
+        [
+          399,
+          404
+        ],
+        [
+          407,
+          412
+        ],
+        [
+          414,
+          419
+        ],
+        [
+          426,
+          473
+        ],
+        [
+          476,
+          488
+        ],
+        [
+          548,
+          548
+        ],
+        [
+          551,
+          556
+        ],
+        [
+          559,
+          564
+        ],
+        [
+          567,
+          572
+        ],
+        [
+          579,
+          587
+        ],
+        [
+          590,
+          598
+        ],
+        [
+          601,
+          609
+        ]
+      ],
+      "selected_ast_sha256": "756f1d7fc9b59bbe9e4de72a3290312ff4c02bea47c28af6431c50d9dc2ebe68"
+    },
+    {
+      "location": "03A.01_modelagem_preditiva_co2.ipynb:célula 11:entradas",
+      "original_cell_lines": [
+        [
+          27,
+          43
+        ],
+        [
+          50,
+          78
+        ]
+      ],
+      "selected_ast_sha256": "417e38bc86abe218ff70cbf9f080d76ca935e3bb420cda083321bdeccfa06c58"
+    },
+    {
+      "location": "03A.01_modelagem_preditiva_co2.ipynb:célula 14:entradas",
+      "original_cell_lines": [
+        [
+          87,
+          95
+        ]
+      ],
+      "selected_ast_sha256": "a1e847b811ded34196f8885ef6a60ec2aac59838aaed47c4a0cb51f16619d734"
+    },
+    {
+      "location": "03A_modelagem_preditiva_co2.ipynb:célula 7:partição temporal",
+      "original_cell_lines": [
+        [
+          52,
+          54
+        ],
+        [
+          56,
+          58
+        ],
+        [
+          60,
+          62
+        ],
+        [
+          69,
+          79
+        ],
+        [
+          86,
+          104
+        ],
+        [
+          111,
+          121
+        ]
+      ],
+      "selected_ast_sha256": "2f0272521971e81dff0250a7ea081e911e768be44880600bea03bc50752bd45f"
+    },
+    {
+      "location": "03A_modelagem_preditiva_co2.ipynb:célula 9:MinMax A/B",
+      "original_cell_lines": [
+        [
+          58,
+          63
+        ],
+        [
+          65,
+          70
+        ],
+        [
+          72,
+          77
+        ],
+        [
+          84,
+          89
+        ],
+        [
+          91,
+          96
+        ],
+        [
+          98,
+          103
+        ],
+        [
+          110,
+          115
+        ],
+        [
+          117,
+          122
+        ],
+        [
+          124,
+          129
+        ],
+        [
+          143,
+          143
+        ],
+        [
+          145,
+          145
+        ],
+        [
+          147,
+          147
+        ],
+        [
+          154,
+          159
+        ],
+        [
+          161,
+          166
+        ],
+        [
+          168,
+          173
+        ],
+        [
+          176,
+          181
+        ],
+        [
+          183,
+          188
+        ],
+        [
+          190,
+          195
+        ],
+        [
+          213,
+          219
+        ],
+        [
+          221,
+          227
+        ]
+      ],
+      "selected_ast_sha256": "c2842f9a1d64e4c23ba2dd65d170743d364950f9f8370b18579d93decec0d538"
+    },
+    {
+      "location": "03A.01_modelagem_preditiva_co2.ipynb:célula 16:MinMax C",
+      "original_cell_lines": [
+        [
+          38,
+          42
+        ],
+        [
+          45,
+          49
+        ],
+        [
+          52,
+          56
+        ],
+        [
+          63,
+          67
+        ],
+        [
+          70,
+          74
+        ],
+        [
+          77,
+          81
+        ],
+        [
+          88,
+          88
+        ],
+        [
+          90,
+          90
+        ],
+        [
+          97,
+          105
+        ],
+        [
+          112,
+          120
+        ],
+        [
+          123,
+          131
+        ],
+        [
+          138,
+          148
+        ],
+        [
+          151,
+          161
+        ]
+      ],
+      "selected_ast_sha256": "3e5516bf01d9d9bec55a6246aeaac185481adcb8fc7f66cdba4610938baaa1d0"
+    },
+    {
+      "location": "03A_modelagem_preditiva_co2.ipynb:célula 16:inverse_target",
+      "original_cell_lines": [
+        [
+          53,
+          66
+        ]
+      ],
+      "selected_ast_sha256": "6fd221558d33d5dc1711fc25f3836e69065b9294cf8654e256aba13bfbe0e60c"
+    },
+    {
+      "location": "03A.01_modelagem_preditiva_co2.ipynb:célula 22:inversa do alvo",
+      "original_cell_lines": [
+        [
+          51,
+          66
+        ]
+      ],
+      "selected_ast_sha256": "257e9646c30ceba1931e2ec376275685a327d007da6952a8db2f5b7163864fca"
+    },
+    {
+      "location": "03A_modelagem_preditiva_co2.ipynb:célula 16:regression_metrics",
+      "original_cell_lines": [
+        [
+          73,
+          100
+        ]
+      ],
+      "selected_ast_sha256": "c184ef5273357c829403e6a13e9fa099309e2ac3e0938f0e353682adb8b9350f"
+    },
+    {
+      "location": "03A.02_comparacao_modelos_gradient_boosting.ipynb:célula 16:regression_metrics",
+      "original_cell_lines": [
+        [
+          21,
+          53
+        ]
+      ],
+      "selected_ast_sha256": "c184ef5273357c829403e6a13e9fa099309e2ac3e0938f0e353682adb8b9350f"
+    },
+    {
+      "location": "03A.03_otimizacao_pareada_xgboost.ipynb:célula 13:regression_metrics",
+      "original_cell_lines": [
+        [
+          20,
+          52
+        ]
+      ],
+      "selected_ast_sha256": "c184ef5273357c829403e6a13e9fa099309e2ac3e0938f0e353682adb8b9350f"
+    },
+    {
+      "location": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb:célula 3:regression_metrics",
+      "original_cell_lines": [
+        [
+          537,
+          650
+        ]
+      ],
+      "selected_ast_sha256": "db1ba089d3644ece67ed9989163c92f6bbc2f9a7df8e465b32c2e7b573a2effb"
+    },
+    {
+      "location": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb:célula 11:metrics_03A04",
+      "original_cell_lines": [
+        [
+          290,
+          382
+        ]
+      ],
+      "selected_ast_sha256": "17cd4fb996417f8dabab09aca5b79533fc22e0894285927dbf5d8fe7f5ebc596"
+    },
+    {
+      "location": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb:célula 16:calculate_metrics",
+      "original_cell_lines": [
+        [
+          603,
+          701
+        ]
+      ],
+      "selected_ast_sha256": "1017ff245a91e7950337754cc4aec37b7b39b982e8fa4e86ec8de7339e811722"
+    },
+    {
+      "location": "03A.05_trajetoria_operacional_historico_ampliado.ipynb:célula 3:regression_metrics",
+      "original_cell_lines": [
+        [
+          942,
+          1097
+        ]
+      ],
+      "selected_ast_sha256": "49c75fc5e7973ba689e85c305d9630ae3888afa81b55038b6f9ddc69e7126f57"
+    },
+    {
+      "location": "03A.01_modelagem_preditiva_co2.ipynb:célula 22:métricas C",
+      "original_cell_lines": [
+        [
+          88,
+          133
+        ]
+      ],
+      "selected_ast_sha256": "203c3ccac189de24d7f4a1c209e2855f9c2043171475caac91c8b6348f34a41f"
+    },
+    {
+      "location": "03A.05_trajetoria_operacional_historico_ampliado.ipynb:célula 18:resíduos e reduções",
+      "original_cell_lines": [
+        [
+          1144,
+          1157
+        ],
+        [
+          1160,
+          1173
+        ],
+        [
+          1180,
+          1190
+        ],
+        [
+          1193,
+          1203
+        ],
+        [
+          1223,
+          1236
+        ],
+        [
+          1276,
+          1289
+        ]
+      ],
+      "selected_ast_sha256": "e7557824ed7a4965ad65cf3c3682b1287b66b528abe0297a0096500e3838c027"
+    },
+    {
+      "location": "03A.05_trajetoria_operacional_historico_ampliado.ipynb:célula 21:summarize_context",
+      "original_cell_lines": [
+        [
+          493,
+          783
+        ]
+      ],
+      "selected_ast_sha256": "726dd52b6346b854b100f7b03de0146f90f57e4f0d97dd384b637a577f36388d"
+    },
+    {
+      "location": "03A.03_otimizacao_pareada_xgboost.ipynb:célula 24:relative_gain_B_vs_A",
+      "original_cell_lines": [
+        [
+          84,
+          105
+        ]
+      ],
+      "selected_ast_sha256": "e9b4a275ca95550e67b658f990810c71da6ebe81cacabd2f969263b8dddc8431"
+    },
+    {
+      "location": "03A_modelagem_preditiva_co2.ipynb:célula 16:regression_metrics",
+      "original_cell_lines": [
+        [
+          73,
+          100
+        ]
+      ],
+      "selected_ast_sha256": "c184ef5273357c829403e6a13e9fa099309e2ac3e0938f0e353682adb8b9350f"
+    },
+    {
+      "location": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb:célula 9:diagnóstico:código público atual",
+      "original_cell_lines": [
+        [
+          158,
+          158
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          162,
+          162
+        ],
+        [
+          164,
+          164
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          173,
+          187
+        ],
+        [
+          217,
+          231
+        ],
+        [
+          244,
+          261
+        ],
+        [
+          280,
+          280
+        ],
+        [
+          283,
+          399
+        ],
+        [
+          402,
+          404
+        ],
+        [
+          431,
+          431
+        ],
+        [
+          434,
+          887
+        ],
+        [
+          890,
+          892
+        ],
+        [
+          899,
+          907
+        ],
+        [
+          911,
+          911
+        ],
+        [
+          914,
+          926
+        ],
+        [
+          929,
+          943
+        ],
+        [
+          950,
+          996
+        ],
+        [
+          1014,
+          1026
+        ],
+        [
+          1029,
+          1041
+        ],
+        [
+          1044,
+          1060
+        ],
+        [
+          1080,
+          1094
+        ],
+        [
+          1097,
+          1111
+        ],
+        [
+          1114,
+          1114
+        ],
+        [
+          1117,
+          1332
+        ],
+        [
+          1335,
+          1339
+        ],
+        [
+          1346,
+          1356
+        ]
+      ],
+      "selected_ast_sha256": "431129c1e8b557436e33415046f437ef6bab240bc51f057f13061ac43c386ddd"
+    },
+    {
+      "location": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb:célula 9:diagnóstico:fórmula anterior em fixture isolada",
+      "original_cell_lines": [
+        [
+          158,
+          158
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          162,
+          162
+        ],
+        [
+          164,
+          164
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          173,
+          187
+        ],
+        [
+          217,
+          231
+        ],
+        [
+          244,
+          261
+        ],
+        [
+          280,
+          280
+        ],
+        [
+          283,
+          399
+        ],
+        [
+          402,
+          404
+        ],
+        [
+          431,
+          431
+        ],
+        [
+          434,
+          887
+        ],
+        [
+          890,
+          892
+        ],
+        [
+          899,
+          907
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          914,
+          926
+        ],
+        [
+          929,
+          943
+        ],
+        [
+          950,
+          996
+        ],
+        [
+          1014,
+          1026
+        ],
+        [
+          1029,
+          1041
+        ],
+        [
+          1044,
+          1060
+        ],
+        [
+          1080,
+          1094
+        ],
+        [
+          1097,
+          1111
+        ],
+        [
+          1114,
+          1114
+        ],
+        [
+          1117,
+          1332
+        ],
+        [
+          1335,
+          1339
+        ],
+        [
+          1346,
+          1356
+        ]
+      ],
+      "selected_ast_sha256": "b8e0e7b732aff7176c903f809a8c73e1ae2f18711e1020f566de7d049bdf4dc8"
+    },
+    {
+      "location": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb:célula 9:diagnóstico:código público atual",
+      "original_cell_lines": [
+        [
+          158,
+          158
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          162,
+          162
+        ],
+        [
+          164,
+          164
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          173,
+          187
+        ],
+        [
+          217,
+          231
+        ],
+        [
+          244,
+          261
+        ],
+        [
+          280,
+          280
+        ],
+        [
+          283,
+          399
+        ],
+        [
+          402,
+          404
+        ],
+        [
+          431,
+          431
+        ],
+        [
+          434,
+          887
+        ],
+        [
+          890,
+          892
+        ],
+        [
+          899,
+          907
+        ],
+        [
+          911,
+          911
+        ],
+        [
+          914,
+          926
+        ],
+        [
+          929,
+          943
+        ],
+        [
+          950,
+          996
+        ],
+        [
+          1014,
+          1026
+        ],
+        [
+          1029,
+          1041
+        ],
+        [
+          1044,
+          1060
+        ],
+        [
+          1080,
+          1094
+        ],
+        [
+          1097,
+          1111
+        ],
+        [
+          1114,
+          1114
+        ],
+        [
+          1117,
+          1332
+        ],
+        [
+          1335,
+          1339
+        ],
+        [
+          1346,
+          1356
+        ]
+      ],
+      "selected_ast_sha256": "431129c1e8b557436e33415046f437ef6bab240bc51f057f13061ac43c386ddd"
+    },
+    {
+      "location": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb:célula 9:diagnóstico:fórmula anterior em fixture isolada",
+      "original_cell_lines": [
+        [
+          158,
+          158
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          162,
+          162
+        ],
+        [
+          164,
+          164
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          173,
+          187
+        ],
+        [
+          217,
+          231
+        ],
+        [
+          244,
+          261
+        ],
+        [
+          280,
+          280
+        ],
+        [
+          283,
+          399
+        ],
+        [
+          402,
+          404
+        ],
+        [
+          431,
+          431
+        ],
+        [
+          434,
+          887
+        ],
+        [
+          890,
+          892
+        ],
+        [
+          899,
+          907
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          914,
+          926
+        ],
+        [
+          929,
+          943
+        ],
+        [
+          950,
+          996
+        ],
+        [
+          1014,
+          1026
+        ],
+        [
+          1029,
+          1041
+        ],
+        [
+          1044,
+          1060
+        ],
+        [
+          1080,
+          1094
+        ],
+        [
+          1097,
+          1111
+        ],
+        [
+          1114,
+          1114
+        ],
+        [
+          1117,
+          1332
+        ],
+        [
+          1335,
+          1339
+        ],
+        [
+          1346,
+          1356
+        ]
+      ],
+      "selected_ast_sha256": "b8e0e7b732aff7176c903f809a8c73e1ae2f18711e1020f566de7d049bdf4dc8"
+    },
+    {
+      "location": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb:célula 9:diagnóstico:fórmula anterior em fixture isolada",
+      "original_cell_lines": [
+        [
+          158,
+          158
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          162,
+          162
+        ],
+        [
+          164,
+          164
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          173,
+          187
+        ],
+        [
+          217,
+          231
+        ],
+        [
+          244,
+          261
+        ],
+        [
+          280,
+          280
+        ],
+        [
+          283,
+          399
+        ],
+        [
+          402,
+          404
+        ],
+        [
+          431,
+          431
+        ],
+        [
+          434,
+          887
+        ],
+        [
+          890,
+          892
+        ],
+        [
+          899,
+          907
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          914,
+          926
+        ],
+        [
+          929,
+          943
+        ],
+        [
+          950,
+          996
+        ],
+        [
+          1014,
+          1026
+        ],
+        [
+          1029,
+          1041
+        ],
+        [
+          1044,
+          1060
+        ],
+        [
+          1080,
+          1094
+        ],
+        [
+          1097,
+          1111
+        ],
+        [
+          1114,
+          1114
+        ],
+        [
+          1117,
+          1332
+        ],
+        [
+          1335,
+          1339
+        ],
+        [
+          1346,
+          1356
+        ]
+      ],
+      "selected_ast_sha256": "b8e0e7b732aff7176c903f809a8c73e1ae2f18711e1020f566de7d049bdf4dc8"
+    },
+    {
+      "location": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb:célula 9:diagnóstico:código público atual",
+      "original_cell_lines": [
+        [
+          158,
+          158
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          162,
+          162
+        ],
+        [
+          164,
+          164
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          173,
+          187
+        ],
+        [
+          217,
+          231
+        ],
+        [
+          244,
+          261
+        ],
+        [
+          280,
+          280
+        ],
+        [
+          283,
+          399
+        ],
+        [
+          402,
+          404
+        ],
+        [
+          431,
+          431
+        ],
+        [
+          434,
+          887
+        ],
+        [
+          890,
+          892
+        ],
+        [
+          899,
+          907
+        ],
+        [
+          911,
+          911
+        ],
+        [
+          914,
+          926
+        ],
+        [
+          929,
+          943
+        ],
+        [
+          950,
+          996
+        ],
+        [
+          1014,
+          1026
+        ],
+        [
+          1029,
+          1041
+        ],
+        [
+          1044,
+          1060
+        ],
+        [
+          1080,
+          1094
+        ],
+        [
+          1097,
+          1111
+        ],
+        [
+          1114,
+          1114
+        ],
+        [
+          1117,
+          1332
+        ],
+        [
+          1335,
+          1339
+        ],
+        [
+          1346,
+          1356
+        ]
+      ],
+      "selected_ast_sha256": "431129c1e8b557436e33415046f437ef6bab240bc51f057f13061ac43c386ddd"
+    },
+    {
+      "location": "audit_monitoring.py:funções de intervalo",
+      "original_cell_lines": [
+        [
+          66,
+          67
+        ],
+        [
+          70,
+          75
+        ],
+        [
+          98,
+          116
+        ],
+        [
+          119,
+          127
+        ],
+        [
+          273,
+          282
+        ]
+      ],
+      "selected_ast_sha256": "edece3b1761ce53578dd339daf7ab09f7548090e5bb8d679d3139130841368e2"
+    }
+  ],
+  "verification_script_sha256": "3d018d3bfbf75d89cd600dcd6431f3bceb6e00b89d5b86a266fcf54bc78c3c1f",
+  "completed": true,
+  "verified_corrections": [
+    {
+      "location": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb, célula 9, max_bin_edge",
+      "original": "max_bin_edge = float(np.ceil(max_load / LOAD_BIN_WIDTH) * LOAD_BIN_WIDTH)",
+      "current_source_exact": "max_bin_edge = float((np.floor(max_load / LOAD_BIN_WIDTH) + 1) * LOAD_BIN_WIDTH)",
+      "verified_current_formula": "max_bin_edge = float((np.floor(max_load / LOAD_BIN_WIDTH) + 1) * LOAD_BIN_WIDTH)",
+      "reason": "pd.cut(..., right=False) exclui valores iguais à última borda. A borda final deve ser estritamente maior que o máximo.",
+      "observed_dataset_effect": "Melhoria preventiva neste recorte: máximo observado de 957 MW, borda original e corrigida de 1.000 MW e vetores de bordas idênticos. As contagens fecham em todos os 15 anos. Nenhuma distância, ordenação, tabela, figura ou conclusão muda com essa substituição nos dados utilizados.",
+      "directly_dependent_tables": [
+        "outputs/tables/03A04_curvas_carga_co2_por_ano.csv",
+        "outputs/tables/03A04_drift_anual_cenario_A.csv",
+        "outputs/tables/03A04_similaridade_curva_vs_2025.csv"
+      ],
+      "affected_columns_in_annual_table_if_boundary_occurs": [
+        "n_common_bins",
+        "reference_observations",
+        "curve_mae_vs_2025",
+        "curve_nmae_vs_2025_pct"
+      ],
+      "directly_dependent_figures": [
+        "outputs/figures/03A04_curvas_carga_co2_anuais.png",
+        "outputs/figures/03A04_distancia_curva_vs_2025.png"
+      ],
+      "unaffected_paths": [
+        "Indicadores anuais de utilização, carga, partidas, intensidade e regressão linear, calculados antes das faixas.",
+        "Decisão exploratória de 2023/2024, que não utiliza distâncias por faixa; outputs/tables/03A04_decisao_amostral_2023_2024.csv e outputs/reports/03A04_delimitacao_amostra_historica.md.",
+        "Treinamento, atributos, divisão temporal, predições, métricas e relatórios dos modelos; a faixa load_bin não integra as matrizes preditoras."
+      ],
+      "article_effect": "Nenhuma alteração numérica ou de conclusão. O artigo não publica as distâncias por faixa; os indicadores operacionais do apêndice são calculados fora desse agrupamento. A interpretação descritiva de Gama permanece correta.",
+      "applied_to_notebook": true
+    }
+  ],
+  "overall_conclusion": "IQR, PCA exploratória, escalonamento, inversão, métricas e intervalos EPA aplicados corretamente nos caminhos verificados. A orientação de Gama é respeitada. A borda superior das faixas está corrigida no notebook público e passou no caso limite. As faixas e os resultados do recorte publicado permanecem iguais."
+}

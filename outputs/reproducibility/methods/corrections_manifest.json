@@ -1,0 +1,470 @@
+{
+  "date": "2026-10-24",
+  "repository": "prcgui/co2-cems-process-data-science",
+  "previous_publication_commit": "378b1947845a7c153dbc2217dc870e1d801ac168",
+  "scope": "Correções bibliográficas, coerência metodológica e verificação numérica das técnicas aplicadas.",
+  "notebooks": [
+    {
+      "path": "notebooks/01_selecao_unidade_estudo.ipynb",
+      "publication_sha256": "041e6f3cee74771a725d77805fef9f2b544461b8f54fd0dc1700083e4eb0716a",
+      "current_sha256": "32b398d1f47bdf170159afef67c9b584ccf245d55c78ae81234a5ebc9a24c4bd",
+      "same_cell_count": true,
+      "execution_counters_preserved": true,
+      "figures_preserved": true,
+      "non_prose_code_changes": []
+    },
+    {
+      "path": "notebooks/02_tratamento_dados.ipynb",
+      "publication_sha256": "04b8e5eba0bf8abe31189d4117aa609c9359f6d3893a98a059e87caebf2fb0f5",
+      "current_sha256": "24fabafb8f16992bb22cc1266e55f5d4c308a99162919f8abcc95546f6e797c6",
+      "same_cell_count": true,
+      "execution_counters_preserved": true,
+      "figures_preserved": true,
+      "non_prose_code_changes": []
+    },
+    {
+      "path": "notebooks/03A.01_modelagem_preditiva_co2.ipynb",
+      "publication_sha256": "480f5a5b151aeb8cc8d18277989226dc881d29215b4c1c40be4cc603f9d37473",
+      "current_sha256": "5a8b10ffc4677aa5f025f496c9ed8f9aefb24e58b3b05362808a2f51eb282e42",
+      "same_cell_count": true,
+      "execution_counters_preserved": true,
+      "figures_preserved": true,
+      "non_prose_code_changes": []
+    },
+    {
+      "path": "notebooks/03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "publication_sha256": "e091842fd2539fcb1e88069d30c539573e1f7b3f40d5c0bbe70668dae979104b",
+      "current_sha256": "32bb264323bfa6346c803c35c0ae82c6c97f7ad3e209bd148855213063a10158",
+      "same_cell_count": true,
+      "execution_counters_preserved": true,
+      "figures_preserved": true,
+      "non_prose_code_changes": []
+    },
+    {
+      "path": "notebooks/03A.03_otimizacao_pareada_xgboost.ipynb",
+      "publication_sha256": "ae930fbd595b9969ac1c60bb1b75f1978cb0f9ab6752f10d76fd38da4bd87f04",
+      "current_sha256": "b8c8bc4d5e7424c6a489d4b94a80e114d4665007ed1ff9a87fd71215a9d9a54e",
+      "same_cell_count": true,
+      "execution_counters_preserved": true,
+      "figures_preserved": true,
+      "non_prose_code_changes": []
+    },
+    {
+      "path": "notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+      "publication_sha256": "bf99b70a15f1a99e4d30ca5842abd826779fcc76324dc5a426a709c8452fee96",
+      "current_sha256": "5702bef29db3e5aad2ad68741cfef8489ca8810ede6cfc55653efb6723e335d8",
+      "same_cell_count": true,
+      "execution_counters_preserved": true,
+      "figures_preserved": true,
+      "non_prose_code_changes": [
+        {
+          "cell_1based_including_markdown": 9,
+          "nodes": [
+            {
+              "top_level_node_0_based": 26,
+              "before": "max_bin_edge = float(np.ceil(max_load / LOAD_BIN_WIDTH) * LOAD_BIN_WIDTH)",
+              "after": "max_bin_edge = float((np.floor(max_load / LOAD_BIN_WIDTH) + 1) * LOAD_BIN_WIDTH)",
+              "is_max_bin_edge_assignment": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "publication_sha256": "47211a1cb271c7ca0054b64f9aebfd1a17a1165ec20bc2444744fa5069c89e68",
+      "current_sha256": "fb065348070edf46c7787709e3cfdedb1aa77e8c8c011cb0d5636dcd18687116",
+      "same_cell_count": true,
+      "execution_counters_preserved": true,
+      "figures_preserved": true,
+      "non_prose_code_changes": []
+    },
+    {
+      "path": "notebooks/03A_modelagem_preditiva_co2.ipynb",
+      "publication_sha256": "a1ac14c609bd395dfd3e9fa4bd8f736a3e16f791979e3a12401650959229ba3b",
+      "current_sha256": "a8d35e65c4054423994e4dbf395eadb6de871ae0af9093db814e7d0d92c63990",
+      "same_cell_count": true,
+      "execution_counters_preserved": true,
+      "figures_preserved": true,
+      "non_prose_code_changes": []
+    }
+  ],
+  "numerical_csv_audit": {
+    "files_checked": 96,
+    "byte_identical_count": 95,
+    "numeric_csv_changes": [],
+    "changed_csv_details": [
+      {
+        "path": "outputs/tables/03A05_decisoes_metodologicas.csv",
+        "byte_identical_to_publication": false,
+        "numeric_cells_changed": [],
+        "text_cells_changed": [
+          {
+            "row_0_based": 6,
+            "column": "justificativa",
+            "before": "A diferença entre os cenários deve decorrer das features utilizadas e não de diferenças na composição da amostra.",
+            "after": "A amostra comum elimina diferenças de composição entre os cenários. As representações são comparadas pela mesma regra de seleção, com complexidade própria para A e B."
+          }
+        ],
+        "same_shape": true
+      }
+    ]
+  },
+  "all_figures_preserved": true,
+  "all_execution_counters_preserved": true,
+  "only_computation_change": {
+    "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+    "cell_1based_including_markdown": 9,
+    "variable": "max_bin_edge",
+    "old": "float(np.ceil(max_load / LOAD_BIN_WIDTH) * LOAD_BIN_WIDTH)",
+    "new": "float((np.floor(max_load / LOAD_BIN_WIDTH) + 1) * LOAD_BIN_WIDTH)",
+    "observed_maximum_load_mw": 957.0,
+    "upper_edge_before_and_after_mw": 1000.0,
+    "all_15_annual_bin_counts_agree": true,
+    "published_numerical_results_changed": false
+  },
+  "source_corrections": {
+    "removed_from_article": [
+      "Akpan e Fuls (2021): acesso integral não obtido",
+      "Gu, Sward e Zhang (2023): acesso integral não obtido",
+      "Bhattacherjee (2012): retirada da classificação não demonstrada do raciocínio"
+    ],
+    "added_to_article": [
+      "EPA (2026), Power Sector Data, referência do conjunto de dados"
+    ],
+    "final_article_reference_count": 22
+  },
+  "documentary_corrections": [
+    {
+      "id": "BOOST-DOC-01",
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 1,
+      "kind": "markdown",
+      "original": "Assim, a comparação permite separar dois efeitos:\n\n1. efeito da quantidade e qualidade das informações fornecidas ao modelo;\n2. efeito da família de algoritmo utilizada para aprender essas relações.",
+      "replacement": "A etapa compara os procedimentos MLP e XGBoost com os mesmos conjuntos de atributos e examina A, B e C dentro do XGBoost. Cada família mantém seu procedimento de ajuste e seleção; por isso, as diferenças observadas não isolam o efeito do algoritmo. Entre os cenários XGBoost, a comparação mantém a amostra e a regra de seleção, permitindo descrever o resultado associado à representação operacional.",
+      "reason": "A comparação entre famílias inclui objetivos, escalonamento, otimização e seleção distintos; igualdade de atributos não isola o algoritmo.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-02",
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 6,
+      "kind": "comment",
+      "original": "# A finalidade é manter C fixo e alterar apenas a família de\n# modelo, MLP para XGBoost.",
+      "replacement": "# A finalidade é manter os atributos de C e avaliar o procedimento\n# XGBoost. A comparação com a MLP também envolve procedimentos de\n# ajuste e seleção próprios de cada família.",
+      "reason": "Evitar afirmar que somente a família muda quando o procedimento de ajuste também muda.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-03",
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 33,
+      "kind": "comment",
+      "original": "# Isso permite separar:\n#\n#       efeito da família de modelo\n#\n# de:\n#\n#       efeito das informações de trajetória.",
+      "replacement": "# Isso permite comparar os procedimentos MLP e XGBoost para cada\n# conjunto de atributos e examinar a trajetória dentro do XGBoost.\n# A comparação entre famílias não isola o efeito do algoritmo.",
+      "reason": "A separação exclusiva de efeitos não decorre do desenho executado.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-04",
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 33,
+      "kind": "comment",
+      "original": "# 4. QUANTIFICAR O EFEITO DA FAMÍLIA DE MODELO",
+      "replacement": "# 4. QUANTIFICAR A DIFERENÇA ENTRE OS PROCEDIMENTOS MLP E XGBOOST",
+      "reason": "O cálculo é uma diferença de métricas entre procedimentos, não estimativa isolada de efeito.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-05",
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 33,
+      "kind": "comment",
+      "original": "# Isso permite avaliar quanto do ganho veio da troca do\n# algoritmo, e não da engenharia de atributos.",
+      "replacement": "# A diferença descreve os procedimentos ajustados com os mesmos\n# atributos. Ela não separa o algoritmo das escolhas de ajuste\n# e seleção adotadas para cada família.",
+      "reason": "Os percentuais calculados não decompõem a origem do ganho.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-06",
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 33,
+      "kind": "generated_report_text",
+      "original": "Os experimentos realizados até este ponto permitem separar dois\nefeitos.\n\n### Efeito da família de modelo\n\nA mudança de MLP para XGBoost produziu uma redução muito\nexpressiva do erro, inclusive quando apenas a carga instantânea\nfoi utilizada.\n\nPortanto, o principal ganho observado decorre da capacidade do\nGradient Boosting de representar a relação não linear entre as\nvariáveis operacionais e a massa horária de CO₂.\n\n### Efeito da trajetória operacional",
+      "replacement": "Os experimentos permitem comparar os procedimentos de modelagem\ne os conjuntos de atributos adotados.\n\n### Comparação dos procedimentos MLP e XGBoost\n\nNeste holdout, os modelos XGBoost apresentaram erros inferiores\naos das MLPs avaliadas, inclusive com apenas a carga instantânea.\nO resultado caracteriza os procedimentos completos, que também\ndiferem no ajuste e na seleção, sem identificar isoladamente a\norigem da diferença de desempenho.\n\n### Comparação das representações de trajetória operacional",
+      "reason": "Remover a atribuição não demonstrada do ganho à capacidade intrínseca de uma família.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": true
+    },
+    {
+      "id": "BOOST-DOC-07",
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 33,
+      "kind": "generated_report_text",
+      "original": "### 13.4. Comparações controladas de algoritmos e variáveis\n\nA comparação entre MLP e XGBoost utiliza, dentro de cada cenário, o mesmo conjunto de variáveis de entrada. A comparação dos Cenários A, B e C, por sua vez, mantém o XGBoost como família de modelo, alterando a representação da operação. Esse desenho ajuda a distinguir **efeito da família de algoritmo** e **valor incremental das variáveis de trajetória**, sem atribuir causalidade à diferença observada nas métricas.",
+      "replacement": "### 13.4. Comparações entre procedimentos e variáveis\n\nMLP e XGBoost utilizam, dentro de cada cenário, os mesmos atributos, mas mantêm procedimentos próprios de ajuste e seleção. A comparação descreve esses procedimentos completos. Entre A, B e C, mantém-se o XGBoost, a amostra e a regra de seleção de árvores; muda a representação operacional e pode mudar a complexidade selecionada. As diferenças nas métricas não identificam efeitos causais.",
+      "reason": "Explicitar o controle efetivamente realizado, incluindo a seleção própria de complexidade.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": true
+    },
+    {
+      "id": "BOOST-DOC-08",
+      "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 11,
+      "kind": "comment",
+      "original": "# Isso produz uma busca suficientemente ampla sem transformar\n# esta etapa em uma otimização computacional excessiva.",
+      "replacement": "# Foram fixadas 30 configurações como orçamento computacional\n# desta etapa. Não foi demonstrado que esse orçamento esgota\n# o espaço de busca ou garante a melhor configuração possível.",
+      "reason": "A fonte não prescreve 30 configurações; não há diagnóstico de suficiência, convergência ou cobertura que sustente a afirmação.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-09",
+      "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 9,
+      "kind": "comment",
+      "original": "# O objetivo principal deste notebook é isolar o efeito do\n# HISTÓRICO DISPONÍVEL sobre a capacidade de generalização\n# temporal do modelo.",
+      "replacement": "# O objetivo principal deste notebook é comparar extensões do\n# HISTÓRICO DISPONÍVEL na avaliação temporal do modelo. Ampliar\n# a janela altera quantidade, antiguidade e composição dos dados.",
+      "reason": "O volume histórico não é alterado mantendo recência e composição constantes.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-10",
+      "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 11,
+      "kind": "comment",
+      "original": "# Para isolar o efeito do VOLUME HISTÓRICO:\n#\n#   - algoritmo permanece fixo;\n#   - hiperparâmetros permanecem fixos;\n#   - feature permanece fixa;\n#   - alvo permanece fixo;\n#   - ano de teste permanece igual entre as janelas\n#     comparadas;\n#   - somente o início da janela de treinamento muda.",
+      "replacement": "# Para comparar diferentes extensões do histórico:\n#\n#   - algoritmo, atributos e alvo permanecem fixos;\n#   - a configuração de referência e a regra de early stopping\n#     são comuns, mas o número selecionado de árvores pode variar;\n#   - o mesmo ano-alvo e a mesma validação são usados entre janelas;\n#   - muda o início do treinamento e, com ele, a quantidade,\n#     a antiguidade e a composição dos registros.",
+      "reason": "A configuração de referência é comum, mas a complexidade selecionada varia; as janelas não isolam quantidade.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-11",
+      "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 11,
+      "kind": "printed_text",
+      "original": "Este experimento responde exclusivamente ao efeito do VOLUME\nDE HISTÓRICO no Cenário A.",
+      "replacement": "Este experimento compara extensões do histórico no Cenário A.\nAs janelas diferem em quantidade, antiguidade e composição dos dados.",
+      "reason": "A frase contradiz a própria ressalva posterior sobre recência e regime.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": true
+    },
+    {
+      "id": "BOOST-DOC-12",
+      "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 11,
+      "kind": "printed_text",
+      "original": "Caso o desempenho estabilize ou piore com janelas maiores,\nisso indicará que dados antigos possuem utilidade limitada ou\nque existe drift suficiente para reduzir sua transferibilidade.",
+      "replacement": "Se o desempenho estabilizar ou piorar, o resultado mostrará\nutilidade limitada da ampliação nas condições avaliadas.\nA comparação, isoladamente, não identifica sua causa nem\ndemonstra drift na relação entre carga e emissão.",
+      "reason": "Piora com mais dados não demonstra drift nem separa mecanismos causais.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": true
+    },
+    {
+      "id": "BOOST-DOC-13",
+      "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 13,
+      "kind": "comment",
+      "original": "# A decisão de retirar 2023 e 2024 da amostra principal é\n# baseada exclusivamente na caracterização operacional.\n#\n# Nenhuma métrica de MAE, RMSE ou R² obtida nos experimentos\n# preditivos é utilizada como critério de exclusão.\n#\n# Isso evita selecionar anos com base no desempenho posterior\n# do modelo.",
+      "replacement": "# Esta célula fixa 2011 a 2022 como histórico de referência e\n# retira 2023 e 2024 da amostra principal após a exploração\n# de indicadores e backtests. A tabela de caracterização usa\n# indicadores operacionais, mas a delimitação é exploratória.\n# Ela não elimina a influência das análises anteriores sobre\n# as decisões do projeto nem torna 2025 um teste cego.",
+      "reason": "As constantes de corte vêm depois dos indicadores e backtests, incluindo 2025. A exclusividade e a eliminação do risco de seleção não são demonstradas.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-14",
+      "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 13,
+      "kind": "generated_report_text",
+      "original": "A decisão de exclusão foi baseada exclusivamente na caracterização\noperacional e não utiliza MAE, RMSE, R² ou qualquer resultado de\ndesempenho preditivo como critério.\n\nIsso reduz o risco de selecionar a amostra em função dos resultados do\nmodelo.",
+      "replacement": "A caracterização apresentada utiliza indicadores operacionais.\nA delimitação de 2011 a 2022, contudo, foi fixada após a exploração\nde indicadores e backtests e deve ser tratada como decisão\nexploratória do projeto. Essa escolha não elimina a influência das\nanálises anteriores nem torna independente a avaliação em 2025.",
+      "reason": "Harmonizar o relatório gerado com a ressalva da célula 12 e do artigo.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": true
+    },
+    {
+      "id": "BOOST-DOC-15",
+      "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 15,
+      "kind": "printed_text",
+      "original": "\"Próxima etapa: refit final de A e B utilizando \"\n    \"2011-2022 + jan-out/2025 e avaliação única \"\n    \"em novembro-dezembro de 2025.\"",
+      "replacement": "\"Próxima etapa: refit final de A e B utilizando \"\n    \"2011-2022 + jan-out/2025 e avaliação em \"\n    \"novembro-dezembro de 2025, período já consultado no projeto.\"",
+      "reason": "Evitar sugerir que o intervalo ainda não foi consultado.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": true
+    },
+    {
+      "id": "BOOST-DOC-16",
+      "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 18,
+      "kind": "comment",
+      "original": "# Esta célula produz a primeira resposta verdadeiramente\n# independente para a pergunta do Notebook 03A.05.",
+      "replacement": "# Esta célula avalia A e B fora do período usado no ajuste\n# desta etapa. Novembro e dezembro já foram consultados no\n# projeto; a comparação não é globalmente independente.",
+      "reason": "O isolamento deste ajuste não restaura independência de decisões anteriores.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-17",
+      "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 18,
+      "kind": "printed_text",
+      "original": "\"\\nO teste final foi executado uma única vez em \"\n    \"novembro e dezembro de 2025.\"",
+      "replacement": "\"\\nA comparação foi calculada em novembro e dezembro de 2025, \"\n    \"fora do ajuste desta etapa e em período já consultado no projeto.\"",
+      "reason": "O código realiza uma chamada de predição por cenário nesta execução, mas não garante avaliação histórica única do período.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": true
+    },
+    {
+      "id": "BOOST-DOC-18",
+      "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 22,
+      "kind": "generated_report_text",
+      "original": "Dois blocos temporais independentes foram estabelecidos:",
+      "replacement": "Dois blocos temporais separados para a construção dos atributos foram estabelecidos:",
+      "reason": "A separação dos blocos evita atravessar a lacuna com lags; não estabelece independência estatística.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": true
+    },
+    {
+      "id": "BOOST-DOC-19",
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 33,
+      "kind": "comment",
+      "original": "# Eles serão usados para separar o efeito:\n#\n#       MLP -> XGBoost\n#\n# mantendo o mesmo conjunto de features.",
+      "replacement": "# Eles serão usados para comparar os procedimentos MLP e XGBoost\n# mantendo o mesmo conjunto de atributos, sem isolar as escolhas\n# de ajuste e seleção próprias de cada família.",
+      "reason": "A interpretação da mesma comparação deve permanecer coerente em todos os comentários.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-20",
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 33,
+      "kind": "comment",
+      "original": "# Portanto, o maior ganho observado decorre da troca da família\n# de modelo.",
+      "replacement": "# A maior diferença observada está associada à comparação dos\n# procedimentos MLP e XGBoost, sem decompor a origem do ganho.",
+      "reason": "Remover atribuição exclusiva à família de algoritmo.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-21",
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 33,
+      "kind": "generated_report_text",
+      "original": "O fato de o Cenário A, utilizando apenas carga instantânea,\ntambém apresentar forte melhora demonstra que o ganho do\nGradient Boosting não pode ser atribuído principalmente às\nfeatures de trajetória.\n\nOs resultados indicam que a família de modelo possui papel\ndeterminante na capacidade de representar a relação entre carga\noperacional e massa horária de CO₂.",
+      "replacement": "A redução de erro também ocorre em A, que utiliza apenas carga\ninstantânea. Portanto, o resultado não exige a inclusão dos\natributos de trajetória para ser observado nesta comparação.\nA diferença caracteriza os procedimentos completos; não permite\nseparar a família de algoritmo das escolhas de ajuste e seleção.",
+      "reason": "As métricas não identificam a contribuição isolada da família nem justificam papel determinante.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": true
+    },
+    {
+      "id": "BOOST-DOC-22",
+      "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 9,
+      "kind": "comment",
+      "original": "#   6. Nenhum ano será excluído simplesmente por apresentar\n#      comportamento operacional diferente.",
+      "replacement": "#   6. Esta célula não exclui anos. A delimitação posterior do\n#      histórico permanece uma decisão exploratória do projeto.",
+      "reason": "Evitar uma promessa geral incompatível com a delimitação exploratória realizada posteriormente.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-23",
+      "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 15,
+      "kind": "comment",
+      "original": "# continuará completamente intocado.",
+      "replacement": "# não será usado no ajuste ou na seleção desta célula, embora\n# já tenha sido consultado nos experimentos anteriores.",
+      "reason": "Distinguir o isolamento da seleção corrente do conhecimento anterior do teste.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-24",
+      "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 15,
+      "kind": "comment",
+      "original": "# - novembro e dezembro ainda não foram utilizados;",
+      "replacement": "# - novembro e dezembro não entraram no ajuste ou na seleção\n#   desta etapa, mas já foram consultados no projeto;",
+      "reason": "A afirmação sem qualificador contradiz a utilização anterior do mesmo intervalo.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": false
+    },
+    {
+      "id": "BOOST-DOC-25",
+      "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "commit_audited": "7460d6a66c9f4ac9b50bc4d664a6117e3455329f",
+      "cell_1based_including_markdown": 22,
+      "kind": "generated_table_text",
+      "original": "\"A diferença entre os cenários deve decorrer \"\n                    \"das features utilizadas e não de diferenças \"\n                    \"na composição da amostra.\"",
+      "replacement": "\"A amostra comum elimina diferenças de composição entre \"\n                    \"os cenários. As representações são comparadas pela mesma \"\n                    \"regra de seleção, com complexidade própria para A e B.\"",
+      "reason": "Descrever o controle realizado sem atribuir toda diferença exclusivamente aos atributos.",
+      "changes_numerical_method": false,
+      "requires_model_retraining": false,
+      "also_harmonize_generated_text_outputs": true
+    }
+  ],
+  "validation_limits": "Período final separado em cada ajuste, mas consultado durante o desenvolvimento. Estudo exploratório, sem independência global confirmatória.",
+  "method_verification_records": [
+    "nn_verification.json",
+    "boosting_validation.json",
+    "statistics_verification.json"
+  ]
+}

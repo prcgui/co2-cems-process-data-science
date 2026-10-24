@@ -477,3 +477,7 @@ A [auditoria do monitoramento histórico](reproducibility/monitoring/README.md) 
 **IND2622: Ciência de Dados e Modelos de Processos de Negócio**  
 Professora: **Fernanda A. B. Amorim**  
 PUC-Rio
+
+## Verificação da aplicação dos métodos
+
+As técnicas citadas foram conferidas por confronto com as fontes, extração das funções dos notebooks, cálculos independentes e consulta aos modelos e resultados preservados. O [relatório técnico e os scripts](reproducibility/methods/README.md) registram cada verificação e suas condições. Também foram corrigidas as alegações de suficiência de 30 configurações, de isolamento exclusivo dos efeitos e de independência global do teste.

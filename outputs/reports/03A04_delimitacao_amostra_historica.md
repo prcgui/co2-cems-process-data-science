@@ -68,12 +68,11 @@ permanecem preservados para análises posteriores de:
 - comparação entre regimes operacionais;
 - investigação de mudanças na utilização e no despacho da unidade.
 
-A decisão de exclusão foi baseada exclusivamente na caracterização
-operacional e não utiliza MAE, RMSE, R² ou qualquer resultado de
-desempenho preditivo como critério.
-
-Isso reduz o risco de selecionar a amostra em função dos resultados do
-modelo.
+A caracterização apresentada utiliza indicadores operacionais.
+A delimitação de 2011 a 2022, contudo, foi fixada após a exploração
+de indicadores e backtests e deve ser tratada como decisão
+exploratória do projeto. Essa escolha não elimina a influência das
+análises anteriores nem torna independente a avaliação em 2025.
 
 ## Fundamentação da delimitação temporal
 
