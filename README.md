@@ -36,6 +36,14 @@ O trabalho articula quatro níveis de análise:
 3. **Caracterização do processo:** duração, carga média, transições e CO₂ acumulado por ciclo;
 4. **Análise e modelagem:** descoberta de trajetórias e variantes, comparação entre ciclos e estimação horária de CO₂.
 
+## Fundamentação dos métodos e referências
+
+Os oito notebooks, da seleção da unidade até 03A.05, incluem notas metodológicas, comentários junto das etapas principais e referências completas. O [guia de fundamentação metodológica](docs/fundamentacao_metodologica.md) relaciona os procedimentos às publicações científicas ou documentações oficiais que os sustentam e identifica as escolhas próprias do estudo.
+
+A revisão documental de 24 de outubro de 2026 explicita as fontes de retropropagação, ReLU, Adam, gradient boosting, XGBoost, busca aleatória, PCA, IQR, normalização e avaliação temporal. As arquiteturas, os hiperparâmetros, os períodos, as regras operacionais e os limiares pertencem ao protocolo do projeto. As referências não são apresentadas como origem de decisões que não prescrevem.
+
+Essa atualização preserva as instruções executáveis e as saídas dos notebooks. Ela não representa nova execução dos oito experimentos. A reprodução integral já documentada permanece restrita a 03A.04 e 03A.05, conforme o [guia de reprodução](reproducibility/README.md).
+
 ## Fonte dos dados
 
 Os dados são provenientes da **U.S. EPA**, com resolução horária para o ano inicial de **2025**.

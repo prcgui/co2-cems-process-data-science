@@ -106,3 +106,9 @@ A reprodução demonstra que os resultados históricos podem ser recuperados com
 Os resultados se referem a uma única unidade. A seleção de 2011 a 2022 foi exploratória, e novembro e dezembro de 2025 já tinham sido examinados durante o desenvolvimento. A reprodução não elimina o risco de otimismo associado a essas decisões nem transforma o período de comparação em teste cego.
 
 As comparações A/B e por contexto são descritivas, sem teste formal de significância ou identificação causal. O alvo é a massa de CO₂ em short tons por registro horário. O modelo utiliza a carga da própria hora; sua avaliação corresponde à estimação condicionada a essa informação. As amostras de 03A.04 e 03A.05 têm critérios de elegibilidade diferentes e seus resultados não devem ser interpretados como uma única comparação pareada entre etapas.
+
+## Atualização da documentação em 24 de outubro de 2026
+
+As oito versões documentadas dos notebooks incorporam referências e comentários metodológicos. A [matriz de fundamentação](../docs/fundamentacao_metodologica.md) explicita o alcance das fontes e as decisões do protocolo. Foram comparadas as árvores sintáticas das células Python antes e depois da atualização e as saídas armazenadas; ambas permaneceram iguais em cada repositório.
+
+Os hashes de código e de notebook presentes nos registros de execução anteriores identificam as versões efetivamente executadas naquela reprodução. A inclusão de comentários e células Markdown modifica o hash integral dos arquivos, sem modificar as instruções computacionais. A [verificação desta atualização documental](../outputs/reproducibility/documentation_update_2026-10-24.json) registra essa correspondência. Os registros anteriores de execução e os dados e resultados científicos foram preservados.
