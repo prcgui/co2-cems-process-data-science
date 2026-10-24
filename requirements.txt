@@ -1,3 +1,6 @@
+# Versões verificadas na reprodução de 24/10/2026, em Python 3.12.14/Linux.
+# O lock descreve o ambiente desta reprodução, não o Colab original.
+-c requirements-reproduction.lock
 numpy
 pandas
 matplotlib
@@ -6,3 +9,8 @@ scikit-learn
 pyarrow
 ipython
 tensorflow
+xgboost
+nbclient
+nbformat
+ipykernel
+tabulate

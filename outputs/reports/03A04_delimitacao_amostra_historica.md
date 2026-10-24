@@ -35,7 +35,7 @@ No período histórico de referência:
 - a menor carga média anual foi
   706.682 MW;
 - o menor percentil 5 da distribuição anual de carga foi
-  425.300 MW;
+  425.600 MW;
 - o maior número anual de startups foi
   25.
 
@@ -43,7 +43,7 @@ Os anos de 2023 e 2024 apresentaram:
 
 | year | operating_pct | zero_load_pct | load_mean | load_p05 | n_startups | n_indicators_outside_reference | classification |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2023 | 49.269 | 4.008 | 691.338 | 136.550 | 20.000 | 4 | distinct_operational_regime |
+| 2023 | 49.269 | 4.008 | 691.338 | 136.750 | 20.000 | 4 | distinct_operational_regime |
 | 2024 | 50.102 | 5.249 | 626.548 | 0.000 | 30.000 | 5 | distinct_operational_regime |
 
 Esses resultados indicam que 2023 e 2024 não representam apenas

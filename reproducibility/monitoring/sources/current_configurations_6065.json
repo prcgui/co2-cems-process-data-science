@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "orisCode": 6065,
+      "id": "DWH3021DNT-5A975BAEEA3B4DE698FA731B4AE3347A",
+      "version": null,
+      "updateDate": "2026-01-26T20:07:00.000Z",
+      "beginReportPeriodId": 72,
+      "endReportPeriodId": null,
+      "monitoringLocationData": [
+        {
+          "id": "6078",
+          "unitId": "2",
+          "stackPipeId": null,
+          "unitRecordId": 2732
+        }
+      ]
+    }
+  ]
+}

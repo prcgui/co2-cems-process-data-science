@@ -1,0 +1,146 @@
+[
+  {
+    "file_name": "iatan_unit2_2011.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2011.parquet",
+    "sha256_before": "2c4e5a56f27d5e2d8705f3794be8c5c6ad35796603b25cf52db4895732614ceb",
+    "size_bytes": 121861,
+    "year": 2011,
+    "rows": 8760,
+    "sha256_after": "2c4e5a56f27d5e2d8705f3794be8c5c6ad35796603b25cf52db4895732614ceb"
+  },
+  {
+    "file_name": "iatan_unit2_2012.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2012.parquet",
+    "sha256_before": "14ad2841a0a53621376b1c185a10d670b9eaf5586809a86833516c7c3d1efa0d",
+    "size_bytes": 123611,
+    "year": 2012,
+    "rows": 8784,
+    "sha256_after": "14ad2841a0a53621376b1c185a10d670b9eaf5586809a86833516c7c3d1efa0d"
+  },
+  {
+    "file_name": "iatan_unit2_2013.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2013.parquet",
+    "sha256_before": "fb9efe3fb26ae2f64cabac992ac15e89697dd5aaa07d7514a2cd7b8a8c8cc8f3",
+    "size_bytes": 120649,
+    "year": 2013,
+    "rows": 8760,
+    "sha256_after": "fb9efe3fb26ae2f64cabac992ac15e89697dd5aaa07d7514a2cd7b8a8c8cc8f3"
+  },
+  {
+    "file_name": "iatan_unit2_2014.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2014.parquet",
+    "sha256_before": "a0bb1b7a1aabf2127ec5c719653ec55f03987eb3d13c597b638774d903823b7e",
+    "size_bytes": 117427,
+    "year": 2014,
+    "rows": 8760,
+    "sha256_after": "a0bb1b7a1aabf2127ec5c719653ec55f03987eb3d13c597b638774d903823b7e"
+  },
+  {
+    "file_name": "iatan_unit2_2015.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2015.parquet",
+    "sha256_before": "993177cedca522727a553333a68596d4aa2d171a8a2a925805513bb623ce929c",
+    "size_bytes": 121402,
+    "year": 2015,
+    "rows": 8760,
+    "sha256_after": "993177cedca522727a553333a68596d4aa2d171a8a2a925805513bb623ce929c"
+  },
+  {
+    "file_name": "iatan_unit2_2016.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2016.parquet",
+    "sha256_before": "0f21ef2cdf6c3aaa32c7092d8e923200cf727f47ff770cd2b4b3803541231158",
+    "size_bytes": 114377,
+    "year": 2016,
+    "rows": 8784,
+    "sha256_after": "0f21ef2cdf6c3aaa32c7092d8e923200cf727f47ff770cd2b4b3803541231158"
+  },
+  {
+    "file_name": "iatan_unit2_2017.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2017.parquet",
+    "sha256_before": "bfee86bcce2c16ceea63447ae8e13bb4d4fc67f3c6cf5ce6446937d68a4734fb",
+    "size_bytes": 123032,
+    "year": 2017,
+    "rows": 8760,
+    "sha256_after": "bfee86bcce2c16ceea63447ae8e13bb4d4fc67f3c6cf5ce6446937d68a4734fb"
+  },
+  {
+    "file_name": "iatan_unit2_2018.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2018.parquet",
+    "sha256_before": "ba4eeac154de369e28b52a7ac7bd2ff699e131f77a8a4635402db26a83872764",
+    "size_bytes": 113253,
+    "year": 2018,
+    "rows": 8760,
+    "sha256_after": "ba4eeac154de369e28b52a7ac7bd2ff699e131f77a8a4635402db26a83872764"
+  },
+  {
+    "file_name": "iatan_unit2_2019.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2019.parquet",
+    "sha256_before": "d0997abc0c2d5640ae78e476823344ce81e7ac0613cbcdc04bc1eccf09a0ff3b",
+    "size_bytes": 121141,
+    "year": 2019,
+    "rows": 8760,
+    "sha256_after": "d0997abc0c2d5640ae78e476823344ce81e7ac0613cbcdc04bc1eccf09a0ff3b"
+  },
+  {
+    "file_name": "iatan_unit2_2020.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2020.parquet",
+    "sha256_before": "b08fc4ffd2f2cb55cbfed503225c0d847d304ba9a1365bc0d720dd4dc4c6b5bd",
+    "size_bytes": 119701,
+    "year": 2020,
+    "rows": 8784,
+    "sha256_after": "b08fc4ffd2f2cb55cbfed503225c0d847d304ba9a1365bc0d720dd4dc4c6b5bd"
+  },
+  {
+    "file_name": "iatan_unit2_2021.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2021.parquet",
+    "sha256_before": "1ca232f870fe1a7942f71c80d418bacc9ee6eb83c33d352ad450c5cdecdac6d0",
+    "size_bytes": 123687,
+    "year": 2021,
+    "rows": 8760,
+    "sha256_after": "1ca232f870fe1a7942f71c80d418bacc9ee6eb83c33d352ad450c5cdecdac6d0"
+  },
+  {
+    "file_name": "iatan_unit2_2022.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2022.parquet",
+    "sha256_before": "7b96de2c5c1e8eec4ce0c3cb1b8e46f47de3e14c061639c9cec6c846257b2c58",
+    "size_bytes": 124136,
+    "year": 2022,
+    "rows": 8760,
+    "sha256_after": "7b96de2c5c1e8eec4ce0c3cb1b8e46f47de3e14c061639c9cec6c846257b2c58"
+  },
+  {
+    "file_name": "iatan_unit2_2023.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2023.parquet",
+    "sha256_before": "fb361c343f14113cd00b786636fe3eca4f3b1728a0deb89c365bdee71eccb5f8",
+    "size_bytes": 115591,
+    "year": 2023,
+    "rows": 8760,
+    "sha256_after": "fb361c343f14113cd00b786636fe3eca4f3b1728a0deb89c365bdee71eccb5f8"
+  },
+  {
+    "file_name": "iatan_unit2_2024.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2024.parquet",
+    "sha256_before": "99ba81a43aa3adb49ed5363c6e507ebbe0b7ce5e1452786c12a5c1aeb2893cda",
+    "size_bytes": 117782,
+    "year": 2024,
+    "rows": 8784,
+    "sha256_after": "99ba81a43aa3adb49ed5363c6e507ebbe0b7ce5e1452786c12a5c1aeb2893cda"
+  },
+  {
+    "file_name": "iatan_unit2_2025.parquet",
+    "logical_repository_path": "data/interim/03A04_multiyear/iatan_unit2_2025.parquet",
+    "sha256_before": "c200de7a9e1a4d2e1448c3ab4fd092abeae5788ca500ecb47010a952a300b1fb",
+    "size_bytes": 126401,
+    "year": 2025,
+    "rows": 8760,
+    "sha256_after": "c200de7a9e1a4d2e1448c3ab4fd092abeae5788ca500ecb47010a952a300b1fb"
+  },
+  {
+    "file_name": "selected_unit_hourly_raw.parquet",
+    "logical_repository_path": "pipeline/selected_unit_hourly_raw.parquet",
+    "sha256_before": "0613b96dfbf0209ed830d36bcf185f5ba89b2cfb8edc1daca276a12e0b4d8911",
+    "sha256_after": "0613b96dfbf0209ed830d36bcf185f5ba89b2cfb8edc1daca276a12e0b4d8911",
+    "size_bytes": 125803,
+    "rows": 8760,
+    "role": "selection_2025_linkage"
+  }
+]

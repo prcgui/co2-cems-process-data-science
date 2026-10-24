@@ -1,0 +1,2 @@
+source_a,source_b,relevant_unique_rows_a,relevant_unique_rows_b,common_rows,only_in_a,only_in_b,equivalent_on_compared_fields
+current_plan_unit2,original_plan_unit2,24,24,24,0,0,True

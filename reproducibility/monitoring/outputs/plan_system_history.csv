@@ -1,0 +1,5 @@
+source,source_member,kind,facility_id,unit_id,monitoringSystemId,systemTypeCode,systemDesignationCode,fuelCode,beginDate,beginHour,endDate,endHour,begin,end,interval_status,interval_note
+original_plan_unit2,original_plan_unit2.xml,system,6065,2,204,FLOW,P,NFS,2010-10-01,0,,,2010-10-01,,valid,
+original_plan_unit2,original_plan_unit2.xml,system,6065,2,203,CO2,P,NFS,2010-10-01,0,,,2010-10-01,,valid,
+current_plan_unit2,current_plan_unit2.json#0,system,6065,2,203,CO2,P,NFS,2010-10-01,0,,,2010-10-01,,valid,
+current_plan_unit2,current_plan_unit2.json#0,system,6065,2,204,FLOW,P,NFS,2010-10-01,0,,,2010-10-01,,valid,

@@ -16,6 +16,12 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
+# Ambiente e execuções interrompidas
+.venv/
+venv/
+outputs/reproducibility/*.failed.ipynb
+*.log
+
 # Credenciais
 .env
 *.key

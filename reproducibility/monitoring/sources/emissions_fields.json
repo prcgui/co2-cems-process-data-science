@@ -1,0 +1,20 @@
+{
+  "schema": "HourlyApportionedEmissionsDTO",
+  "properties": {
+    "co2Mass": {
+      "type": "number",
+      "description": "CO2 mass emissions (short tons)",
+      "example": 150.8
+    },
+    "co2MassMeasureFlg": {
+      "type": "string",
+      "description": "Describes how the CO2 Mass values were determined.",
+      "example": "Measured"
+    },
+    "opTime": {
+      "type": "number",
+      "description": "Any part of an hour in which a unit combusts any fuel.",
+      "example": 0.95
+    }
+  }
+}

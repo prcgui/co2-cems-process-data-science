@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "substituteDataCode": "FSP75",
+      "substituteDataDescription": "Fuel-Specific Missing Data"
+    },
+    {
+      "substituteDataCode": "FSP75C",
+      "substituteDataDescription": "Fuel-Specific Missing Data with Separate Co-Fired Database"
+    },
+    {
+      "substituteDataCode": "MHHI",
+      "substituteDataDescription": "Maximum Rated Hourly Heat Input Rate for LME Units Normal using Long Term Fuel Flow"
+    },
+    {
+      "substituteDataCode": "NLB",
+      "substituteDataDescription": "Non Load-Based Missing Data"
+    },
+    {
+      "substituteDataCode": "NLBOP",
+      "substituteDataDescription": "Non Load-Based Missing Data with Operational Bins"
+    },
+    {
+      "substituteDataCode": "OZN75",
+      "substituteDataDescription": "Ozone vs Non-Ozone NOX Missing Data"
+    },
+    {
+      "substituteDataCode": "REV75",
+      "substituteDataDescription": "Inverse Part 75 for H2O or O2 Missing Data"
+    },
+    {
+      "substituteDataCode": "SPTS",
+      "substituteDataDescription": "Standard Part 75 for Missing Data"
+    }
+  ]
+}

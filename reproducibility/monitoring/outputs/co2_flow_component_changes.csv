@@ -1,0 +1,13 @@
+source,source_member,kind,facility_id,unit_id,componentId,beginDate,beginHour,endDate,endHour,begin,end,interval_status,interval_note,monitoringSystemId,systemTypeCode,systemDesignationCode,fuelCode,componentTypeCode,sampleAcquisitionMethodCode,basisCode,manufacturer,modelVersion,serialNumber
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,235,2018-01-04,15,,,2018-01-04 15:00:00,,valid,,204,FLOW,P,NFS,DAHS,,,ESC,STACKVISION,2M272806PD
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,225,2017-08-28,10,,,2017-08-28 10:00:00,,valid,,204,FLOW,P,NFS,DL,,,ESC,8864,C1418
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,235,2018-01-04,15,,,2018-01-04 15:00:00,,valid,,203,CO2,P,NFS,DAHS,,,ESC,STACKVISION,2M272806PD
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,234,2024-09-18,10,,,2024-09-18 10:00:00,,valid,,203,CO2,P,NFS,PRB,DIL,,M&C,SP2006,29889-2147387
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,422,2024-09-18,10,,,2024-09-18 10:00:00,,valid,,203,CO2,P,NFS,CO2,DIL,W,TELEDYNE,T360,581
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,225,2017-08-28,10,,,2017-08-28 10:00:00,,valid,,203,CO2,P,NFS,DL,,,ESC,8864,C1418
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,235,2018-01-04,15,,,2018-01-04 15:00:00,,valid,,203,CO2,P,NFS,DAHS,,,ESC,STACKVISION,2M272806PD
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,225,2017-08-28,10,,,2017-08-28 10:00:00,,valid,,203,CO2,P,NFS,DL,,,ESC,8864,C1418
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,422,2024-09-18,10,,,2024-09-18 10:00:00,,valid,,203,CO2,P,NFS,CO2,DIL,W,TELEDYNE,T360,581
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,234,2024-09-18,10,,,2024-09-18 10:00:00,,valid,,203,CO2,P,NFS,PRB,DIL,,M&C,SP2006,29889-2147387
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,235,2018-01-04,15,,,2018-01-04 15:00:00,,valid,,204,FLOW,P,NFS,DAHS,,,ESC,STACKVISION,2M272806PD
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,225,2017-08-28,10,,,2017-08-28 10:00:00,,valid,,204,FLOW,P,NFS,DL,,,ESC,8864,C1418

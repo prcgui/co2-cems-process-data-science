@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MonitoringPlan>
+  <ORISCode>6065</ORISCode>
+  <Version>1.2</Version>
+  <MonitoringLocationData>
+    <UnitID>2</UnitID>
+    <UnitData>
+      <MonitoringMethodData>
+        <ParameterCode>CO2</ParameterCode>
+        <MonitoringMethodCode>CEM</MonitoringMethodCode>
+        <SubstituteDataCode>SPTS</SubstituteDataCode>
+        <BypassApproachCode />
+        <BeginDate>2010-10-01</BeginDate>
+        <BeginHour>0</BeginHour>
+        <EndDate />
+        <EndHour />
+      </MonitoringMethodData>
+      <MonitoringFormulaData>
+        <ParameterCode>CO2</ParameterCode>
+        <FormulaID>203</FormulaID>
+        <FormulaCode>F-11</FormulaCode>
+        <FormulaText />
+        <BeginDate>2010-10-01</BeginDate>
+        <BeginHour>0</BeginHour>
+        <EndDate />
+        <EndHour />
+      </MonitoringFormulaData>
+      <MonitoringSystemData>
+        <MonitoringSystemID>204</MonitoringSystemID>
+        <SystemTypeCode>FLOW</SystemTypeCode>
+        <SystemDesignationCode>P</SystemDesignationCode>
+        <FuelCode>NFS</FuelCode>
+        <BeginDate>2010-10-01</BeginDate>
+        <BeginHour>0</BeginHour>
+        <EndDate />
+        <EndHour />
+        <MonitoringSystemComponentData>
+          <ComponentID>235</ComponentID>
+          <BeginDate>2018-01-04</BeginDate>
+          <BeginHour>15</BeginHour>
+          <EndDate />
+          <EndHour />
+        </MonitoringSystemComponentData>
+        <MonitoringSystemComponentData>
+          <ComponentID>230</ComponentID>
+          <BeginDate>2010-10-01</BeginDate>
+          <BeginHour>0</BeginHour>
+          <EndDate>2018-01-04</EndDate>
+          <EndHour>14</EndHour>
+        </MonitoringSystemComponentData>
+        <MonitoringSystemComponentData>
+          <ComponentID>224</ComponentID>
+          <BeginDate>2010-10-01</BeginDate>
+          <BeginHour>0</BeginHour>
+          <EndDate>2017-08-28</EndDate>
+          <EndHour>9</EndHour>
+        </MonitoringSystemComponentData>
+        <MonitoringSystemComponentData>
+          <ComponentID>223</ComponentID>
+          <BeginDate>2010-10-01</BeginDate>
+          <BeginHour>0</BeginHour>
+          <EndDate />
+          <EndHour />
+        </MonitoringSystemComponentData>
+        <MonitoringSystemComponentData>
+          <ComponentID>225</ComponentID>
+          <BeginDate>2017-08-28</BeginDate>
+          <BeginHour>10</BeginHour>
+          <EndDate />
+          <EndHour />
+        </MonitoringSystemComponentData>
+      </MonitoringSystemData>
+      <MonitoringSystemData>
+        <MonitoringSystemID>203</MonitoringSystemID>
+        <SystemTypeCode>CO2</SystemTypeCode>
+        <SystemDesignationCode>P</SystemDesignationCode>
+        <FuelCode>NFS</FuelCode>
+        <BeginDate>2010-10-01</BeginDate>
+        <BeginHour>0</BeginHour>
+        <EndDate />
+        <EndHour />
+        <MonitoringSystemComponentData>
+          <ComponentID>235</ComponentID>
+          <BeginDate>2018-01-04</BeginDate>
+          <BeginHour>15</BeginHour>
+          <EndDate />
+          <EndHour />
+        </MonitoringSystemComponentData>
+        <MonitoringSystemComponentData>
+          <ComponentID>229</ComponentID>
+          <BeginDate>2010-10-01</BeginDate>
+          <BeginHour>0</BeginHour>
+          <EndDate>2024-09-18</EndDate>
+          <EndHour>9</EndHour>
+        </MonitoringSystemComponentData>
+        <MonitoringSystemComponentData>
+          <ComponentID>230</ComponentID>
+          <BeginDate>2010-10-01</BeginDate>
+          <BeginHour>0</BeginHour>
+          <EndDate>2018-01-04</EndDate>
+          <EndHour>14</EndHour>
+        </MonitoringSystemComponentData>
+        <MonitoringSystemComponentData>
+          <ComponentID>224</ComponentID>
+          <BeginDate>2010-10-01</BeginDate>
+          <BeginHour>0</BeginHour>
+          <EndDate>2017-08-28</EndDate>
+          <EndHour>9</EndHour>
+        </MonitoringSystemComponentData>
+        <MonitoringSystemComponentData>
+          <ComponentID>222</ComponentID>
+          <BeginDate>2010-10-01</BeginDate>
+          <BeginHour>0</BeginHour>
+          <EndDate>2024-09-18</EndDate>
+          <EndHour>9</EndHour>
+        </MonitoringSystemComponentData>
+        <MonitoringSystemComponentData>
+          <ComponentID>234</ComponentID>
+          <BeginDate>2024-09-18</BeginDate>
+          <BeginHour>10</BeginHour>
+          <EndDate />
+          <EndHour />
+        </MonitoringSystemComponentData>
+        <MonitoringSystemComponentData>
+          <ComponentID>422</ComponentID>
+          <BeginDate>2024-09-18</BeginDate>
+          <BeginHour>10</BeginHour>
+          <EndDate />
+          <EndHour />
+        </MonitoringSystemComponentData>
+        <MonitoringSystemComponentData>
+          <ComponentID>225</ComponentID>
+          <BeginDate>2017-08-28</BeginDate>
+          <BeginHour>10</BeginHour>
+          <EndDate />
+          <EndHour />
+        </MonitoringSystemComponentData>
+      </MonitoringSystemData>
+      <ComponentData>
+        <ComponentID>230</ComponentID>
+        <ComponentTypeCode>DAHS</ComponentTypeCode>
+        <SampleAcquisitionMethodCode />
+        <BasisCode />
+        <Manufacturer>ESC</Manufacturer>
+        <ModelVersion>STACKVISION</ModelVersion>
+        <SerialNumber />
+      </ComponentData>
+      <ComponentData>
+        <ComponentID>235</ComponentID>
+        <ComponentTypeCode>DAHS</ComponentTypeCode>
+        <SampleAcquisitionMethodCode />
+        <BasisCode />
+        <Manufacturer>ESC</Manufacturer>
+        <ModelVersion>STACKVISION</ModelVersion>
+        <SerialNumber>2M272806PD</SerialNumber>
+      </ComponentData>
+      <ComponentData>
+        <ComponentID>224</ComponentID>
+        <ComponentTypeCode>DL</ComponentTypeCode>
+        <SampleAcquisitionMethodCode />
+        <BasisCode />
+        <Manufacturer>ESC</Manufacturer>
+        <ModelVersion>8832</ModelVersion>
+        <SerialNumber>A2066</SerialNumber>
+      </ComponentData>
+      <ComponentData>
+        <ComponentID>229</ComponentID>
+        <ComponentTypeCode>PRB</ComponentTypeCode>
+        <SampleAcquisitionMethodCode>DIL</SampleAcquisitionMethodCode>
+        <BasisCode />
+        <Manufacturer>M&amp;C</Manufacturer>
+        <ModelVersion>SP2000H</ModelVersion>
+        <SerialNumber>8200371</SerialNumber>
+      </ComponentData>
+      <ComponentData>
+        <ComponentID>222</ComponentID>
+        <ComponentTypeCode>CO2</ComponentTypeCode>
+        <SampleAcquisitionMethodCode>DIL</SampleAcquisitionMethodCode>
+        <BasisCode>W</BasisCode>
+        <Manufacturer>TECO</Manufacturer>
+        <ModelVersion>410I</ModelVersion>
+        <SerialNumber>0730925428</SerialNumber>
+        <AnalyzerRangeData>
+          <AnalyzerRangeCode>H</AnalyzerRangeCode>
+          <DualRangeIndicator>0</DualRangeIndicator>
+          <BeginDate>2010-10-01</BeginDate>
+          <BeginHour>0</BeginHour>
+          <EndDate>2024-09-18</EndDate>
+          <EndHour>9</EndHour>
+        </AnalyzerRangeData>
+      </ComponentData>
+      <ComponentData>
+        <ComponentID>223</ComponentID>
+        <ComponentTypeCode>FLOW</ComponentTypeCode>
+        <SampleAcquisitionMethodCode>U</SampleAcquisitionMethodCode>
+        <BasisCode>W</BasisCode>
+        <Manufacturer>TELEDYNE INSTRUMENTS</Manufacturer>
+        <ModelVersion>ULTRAFLOW 150</ModelVersion>
+        <SerialNumber>1500829</SerialNumber>
+      </ComponentData>
+      <ComponentData>
+        <ComponentID>234</ComponentID>
+        <ComponentTypeCode>PRB</ComponentTypeCode>
+        <SampleAcquisitionMethodCode>DIL</SampleAcquisitionMethodCode>
+        <BasisCode />
+        <Manufacturer>M&amp;C</Manufacturer>
+        <ModelVersion>SP2006</ModelVersion>
+        <SerialNumber>29889-2147387</SerialNumber>
+      </ComponentData>
+      <ComponentData>
+        <ComponentID>422</ComponentID>
+        <ComponentTypeCode>CO2</ComponentTypeCode>
+        <SampleAcquisitionMethodCode>DIL</SampleAcquisitionMethodCode>
+        <BasisCode>W</BasisCode>
+        <Manufacturer>TELEDYNE</Manufacturer>
+        <ModelVersion>T360</ModelVersion>
+        <SerialNumber>581</SerialNumber>
+        <AnalyzerRangeData>
+          <AnalyzerRangeCode>H</AnalyzerRangeCode>
+          <DualRangeIndicator>0</DualRangeIndicator>
+          <BeginDate>2024-09-18</BeginDate>
+          <BeginHour>10</BeginHour>
+          <EndDate />
+          <EndHour />
+        </AnalyzerRangeData>
+      </ComponentData>
+      <ComponentData>
+        <ComponentID>225</ComponentID>
+        <ComponentTypeCode>DL</ComponentTypeCode>
+        <SampleAcquisitionMethodCode />
+        <BasisCode />
+        <Manufacturer>ESC</Manufacturer>
+        <ModelVersion>8864</ModelVersion>
+        <SerialNumber>C1418</SerialNumber>
+      </ComponentData>
+      <MonitoringSpanData>
+        <ComponentTypeCode>FLOW</ComponentTypeCode>
+        <SpanScaleCode />
+        <SpanMethodCode>F</SpanMethodCode>
+        <MPCValue />
+        <MPFValue>140000000</MPFValue>
+        <SpanValue>2500</SpanValue>
+        <FullScaleRange>2500</FullScaleRange>
+        <SpanUnitsOfMeasureCode>KSCFM</SpanUnitsOfMeasureCode>
+        <FlowSpanValue>150000000</FlowSpanValue>
+        <FlowFullScaleRange>150000000</FlowFullScaleRange>
+        <BeginDate>2010-10-01</BeginDate>
+        <BeginHour>0</BeginHour>
+        <EndDate />
+        <EndHour />
+      </MonitoringSpanData>
+      <MonitoringSpanData>
+        <ComponentTypeCode>CO2</ComponentTypeCode>
+        <SpanScaleCode>H</SpanScaleCode>
+        <SpanMethodCode>TB</SpanMethodCode>
+        <MPCValue>14</MPCValue>
+        <MPFValue />
+        <SpanValue>20</SpanValue>
+        <FullScaleRange>20</FullScaleRange>
+        <SpanUnitsOfMeasureCode>PCT</SpanUnitsOfMeasureCode>
+        <FlowSpanValue />
+        <FlowFullScaleRange />
+        <BeginDate>2010-10-01</BeginDate>
+        <BeginHour>0</BeginHour>
+        <EndDate />
+        <EndHour />
+      </MonitoringSpanData>
+    </UnitData>
+  </MonitoringLocationData>
+</MonitoringPlan>

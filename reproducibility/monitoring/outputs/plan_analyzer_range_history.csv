@@ -1,0 +1,5 @@
+source,source_member,kind,facility_id,unit_id,analyzerRangeCode,dualRangeIndicator,beginDate,beginHour,endDate,endHour,begin,end,interval_status,interval_note,componentId,componentTypeCode
+original_plan_unit2,original_plan_unit2.xml,analyzer_range,6065,2,H,0,2010-10-01,0,2024-09-18,9,2010-10-01 00:00:00,2024-09-18 09:00:00,valid,,222,CO2
+original_plan_unit2,original_plan_unit2.xml,analyzer_range,6065,2,H,0,2024-09-18,10,,,2024-09-18 10:00:00,,valid,,422,CO2
+current_plan_unit2,current_plan_unit2.json#0,analyzer_range,6065,2,H,0,2010-10-01,0,2024-09-18,9,2010-10-01 00:00:00,2024-09-18 09:00:00,valid,,222,CO2
+current_plan_unit2,current_plan_unit2.json#0,analyzer_range,6065,2,H,0,2024-09-18,10,,,2024-09-18 10:00:00,,valid,,422,CO2

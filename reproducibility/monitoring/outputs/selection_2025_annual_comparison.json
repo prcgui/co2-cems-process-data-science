@@ -1,0 +1,20 @@
+{
+  "original_selection_file": "pipeline/selected_unit_hourly_raw.parquet",
+  "annual_2025_file": "data/interim/03A04_multiyear/iatan_unit2_2025.parquet",
+  "original_selection_sha256": "0613b96dfbf0209ed830d36bcf185f5ba89b2cfb8edc1daca276a12e0b4d8911",
+  "annual_2025_sha256": "c200de7a9e1a4d2e1448c3ab4fd092abeae5788ca500ecb47010a952a300b1fb",
+  "rows_selection": 8760,
+  "rows_annual": 8760,
+  "normalization": "Facility/unit identifiers normalized; dates ISO day; hours numeric; chronological sorting; nulls considered equal. No numeric tolerance used.",
+  "mismatched_rows_by_field": {
+    "Facility ID": 0,
+    "Unit ID": 0,
+    "Date": 0,
+    "Hour": 0,
+    "Operating Time": 0,
+    "Gross Load (MW)": 0,
+    "CO2 Mass (short tons)": 0,
+    "CO2 Mass Measure Indicator": 0
+  },
+  "equivalent_on_compared_fields": true
+}

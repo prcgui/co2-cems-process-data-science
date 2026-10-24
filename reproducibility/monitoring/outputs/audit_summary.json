@@ -1,0 +1,80 @@
+{
+  "audit_version": "1.0.0",
+  "completed_at_utc": "2026-10-24T14:03:52.049110+00:00",
+  "facility_id": "6065",
+  "unit_id": "2",
+  "start_year": 2011,
+  "end_year": 2025,
+  "audited_rows": 131496,
+  "n_on": 98799,
+  "calendar_gap_hours": 0,
+  "duplicate_extra_rows": 0,
+  "input_files_unchanged": true,
+  "selection_rule_unchanged": true,
+  "model_samples_modified": false,
+  "plan_metadata": [
+    {
+      "source": "original_plan_unit2",
+      "path": "sources/original_plan_unit2.xml",
+      "member": "original_plan_unit2.xml",
+      "format": "xml",
+      "sha256": "1fbaf21ecc1fd8155d9d7a80cce3699b9b22f3f7ab45decc51eb07bbec21116b",
+      "facility_id": "6065",
+      "unit_id": "2",
+      "plan_id": null,
+      "location_id": null,
+      "reported_update_date": null,
+      "begin_report_period_id": null,
+      "end_report_period_id": null
+    },
+    {
+      "source": "current_plan_unit2",
+      "path": "sources/current_plan_unit2.json",
+      "member": "current_plan_unit2.json#0",
+      "format": "json",
+      "sha256": "b378494951c030505fab32ceec4a30caf0977254949e1270a8cc7b9976fa1406",
+      "facility_id": "6065",
+      "unit_id": "2",
+      "plan_id": "DWH3021DNT-5A975BAEEA3B4DE698FA731B4AE3347A",
+      "location_id": "6078",
+      "reported_update_date": "2026-01-26T20:07:00.000Z",
+      "begin_report_period_id": 72,
+      "end_report_period_id": null
+    }
+  ],
+  "snapshot_comparison": [
+    {
+      "source_a": "current_plan_unit2",
+      "source_b": "original_plan_unit2",
+      "relevant_unique_rows_a": 24,
+      "relevant_unique_rows_b": 24,
+      "common_rows": 24,
+      "only_in_a": 0,
+      "only_in_b": 0,
+      "equivalent_on_compared_fields": true
+    }
+  ],
+  "selection_2025_comparison": {
+    "original_selection_file": "pipeline/selected_unit_hourly_raw.parquet",
+    "annual_2025_file": "data/interim/03A04_multiyear/iatan_unit2_2025.parquet",
+    "original_selection_sha256": "0613b96dfbf0209ed830d36bcf185f5ba89b2cfb8edc1daca276a12e0b4d8911",
+    "annual_2025_sha256": "c200de7a9e1a4d2e1448c3ab4fd092abeae5788ca500ecb47010a952a300b1fb",
+    "rows_selection": 8760,
+    "rows_annual": 8760,
+    "normalization": "Facility/unit identifiers normalized; dates ISO day; hours numeric; chronological sorting; nulls considered equal. No numeric tolerance used.",
+    "mismatched_rows_by_field": {
+      "Facility ID": 0,
+      "Unit ID": 0,
+      "Date": 0,
+      "Hour": 0,
+      "Operating Time": 0,
+      "Gross Load (MW)": 0,
+      "CO2 Mass (short tons)": 0,
+      "CO2 Mass Measure Indicator": 0
+    },
+    "equivalent_on_compared_fields": true
+  },
+  "findings": [
+    "2019: n_load_missing_on = 1."
+  ]
+}

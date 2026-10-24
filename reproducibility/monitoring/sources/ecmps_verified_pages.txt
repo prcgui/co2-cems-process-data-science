@@ -1,0 +1,193 @@
+EPA, ECMPS Monitoring Plan Reporting Instructions, December 20, 2024.
+Source: https://www.epa.gov/system/files/documents/2024-12/ecmps_monitoring_plan_reporting_instructions-12202024.pdf
+Read-only page-text extraction with pdftotext -layout.
+
+
+=== PDF page 37 (1-based) ===
+Monitoring Plan Reporting Instructions                                                6.0 Monitoring Method Data
+
+  hour when burning a secondary fuel that is not measured by a long-term fuel flow system, or (2)
+  if a unit operated for only a very short period or used only a very limited amount of fuel during a
+  quarter or reporting period, so that a tank drop measurement will not yield an accurate estimate
+  of the fuel combusted during the reporting period. Report the appropriate uppercase code as
+  shown in the table below:
+
+                              Table 12: Substitute Data Codes and Descriptions
+
+       Code                          Description                       Appropriate for Parameter Codes
+     FSP75       Fuel-Specific Part 75                                NOXR, NOX, SO2, CO2, H2O, and HI
+     FSP75C      Fuel-Specific Part 75 with separate co-fired         NOXR, NOX, SO2, CO2, H2O, and HI
+                 database
+     MHHI        Maximum Rated Hourly Heat Input Rate for LME         HIT
+                 Units using Long Term Fuel Flow methodology
+     NLB         Non-Load Based                                       NOXR, NOX, and HI
+     NLBOP       Non-Load Based with Operational Bins                 NOXR, NOX, and HI
+     OZN75       Ozone vs. Non-Ozone Season                           NOX, NOXR
+     REV75       Reverse of Standard Part 75                          H2O
+     SPTS        Standard Part 75                                     NOXR, NOX, SO2, CO2, H2O, and HI
+
+
+
+  Bypass Approach Code (BypassApproachCode)
+  Report the Bypass Approach Code used to calculate emissions for an unmonitored bypass stack
+  whose method of determining emissions is based on a default value. The Bypass Approach Code
+  is not required if a bypass stack is directly monitored or valid data are calculated from monitors
+  at other locations (e.g., at a control device inlet). This code is only applicable for parameters
+  SO2, NOX, and NOXR with CEM, CEMF23, and NOXR method codes. Report the appropriate
+  uppercase codes as shown in the table below:
+
+                             Table 13: Bypass Approach Codes and Descriptions
+
+                              Code                              Description
+                       BYMAX                MPC or MER* for Highest Emitting Fuel
+                       BYMAXFS              Fuel-Specific MPC or MER*
+
+                       * Note that MEC or MCR may be used for documented controlled hours.
+
+  Begin Date (BeginDate)
+  Report the date on which the methodology was first used to determine emissions or heat input
+  rate for the monitoring location. For opacity, report the same starting date as for emission
+  reporting, whether the applicable units are exempted from opacity monitoring or not.
+
+  For new units, report the first date on which the methodology is expected to be used to determine
+  emissions or heat input rate. Correct as needed when the actual begin date is known.
+
+
+December 20, 2024                                      Page 32                  Environmental Protection Agency
+
+
+=== PDF page 38 (1-based) ===
+Monitoring Plan Reporting Instructions                                          6.0 Monitoring Method Data
+
+  Begin Hour (BeginHour)
+  Report the hour in which the methodology was first used to determine emissions or heat input
+  rate for the monitoring location.
+
+  End Date (EndDate)
+  Report the date on which the methodology was last used to determine emissions or heat input
+  rate for the monitoring location. This value should be left blank for active records.
+
+  End Hour (EndHour)
+  Report the hour in which the methodology was last used to determine emissions or heat input
+  rate for the monitoring location. This value should be left blank for active records.
+
+  Specific Considerations
+
+  Moisture
+  If required to correct for moisture (H2O) when calculating emissions or heat input at a
+  monitoring location, report a separate monitor method record for the H2O parameter. Do this for
+  each location at which moisture is needed, defining the methodology used to determine hourly
+  moisture for emissions calculations.
+
+  Heat Input
+  If heat input monitoring is required, there must be a separate monitor method record for heat
+  input (HI) data for each unit, even if the monitor location is not at the unit level. For example, if
+  SO2, CO2, NOx, and Flow monitors are installed at CS001, which serves Unit 1, 2, and 3, there
+  will be a full set of monitor method records for CS001 and only one monitor method record for
+  HI at each unit. The unit records for monitor method should indicate that the heat input is
+  calculated for the unit, using the "CALC" monitoring method code.
+
+  NOx Mass Emissions Rate
+  For units opting to report forsubject to subpart GGGGG of 40 CFR Part 97 where NOx mass
+  emissions (NOX) are monitored at a common stack, there must also be a separate monitor
+  method record for NOX for each unit. The unit records for NOX should indicate that NOx mass
+  emissions are calculated for the unit using the “CALC” monitoring method code.
+
+  Acid Rain Program Units
+      •   If a location which has an SO2 monitor combusts both high sulfur fuel (e.g., coal or oil)
+          and a low sulfur fuel, and uses a default SO2 emission rate in conjunction with Equation
+          F-23 for hours in which very low sulfur fuel is combusted (see §75.11(e)(1)), report one
+          monitor method record for parameter SO2 with a monitoring methodology code
+          CEMF23. If only low-sulfur fuel is combusted and the F-23 calculation is used for every
+          hour, report the SO2 monitoring method as F23.
+      •   If a unit or stack is exempt from opacity monitoring, report a monitor method record for
+          the unit or stack defining the parameter OP with a monitor method code of EXP.
+      •   If opacity is monitored at a common stack or multiple stacks, but no other parameters are
+          monitored at that location, do not define the stack(s). Instead, report the opacity method
+          and system data at the unit level.
+
+
+December 20, 2024                                Page 33                  Environmental Protection Agency
+
+
+=== PDF page 66 (1-based) ===
+Monitoring Plan Reporting Instructions                             8.2 Monitoring System Component Data
+
+  Begin Date (BeginDate)
+  Report the date on which the component became an active part of the system. If this component
+  is an original part of the system, this date will be the same as the System Begin Date.
+
+  Begin Hour (BeginHour)
+  Report the hour in which the component became an active part of the system.
+
+  End Date (EndDate)
+  Report the last date that the component was an active part of the system. This value should be
+  left blank for active system-component relationships.
+
+  End Hour (EndHour)
+  Report the last hour that the component was an active part of the system. This value should be
+  left blank for active system-component relationships.
+
+
+
+
+December 20, 2024                              Page 61                 Environmental Protection Agency
+
+
+=== PDF page 85 (1-based) ===
+ Monitoring Plan Reporting Instructions                                                 9.0 Monitoring Formula Data
+
+                       Table 43: CO2 Concentration and Mass Emission Rate Formulas
+
+Code Parameter                            Formula                                         Where:
+F-2     CO2                                                             Eh    =   Hourly CO2 mass emissions (tons/hr)
+                                                                        K     =   5.7 x 10-7 for CO2 ((tons/scf)/percent
+                                                                                  CO2)
+                                                   100 − % H 2 O        Chp   =   Hourly average, CO2 concentration
+                           E h = K × Chp × Qhs ×                                  (percent CO2, dry basis)
+                                                       100              Qhs   =   Hourly average volumetric flow rate
+                                                                                  (scfh, wet basis)
+                                                                        %H2O =    Hourly average stack moisture
+                                                                                  content (percent by volume)
+F-11    CO2                                                             Eh    =   Hourly CO2 mass emission rate
+                                                                                  (tons/hr)
+                                                                        K     =   5.7x10-7 for CO2 ((tons/scf)/percent
+                                  E h = K × Ch × Qh                     Ch    =
+                                                                                  CO2)
+                                                                                  Hourly average CO2 concentration
+                                                                                  (percent CO2, wet basis)
+                                                                        Qh    =   Hourly average volumetric flow rate
+                                                                                  (scfh, wet basis)
+F-14A CO2C                                                              CO2d =    Hourly average CO2 concentration
+                                                                                  (percent by volume, dry basis)
+                                                                        F     =   Dry-basis F-factor (dscf/mmBtu)
+                                         Fc 20.9 − O2 d                 Fc    =   Carbon-based F-factor (scf
+                           CO2 d = 100 ×   ×                                      CO2/mmBtu)
+                                         F     20.9                     20.9 =    Percentage of O2 in ambient air
+                                                                        O2d =     Hourly average O2 concentration
+                                                                                  (percent by volume, dry basis)
+F-14B CO2C                                                              CO2w =    Hourly average CO2 concentration
+                                                                                  (percent by volume, wet basis)
+                                                                        F     =   Dry-basis F-factor (dscf/mmBtu)
+                              100 Fc        100 − % H 2 O           Fc    =   Carbon-based F-factor (scf
+                      CO2 w =     × ×  20.9                − O2W              CO2/mmBtu)
+                              20.9 F            100                 20.9 =    Percentage of O2 in ambient air
+                                                                        O2W =     Hourly average O2 concentration
+                                                                                  (percent by volume, wet basis)
+                                                                        %H2O =    Moisture content of gas in the stack
+                                                                                  (percent)
+G-1     CO2M                                                            WCO2 =    CO2 emitted from combustion
+
+                                     ( MW + MW ) × W
+                                                                                  (tons/day)
+                                                                        MWc =     Molecular weight of carbon (12.0)
+                                            c        O2        c
+                            WCO2 =                                      MWO2 =    Molecular weight of oxygen (32.0)
+                                            2000 MWc                    Wc =      Carbon burned (lb/day) determined
+                                                                                  using fuel sampling and analysis and
+                                                                                  fuel feed rates*
+
+
+
+
+ December 20, 2024                                        Page 80                 Environmental Protection Agency

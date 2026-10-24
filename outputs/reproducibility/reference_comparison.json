@@ -1,0 +1,67 @@
+{
+  "absolute_tolerance": 1e-06,
+  "relative_tolerance": 1e-08,
+  "all_passed": true,
+  "checks": [
+    {
+      "file": "03A04_comparacao_2025_vs_historico_2025.csv",
+      "reference_sha256": "915b86bf14b333752b13f346cc1ae9e45d0f4a41210b25dc46076ba0b32ff43e",
+      "generated_sha256": "915b86bf14b333752b13f346cc1ae9e45d0f4a41210b25dc46076ba0b32ff43e",
+      "passed": true,
+      "max_absolute_numeric_difference": 0.0,
+      "issues": []
+    },
+    {
+      "file": "03A04_ganho_incremental_historico_2011_2022.csv",
+      "reference_sha256": "b10ba3f90af56507e566d2b80cedfd162290ea6297f00277d217cb2f78ff3605",
+      "generated_sha256": "b10ba3f90af56507e566d2b80cedfd162290ea6297f00277d217cb2f78ff3605",
+      "passed": true,
+      "max_absolute_numeric_difference": 0.0,
+      "issues": []
+    },
+    {
+      "file": "03A04_sintese_evidencias_historico.csv",
+      "reference_sha256": "723380e9ed016abec918fa0859b80fb8fd8b52473c85f1095738eaa914e8a510",
+      "generated_sha256": "723380e9ed016abec918fa0859b80fb8fd8b52473c85f1095738eaa914e8a510",
+      "passed": true,
+      "max_absolute_numeric_difference": 0.0,
+      "issues": []
+    },
+    {
+      "file": "03A05_comparacao_contextos_operacionais.csv",
+      "reference_sha256": "8e04c5eb0d643fc662da75a0ffd190fdd982e1db14a0d0fef500ed67d4fd6583",
+      "generated_sha256": "8e04c5eb0d643fc662da75a0ffd190fdd982e1db14a0d0fef500ed67d4fd6583",
+      "passed": true,
+      "max_absolute_numeric_difference": 0.0,
+      "issues": []
+    },
+    {
+      "file": "03A05_delimitacao_amostras_experimento.csv",
+      "reference_sha256": "f9d8132f1b71c7dd88861358b77a55b9a734af753e4db3f9b8fd36886a5f2dab",
+      "generated_sha256": "f9d8132f1b71c7dd88861358b77a55b9a734af753e4db3f9b8fd36886a5f2dab",
+      "passed": true,
+      "max_absolute_numeric_difference": 0.0,
+      "issues": []
+    },
+    {
+      "file": "03A05_resultado_final_A_B.csv",
+      "reference_sha256": "d064b74eb949f27ac8b56f9b574e766e256b445f237b8bb4e14cf2170cda121f",
+      "generated_sha256": "d064b74eb949f27ac8b56f9b574e766e256b445f237b8bb4e14cf2170cda121f",
+      "passed": true,
+      "max_absolute_numeric_difference": 0.0,
+      "issues": []
+    },
+    {
+      "file": "03A05_selecao_complexidade_A_B.csv",
+      "reference_sha256": "d5d78cc165ec4ff3883e2b888804b9e624d2ba4516bd175eb95a7abac8ee569d",
+      "generated_sha256": "d5d78cc165ec4ff3883e2b888804b9e624d2ba4516bd175eb95a7abac8ee569d",
+      "passed": true,
+      "max_absolute_numeric_difference": 0.0,
+      "issues": []
+    }
+  ],
+  "reference_commits": {
+    "03A.04": "0fa317271ec2cd08d66e0d9e2723c01008667412",
+    "03A.05": "8f23aa9488cdab980d2dcd875e720c15242f4845"
+  }
+}

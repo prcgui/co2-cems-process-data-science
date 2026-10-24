@@ -1,0 +1,316 @@
+{
+  "items": [
+    {
+      "code": "control-equip-param-codes",
+      "name": "Control Equipment Parameter Codes & Descriptions"
+    },
+    {
+      "code": "parameter-codes",
+      "name": "Parameter Codes & Descriptions"
+    },
+    {
+      "code": "source-category-codes",
+      "name": "Source Category Codes & Descriptions"
+    },
+    {
+      "code": "state-codes",
+      "name": "State Codes & Descriptions"
+    },
+    {
+      "code": "transaction-type-codes",
+      "name": "Transation Type Codes & Descriptions"
+    },
+    {
+      "code": "accuracy-spec-codes",
+      "name": "Accuracy Spec Codes & Descriptions"
+    },
+    {
+      "code": "accuracy-test-method-codes",
+      "name": "Accuracy Test Method Codes & Descriptions"
+    },
+    {
+      "code": "acquisition-method-codes",
+      "name": "Acquisition Method Codes & Descriptions"
+    },
+    {
+      "code": "analyzer-range-codes",
+      "name": "Analyzer Range Codes & Descriptions"
+    },
+    {
+      "code": "aps-codes",
+      "name": "APS Codes & Descriptions"
+    },
+    {
+      "code": "basis-codes",
+      "name": "Basis Codes & Descriptions"
+    },
+    {
+      "code": "bypass-approach-codes",
+      "name": "Bypass Approach Codes & Descriptions"
+    },
+    {
+      "code": "component-type-codes",
+      "name": "Component Type Codes & Descriptions"
+    },
+    {
+      "code": "default-purpose-codes",
+      "name": "Default Purpose Codes & Descriptions"
+    },
+    {
+      "code": "default-source-codes",
+      "name": "Default Source Codes & Descriptions"
+    },
+    {
+      "code": "demonstration-method-codes",
+      "name": "Demonstration Method Codes & Descriptions"
+    },
+    {
+      "code": "equation-codes",
+      "name": "Equation Codes & Descriptions"
+    },
+    {
+      "code": "fuel-codes",
+      "name": "Fuel Codes & Descriptions"
+    },
+    {
+      "code": "fuel-flow-period-codes",
+      "name": "Fuel Flow Period Codes & Descriptions"
+    },
+    {
+      "code": "fuel-group-codes",
+      "name": "Fuel Group Codes & Descriptions"
+    },
+    {
+      "code": "fuel-indicator-codes",
+      "name": "Fuel Indicator Codes & Descriptions"
+    },
+    {
+      "code": "gas-level-codes",
+      "name": "Gas Level Codes & Descriptions"
+    },
+    {
+      "code": "gas-type-codes",
+      "name": "Gas Type Codes & Descriptions"
+    },
+    {
+      "code": "indicator-codes",
+      "name": "Indicator Codes & Descriptions"
+    },
+    {
+      "code": "injection-protocol-codes",
+      "name": "Injection Protocol Codes & Descriptions"
+    },
+    {
+      "code": "material-codes",
+      "name": "Material Codes & Descriptions"
+    },
+    {
+      "code": "mats-method-codes",
+      "name": "MATS Method Codes & Descriptions"
+    },
+    {
+      "code": "mats-method-parameter-codes",
+      "name": "MATS Method Parameter Codes & Descriptions"
+    },
+    {
+      "code": "max-rate-source-codes",
+      "name": "Max Rate Source Codes & Descriptions"
+    },
+    {
+      "code": "method-codes",
+      "name": "Method Codes & Descriptions"
+    },
+    {
+      "code": "modc-codes",
+      "name": "MODC Codes & Descriptions"
+    },
+    {
+      "code": "electrical-load-codes",
+      "name": "Electrical Load Codes & Descriptions"
+    },
+    {
+      "code": "emission-standard-codes",
+      "name": "Emission Standard Codes & Descriptions"
+    },
+    {
+      "code": "operating-condition-codes",
+      "name": "Operating Condition Codes & Descriptions"
+    },
+    {
+      "code": "operating-level-codes",
+      "name": "Operating Level Codes & Descriptions"
+    },
+    {
+      "code": "pressure-measure-codes",
+      "name": "Pressure Measure Codes & Descriptions"
+    },
+    {
+      "code": "probe-type-codes",
+      "name": "Probe Type Codes & Descriptions"
+    },
+    {
+      "code": "qa-cert-event-codes",
+      "name": "QA Certification Event Codes & Descriptions"
+    },
+    {
+      "code": "qualification-data-type-codes",
+      "name": "Qualification Data Type Codes & Descriptions"
+    },
+    {
+      "code": "qualification-lee-test-type-codes",
+      "name": "Qualification LEE Test Type Codes & Descriptions"
+    },
+    {
+      "code": "qualification-type-codes",
+      "name": "Qualification Type Codes & Descriptions"
+    },
+    {
+      "code": "rata-frequency-codes",
+      "name": "Rata Frequency Codes & Descriptions"
+    },
+    {
+      "code": "reference-method-codes",
+      "name": "Reference Method Codes & Descriptions"
+    },
+    {
+      "code": "required-test-codes",
+      "name": "Required Test Codes & Descriptions"
+    },
+    {
+      "code": "run-status-codes",
+      "name": "Run Status Codes & Descriptions"
+    },
+    {
+      "code": "sample-type-codes",
+      "name": "Sample Type Codes & Descriptions"
+    },
+    {
+      "code": "shape-codes",
+      "name": "Shape Codes & Descriptions"
+    },
+    {
+      "code": "sod-mass-codes",
+      "name": "SOD Mass Codes & Descriptions"
+    },
+    {
+      "code": "sod-volumetric-codes",
+      "name": "SOD Volumetric Codes & Descriptions"
+    },
+    {
+      "code": "span-method-codes",
+      "name": "Span Method Codes & Descriptions"
+    },
+    {
+      "code": "span-scale-codes",
+      "name": "Span Scale Codes & Descriptions"
+    },
+    {
+      "code": "substitute-data-codes",
+      "name": "Substitute Data Codes & Descriptions"
+    },
+    {
+      "code": "system-designation-codes",
+      "name": "System Designation Codes & Descriptions"
+    },
+    {
+      "code": "system-type-codes",
+      "name": "System Type Codes & Descriptions"
+    },
+    {
+      "code": "test-basis-codes",
+      "name": "Test Basis Codes & Descriptions"
+    },
+    {
+      "code": "test-claim-codes",
+      "name": "Test Claim Codes & Descriptions"
+    },
+    {
+      "code": "test-frequency-codes",
+      "name": "Test Frequency Codes & Descriptions"
+    },
+    {
+      "code": "test-reason-codes",
+      "name": "Test Reason Codes & Descriptions"
+    },
+    {
+      "code": "test-result-codes",
+      "name": "Test Result Codes & Descriptions"
+    },
+    {
+      "code": "test-type-codes",
+      "name": "Test Type Codes & Descriptions"
+    },
+    {
+      "code": "test-type-group-codes",
+      "name": "Test Type Group Codes & Descriptions"
+    },
+    {
+      "code": "train-qa-status-codes",
+      "name": "Train QA Status Codes & Descriptions"
+    },
+    {
+      "code": "units-of-measure-codes",
+      "name": "Units of Measure Codes & Descriptions"
+    },
+    {
+      "code": "waf-method-codes",
+      "name": "WAF Method Codes & Descriptions"
+    },
+    {
+      "code": "es-severity-codes",
+      "name": "Error Suppression Severity Codes & Descriptions"
+    },
+    {
+      "code": "es-reason-codes",
+      "name": "Error Suppression Reason Codes & Descriptions"
+    },
+    {
+      "code": "es-check-catalog-results",
+      "name": "Error Suppression Check Catalog Results"
+    },
+    {
+      "code": "es-parameter-codes",
+      "name": "Error Suppression Parameter Codes & Descriptions"
+    },
+    {
+      "code": "extension-exemption-codes",
+      "name": "Extension & Exemption Codes & Descriptions"
+    },
+    {
+      "code": "gas-component-codes",
+      "name": "Gas Component Codes & Descriptions"
+    },
+    {
+      "code": "protocol-gas-vendors",
+      "name": "Protocol Gas Vendors"
+    },
+    {
+      "code": "mats-report-type-codes",
+      "name": "MATS Report Type Codes & Descriptions"
+    },
+    {
+      "code": "mats-pollutant-codes",
+      "name": "MATS Pollutant Codes & Descriptions"
+    },
+    {
+      "code": "mats-test-method-codes",
+      "name": "MATS Test Method Codes & Descriptions"
+    },
+    {
+      "code": "mats-averaging-group-codes",
+      "name": "MATS Averaging Group Codes & Descriptions"
+    },
+    {
+      "code": "reporting-frequency-codes",
+      "name": "Reporting Frequency Codes & Descriptions"
+    },
+    {
+      "code": "operating-type-codes",
+      "name": "Operating Type Codes & Descriptions"
+    },
+    {
+      "code": "file-type-codes",
+      "name": "File Type Codes & Descriptions"
+    }
+  ]
+}

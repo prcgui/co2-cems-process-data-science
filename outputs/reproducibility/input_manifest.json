@@ -1,0 +1,327 @@
+[
+  {
+    "path": "pipeline/selected_unit.json",
+    "size_bytes": 175,
+    "sha256": "dc194c93ed6dc31587f9cba8bd60dd4db2c2314d5f98d31ed28e6f90523d5f53"
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2010.parquet",
+    "size_bytes": 40335,
+    "sha256": "90b16dd1f36a94266dd14487f27a1667eb5c0eba4f77ac6d11660ecddbfc71a5",
+    "rows": 2208,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2011.parquet",
+    "size_bytes": 121861,
+    "sha256": "2c4e5a56f27d5e2d8705f3794be8c5c6ad35796603b25cf52db4895732614ceb",
+    "rows": 8760,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2012.parquet",
+    "size_bytes": 123611,
+    "sha256": "14ad2841a0a53621376b1c185a10d670b9eaf5586809a86833516c7c3d1efa0d",
+    "rows": 8784,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2013.parquet",
+    "size_bytes": 120649,
+    "sha256": "fb9efe3fb26ae2f64cabac992ac15e89697dd5aaa07d7514a2cd7b8a8c8cc8f3",
+    "rows": 8760,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2014.parquet",
+    "size_bytes": 117427,
+    "sha256": "a0bb1b7a1aabf2127ec5c719653ec55f03987eb3d13c597b638774d903823b7e",
+    "rows": 8760,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2015.parquet",
+    "size_bytes": 121402,
+    "sha256": "993177cedca522727a553333a68596d4aa2d171a8a2a925805513bb623ce929c",
+    "rows": 8760,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2016.parquet",
+    "size_bytes": 114377,
+    "sha256": "0f21ef2cdf6c3aaa32c7092d8e923200cf727f47ff770cd2b4b3803541231158",
+    "rows": 8784,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2017.parquet",
+    "size_bytes": 123032,
+    "sha256": "bfee86bcce2c16ceea63447ae8e13bb4d4fc67f3c6cf5ce6446937d68a4734fb",
+    "rows": 8760,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2018.parquet",
+    "size_bytes": 113253,
+    "sha256": "ba4eeac154de369e28b52a7ac7bd2ff699e131f77a8a4635402db26a83872764",
+    "rows": 8760,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2019.parquet",
+    "size_bytes": 121141,
+    "sha256": "d0997abc0c2d5640ae78e476823344ce81e7ac0613cbcdc04bc1eccf09a0ff3b",
+    "rows": 8760,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2020.parquet",
+    "size_bytes": 119701,
+    "sha256": "b08fc4ffd2f2cb55cbfed503225c0d847d304ba9a1365bc0d720dd4dc4c6b5bd",
+    "rows": 8784,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2021.parquet",
+    "size_bytes": 123687,
+    "sha256": "1ca232f870fe1a7942f71c80d418bacc9ee6eb83c33d352ad450c5cdecdac6d0",
+    "rows": 8760,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2022.parquet",
+    "size_bytes": 124136,
+    "sha256": "7b96de2c5c1e8eec4ce0c3cb1b8e46f47de3e14c061639c9cec6c846257b2c58",
+    "rows": 8760,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2023.parquet",
+    "size_bytes": 115591,
+    "sha256": "fb361c343f14113cd00b786636fe3eca4f3b1728a0deb89c365bdee71eccb5f8",
+    "rows": 8760,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2024.parquet",
+    "size_bytes": 117782,
+    "sha256": "99ba81a43aa3adb49ed5363c6e507ebbe0b7ce5e1452786c12a5c1aeb2893cda",
+    "rows": 8784,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  },
+  {
+    "path": "data/interim/03A04_multiyear/iatan_unit2_2025.parquet",
+    "size_bytes": 126401,
+    "sha256": "c200de7a9e1a4d2e1448c3ab4fd092abeae5788ca500ecb47010a952a300b1fb",
+    "rows": 8760,
+    "columns": [
+      "Facility ID",
+      "Unit ID",
+      "Date",
+      "Hour",
+      "Operating Time",
+      "Gross Load (MW)",
+      "CO2 Mass (short tons)",
+      "CO2 Mass Measure Indicator",
+      "facilityId_norm",
+      "unitId_norm",
+      "timestamp",
+      "source_year"
+    ]
+  }
+]

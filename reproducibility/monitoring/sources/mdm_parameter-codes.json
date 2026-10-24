@@ -1,0 +1,292 @@
+{
+  "items": [
+    {
+      "parameterCode": "AKSF",
+      "parameterDescription": "Appendix K Sample to Stack Flow Scaling Factor"
+    },
+    {
+      "parameterCode": "BCO2",
+      "parameterDescription": "Biogenic CO2 Mass (ton)"
+    },
+    {
+      "parameterCode": "CO2C",
+      "parameterDescription": "CO2 Concentration (pct)"
+    },
+    {
+      "parameterCode": "CO2R",
+      "parameterDescription": "CO2 Emission Rate (ton/mmBtu)"
+    },
+    {
+      "parameterCode": "CO2",
+      "parameterDescription": "CO2 Hourly Mass Rate (ton/hr)"
+    },
+    {
+      "parameterCode": "CO2M",
+      "parameterDescription": "CO2 Mass (ton)"
+    },
+    {
+      "parameterCode": "CO2X",
+      "parameterDescription": "CO2 Maximum Concentration (pct)"
+    },
+    {
+      "parameterCode": "CO2N",
+      "parameterDescription": "CO2 Minimum Concentration (pct)"
+    },
+    {
+      "parameterCode": "DENSOIL",
+      "parameterDescription": "Density of Oil"
+    },
+    {
+      "parameterCode": "FC",
+      "parameterDescription": "F-Factor Carbon-based"
+    },
+    {
+      "parameterCode": "FD",
+      "parameterDescription": "F-Factor Dry-basis"
+    },
+    {
+      "parameterCode": "FW",
+      "parameterDescription": "F-Factor Wet-basis"
+    },
+    {
+      "parameterCode": "FF2L",
+      "parameterDescription": "Fuel Flow to Load Rate"
+    },
+    {
+      "parameterCode": "FGAS",
+      "parameterDescription": "Gas Hourly Flow Rate (hscf)"
+    },
+    {
+      "parameterCode": "GCV",
+      "parameterDescription": "Gross Calorific Value for Oil or Gas"
+    },
+    {
+      "parameterCode": "GHR",
+      "parameterDescription": "Gross Heat Rate"
+    },
+    {
+      "parameterCode": "HCLRE",
+      "parameterDescription": "HCl Electrical Output Based Emissions Rate (lb/MWh)"
+    },
+    {
+      "parameterCode": "HCLRH",
+      "parameterDescription": "HCl Heat Input Based Emissions Rate (lb/mmBtu)"
+    },
+    {
+      "parameterCode": "HCLC",
+      "parameterDescription": "HCl concentration (ppm)"
+    },
+    {
+      "parameterCode": "HFRE",
+      "parameterDescription": "HF Electrical Output Based Emissions Rate (lb/MWh)"
+    },
+    {
+      "parameterCode": "HFRH",
+      "parameterDescription": "HF Heat Input Based Emissions Rate (lb/mmBtu)"
+    },
+    {
+      "parameterCode": "HFC",
+      "parameterDescription": "HF concentration (ppm)"
+    },
+    {
+      "parameterCode": "HI",
+      "parameterDescription": "Heat Input Rate (mmBtu/hr)"
+    },
+    {
+      "parameterCode": "HIT",
+      "parameterDescription": "Heat Input Total (mmBtu)"
+    },
+    {
+      "parameterCode": "HGC",
+      "parameterDescription": "Hg Concentration (ugscm)"
+    },
+    {
+      "parameterCode": "HGRE",
+      "parameterDescription": "Hg Electrical Output Based Emission Rate"
+    },
+    {
+      "parameterCode": "HGRH",
+      "parameterDescription": "Hg Heat Input Based Emission Rate"
+    },
+    {
+      "parameterCode": "HCL",
+      "parameterDescription": "Hydrogen chloride"
+    },
+    {
+      "parameterCode": "HF",
+      "parameterDescription": "Hydrogen fluoride"
+    },
+    {
+      "parameterCode": "H2OX",
+      "parameterDescription": "Maximum Moisture (pct)"
+    },
+    {
+      "parameterCode": "NOCX",
+      "parameterDescription": "Maximum NOx Concentration (ppm)"
+    },
+    {
+      "parameterCode": "NORX",
+      "parameterDescription": "Maximum NOx Emission Rate (lb/mmBtu)"
+    },
+    {
+      "parameterCode": "O2X",
+      "parameterDescription": "Maximum O2 Concentration (pct)"
+    },
+    {
+      "parameterCode": "MHHI",
+      "parameterDescription": "Maximum Rated Hourly Heat Input Rate (mmBtu/hr)"
+    },
+    {
+      "parameterCode": "SO2X",
+      "parameterDescription": "Maximum SO2 Concentration (ppm)"
+    },
+    {
+      "parameterCode": "SORX",
+      "parameterDescription": "Maximum SO2 Emission Rate (lb/mmBtu)"
+    },
+    {
+      "parameterCode": "FLOX",
+      "parameterDescription": "Maximum Stack Flow (scfh)"
+    },
+    {
+      "parameterCode": "HG",
+      "parameterDescription": "Mercury"
+    },
+    {
+      "parameterCode": "MNGF",
+      "parameterDescription": "Minimum Gas Flow Rate (hscf)"
+    },
+    {
+      "parameterCode": "MNHI",
+      "parameterDescription": "Minimum Heat Input Rate (mmBtu/hr)"
+    },
+    {
+      "parameterCode": "H2ON",
+      "parameterDescription": "Minimum Moisture (pct)"
+    },
+    {
+      "parameterCode": "MNNX",
+      "parameterDescription": "Minimum NOx Emission Rate (lb/mmBtu)"
+    },
+    {
+      "parameterCode": "O2N",
+      "parameterDescription": "Minimum O2 Concentration (pct)"
+    },
+    {
+      "parameterCode": "MNOF",
+      "parameterDescription": "Minimum Oil Flow Rate"
+    },
+    {
+      "parameterCode": "BWA",
+      "parameterDescription": "Moisture Fraction in Ambient Air"
+    },
+    {
+      "parameterCode": "H2O",
+      "parameterDescription": "Moisture Percentage (pct)"
+    },
+    {
+      "parameterCode": "NOXC",
+      "parameterDescription": "NOx Concentration (ppm)"
+    },
+    {
+      "parameterCode": "NOXR",
+      "parameterDescription": "NOx Emission Rate (lb/mmBtu)"
+    },
+    {
+      "parameterCode": "NOX",
+      "parameterDescription": "NOx Hourly Mass Rate (lb/hr)"
+    },
+    {
+      "parameterCode": "NOXM",
+      "parameterDescription": "NOx Mass (lb)"
+    },
+    {
+      "parameterCode": "OPHOURS",
+      "parameterDescription": "Number of Operating Hours"
+    },
+    {
+      "parameterCode": "O2C",
+      "parameterDescription": "O2 Concentration (pct)"
+    },
+    {
+      "parameterCode": "FOIL",
+      "parameterDescription": "Oil Flow Rate"
+    },
+    {
+      "parameterCode": "OILM",
+      "parameterDescription": "Oil Mass Flow Rate (lb/hr)"
+    },
+    {
+      "parameterCode": "VOIL",
+      "parameterDescription": "Oil Volume"
+    },
+    {
+      "parameterCode": "OILV",
+      "parameterDescription": "Oil Volumetric Flow Rate"
+    },
+    {
+      "parameterCode": "OP",
+      "parameterDescription": "Opacity"
+    },
+    {
+      "parameterCode": "LOAD",
+      "parameterDescription": "Operating Load"
+    },
+    {
+      "parameterCode": "OPTIME",
+      "parameterDescription": "Operating Time (hr)"
+    },
+    {
+      "parameterCode": "PM",
+      "parameterDescription": "Particulate Matter"
+    },
+    {
+      "parameterCode": "SO2C",
+      "parameterDescription": "SO2 Concentration (ppm)"
+    },
+    {
+      "parameterCode": "SO2RE",
+      "parameterDescription": "SO2 Electrical Output Based Hourly Emission Rate (lb/MW-hr)"
+    },
+    {
+      "parameterCode": "SO2RH",
+      "parameterDescription": "SO2 Heat Input Based Hourly Emission Rate (lb/mmBtu)"
+    },
+    {
+      "parameterCode": "SO2R",
+      "parameterDescription": "SO2 Hourly  Emission Rate (lb/mmBtu)"
+    },
+    {
+      "parameterCode": "SO2",
+      "parameterDescription": "SO2 Hourly Mass Rate (lb/hr)"
+    },
+    {
+      "parameterCode": "SO2M",
+      "parameterDescription": "SO2 Mass (lb)"
+    },
+    {
+      "parameterCode": "SGF",
+      "parameterDescription": "Sample Gas Flow"
+    },
+    {
+      "parameterCode": "FLOW",
+      "parameterDescription": "Stack Flow (scfh)"
+    },
+    {
+      "parameterCode": "SULFUR",
+      "parameterDescription": "Sulfur Content"
+    },
+    {
+      "parameterCode": "PMC",
+      "parameterDescription": "PM Concentration (mg/acm)"
+    },
+    {
+      "parameterCode": "PMRE",
+      "parameterDescription": "Gross Output-Based PM Emission Rate (lb/MWh)"
+    },
+    {
+      "parameterCode": "PMRH",
+      "parameterDescription": "Heat Input-Based PM Emission Rate (lb/mmBtu)"
+    }
+  ]
+}

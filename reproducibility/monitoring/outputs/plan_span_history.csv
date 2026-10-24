@@ -1,0 +1,5 @@
+source,source_member,kind,facility_id,unit_id,componentTypeCode,spanScaleCode,spanMethodCode,mpcValue,mpfValue,spanValue,fullScaleRange,spanUnitsOfMeasureCode,flowSpanValue,flowFullScaleRange,beginDate,beginHour,endDate,endHour,begin,end,interval_status,interval_note
+original_plan_unit2,original_plan_unit2.xml,span,6065,2,FLOW,,F,,140000000,2500,2500,KSCFM,150000000,150000000,2010-10-01,0,,,2010-10-01,,valid,
+original_plan_unit2,original_plan_unit2.xml,span,6065,2,CO2,H,TB,14,,20,20,PCT,,,2010-10-01,0,,,2010-10-01,,valid,
+current_plan_unit2,current_plan_unit2.json#0,span,6065,2,FLOW,,F,,140000000,2500,2500,KSCFM,150000000,150000000,2010-10-01,0,,,2010-10-01,,valid,
+current_plan_unit2,current_plan_unit2.json#0,span,6065,2,CO2,H,TB,14,,20,20,PCT,,,2010-10-01,0,,,2010-10-01,,valid,

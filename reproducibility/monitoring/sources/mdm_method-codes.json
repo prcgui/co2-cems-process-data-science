@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "methodCode": "AD",
+      "methodDescription": "Appendix D"
+    },
+    {
+      "methodCode": "ADCALC",
+      "methodDescription": "Appendix D Measured and Apportioned"
+    },
+    {
+      "methodCode": "AE",
+      "methodDescription": "Appendix E"
+    },
+    {
+      "methodCode": "AMS",
+      "methodDescription": "Alternative Monitoring System"
+    },
+    {
+      "methodCode": "CALC",
+      "methodDescription": "Apportioned or Summed Value"
+    },
+    {
+      "methodCode": "CEM",
+      "methodDescription": "Continuous Emission Monitor"
+    },
+    {
+      "methodCode": "CEMF23",
+      "methodDescription": "Continuous Emission Monitor or Equation F-23"
+    },
+    {
+      "methodCode": "CEMNOXR",
+      "methodDescription": "Continuous Emission Monitor or Calculation from NOx Rate"
+    },
+    {
+      "methodCode": "COM",
+      "methodDescription": "Continuous Opacity or Particulate Matter Monitor"
+    },
+    {
+      "methodCode": "EXP",
+      "methodDescription": "Exempt"
+    },
+    {
+      "methodCode": "F23",
+      "methodDescription": "Equation F-23"
+    },
+    {
+      "methodCode": "FSA",
+      "methodDescription": "Fueling Sample and Analysis"
+    },
+    {
+      "methodCode": "LME",
+      "methodDescription": "Low Mass Emissions"
+    },
+    {
+      "methodCode": "LTFCALC",
+      "methodDescription": "Long-Term Fuel Flow Measured and Apportioned"
+    },
+    {
+      "methodCode": "LTFF",
+      "methodDescription": "Long-Term Fuel Flow"
+    },
+    {
+      "methodCode": "MDF",
+      "methodDescription": "Moisture Default"
+    },
+    {
+      "methodCode": "MHHI",
+      "methodDescription": "Maximum Hourly Heat Input"
+    },
+    {
+      "methodCode": "MMS",
+      "methodDescription": "Moisture Sensor"
+    },
+    {
+      "methodCode": "MTB",
+      "methodDescription": "Moisture Lookup Table"
+    },
+    {
+      "methodCode": "MWD",
+      "methodDescription": "Wet and Dry O2 Monitors"
+    },
+    {
+      "methodCode": "NOXR",
+      "methodDescription": "NOx Mass Calculated from NOx Emission Rate"
+    },
+    {
+      "methodCode": "PEM",
+      "methodDescription": "Predictive Emissions Monitor"
+    },
+    {
+      "methodCode": "CEMST",
+      "methodDescription": "Hg CEMS and Sorbent Trap Monitoring System"
+    },
+    {
+      "methodCode": "ST",
+      "methodDescription": "Sorbent Trap Monitoring System"
+    }
+  ]
+}

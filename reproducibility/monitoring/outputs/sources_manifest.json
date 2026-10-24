@@ -1,0 +1,92 @@
+[
+  {
+    "path": "sources/bulk_catalog_6065_monitoring.json",
+    "size_bytes": 466,
+    "sha256": "4b2531184b6e323a6fa8926eeb72b523ea3c08b6e56748477170ef88af8e0bd1"
+  },
+  {
+    "path": "sources/current_configurations_6065.json",
+    "size_bytes": 426,
+    "sha256": "282aa5a1a02d155e550409a7844c26e4ed93cf8016b4986f9188b5dce06f1b8e"
+  },
+  {
+    "path": "sources/current_plan_unit2.json",
+    "size_bytes": 8599,
+    "sha256": "b378494951c030505fab32ceec4a30caf0977254949e1270a8cc7b9976fa1406"
+  },
+  {
+    "path": "sources/ecmps_monitoring_plan_reporting_instructions_2024-12-20.pdf",
+    "size_bytes": 1296025,
+    "sha256": "62c540258dd387c8fa9f6ffa018f6f9a05b849faa28e9f3d7f7a91f20ca8bb15"
+  },
+  {
+    "path": "sources/ecmps_verified_pages.txt",
+    "size_bytes": 12685,
+    "sha256": "d6a315b6fde97bc5d5849a3b800bdd127ab0be39bbec4f4b0598b8d84352900a"
+  },
+  {
+    "path": "sources/emissions_fields.json",
+    "size_bytes": 506,
+    "sha256": "af63416c2db34ce719d96578c6771461453a7abc7cba3999e6f0a65be0ea430b"
+  },
+  {
+    "path": "sources/fetch_verification.json",
+    "size_bytes": 193,
+    "sha256": "c26220c1aa290a54df0b0de70ce2b328c217b9470202baf456135f072e38cbcd"
+  },
+  {
+    "path": "sources/mdm_acquisition-method-codes.json",
+    "size_bytes": 2338,
+    "sha256": "b205a4193b2621cab241cdc5db98b582da7b83d8dfcf7bc3d0d10ee287153141"
+  },
+  {
+    "path": "sources/mdm_code_list.json",
+    "size_bytes": 7978,
+    "sha256": "ffbba4a9024dd21a8623eb9a7537a180f7fb3f05977aa89ac925460ac51f7d69"
+  },
+  {
+    "path": "sources/mdm_component-type-codes.json",
+    "size_bytes": 4725,
+    "sha256": "bba988da50949873d68a018129c5541e3ac1536df941f37d247c3d46f7788cc1"
+  },
+  {
+    "path": "sources/mdm_method-codes.json",
+    "size_bytes": 2372,
+    "sha256": "2692d33db55ab6a2dc9cef5bfa85e8d72be759207810a33ed82dec1444e9efda"
+  },
+  {
+    "path": "sources/mdm_parameter-codes.json",
+    "size_bytes": 7494,
+    "sha256": "7a192735b8b15be20cedb7ec1d2675b25a80afa7002d33ce816efb8c73005ba2"
+  },
+  {
+    "path": "sources/mdm_substitute-data-codes.json",
+    "size_bytes": 1074,
+    "sha256": "391f819909bdcea6cd3252ce63811630091c8b4db0d971986a3bcabf0af74a1e"
+  },
+  {
+    "path": "sources/mdm_system-type-codes.json",
+    "size_bytes": 2133,
+    "sha256": "42831b3f8b38f28711f39cf6f3f8f889ce84d041b4b937e70c7a1707e4c92cef"
+  },
+  {
+    "path": "sources/original_plan_unit2.xml",
+    "size_bytes": 9903,
+    "sha256": "1fbaf21ecc1fd8155d9d7a80cce3699b9b22f3f7ab45decc51eb07bbec21116b"
+  },
+  {
+    "path": "sources/original_zip_verification.json",
+    "size_bytes": 985,
+    "sha256": "97637ac8c1d5f827d94b0963ebcc5ea2f4d8c8eac2ca53ca64e7913233801754"
+  },
+  {
+    "path": "sources/selection_rule_evidence.json",
+    "size_bytes": 2259,
+    "sha256": "16b0dd3d37f2c17858b38f24eff6a4db33849619c41c9b8f2a48a6410e64e5c4"
+  },
+  {
+    "path": "sources/source_provenance.json",
+    "size_bytes": 7583,
+    "sha256": "03bfdd57bd5f2cab074563aaae3b83b5d943581281a34e58d63e4c0d87f6ac93"
+  }
+]

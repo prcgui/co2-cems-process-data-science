@@ -1,0 +1,300 @@
+{
+  "orisCode": 6065,
+  "id": "DWH3021DNT-5A975BAEEA3B4DE698FA731B4AE3347A",
+  "version": "1.0.0",
+  "updateDate": "2026-01-26T20:07:00.000Z",
+  "beginReportPeriodId": 72,
+  "endReportPeriodId": null,
+  "monitoringLocationData": [
+    {
+      "id": "6078",
+      "unitId": "2",
+      "stackPipeId": null,
+      "monitoringMethodData": [
+        {
+          "parameterCode": "CO2",
+          "monitoringMethodCode": "CEM",
+          "substituteDataCode": "SPTS",
+          "bypassApproachCode": null,
+          "beginDate": "2010-10-01",
+          "beginHour": 0,
+          "endDate": null,
+          "endHour": null
+        }
+      ],
+      "monitoringFormulaData": [
+        {
+          "parameterCode": "CO2",
+          "formulaId": "203",
+          "formulaCode": "F-11",
+          "formulaText": null,
+          "beginDate": "2010-10-01",
+          "beginHour": 0,
+          "endDate": null,
+          "endHour": null
+        }
+      ],
+      "monitoringSystemData": [
+        {
+          "monitoringSystemId": "203",
+          "systemTypeCode": "CO2",
+          "systemDesignationCode": "P",
+          "fuelCode": "NFS",
+          "beginDate": "2010-10-01",
+          "beginHour": 0,
+          "endDate": null,
+          "endHour": null,
+          "monitoringSystemComponentData": [
+            {
+              "componentId": "230",
+              "beginDate": "2010-10-01",
+              "beginHour": 0,
+              "endDate": "2018-01-04",
+              "endHour": 14
+            },
+            {
+              "componentId": "222",
+              "beginDate": "2010-10-01",
+              "beginHour": 0,
+              "endDate": "2024-09-18",
+              "endHour": 9
+            },
+            {
+              "componentId": "224",
+              "beginDate": "2010-10-01",
+              "beginHour": 0,
+              "endDate": "2017-08-28",
+              "endHour": 9
+            },
+            {
+              "componentId": "229",
+              "beginDate": "2010-10-01",
+              "beginHour": 0,
+              "endDate": "2024-09-18",
+              "endHour": 9
+            },
+            {
+              "componentId": "235",
+              "beginDate": "2018-01-04",
+              "beginHour": 15,
+              "endDate": null,
+              "endHour": null
+            },
+            {
+              "componentId": "225",
+              "beginDate": "2017-08-28",
+              "beginHour": 10,
+              "endDate": null,
+              "endHour": null
+            },
+            {
+              "componentId": "422",
+              "beginDate": "2024-09-18",
+              "beginHour": 10,
+              "endDate": null,
+              "endHour": null
+            },
+            {
+              "componentId": "234",
+              "beginDate": "2024-09-18",
+              "beginHour": 10,
+              "endDate": null,
+              "endHour": null
+            }
+          ]
+        },
+        {
+          "monitoringSystemId": "204",
+          "systemTypeCode": "FLOW",
+          "systemDesignationCode": "P",
+          "fuelCode": "NFS",
+          "beginDate": "2010-10-01",
+          "beginHour": 0,
+          "endDate": null,
+          "endHour": null,
+          "monitoringSystemComponentData": [
+            {
+              "componentId": "223",
+              "beginDate": "2010-10-01",
+              "beginHour": 0,
+              "endDate": null,
+              "endHour": null
+            },
+            {
+              "componentId": "224",
+              "beginDate": "2010-10-01",
+              "beginHour": 0,
+              "endDate": "2017-08-28",
+              "endHour": 9
+            },
+            {
+              "componentId": "230",
+              "beginDate": "2010-10-01",
+              "beginHour": 0,
+              "endDate": "2018-01-04",
+              "endHour": 14
+            },
+            {
+              "componentId": "235",
+              "beginDate": "2018-01-04",
+              "beginHour": 15,
+              "endDate": null,
+              "endHour": null
+            },
+            {
+              "componentId": "225",
+              "beginDate": "2017-08-28",
+              "beginHour": 10,
+              "endDate": null,
+              "endHour": null
+            }
+          ]
+        }
+      ],
+      "componentData": [
+        {
+          "componentId": "229",
+          "componentTypeCode": "PRB",
+          "sampleAcquisitionMethodCode": "DIL",
+          "basisCode": null,
+          "manufacturer": "M&C",
+          "modelVersion": "SP2000H",
+          "serialNumber": "8200371",
+          "analyzerRangeData": []
+        },
+        {
+          "componentId": "230",
+          "componentTypeCode": "DAHS",
+          "sampleAcquisitionMethodCode": null,
+          "basisCode": null,
+          "manufacturer": "ESC",
+          "modelVersion": "STACKVISION",
+          "serialNumber": null,
+          "analyzerRangeData": []
+        },
+        {
+          "componentId": "224",
+          "componentTypeCode": "DL",
+          "sampleAcquisitionMethodCode": null,
+          "basisCode": null,
+          "manufacturer": "ESC",
+          "modelVersion": "8832",
+          "serialNumber": "A2066",
+          "analyzerRangeData": []
+        },
+        {
+          "componentId": "222",
+          "componentTypeCode": "CO2",
+          "sampleAcquisitionMethodCode": "DIL",
+          "basisCode": "W",
+          "manufacturer": "TECO",
+          "modelVersion": "410I",
+          "serialNumber": "0730925428",
+          "analyzerRangeData": [
+            {
+              "analyzerRangeCode": "H",
+              "dualRangeIndicator": 0,
+              "beginDate": "2010-10-01",
+              "beginHour": 0,
+              "endDate": "2024-09-18",
+              "endHour": 9
+            }
+          ]
+        },
+        {
+          "componentId": "223",
+          "componentTypeCode": "FLOW",
+          "sampleAcquisitionMethodCode": "U",
+          "basisCode": "W",
+          "manufacturer": "TELEDYNE INSTRUMENTS",
+          "modelVersion": "ULTRAFLOW 150",
+          "serialNumber": "1500829",
+          "analyzerRangeData": []
+        },
+        {
+          "componentId": "235",
+          "componentTypeCode": "DAHS",
+          "sampleAcquisitionMethodCode": null,
+          "basisCode": null,
+          "manufacturer": "ESC",
+          "modelVersion": "STACKVISION",
+          "serialNumber": "2M272806PD",
+          "analyzerRangeData": []
+        },
+        {
+          "componentId": "225",
+          "componentTypeCode": "DL",
+          "sampleAcquisitionMethodCode": null,
+          "basisCode": null,
+          "manufacturer": "ESC",
+          "modelVersion": "8864",
+          "serialNumber": "C1418",
+          "analyzerRangeData": []
+        },
+        {
+          "componentId": "234",
+          "componentTypeCode": "PRB",
+          "sampleAcquisitionMethodCode": "DIL",
+          "basisCode": null,
+          "manufacturer": "M&C",
+          "modelVersion": "SP2006",
+          "serialNumber": "29889-2147387",
+          "analyzerRangeData": []
+        },
+        {
+          "componentId": "422",
+          "componentTypeCode": "CO2",
+          "sampleAcquisitionMethodCode": "DIL",
+          "basisCode": "W",
+          "manufacturer": "TELEDYNE",
+          "modelVersion": "T360",
+          "serialNumber": "581",
+          "analyzerRangeData": [
+            {
+              "analyzerRangeCode": "H",
+              "dualRangeIndicator": 0,
+              "beginDate": "2024-09-18",
+              "beginHour": 10,
+              "endDate": null,
+              "endHour": null
+            }
+          ]
+        }
+      ],
+      "monitoringSpanData": [
+        {
+          "componentTypeCode": "FLOW",
+          "spanScaleCode": null,
+          "spanMethodCode": "F",
+          "mpcValue": null,
+          "mpfValue": 140000000,
+          "spanValue": 2500,
+          "fullScaleRange": 2500,
+          "spanUnitsOfMeasureCode": "KSCFM",
+          "flowSpanValue": 150000000,
+          "flowFullScaleRange": 150000000,
+          "beginDate": "2010-10-01",
+          "beginHour": 0,
+          "endDate": null,
+          "endHour": null
+        },
+        {
+          "componentTypeCode": "CO2",
+          "spanScaleCode": "H",
+          "spanMethodCode": "TB",
+          "mpcValue": 14,
+          "mpfValue": null,
+          "spanValue": 20,
+          "fullScaleRange": 20,
+          "spanUnitsOfMeasureCode": "PCT",
+          "flowSpanValue": null,
+          "flowFullScaleRange": null,
+          "beginDate": "2010-10-01",
+          "beginHour": 0,
+          "endDate": null,
+          "endHour": null
+        }
+      ]
+    }
+  ]
+}

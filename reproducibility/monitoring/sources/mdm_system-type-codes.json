@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "systemTypeCode": "CO2",
+      "systemTypeDescription": "CO2 Concentration"
+    },
+    {
+      "systemTypeCode": "FLOW",
+      "systemTypeDescription": "Stack Flow"
+    },
+    {
+      "systemTypeCode": "GAS",
+      "systemTypeDescription": "Gas Fuel Flow"
+    },
+    {
+      "systemTypeCode": "H2O",
+      "systemTypeDescription": "Moisture (O2 Wet and Dry)"
+    },
+    {
+      "systemTypeCode": "H2OM",
+      "systemTypeDescription": "Moisture Sensor"
+    },
+    {
+      "systemTypeCode": "H2OT",
+      "systemTypeDescription": "Moisture Table"
+    },
+    {
+      "systemTypeCode": "HG",
+      "systemTypeDescription": "Hg Concentration CEMS"
+    },
+    {
+      "systemTypeCode": "LTGS",
+      "systemTypeDescription": "Long-term Gas Fuel Flow"
+    },
+    {
+      "systemTypeCode": "LTOL",
+      "systemTypeDescription": "Long-term Oil Fuel Flow"
+    },
+    {
+      "systemTypeCode": "NOX",
+      "systemTypeDescription": "NOx Emission Rate"
+    },
+    {
+      "systemTypeCode": "NOXC",
+      "systemTypeDescription": "NOx Concentration"
+    },
+    {
+      "systemTypeCode": "NOXE",
+      "systemTypeDescription": "NOx Appendix E"
+    },
+    {
+      "systemTypeCode": "NOXP",
+      "systemTypeDescription": "NOx PEMS"
+    },
+    {
+      "systemTypeCode": "O2",
+      "systemTypeDescription": "O2 Concentration"
+    },
+    {
+      "systemTypeCode": "OILM",
+      "systemTypeDescription": "Mass of Oil Fuel Flow"
+    },
+    {
+      "systemTypeCode": "OILV",
+      "systemTypeDescription": "Volumetric Oil Fuel Flow"
+    },
+    {
+      "systemTypeCode": "OP",
+      "systemTypeDescription": "Opacity"
+    },
+    {
+      "systemTypeCode": "PM",
+      "systemTypeDescription": "Particulate Matter"
+    },
+    {
+      "systemTypeCode": "SO2",
+      "systemTypeDescription": "SO2 Concentration"
+    },
+    {
+      "systemTypeCode": "HCL",
+      "systemTypeDescription": "HCl Concentration CEMS"
+    },
+    {
+      "systemTypeCode": "HF",
+      "systemTypeDescription": "HF Concentration CEMS"
+    },
+    {
+      "systemTypeCode": "ST",
+      "systemTypeDescription": "Sorbent Trap Monitoring System"
+    }
+  ]
+}

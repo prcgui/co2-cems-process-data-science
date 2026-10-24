@@ -1,0 +1,32 @@
+{
+  "url": "https://api.epa.gov/easey/bulk-files/xml/mp/006065_MP.zip",
+  "accessed_at_utc": "2026-10-24T13:54:12.094816+00:00",
+  "status": 200,
+  "bytes": 8517,
+  "sha256": "921b6607e66a1ce75457a282899e2f5c877daa754a6c4ebcf0e8f8a967707ba8",
+  "members": [
+    {
+      "name": "6065_1_20250122_1995Q1_MP.xml",
+      "bytes": 61909,
+      "sha256": "c7fdbd8643ff5c2aa65e7d72f355448a5d9ee3fee79ead417190cf620bf3ec67"
+    },
+    {
+      "name": "6065_2_20260126_2010Q4_MP.xml",
+      "bytes": 44529,
+      "sha256": "d8d52678ced7474d8728aa61a1573e861f7a8bd42a43d441b533da2c8e75f9dd"
+    }
+  ],
+  "original_members": [
+    {
+      "name": "6065_1_20250122_1995Q1_MP.xml",
+      "bytes": 61909,
+      "sha256": "c7fdbd8643ff5c2aa65e7d72f355448a5d9ee3fee79ead417190cf620bf3ec67"
+    },
+    {
+      "name": "6065_2_20260126_2010Q4_MP.xml",
+      "bytes": 44529,
+      "sha256": "d8d52678ced7474d8728aa61a1573e861f7a8bd42a43d441b533da2c8e75f9dd"
+    }
+  ],
+  "members_match_original": true
+}

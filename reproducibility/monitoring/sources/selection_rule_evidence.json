@@ -1,0 +1,25 @@
+{
+  "notebook": "notebooks/01_selecao_unidade_estudo.ipynb",
+  "notebook_sha256": "a9243370804766c728a1cbe8a721ceea14dd75ce8d783d2f29af4584d25379d4",
+  "repository_commit": "8f23aa9488cdab980d2dcd875e720c15242f4845",
+  "notes": [
+    {
+      "cell_index_zero_based": 12,
+      "source_line_one_based": 395,
+      "excerpt": "        \"CO2 Mass Measure Indicator\"\n        in g.columns\n        and operating_hours > 0\n    ):\n\n        indicator = (\n            g.loc[\n                on,\n                \"CO2 Mass Measure Indicator\"\n            ]\n            .astype(str)\n            .str.strip()\n            .str.lower()\n        )\n\n\n        measured_share = float(\n            indicator\n            .str.contains(\n                \"measured\",\n                na=False\n            )\n            .mean()\n        )\n\n    else:\n\n        measured_share = np.nan\n",
+      "excerpt_start_line_one_based": 377,
+      "source_line_text": "            .str.contains("
+    },
+    {
+      "cell_index_zero_based": 13,
+      "source_line_one_based": 375,
+      "excerpt": "        \"CO2 Mass Measure Indicator\"\n        in g.columns\n        and operating_hours > 0\n    ):\n\n        indicator = (\n            g.loc[\n                on,\n                \"CO2 Mass Measure Indicator\"\n            ]\n            .astype(str)\n            .str.strip()\n            .str.lower()\n        )\n\n\n        measured_share = float(\n            indicator\n            .str.contains(\n                \"measured\",\n                na=False\n            )\n            .mean()\n        )\n\n    else:\n\n        measured_share = np.nan\n",
+      "excerpt_start_line_one_based": 357,
+      "source_line_text": "            .str.contains("
+    }
+  ],
+  "interpretation": "The original measured_share contains the substring measured and includes Measured and Substitute. The historical audit reports exact labels separately and does not alter selection.",
+  "repository": "prcgui/co2-cems-process-data-science",
+  "notebook_url": "https://github.com/prcgui/co2-cems-process-data-science/blob/8f23aa9488cdab980d2dcd875e720c15242f4845/notebooks/01_selecao_unidade_estudo.ipynb",
+  "notebook_git_blob_sha": "b91dcf1db5d5ec1fd57fe58909f2327f4f9e6af7"
+}

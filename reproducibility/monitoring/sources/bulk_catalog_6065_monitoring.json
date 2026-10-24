@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "filename": "006065_MP.zip",
+      "s3Path": "xml/mp/006065_MP.zip",
+      "bytes": 106438,
+      "kiloBytes": 103.9,
+      "megaBytes": 0.1,
+      "gigaBytes": 0,
+      "lastUpdated": "2026-01-27T05:00:00.000Z",
+      "metadata": {
+        "dataType": "XML",
+        "description": "Monitoring plan file submitted by facility ID 6065 under Part 75",
+        "stateCode": "MO",
+        "dataSubType": "Monitoring Plan"
+      }
+    }
+  ]
+}

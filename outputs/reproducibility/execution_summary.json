@@ -1,0 +1,30 @@
+{
+  "started_at_utc": "2026-10-24T14:06:57.352731+00:00",
+  "runner_sha256": "f67dba6135bef21f8bba4de0b4033843047f6f4fa16326ace1ae6bea2b157e9c",
+  "scope": [
+    "03A.04",
+    "03A.05"
+  ],
+  "runs": [
+    {
+      "notebook": "notebooks/03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+      "code_source_sha256": "16e4100d4891bb4012524d1e11d83cee81de24bee183933d0288e98d781c6942",
+      "executed_notebook_sha256": "f9e656d187d2b8ca56b672d2b611b379bfe629e9647c83d98dde7945ed9ca452",
+      "elapsed_seconds": 17.254,
+      "executed_code_cells": 10,
+      "completed": true
+    },
+    {
+      "notebook": "notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "code_source_sha256": "cb76007a9b8b4dcdaed1c9d08fcba997a112da756a59267e4ddc16392c65c9ca",
+      "executed_notebook_sha256": "c33a24742779f08abfacbe9403656c96089002b446d27f6ff70f65c3d50075f1",
+      "elapsed_seconds": 10.233,
+      "executed_code_cells": 10,
+      "completed": true
+    }
+  ],
+  "completed": true,
+  "finished_at_utc": "2026-10-24T14:07:24.977708+00:00",
+  "reference_comparison_passed": true,
+  "inputs_unchanged": true
+}

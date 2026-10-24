@@ -278,7 +278,7 @@ A delimitação temporal adotada foi:
 - **2023–2024:** regime operacional distinto, preservado para análises específicas, mas excluído da amostra principal;
 - **2025:** período futuro de avaliação.
 
-A decisão sobre 2023 e 2024 foi baseada em indicadores operacionais antes da comparação preditiva. O detalhamento está em [03A04_delimitacao_amostra_historica.md](outputs/reports/03A04_delimitacao_amostra_historica.md).
+A delimitação de 2011 a 2022 foi exploratória e consolidada após os backtests, que incluíram avaliação em 2025. A justificativa operacional para o tratamento de 2023 e 2024 está em [03A04_delimitacao_amostra_historica.md](outputs/reports/03A04_delimitacao_amostra_historica.md).
 
 ### Generalização 2011–2022 para 2025
 
@@ -449,6 +449,13 @@ Para execução local:
 ```bash
 pip install -r requirements.txt
 ```
+
+
+## Reprodução verificada de 03A.04 e 03A.05
+
+O [guia de reprodução](reproducibility/README.md) documenta os insumos, o ambiente fixado, a execução local, as correções de integridade e as evidências geradas. A execução integral reproduziu os sete CSVs de referência byte a byte; nove Parquets de amostras e previsões mantiveram valores e tipos exatamente iguais aos originais preservados. O guia explicita as diferenças de serialização, a correção do consolidado e os limites científicos desta verificação.
+
+A [auditoria do monitoramento histórico](reproducibility/monitoring/README.md) documenta métodos declarados, vigências da instrumentação, indicadores de medição e substituição e as limitações dessa evidência.
 
 
 ## Autores

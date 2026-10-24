@@ -1,0 +1,58 @@
+year,raw_indicator,audit_category,n_all,n_on,n_off,co2_mass_in_on_hours_short_tons
+2011,<missing>,missing,1215,0,1215,
+2011,Measured,measured_only,7502,7502,0,5276912.645
+2011,Measured and Substitute,mixed_measured_substitute,37,37,0,17577.861999999997
+2011,Substitute,substitute_only,6,6,0,4026.6
+2012,<missing>,missing,598,0,598,
+2012,Measured,measured_only,8180,8180,0,6524822.59
+2012,Measured and Substitute,mixed_measured_substitute,5,5,0,3676.4999999999995
+2012,Substitute,substitute_only,1,1,0,846.9
+2013,<missing>,missing,1123,0,1123,
+2013,Measured,measured_only,7622,7622,0,5900126.555
+2013,Measured and Substitute,mixed_measured_substitute,15,15,0,10716.7
+2014,<missing>,missing,2831,0,2831,
+2014,Measured,measured_only,5861,5861,0,4465426.006999999
+2014,Measured and Substitute,mixed_measured_substitute,57,57,0,26456.957000000002
+2014,Substitute,substitute_only,11,11,0,3053.255
+2015,<missing>,missing,1346,0,1346,
+2015,Measured,measured_only,7382,7382,0,5587283.365
+2015,Measured and Substitute,mixed_measured_substitute,20,20,0,12797.499999999998
+2015,Substitute,substitute_only,12,12,0,5544.7
+2016,<missing>,missing,2702,0,2702,
+2016,Measured,measured_only,6027,6027,0,4677408.947
+2016,Measured and Substitute,mixed_measured_substitute,38,38,0,7233.631
+2016,Substitute,substitute_only,17,17,0,1081.65
+2017,<missing>,missing,255,0,255,
+2017,Measured,measured_only,8471,8471,0,6341184.962
+2017,Measured and Substitute,mixed_measured_substitute,32,32,0,19801.8
+2017,Substitute,substitute_only,2,2,0,1679.6
+2018,<missing>,missing,3473,0,3473,
+2018,Measured,measured_only,5263,5263,0,3772475.6810000003
+2018,Measured and Substitute,mixed_measured_substitute,7,7,0,4617.936000000001
+2018,Substitute,substitute_only,17,17,0,2420.4790000000003
+2019,<missing>,missing,1058,0,1058,
+2019,Measured,measured_only,7672,7672,0,5606071.768
+2019,Measured and Substitute,mixed_measured_substitute,25,25,0,18602.7
+2019,Substitute,substitute_only,5,5,0,3733.4
+2020,<missing>,missing,2218,0,2218,
+2020,Measured,measured_only,6546,6546,0,4700597.461
+2020,Measured and Substitute,mixed_measured_substitute,10,10,0,6980.0
+2020,Substitute,substitute_only,10,10,0,999.856
+2021,<missing>,missing,2057,0,2057,
+2021,Measured,measured_only,6672,6672,0,4599711.2469999995
+2021,Measured and Substitute,mixed_measured_substitute,22,22,0,9954.569
+2021,Substitute,substitute_only,9,9,0,1233.024
+2022,<missing>,missing,2483,0,2483,
+2022,Measured,measured_only,6257,6257,0,4052139.457
+2022,Measured and Substitute,mixed_measured_substitute,20,20,0,7639.3
+2023,<missing>,missing,4444,0,4444,
+2023,Measured,measured_only,4277,4277,0,2853131.058
+2023,Measured and Substitute,mixed_measured_substitute,32,32,0,6583.262000000001
+2023,Substitute,substitute_only,7,7,0,650.959
+2024,<missing>,missing,4383,0,4383,
+2024,Measured,measured_only,4320,4320,0,2757370.933
+2024,Measured and Substitute,mixed_measured_substitute,65,65,0,35810.91799999999
+2024,Substitute,substitute_only,16,16,0,1838.782
+2025,<missing>,missing,2511,0,2511,
+2025,Measured,measured_only,6209,6209,0,3616454.166
+2025,Measured and Substitute,mixed_measured_substitute,40,40,0,17133.972

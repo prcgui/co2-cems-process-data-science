@@ -47,7 +47,7 @@ Iatan Unit 2.
 Os anos de 2023 e 2024 foram classificados como período de regime
 operacional distinto.
 
-Essa decisão foi tomada antes da comparação preditiva e baseou-se em
+A delimitação de 2011 a 2022 foi exploratória e consolidada após os backtests, que incluíram avaliação em 2025. Sua justificativa operacional baseou-se em
 indicadores operacionais da própria unidade, incluindo:
 
 - proporção anual de horas em operação;
@@ -74,29 +74,29 @@ O desenho experimental foi:
 
 **Teste out-of-time: 2025**
 
-O modelo final utilizou 167,664 observações históricas e
-foi avaliado em 12,498 observações válidas de 2025.
+O modelo final utilizou 83,832 observações históricas e
+foi avaliado em 6,249 observações válidas de 2025.
 
-Foram selecionadas 199 árvores.
+Foram selecionadas 202 árvores.
 
 Resultados:
 
-- MAE = 50.2445 short tons de CO2;
-- RMSE = 68.4346 short tons de CO2;
-- R² = 0.8895;
-- NMAE = 8.64%;
-- Bias = -33.8896 short tons de CO2.
+- MAE = 50.2740 short tons de CO2;
+- RMSE = 68.4650 short tons de CO2;
+- R² = 0.8894;
+- NMAE = 8.65%;
+- Bias = -33.9686 short tons de CO2.
 
 O resultado demonstra que a relação entre carga instantânea e emissão
 de CO2 aprendida no período de 2011 a 2022 mantém capacidade relevante
 de transferência temporal para 2025.
 
-O R² de 0.8895 indica que o modelo histórico preservou
+O R² de 0.8894 indica que o modelo histórico preservou
 capacidade substancial de explicar a variabilidade das emissões de
 2025.
 
-Ao mesmo tempo, o NMAE de 8.64% e o bias de
--33.8896 mostram que a transferência não é perfeita e
+Ao mesmo tempo, o NMAE de 8.65% e o bias de
+-33.9686 mostram que a transferência não é perfeita e
 que existe deslocamento da relação carga e emissão entre o histórico
 e 2025.
 
@@ -134,7 +134,7 @@ Treinamento final:
 
 Número de árvores selecionado:
 
-114
+119
 
 ### Modelo 2
 
@@ -146,7 +146,7 @@ Treinamento final:
 
 Número de árvores selecionado:
 
-463
+524
 
 ---
 
@@ -154,9 +154,9 @@ Número de árvores selecionado:
 
 | experiment | training | test | MAE | RMSE | R2 | NMAE_pct | Bias |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Historical generalization | 2011-2022 | 2025 completo | 50.2445 | 68.4346 | 0.8895 | 8.6410 | -33.8896 |
-| Paired baseline | Jan-Oct/2025 | Nov-Dec/2025 | 23.8342 | 29.0005 | 0.9796 | 4.0497 | 9.1890 |
-| Paired historical model | 2011-2022 + Jan-Oct/2025 | Nov-Dec/2025 | 20.1855 | 25.0765 | 0.9847 | 3.4298 | -10.4366 |
+| Historical generalization | 2011-2022 | 2025 completo | 50.2740 | 68.4650 | 0.8894 | 8.6461 | -33.9686 |
+| Paired baseline | Jan-Oct/2025 | Nov-Dec/2025 | 23.3470 | 28.5786 | 0.9802 | 3.9669 | 9.0645 |
+| Paired historical model | 2011-2022 + Jan-Oct/2025 | Nov-Dec/2025 | 20.2454 | 25.1240 | 0.9847 | 3.4399 | -10.4354 |
 
 ---
 
@@ -164,33 +164,33 @@ Número de árvores selecionado:
 
 | metric | 2025_only | history_plus_2025 | relative_improvement_pct |
 | --- | --- | --- | --- |
-| MAE | 23.8342 | 20.1855 | 15.3085 |
-| RMSE | 29.0005 | 25.0765 | 13.5310 |
-| NMAE | 4.0497 | 3.4298 | 15.3085 |
+| MAE | 23.3470 | 20.2454 | 13.2849 |
+| RMSE | 28.5786 | 25.1240 | 12.0881 |
+| NMAE | 3.9669 | 3.4399 | 13.2849 |
 
 Ao acrescentar o histórico de 2011 a 2022, o MAE foi reduzido de
-23.8342 para 20.1855 short tons de CO2.
+23.3470 para 20.2454 short tons de CO2.
 
 Isso corresponde a uma redução relativa de:
 
-**15.31%**
+**13.28%**
 
-O RMSE foi reduzido de 29.0005 para
-25.0765, correspondendo a uma melhoria de:
+O RMSE foi reduzido de 28.5786 para
+25.1240, correspondendo a uma melhoria de:
 
-**13.53%**
+**12.09%**
 
-O NMAE foi reduzido de 4.05% para
-3.43%.
+O NMAE foi reduzido de 3.97% para
+3.44%.
 
 Além da melhoria nas métricas agregadas, o modelo com histórico
 apresentou menor erro absoluto em:
 
-**66.08% das horas do teste.**
+**65.30% das horas do teste.**
 
 A redução média pareada do erro absoluto foi de:
 
-**3.6487 short tons de CO2 por hora.**
+**3.1016 short tons de CO2 por hora.**
 
 Portanto, a melhoria não decorre apenas de um conjunto pequeno de
 observações com erros extremos.
@@ -204,7 +204,7 @@ maioria das horas avaliadas.
 
 O R² aumentou de:
 
-`0.9796`
+`0.9802`
 
 para:
 
@@ -212,7 +212,7 @@ para:
 
 correspondendo a uma variação absoluta de:
 
-`+0.0052`
+`+0.0045`
 
 Ambos os modelos já apresentam coeficiente de determinação elevado.
 
@@ -229,11 +229,11 @@ do histórico.
 
 O modelo treinado apenas com dados recentes apresentou:
 
-`Bias = 9.1890`
+`Bias = 9.0645`
 
 O modelo com histórico apresentou:
 
-`Bias = -10.4366`
+`Bias = -10.4354`
 
 Como o bias foi definido por:
 
@@ -246,7 +246,7 @@ O modelo enriquecido pelo histórico apresenta pequena tendência média
 de superestimação.
 
 Em magnitude absoluta, o bias passou de
-9.1890 para 10.4366 short tons.
+9.0645 para 10.4354 short tons.
 
 A redução de MAE e RMSE, portanto, não foi acompanhada por redução da
 magnitude absoluta do bias.
@@ -270,11 +270,11 @@ cada modelo antes do ajuste final.
 
 O modelo treinado apenas com 2025 utilizou:
 
-**114 árvores**
+**119 árvores**
 
 O modelo contendo histórico utilizou:
 
-**463 árvores**
+**524 árvores**
 
 Após essa etapa, outubro foi reincorporado aos respectivos conjuntos
 de treinamento.
@@ -297,17 +297,17 @@ Os resultados fornecem evidência consistente de que o histórico de 2011 a 2022
 
 O principal resultado desta etapa foi a redução de:
 
-**15.31% no MAE**
+**13.28% no MAE**
 
 quando o histórico de 2011 a 2022 foi incorporado aos dados recentes
 de 2025.
 
 Esse ganho foi acompanhado por:
 
-- redução de 13.53% no RMSE;
-- aumento do R² de 0.9796 para 0.9847;
-- redução do NMAE de 4.05% para 3.43%;
-- menor erro absoluto em 66.08% das horas avaliadas.
+- redução de 12.09% no RMSE;
+- aumento do R² de 0.9802 para 0.9847;
+- redução do NMAE de 3.97% para 3.44%;
+- menor erro absoluto em 65.30% das horas avaliadas.
 
 Os resultados permitem concluir que o histórico de 2011 a 2022 não é
 apenas capaz de produzir previsões transferíveis para 2025.

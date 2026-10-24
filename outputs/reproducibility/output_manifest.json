@@ -1,0 +1,362 @@
+[
+  {
+    "path": "outputs/tables/03A04_auditoria_historico_iatan.csv",
+    "size_bytes": 1286,
+    "sha256": "bb14b55b497ad2da6b7c30ce8949991f4b8494a58d7a2c591f2020e63dd2e096"
+  },
+  {
+    "path": "outputs/tables/03A04_backtest_volume_historico_A.csv",
+    "size_bytes": 6496,
+    "sha256": "a85fab0094614901865290d9ed104a4ad0d87d5fa96a97dd629c2fb6a883ffd9"
+  },
+  {
+    "path": "outputs/tables/03A04_carga_zero_baixa_operacao.csv",
+    "size_bytes": 706,
+    "sha256": "ade3328059f4d54d7a6270408d3ac8e4346288c7c0b0709cfc141c27ab44ed68"
+  },
+  {
+    "path": "outputs/tables/03A04_comparacao_2025_vs_historico_2025.csv",
+    "size_bytes": 450,
+    "sha256": "915b86bf14b333752b13f346cc1ae9e45d0f4a41210b25dc46076ba0b32ff43e"
+  },
+  {
+    "path": "outputs/tables/03A04_curvas_carga_co2_por_ano.csv",
+    "size_bytes": 28404,
+    "sha256": "f2505ce4b1e679d5b3e1374b2999116a1bb166a9e3412700694f340d61a03ee2"
+  },
+  {
+    "path": "outputs/tables/03A04_decisao_amostral_2023_2024.csv",
+    "size_bytes": 1218,
+    "sha256": "4eaf86d4bd92c97bb6abac5408cbde1463ec055d93bed403b3bd52bda9b71a2a"
+  },
+  {
+    "path": "outputs/tables/03A04_drift_anual_cenario_A.csv",
+    "size_bytes": 5084,
+    "sha256": "a5270151f533c86d7bde9c4d098b3135f82b428a26656c96b1c1cce61f2630bf"
+  },
+  {
+    "path": "outputs/tables/03A04_ganho_incremental_historico_2011_2022.csv",
+    "size_bytes": 171,
+    "sha256": "b10ba3f90af56507e566d2b80cedfd162290ea6297f00277d217cb2f78ff3605"
+  },
+  {
+    "path": "outputs/tables/03A04_ganho_vs_1ano_A.csv",
+    "size_bytes": 7389,
+    "sha256": "1b6b4ab3a9c5cf4c8732dafb52a5284bb89ff1dad6ab7b15075733910c694d0e"
+  },
+  {
+    "path": "outputs/tables/03A04_generalizacao_2011_2022_para_2025.csv",
+    "size_bytes": 282,
+    "sha256": "4c72d0bf800005fee2f2d0647e80f8f26a8d2c22624d486b6d5f272376b6fe38"
+  },
+  {
+    "path": "outputs/tables/03A04_generalizacao_2025_diagnostico_carga.csv",
+    "size_bytes": 580,
+    "sha256": "da80d1673ba17b01c00843ca27994c475d20b92a201f8fbdc992e6ab3eb83819"
+  },
+  {
+    "path": "outputs/tables/03A04_generalizacao_2025_diagnostico_mensal.csv",
+    "size_bytes": 1348,
+    "sha256": "5f4b4d13c1397e642ea05926a50d34ec0e5ed83d704d97a0c60c2e1ab1b576d0"
+  },
+  {
+    "path": "outputs/tables/03A04_melhor_janela_por_ano_alvo.csv",
+    "size_bytes": 589,
+    "sha256": "5fe56d5b6ab13506637b274c5c590a7ee44e24b188cf1f2e7b9a30e376131567"
+  },
+  {
+    "path": "outputs/tables/03A04_papel_metodologico_anos.csv",
+    "size_bytes": 2243,
+    "sha256": "753775830be80716e451ed8945c2cecfe434f8b740f8bdf4a1b614efc216c858"
+  },
+  {
+    "path": "outputs/tables/03A04_resumo_operacional_anual.csv",
+    "size_bytes": 3351,
+    "sha256": "138aa3c765c553e200bb44767a0674aa737905865c49fff74220be64d409b1e5"
+  },
+  {
+    "path": "outputs/tables/03A04_resumo_volume_historico_A.csv",
+    "size_bytes": 853,
+    "sha256": "242917798b37838ee5dc37f3ba59d22ee18dcd37cf751ef202371fcfc9921fe8"
+  },
+  {
+    "path": "outputs/tables/03A04_similaridade_curva_vs_2025.csv",
+    "size_bytes": 1212,
+    "sha256": "692e512f9bd15fa093b324e1cf5ffe488aac009e9fae5c220f7824bd2394b8f8"
+  },
+  {
+    "path": "outputs/tables/03A04_sintese_evidencias_historico.csv",
+    "size_bytes": 484,
+    "sha256": "723380e9ed016abec918fa0859b80fb8fd8b52473c85f1095738eaa914e8a510"
+  },
+  {
+    "path": "outputs/tables/03A05_amostra_comum_por_ano.csv",
+    "size_bytes": 933,
+    "sha256": "7351363113721653af6e87015db8aae064cda08eb79c0207cf951da52d231273"
+  },
+  {
+    "path": "outputs/tables/03A05_auditoria_bases_anuais.csv",
+    "size_bytes": 1215,
+    "sha256": "e26ab51aef6b79e347655eac21c6b2f6564400a98252af4d529bcbd5cf609c65"
+  },
+  {
+    "path": "outputs/tables/03A05_auditoria_continuidade_anos.csv",
+    "size_bytes": 634,
+    "sha256": "2d1b5d4198fee45b69bd6b34473ffc88a183856adcc326781e1f30e9cec1ecb6"
+  },
+  {
+    "path": "outputs/tables/03A05_auditoria_features_B.csv",
+    "size_bytes": 252,
+    "sha256": "c170e102efba5944bf05d8edd7171f012698cf8bbc3106c69aac5f17bc268640"
+  },
+  {
+    "path": "outputs/tables/03A05_auditoria_inicio_hours_since_startup.csv",
+    "size_bytes": 125,
+    "sha256": "e18ac652043e784dcc44f7a11cb82313bcc5619825b6f377032ae78506555772"
+  },
+  {
+    "path": "outputs/tables/03A05_blocos_temporais.csv",
+    "size_bytes": 224,
+    "sha256": "4042fce9f5653afc572c712442681f2a7c87d875ab20f0d71723dec4b31dede0"
+  },
+  {
+    "path": "outputs/tables/03A05_comparacao_contextos_operacionais.csv",
+    "size_bytes": 1144,
+    "sha256": "8e04c5eb0d643fc662da75a0ffd190fdd982e1db14a0d0fef500ed67d4fd6583"
+  },
+  {
+    "path": "outputs/tables/03A05_decisao_carga_ausente_2019.csv",
+    "size_bytes": 603,
+    "sha256": "550368bc33108813aefb37fd04a554c2e51c7d8b618ed5d578bd8aed0175d206"
+  },
+  {
+    "path": "outputs/tables/03A05_decisao_hours_since_startup_inicio_historico.csv",
+    "size_bytes": 506,
+    "sha256": "959fe63ed57b581e0412d9221ce0fcb1b301e24d03a2678e221c906f3fcd7055"
+  },
+  {
+    "path": "outputs/tables/03A05_decisoes_metodologicas.csv",
+    "size_bytes": 2417,
+    "sha256": "a9307d4e9368cdea64a92d912a3bfbf56d2099c73e5f880b2d245af9de6cce07"
+  },
+  {
+    "path": "outputs/tables/03A05_delimitacao_amostras_experimento.csv",
+    "size_bytes": 425,
+    "sha256": "f9d8132f1b71c7dd88861358b77a55b9a734af753e4db3f9b8fd36886a5f2dab"
+  },
+  {
+    "path": "outputs/tables/03A05_elegibilidade_B_por_ano.csv",
+    "size_bytes": 388,
+    "sha256": "0a3acf83a53ba4c1a286dec44ed9fffdbfaa5a16a377b0ad4356e9cd4a1970af"
+  },
+  {
+    "path": "outputs/tables/03A05_ganho_incremental_trajetoria.csv",
+    "size_bytes": 544,
+    "sha256": "855bb1d5f91b1287ee480153f15319b5daf012b7f3cfe947d00422033e77caba"
+  },
+  {
+    "path": "outputs/tables/03A05_maiores_melhorias_B.csv",
+    "size_bytes": 2820,
+    "sha256": "8317315233ec3021309bf3380feeb0c305e8f8f78f157de68c31db28d5caec7e"
+  },
+  {
+    "path": "outputs/tables/03A05_maiores_pioras_B.csv",
+    "size_bytes": 2782,
+    "sha256": "0cb854f8e7ede0b57d9a4953147901b917a4910dd4a53a6f87cce5c9da01634c"
+  },
+  {
+    "path": "outputs/tables/03A05_motivos_exclusao_amostra_comum.csv",
+    "size_bytes": 150,
+    "sha256": "7713a9325d04d14362a36743644bbf54c4ebf396ba41dcd9c613881b6dbf6d5c"
+  },
+  {
+    "path": "outputs/tables/03A05_quantis_ganho_horario_B_vs_A.csv",
+    "size_bytes": 237,
+    "sha256": "a29615439a663061d9bb464f02148d6a73d5250dfe1cb561b5a6edd2fd6a120e"
+  },
+  {
+    "path": "outputs/tables/03A05_resultado_final_A_B.csv",
+    "size_bytes": 413,
+    "sha256": "d064b74eb949f27ac8b56f9b574e766e256b445f237b8bb4e14cf2170cda121f"
+  },
+  {
+    "path": "outputs/tables/03A05_resumo_casos_extremos_B.csv",
+    "size_bytes": 180,
+    "sha256": "0e66f5c462e24350b94330939f5b0a2f0ac3af0ae73714382fbb15ee8b545d49"
+  },
+  {
+    "path": "outputs/tables/03A05_selecao_complexidade_A_B.csv",
+    "size_bytes": 503,
+    "sha256": "d5d78cc165ec4ff3883e2b888804b9e624d2ba4516bd175eb95a7abac8ee569d"
+  },
+  {
+    "path": "outputs/tables/03A05_sintese_evidencias_trajetoria_historico.csv",
+    "size_bytes": 2044,
+    "sha256": "a477d10d0c0ff9fc00d1133c28d8c5cd8c994892df7c5712a266298b2c28aa67"
+  },
+  {
+    "path": "outputs/tables/03A05_transicoes_operacionais_por_ano.csv",
+    "size_bytes": 164,
+    "sha256": "377452e82cbfa41ba4a3596f3d9060a08de7c4cc438e5a2735b1310793640d27"
+  },
+  {
+    "path": "outputs/reports/03A04_delimitacao_amostra_historica.md",
+    "size_bytes": 4774,
+    "sha256": "33f65a1cd718f7deacd925bcf4c5a25cdf99566ed80340c4ed0db26417c282a1"
+  },
+  {
+    "path": "outputs/reports/03A04_relatorio_valor_preditivo_historico.md",
+    "size_bytes": 14205,
+    "sha256": "6ecbbb680628a1962e250d3f729aabcc9d922bd64d47ee49f0e4de06835bece3"
+  },
+  {
+    "path": "outputs/reports/03A05_relatorio_trajetoria_operacional_historico_ampliado.md",
+    "size_bytes": 23292,
+    "sha256": "011b2e8952781b3a633ce02e00993072160a69532d8827367919e1a5ff13f02c"
+  },
+  {
+    "path": "outputs/figures/03A04_comparacao_2025_vs_historico_2025_erros.png",
+    "size_bytes": 88667,
+    "sha256": "6882a56242ff3a268dca2d9f2f2fe58e39cdae34285b514fed0d05781b07c151"
+  },
+  {
+    "path": "outputs/figures/03A04_comparacao_2025_vs_historico_2025_series.png",
+    "size_bytes": 825909,
+    "sha256": "02573db6109d6221778c4fe58d1b1566d90a443a929dca034670b20d93884598"
+  },
+  {
+    "path": "outputs/figures/03A04_curvas_carga_co2_anuais.png",
+    "size_bytes": 649319,
+    "sha256": "4e94443eb65cb9da8de5a4dc1f2cbb015dbf3235023447ced58e12159d30ecda"
+  },
+  {
+    "path": "outputs/figures/03A04_distancia_curva_vs_2025.png",
+    "size_bytes": 102797,
+    "sha256": "78828fc0d1d7fabee977b7dc3881f4a06dd2769e36ab1de3f3b0142408ec2628"
+  },
+  {
+    "path": "outputs/figures/03A04_generalizacao_2011_2022_2025_mae_mensal.png",
+    "size_bytes": 148722,
+    "sha256": "bda0b3227d72d0bc61562fd39470d8b0e5557a7c7a032502b20936ad8eec9435"
+  },
+  {
+    "path": "outputs/figures/03A04_generalizacao_2011_2022_2025_observado_previsto.png",
+    "size_bytes": 282741,
+    "sha256": "f609892c2867d3f206739376178487adb5b9561facb4f6c1f0045939be502656"
+  },
+  {
+    "path": "outputs/figures/03A04_generalizacao_2011_2022_2025_residuo_carga.png",
+    "size_bytes": 555449,
+    "sha256": "90eadf4a027b7d4d08ec7cb1dbc528ec8af5bd080f3d6a50c2eedc57734fce8d"
+  },
+  {
+    "path": "outputs/figures/03A04_intensidade_co2_anual.png",
+    "size_bytes": 173580,
+    "sha256": "1c69410afb19cba7e8a79bf921c3633d225dc28e094cf00c1943b6ca17fefc42"
+  },
+  {
+    "path": "outputs/figures/03A04_mae_medio_volume_historico.png",
+    "size_bytes": 102510,
+    "sha256": "e95fea184d8c48416165801345de791063d54d3e416682a8412f4d9dc4d4eb67"
+  },
+  {
+    "path": "outputs/figures/03A04_mae_volume_por_ano_alvo.png",
+    "size_bytes": 241731,
+    "sha256": "6049784dceec7cfb29e932c018f014cb0913b5cc773382c15115e063104ee188"
+  },
+  {
+    "path": "outputs/figures/03A04_nmae_medio_volume_historico.png",
+    "size_bytes": 97018,
+    "sha256": "350c664e604c01b55d9b3db1beebc62ffdde29d164c20f9f95c1f30240111017"
+  },
+  {
+    "path": "outputs/figures/03A04_operating_pct_anual.png",
+    "size_bytes": 191972,
+    "sha256": "f044ad4522447272875990e695c4f1bbda6413d3b0d354751c7f2eec82f50e70"
+  },
+  {
+    "path": "outputs/figures/03A04_startups_anual.png",
+    "size_bytes": 158339,
+    "sha256": "795972fa84d0de02b7ca007f0c0c23b6b5c8bb3ca8514a51c11944b3d47a7522"
+  },
+  {
+    "path": "outputs/figures/03A05_distribuicao_ganho_horario_B_vs_A.png",
+    "size_bytes": 128438,
+    "sha256": "655ea6a79dc713de0752e4be308f30e2c382bdf6fb76aeb2f5a29848fcd757c3"
+  },
+  {
+    "path": "outputs/figures/03A05_ganho_trajetoria_por_contexto.png",
+    "size_bytes": 160899,
+    "sha256": "9ee9eef95e4677e904aa91dd60550697b6d66083a1a0e17d1618cd390f0642e9"
+  },
+  {
+    "path": "data/interim/03A04_multiyear/03A04_amostra_principal_2011_2022.parquet",
+    "size_bytes": 1081787,
+    "sha256": "995bdffda5330d25b6538ccc33c3d3a707ff33b6687d64060c8b1a22f4758e54"
+  },
+  {
+    "path": "data/interim/03A04_multiyear/03A04_generalizacao_2011_2022_previsoes_2025.parquet",
+    "size_bytes": 177450,
+    "sha256": "fa6c8ed8dea1260e94ace9b9bb5be4ecc8be3d754efb39399e39092ea1995ccb"
+  },
+  {
+    "path": "data/interim/03A04_multiyear/03A04_previsoes_backtest_volume_A.parquet",
+    "size_bytes": 1882903,
+    "sha256": "0a8f58bacafa57954da250a944ce2d0fb4b092a9f47c20742532ccf496ed89d6"
+  },
+  {
+    "path": "data/interim/03A04_multiyear/03A04_previsoes_pareadas_2025_vs_historico_2025.parquet",
+    "size_bytes": 42780,
+    "sha256": "392a5ba45fc8cc61f2801782ffe1c4be37f12e19dd306ac0f4ca4ed9731191d4"
+  },
+  {
+    "path": "data/interim/03A04_multiyear/03A04_teste_generalizacao_2025.parquet",
+    "size_bytes": 103974,
+    "sha256": "f6b7119ffff5c1ace79469854646b6f4ad307d730ab18c970447ad4e09bf141e"
+  },
+  {
+    "path": "data/interim/03A05_trajectory_history/03A05_amostra_comum_A_B.parquet",
+    "size_bytes": 2146517,
+    "sha256": "fd8004c242bd3fec061d920edec1482d8450c0bddd57143a54f1a554c2d854ca"
+  },
+  {
+    "path": "data/interim/03A05_trajectory_history/03A05_base_features_trajetoria.parquet",
+    "size_bytes": 2361264,
+    "sha256": "20123bc30c0b69d4871b1aec77b930528fff4afb9ef56079aeb0873f7bd9d275"
+  },
+  {
+    "path": "data/interim/03A05_trajectory_history/03A05_previsoes_pareadas_A_B_nov_dez_2025.parquet",
+    "size_bytes": 84736,
+    "sha256": "eaf6927561e16e9c2cecd36e80240645cd755ab20e36b4a1a60fe7b555c114ee"
+  },
+  {
+    "path": "data/interim/03A05_trajectory_history/03A05_previsoes_pareadas_com_contextos.parquet",
+    "size_bytes": 87103,
+    "sha256": "8c55b7e844f4490b731e9aaa52b4f1a4ab0b25ef09d6974a4e4b06df9cd1d0fb"
+  },
+  {
+    "path": "data/interim/03A05_trajectory_history/03A05_previsoes_validacao_outubro_A_B.parquet",
+    "size_bytes": 12126,
+    "sha256": "7bcd99852bc0a82f71bba526a49d09beb1fcbcfe5debdd0cffc676a00af1afd1"
+  },
+  {
+    "path": "data/interim/03A05_trajectory_history/03A05_teste_nov_dez_2025_A_B.parquet",
+    "size_bytes": 66235,
+    "sha256": "8afce8aa4f30dccc45e5efe5fb0b03dbf756a73a6180d38eac0b978f817084c1"
+  },
+  {
+    "path": "data/interim/03A05_trajectory_history/03A05_treino_final_A_B.parquet",
+    "size_bytes": 2120745,
+    "sha256": "d9bc388d02bc09baa93f209e2e39a7a0058c261f39d709ca5ea62214080112da"
+  },
+  {
+    "path": "data/interim/03A05_trajectory_history/03A05_treino_selecao_A_B.parquet",
+    "size_bytes": 2115824,
+    "sha256": "e8fa9fd154e1ebd2fa8315106a89e9dfad8fa48fb9e062c9135ae5ac56695227"
+  },
+  {
+    "path": "data/interim/03A05_trajectory_history/03A05_validacao_outubro_2025_A_B.parquet",
+    "size_bytes": 32260,
+    "sha256": "4d261ebe15a5103cdd95580841ab3eb9cb682759c6c9cb84a2f5cc56424ecbe3"
+  }
+]

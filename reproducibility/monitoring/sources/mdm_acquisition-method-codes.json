@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "acquisitionMethodCode": "COR",
+      "acquisitionMethodDescription": "Coriolis"
+    },
+    {
+      "acquisitionMethodCode": "DIL",
+      "acquisitionMethodDescription": "Dilution"
+    },
+    {
+      "acquisitionMethodCode": "DIN",
+      "acquisitionMethodDescription": "Dilution In-Stack"
+    },
+    {
+      "acquisitionMethodCode": "DOD",
+      "acquisitionMethodDescription": "Dry Out-of-Stack Dilution"
+    },
+    {
+      "acquisitionMethodCode": "DOU",
+      "acquisitionMethodDescription": "Dilution Out-of-Stack"
+    },
+    {
+      "acquisitionMethodCode": "DP",
+      "acquisitionMethodDescription": "Differential Pressure"
+    },
+    {
+      "acquisitionMethodCode": "EXT",
+      "acquisitionMethodDescription": "Dry Extractive"
+    },
+    {
+      "acquisitionMethodCode": "IS",
+      "acquisitionMethodDescription": "In Situ"
+    },
+    {
+      "acquisitionMethodCode": "ISC",
+      "acquisitionMethodDescription": "Cross Stack In Situ"
+    },
+    {
+      "acquisitionMethodCode": "ISP",
+      "acquisitionMethodDescription": "Point/Path In Situ"
+    },
+    {
+      "acquisitionMethodCode": "NOZ",
+      "acquisitionMethodDescription": "Nozzle"
+    },
+    {
+      "acquisitionMethodCode": "O",
+      "acquisitionMethodDescription": "Other"
+    },
+    {
+      "acquisitionMethodCode": "ORF",
+      "acquisitionMethodDescription": "Orifice"
+    },
+    {
+      "acquisitionMethodCode": "PDP",
+      "acquisitionMethodDescription": "Positive Displacement"
+    },
+    {
+      "acquisitionMethodCode": "T",
+      "acquisitionMethodDescription": "Thermal Mass Flowmeter"
+    },
+    {
+      "acquisitionMethodCode": "TUR",
+      "acquisitionMethodDescription": "Turbine"
+    },
+    {
+      "acquisitionMethodCode": "U",
+      "acquisitionMethodDescription": "Ultrasonic"
+    },
+    {
+      "acquisitionMethodCode": "VCON",
+      "acquisitionMethodDescription": "V-Cone"
+    },
+    {
+      "acquisitionMethodCode": "VEN",
+      "acquisitionMethodDescription": "Venturi"
+    },
+    {
+      "acquisitionMethodCode": "VTX",
+      "acquisitionMethodDescription": "Vortex"
+    },
+    {
+      "acquisitionMethodCode": "WXT",
+      "acquisitionMethodDescription": "Wet Extractive"
+    },
+    {
+      "acquisitionMethodCode": "ADSP",
+      "acquisitionMethodDescription": "Hg Adsorption on Sorbent Medium"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "source_a": "raw_xml",
+      "source_b": "extract_xml",
+      "relevant_unique_rows_a": 24,
+      "relevant_unique_rows_b": 24,
+      "common_rows": 24,
+      "only_in_a": 0,
+      "only_in_b": 0,
+      "equivalent_on_compared_fields": true
+    },
+    {
+      "source_a": "raw_json",
+      "source_b": "extract_json",
+      "relevant_unique_rows_a": 24,
+      "relevant_unique_rows_b": 24,
+      "common_rows": 24,
+      "only_in_a": 0,
+      "only_in_b": 0,
+      "equivalent_on_compared_fields": true
+    }
+  ],
+  "all_fields_used_by_audit_preserved": true
+}

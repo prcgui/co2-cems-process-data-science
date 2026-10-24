@@ -1,0 +1,51 @@
+{
+  "completed_at_utc": "2026-10-24T14:03:52.739956+00:00",
+  "runtime_python": "3.12.14",
+  "cwd": "reproducibility/monitoring",
+  "runtime_path_normalization": "Absolute audit directory in captured output is replaced with <audit_dir>. Commands use the local ignored inputs at their documented relative paths.",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "fetch_sources.py",
+        "--offline"
+      ],
+      "returncode": 0,
+      "stdout": "Verified 13 sources; new network requests: 0.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "audit_monitoring.py",
+        "--hourly-dir",
+        "../../data/interim/03A04_multiyear",
+        "--selection-file",
+        "../../pipeline/selected_unit_hourly_raw.parquet"
+      ],
+      "returncode": 0,
+      "stdout": "{\"audited_rows\": 131496, \"n_on\": 98799, \"calendar_gap_hours\": 0, \"duplicate_extra_rows\": 0, \"input_files_unchanged\": true}\nAudit outputs: <audit_dir>/outputs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "validation_checks.py",
+        "--hourly-dir",
+        "../../data/interim/03A04_multiyear"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_2025_original_indicator_counts (__main__.AuditChecks.test_2025_original_indicator_counts) ... ok\ntest_end_hour_inclusive_and_adjacent_transition (__main__.AuditChecks.test_end_hour_inclusive_and_adjacent_transition) ... ok\ntest_exact_labels_keep_mixed_separate (__main__.AuditChecks.test_exact_labels_keep_mixed_separate) ... ok\ntest_leap_calendar_gap_duplicate_and_input_preservation (__main__.AuditChecks.test_leap_calendar_gap_duplicate_and_input_preservation) ... ok\ntest_preserved_original_xml_and_current_json_agree (__main__.AuditChecks.test_preserved_original_xml_and_current_json_agree) ... ok\ntest_public_json_extracts_omit_administrative_identifiers (__main__.AuditChecks.test_public_json_extracts_omit_administrative_identifiers) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.179s\n\nOK\n"
+    }
+  ],
+  "public_numerical_tables_equal_preserved_audit": {
+    "annual_measurement_summary.csv": true,
+    "monthly_measurement_summary.csv": true,
+    "cohort_measurement_summary.csv": true,
+    "indicator_raw_counts.csv": true,
+    "substitution_episodes.csv": true
+  },
+  "source_manifest_hashes_current": true,
+  "all_passed": true
+}

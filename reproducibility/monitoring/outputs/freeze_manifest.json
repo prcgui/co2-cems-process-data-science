@@ -1,0 +1,259 @@
+{
+  "frozen_at_utc": "2026-10-24T14:05:06.637274+00:00",
+  "scope": "reproducibility/monitoring only",
+  "repository": "prcgui/co2-cems-process-data-science",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11703,
+      "sha256": "990ae92aa9d594ec1efbf872f11e541f6f871e06450d1143a708ff2510358a44"
+    },
+    {
+      "path": "audit_monitoring.py",
+      "bytes": 41674,
+      "sha256": "b8dbf41b88603e7a4813a217e427b5c2ba497977cd5df0ce9cf1365aa85ccf38"
+    },
+    {
+      "path": "fetch_sources.py",
+      "bytes": 8793,
+      "sha256": "d520d12eff4a6abc7f452ed8eec16e91ab50369eff2c6260d9dcae237ec72b80"
+    },
+    {
+      "path": "outputs/annual_measurement_summary.csv",
+      "bytes": 5375,
+      "sha256": "bd3f32d84d2124c51aa513c342fc80c55131c62d4fbf5ba1badd30ede5ea8fb3"
+    },
+    {
+      "path": "outputs/audit_report.md",
+      "bytes": 9718,
+      "sha256": "1d6d2b222c4c2d6e29da5c09cb71eba75dca09dae62a38ba8a92f3729fc8c818"
+    },
+    {
+      "path": "outputs/audit_summary.json",
+      "bytes": 2652,
+      "sha256": "c3d5bedaf54b86cd3fddf233d258af28ebef8e91c1f9202c8948b01b01a3311c"
+    },
+    {
+      "path": "outputs/calendar_gap_episodes.csv",
+      "bytes": 28,
+      "sha256": "b9f5b55dd33cdd41c814cfecce966388315eba9cbd1dd576a869451a8f262d57"
+    },
+    {
+      "path": "outputs/co2_flow_component_changes.csv",
+      "bytes": 2204,
+      "sha256": "14f0e3dd21e301b2a49e53bb068b7e432755e4fd4f3193c8f832aab4b65347ad"
+    },
+    {
+      "path": "outputs/co2_flow_component_history.csv",
+      "bytes": 4787,
+      "sha256": "294fedb9b6b149c22031100b8ec689a2255a2b4456593bd68d475228a393a425"
+    },
+    {
+      "path": "outputs/cohort_measurement_summary.csv",
+      "bytes": 1800,
+      "sha256": "edc3541bcdd8ecb045cbeada3392cdb6e8f7aedbab6126a874cbd0c3c77ec611"
+    },
+    {
+      "path": "outputs/component_coverage.csv",
+      "bytes": 12729,
+      "sha256": "2a8f20d9905e39ac313eb3c719cd20961b5683aad78a4ad0b134709012c9ee2b"
+    },
+    {
+      "path": "outputs/extract_verification.json",
+      "bytes": 589,
+      "sha256": "eb51ba06386caf84892ae5d7391929876b305c10f68730f5939a8a08f9f97c47"
+    },
+    {
+      "path": "outputs/indicator_raw_counts.csv",
+      "bytes": 3127,
+      "sha256": "b9d2442133325d4496b29e5dda68ba98efedf7bf59902ec207301f89eee25a47"
+    },
+    {
+      "path": "outputs/input_manifest.json",
+      "bytes": 6099,
+      "sha256": "f66d7cdb4b1b000e6feef4971aba258c2c21cf42e0d51831c5cc5943d5817658"
+    },
+    {
+      "path": "outputs/monitoring_plan_coverage.csv",
+      "bytes": 2159,
+      "sha256": "02f1386b76ee15467ac227eaf3fa7c53e85bc816f164d267ba48aad2d226a745"
+    },
+    {
+      "path": "outputs/monthly_measurement_summary.csv",
+      "bytes": 28170,
+      "sha256": "52a40cb0068f9c6b3681e2bc788f3a782f30b896bb5f636d510175f2587292a8"
+    },
+    {
+      "path": "outputs/plan_analyzer_range_history.csv",
+      "bytes": 737,
+      "sha256": "4f748bef84afcfb1c6b9c5eb5494d4573e666e25bb5838d65e5f47482b4ba61e"
+    },
+    {
+      "path": "outputs/plan_component_history.csv",
+      "bytes": 1984,
+      "sha256": "1cda275965d65f9f78816b805fc45d8408975ec082a314b40df78efee9fdfe9b"
+    },
+    {
+      "path": "outputs/plan_formula_history.csv",
+      "bytes": 385,
+      "sha256": "cc2e16eabee3c17017777280b4bfbd0b9f216765a5057f772240a9ce84a9c7fb"
+    },
+    {
+      "path": "outputs/plan_method_history.csv",
+      "bytes": 408,
+      "sha256": "03798ee3761b249fa092b6167eb68b0fd67c1b1b77cc386ca199c702439d3780"
+    },
+    {
+      "path": "outputs/plan_span_history.csv",
+      "bytes": 790,
+      "sha256": "e842a1adfbffafec59a53bbd080b426f712b352549b21d3a6cf21c906f1e7198"
+    },
+    {
+      "path": "outputs/plan_system_component_history.csv",
+      "bytes": 4787,
+      "sha256": "294fedb9b6b149c22031100b8ec689a2255a2b4456593bd68d475228a393a425"
+    },
+    {
+      "path": "outputs/plan_system_history.csv",
+      "bytes": 615,
+      "sha256": "9a3b2e6c2e83f4fdfdfd7a2e951b6ac997f4d3b8ab402cfe1c3b6968e3de8f74"
+    },
+    {
+      "path": "outputs/selection_2025_annual_comparison.json",
+      "bytes": 827,
+      "sha256": "d273667e93645923fc052ef092503d132f2aa39d863d44fae3655c6ddac6c907"
+    },
+    {
+      "path": "outputs/snapshot_comparison.csv",
+      "bytes": 183,
+      "sha256": "cafc20e18ffd26d0f7a17bbf0d024b80cb8378b23e4ab33727f63befc726d564"
+    },
+    {
+      "path": "outputs/sources_manifest.json",
+      "bytes": 2985,
+      "sha256": "0574cd4210d4007d4d4f581230a439ec9a76e462e6d0157400472863ad92f945"
+    },
+    {
+      "path": "outputs/substitution_episodes.csv",
+      "bytes": 32643,
+      "sha256": "ecf4b6f1041a72edba6743ccb7f0927b8d5a0305b09c935f53a504cc3850217a"
+    },
+    {
+      "path": "outputs/verification_run.json",
+      "bytes": 2444,
+      "sha256": "13db9ec6b7d9a5d2bbe93027b98a35a06445df5992b6d13fc3cd35662a3b1ab1"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 43,
+      "sha256": "d39e3cf41ba33a4635f8cb4f897e36713aa1092217f22e38d52a1486b54fb79f"
+    },
+    {
+      "path": "source_extracts.py",
+      "bytes": 10409,
+      "sha256": "578c0edf37333f929da7dcef61124baef7127a285ad08ea8fdb4ebc6c1b91fae"
+    },
+    {
+      "path": "sources/bulk_catalog_6065_monitoring.json",
+      "bytes": 466,
+      "sha256": "4b2531184b6e323a6fa8926eeb72b523ea3c08b6e56748477170ef88af8e0bd1"
+    },
+    {
+      "path": "sources/current_configurations_6065.json",
+      "bytes": 426,
+      "sha256": "282aa5a1a02d155e550409a7844c26e4ed93cf8016b4986f9188b5dce06f1b8e"
+    },
+    {
+      "path": "sources/current_plan_unit2.json",
+      "bytes": 8599,
+      "sha256": "b378494951c030505fab32ceec4a30caf0977254949e1270a8cc7b9976fa1406"
+    },
+    {
+      "path": "sources/ecmps_monitoring_plan_reporting_instructions_2024-12-20.pdf",
+      "bytes": 1296025,
+      "sha256": "62c540258dd387c8fa9f6ffa018f6f9a05b849faa28e9f3d7f7a91f20ca8bb15"
+    },
+    {
+      "path": "sources/ecmps_verified_pages.txt",
+      "bytes": 12685,
+      "sha256": "d6a315b6fde97bc5d5849a3b800bdd127ab0be39bbec4f4b0598b8d84352900a"
+    },
+    {
+      "path": "sources/emissions_fields.json",
+      "bytes": 506,
+      "sha256": "af63416c2db34ce719d96578c6771461453a7abc7cba3999e6f0a65be0ea430b"
+    },
+    {
+      "path": "sources/fetch_verification.json",
+      "bytes": 193,
+      "sha256": "c26220c1aa290a54df0b0de70ce2b328c217b9470202baf456135f072e38cbcd"
+    },
+    {
+      "path": "sources/mdm_acquisition-method-codes.json",
+      "bytes": 2338,
+      "sha256": "b205a4193b2621cab241cdc5db98b582da7b83d8dfcf7bc3d0d10ee287153141"
+    },
+    {
+      "path": "sources/mdm_code_list.json",
+      "bytes": 7978,
+      "sha256": "ffbba4a9024dd21a8623eb9a7537a180f7fb3f05977aa89ac925460ac51f7d69"
+    },
+    {
+      "path": "sources/mdm_component-type-codes.json",
+      "bytes": 4725,
+      "sha256": "bba988da50949873d68a018129c5541e3ac1536df941f37d247c3d46f7788cc1"
+    },
+    {
+      "path": "sources/mdm_method-codes.json",
+      "bytes": 2372,
+      "sha256": "2692d33db55ab6a2dc9cef5bfa85e8d72be759207810a33ed82dec1444e9efda"
+    },
+    {
+      "path": "sources/mdm_parameter-codes.json",
+      "bytes": 7494,
+      "sha256": "7a192735b8b15be20cedb7ec1d2675b25a80afa7002d33ce816efb8c73005ba2"
+    },
+    {
+      "path": "sources/mdm_substitute-data-codes.json",
+      "bytes": 1074,
+      "sha256": "391f819909bdcea6cd3252ce63811630091c8b4db0d971986a3bcabf0af74a1e"
+    },
+    {
+      "path": "sources/mdm_system-type-codes.json",
+      "bytes": 2133,
+      "sha256": "42831b3f8b38f28711f39cf6f3f8f889ce84d041b4b937e70c7a1707e4c92cef"
+    },
+    {
+      "path": "sources/original_plan_unit2.xml",
+      "bytes": 9903,
+      "sha256": "1fbaf21ecc1fd8155d9d7a80cce3699b9b22f3f7ab45decc51eb07bbec21116b"
+    },
+    {
+      "path": "sources/original_zip_verification.json",
+      "bytes": 985,
+      "sha256": "97637ac8c1d5f827d94b0963ebcc5ea2f4d8c8eac2ca53ca64e7913233801754"
+    },
+    {
+      "path": "sources/selection_rule_evidence.json",
+      "bytes": 2259,
+      "sha256": "16b0dd3d37f2c17858b38f24eff6a4db33849619c41c9b8f2a48a6410e64e5c4"
+    },
+    {
+      "path": "sources/source_provenance.json",
+      "bytes": 7583,
+      "sha256": "03bfdd57bd5f2cab074563aaae3b83b5d943581281a34e58d63e4c0d87f6ac93"
+    },
+    {
+      "path": "validation_checks.py",
+      "bytes": 4925,
+      "sha256": "5881c8277b4972da76eebfedba151b9b9c2802d7bc977c439bc488a6ff0c5f4f"
+    }
+  ],
+  "self_excluded": true,
+  "no_github_publication_performed": true
+}

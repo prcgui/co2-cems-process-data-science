@@ -1,0 +1,27 @@
+source,source_member,kind,facility_id,unit_id,componentId,beginDate,beginHour,endDate,endHour,begin,end,interval_status,interval_note,monitoringSystemId,systemTypeCode,systemDesignationCode,fuelCode,componentTypeCode,sampleAcquisitionMethodCode,basisCode,manufacturer,modelVersion,serialNumber
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,235,2018-01-04,15,,,2018-01-04 15:00:00,,valid,,204,FLOW,P,NFS,DAHS,,,ESC,STACKVISION,2M272806PD
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,230,2010-10-01,0,2018-01-04,14,2010-10-01 00:00:00,2018-01-04 14:00:00,valid,,204,FLOW,P,NFS,DAHS,,,ESC,STACKVISION,
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,224,2010-10-01,0,2017-08-28,9,2010-10-01 00:00:00,2017-08-28 09:00:00,valid,,204,FLOW,P,NFS,DL,,,ESC,8832,A2066
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,223,2010-10-01,0,,,2010-10-01 00:00:00,,valid,,204,FLOW,P,NFS,FLOW,U,W,TELEDYNE INSTRUMENTS,ULTRAFLOW 150,1500829
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,225,2017-08-28,10,,,2017-08-28 10:00:00,,valid,,204,FLOW,P,NFS,DL,,,ESC,8864,C1418
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,235,2018-01-04,15,,,2018-01-04 15:00:00,,valid,,203,CO2,P,NFS,DAHS,,,ESC,STACKVISION,2M272806PD
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,229,2010-10-01,0,2024-09-18,9,2010-10-01 00:00:00,2024-09-18 09:00:00,valid,,203,CO2,P,NFS,PRB,DIL,,M&C,SP2000H,8200371
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,230,2010-10-01,0,2018-01-04,14,2010-10-01 00:00:00,2018-01-04 14:00:00,valid,,203,CO2,P,NFS,DAHS,,,ESC,STACKVISION,
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,224,2010-10-01,0,2017-08-28,9,2010-10-01 00:00:00,2017-08-28 09:00:00,valid,,203,CO2,P,NFS,DL,,,ESC,8832,A2066
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,222,2010-10-01,0,2024-09-18,9,2010-10-01 00:00:00,2024-09-18 09:00:00,valid,,203,CO2,P,NFS,CO2,DIL,W,TECO,410I,0730925428
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,234,2024-09-18,10,,,2024-09-18 10:00:00,,valid,,203,CO2,P,NFS,PRB,DIL,,M&C,SP2006,29889-2147387
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,422,2024-09-18,10,,,2024-09-18 10:00:00,,valid,,203,CO2,P,NFS,CO2,DIL,W,TELEDYNE,T360,581
+original_plan_unit2,original_plan_unit2.xml,system_component,6065,2,225,2017-08-28,10,,,2017-08-28 10:00:00,,valid,,203,CO2,P,NFS,DL,,,ESC,8864,C1418
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,230,2010-10-01,0,2018-01-04,14,2010-10-01 00:00:00,2018-01-04 14:00:00,valid,,203,CO2,P,NFS,DAHS,,,ESC,STACKVISION,
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,222,2010-10-01,0,2024-09-18,9,2010-10-01 00:00:00,2024-09-18 09:00:00,valid,,203,CO2,P,NFS,CO2,DIL,W,TECO,410I,0730925428
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,224,2010-10-01,0,2017-08-28,9,2010-10-01 00:00:00,2017-08-28 09:00:00,valid,,203,CO2,P,NFS,DL,,,ESC,8832,A2066
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,229,2010-10-01,0,2024-09-18,9,2010-10-01 00:00:00,2024-09-18 09:00:00,valid,,203,CO2,P,NFS,PRB,DIL,,M&C,SP2000H,8200371
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,235,2018-01-04,15,,,2018-01-04 15:00:00,,valid,,203,CO2,P,NFS,DAHS,,,ESC,STACKVISION,2M272806PD
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,225,2017-08-28,10,,,2017-08-28 10:00:00,,valid,,203,CO2,P,NFS,DL,,,ESC,8864,C1418
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,422,2024-09-18,10,,,2024-09-18 10:00:00,,valid,,203,CO2,P,NFS,CO2,DIL,W,TELEDYNE,T360,581
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,234,2024-09-18,10,,,2024-09-18 10:00:00,,valid,,203,CO2,P,NFS,PRB,DIL,,M&C,SP2006,29889-2147387
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,223,2010-10-01,0,,,2010-10-01 00:00:00,,valid,,204,FLOW,P,NFS,FLOW,U,W,TELEDYNE INSTRUMENTS,ULTRAFLOW 150,1500829
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,224,2010-10-01,0,2017-08-28,9,2010-10-01 00:00:00,2017-08-28 09:00:00,valid,,204,FLOW,P,NFS,DL,,,ESC,8832,A2066
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,230,2010-10-01,0,2018-01-04,14,2010-10-01 00:00:00,2018-01-04 14:00:00,valid,,204,FLOW,P,NFS,DAHS,,,ESC,STACKVISION,
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,235,2018-01-04,15,,,2018-01-04 15:00:00,,valid,,204,FLOW,P,NFS,DAHS,,,ESC,STACKVISION,2M272806PD
+current_plan_unit2,current_plan_unit2.json#0,system_component,6065,2,225,2017-08-28,10,,,2017-08-28 10:00:00,,valid,,204,FLOW,P,NFS,DL,,,ESC,8864,C1418
