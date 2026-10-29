@@ -1,22 +1,17 @@
-# Referências documentais do projeto CO₂ CEMS
+# Biblioteca de referências da versão revisada em 29/10/2026
 
-Esta pasta registra as 22 referências da versão auditada do artigo e separa três situações:
+Este diretório acompanha a versão atual do artigo e contém o registro mestre das **31 fontes efetivamente citadas**.
 
-1. **PDF redistribuível publicamente**: arquivado apenas quando a licença ou a natureza pública da fonte permite.
-2. **Texto completo disponível por link oficial/manuscrito autoral**: a fonte é auditável, mas o PDF não é republicado neste repositório quando a redistribuição não está claramente autorizada.
-3. **Fonte que não é PDF**: documentação de software, conjunto de dados ou repositório; nesses casos, preserva-se a URL/versionamento do objeto original.
+As referências fornecidas pelo usuário foram conferidas no texto original. Quando uma fonte nova cobria de forma mais direta a mesma afirmação de uma referência temática anterior, a nova fonte foi priorizada. Por esse motivo, F. Liu e Li (2025), Tu et al. (2024) e Zhou et al. (2023) deixaram de integrar a bibliografia final do artigo.
 
-O arquivo `source_registry.csv` registra DOI/URL, acesso, condição de redistribuição, finalidade da citação e situação da auditoria.
+O PDF `10_artigos_emissoes_co2_termeletricas.pdf` é um resumo secundário e não é usado como evidência científica no artigo ou nos notebooks.
 
-## PDFs arquivados aqui
+## Organização
 
-- `public_pdfs/Glorot_Bordes_Bengio_2011_Deep_Sparse_Rectifier_Neural_Networks.pdf`: PMLR, CC BY 4.0.
-- `public_pdfs/EPA_2024_ECMPS_Monitoring_Plan.pdf`: documento oficial da U.S. EPA.
+- `source_registry.csv`: DOI/URL, função da citação, status de auditoria e nome da cópia privada quando fornecida.
+- `private_library/`: PDFs fornecidos pelo usuário, preservados no Google Drive privado.
+- GitHub público: mantém o registro e somente PDFs cuja redistribuição pública seja apropriada.
 
-Os artigos MDPI citados são CC BY 4.0 e podem ser redistribuídos, mas permanecem apontados pelo URL oficial no registro até que uma cópia binária oficial seja incorporada ao pacote.
+## Melhoria metodológica incorporada
 
-## Política
-
-Acesso gratuito não é tratado como autorização automática de republicação. Para JMLR, ACM, Elsevier, Nature, Royal Society e fontes semelhantes, o repositório mantém DOI/URL e a evidência de auditoria, sem duplicar o PDF quando a licença de redistribuição não foi confirmada.
-
-A verificação metodológica está documentada em `reproducibility/methods/`.
+Potts et al. (2026) motivou a inclusão, no Notebook 03A.05, de um diagnóstico simples de cobertura operacional baseado em atributos do teste fora dos mínimos e máximos observados no treinamento. A célula não reproduz o framework completo do preprint e está marcada como não executada nesta revisão; portanto, não altera os resultados numéricos já apresentados.
