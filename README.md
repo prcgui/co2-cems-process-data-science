@@ -481,3 +481,8 @@ PUC-Rio
 ## Verificação da aplicação dos métodos
 
 As técnicas citadas foram conferidas por confronto com as fontes, extração das funções dos notebooks, cálculos independentes e consulta aos modelos e resultados preservados. O [relatório técnico e os scripts](reproducibility/methods/README.md) registram cada verificação e suas condições. Também foram corrigidas as alegações de suficiência de 30 configurações, de isolamento exclusivo dos efeitos e de independência global do teste.
+
+
+## Biblioteca de referências
+
+A documentação bibliográfica auditada está em [`references/`](references/README.md). O registro mestre [`source_registry.csv`](references/source_registry.csv) informa DOI/URL, status de acesso, condição de redistribuição e finalidade de cada uma das 22 fontes. PDFs públicos arquivados ficam em [`references/public_pdfs/`](references/public_pdfs/).
