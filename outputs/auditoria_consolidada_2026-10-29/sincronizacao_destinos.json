@@ -3,24 +3,29 @@
   "github": {
     "co2-cems-thermal-modeling": {
       "situacao": "publicado_e_conferido",
-      "commit_conteudo": "5276169e1195a17d145babcf6b7ffa43f5dbcd3e",
+      "commit_conteudo": "12dd79c5f4c9b340a6e209c028653600a7000825",
       "artigo_sha256": "82e63b6ff94d1fe91ba62cabb87d74e883c44ee16abc34c903625ef1cd43f372",
       "url": "https://github.com/prcgui/co2-cems-thermal-modeling"
     },
     "co2-cems-process-data-science": {
       "situacao": "publicado_e_conferido",
-      "commit_conteudo": "e73de14a4ace6c96fd7b55e3683d154cc770d536",
+      "commit_conteudo": "6ea44d822e9645a309ae1819a7e4c4baf43d7b83",
       "artigo_sha256": "82e63b6ff94d1fe91ba62cabb87d74e883c44ee16abc34c903625ef1cd43f372",
       "url": "https://github.com/prcgui/co2-cems-process-data-science"
     }
   },
   "drive": {
-    "situacao": "envio_pendente",
+    "situacao": "atualizado_e_conferido",
+    "data_local": "2026-10-30",
     "pasta": "https://drive.google.com/drive/folders/1ONZBhbSfVpuN9TNTstsAmCQSZBZKv0l9",
-    "leitura_e_download_funcionam": true,
-    "selecao_upload_falhou": "browser.user is unavailable",
-    "chrome_alternativo": "controle interrompido por não confirmar a URL no Windows",
-    "pacote_local": "drive_upload/Atualizacao_Modelagem_Matematica_IA_2026-10-30.zip",
-    "pdfs_no_pacote_matematica": 36
+    "biblioteca_pdfs": "https://drive.google.com/drive/folders/1bZn3RDuNZvBC2fsaU_hivr_rvWdd9MO3",
+    "arquivos_enviados": 288,
+    "itens_upload_incluindo_pastas": "303 de 303 concluídos",
+    "notebooks_no_pacote": 11,
+    "pdfs_confirmados_na_pasta": 36,
+    "artigo_sha256_conferido_por_download": "82e63b6ff94d1fe91ba62cabb87d74e883c44ee16abc34c903625ef1cd43f372",
+    "pdf_kunsch_sha256_conferido_por_download": "d55f22606e7dfedfe98de550b81f00708963b23ed718c5ef17d98321bd83f3ab",
+    "pastas_e_dados_anteriores_preservados": true,
+    "observacao": "A primeira tentativa teve 32 arquivos não encontrados. Reenvio de diretório com caminhos curtos concluiu todos os 303 itens."
   }
 }

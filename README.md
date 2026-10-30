@@ -497,10 +497,10 @@ As oito execuções principais recebidas em 29 de outubro de 2026 foram inspecio
 - [Ablação executada 03A.05A](notebooks/03A_05A_ablacao_controlada_features_Colab.ipynb)
 - [Sensibilidade de calendário 03A.05B](notebooks/03A_05B_incerteza_pareada_calendario.ipynb)
 - [MLP e XGBoost com cinco sementes 03A.05C](notebooks/03A_05C_MLP_XGBoost_sementes_protocolo_comum_Colab.ipynb)
-- [Catálogo de fontes](references/metadata/source_registry.csv) e [índice dos PDFs preparados para o Drive](references/metadata/pdfs_referencias_utilizadas.csv)
+- [Catálogo de fontes](references/metadata/source_registry.csv) e [índice dos PDFs preservados no Drive](references/metadata/pdfs_referencias_utilizadas.csv)
 
 Os resultados principais mantêm os ganhos descritivos já existentes de 13,28% com histórico ampliado e 22,90% nas rampas. A ablação não identificou ganho global consistente. Em 03A.05C, XGBoost teve menor MAE no teste em todos os pares de mesma semente/cenário, com inversão da ordenação na validação. Esses protocolos permanecem separados; cinco sementes não equivalem a novos períodos de teste. Os limites de 03A.05B são exploratórios.
 
 Os PDFs privados e os dados volumosos permanecem no Drive do projeto. O índice identifica as versões e o conteúdo por SHA-256; links históricos continuam representando suas versões preservadas.
 
-O [registro de sincronização](outputs/auditoria_consolidada_2026-10-29/sincronizacao_destinos.json) distingue a publicação no GitHub do envio ao Drive. Na consolidação de 30/10/2026, o pacote local para o Drive está pronto; o upload permanece pendente por falha do seletor de arquivos da ferramenta.
+O [registro de sincronização](outputs/auditoria_consolidada_2026-10-29/sincronizacao_destinos.json) distingue a publicação no GitHub do envio ao Drive. Em 30/10/2026, o Drive foi atualizado: 303 de 303 itens do pacote concluídos, com 36 PDFs na biblioteca de referências e confirmação da identidade do artigo por download. [Pasta do projeto](https://drive.google.com/drive/folders/1ONZBhbSfVpuN9TNTstsAmCQSZBZKv0l9) e [PDFs das referências](https://drive.google.com/drive/folders/1bZn3RDuNZvBC2fsaU_hivr_rvWdd9MO3).
