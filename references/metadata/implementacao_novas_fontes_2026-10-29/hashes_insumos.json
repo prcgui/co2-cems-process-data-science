@@ -1,0 +1,7 @@
+{
+  "data/interim/03A05_trajectory_history/03A05_treino_selecao_A_B.parquet": "7d7aebca5a1d588fe6bff48e25002693724644d0ef5e8836bb408dd1a021080a",
+  "data/interim/03A05_trajectory_history/03A05_validacao_outubro_2025_A_B.parquet": "aa54c3b08d43f1151244dbd4d83ebf2673a52a6019c6f8f100190aec6552a54b",
+  "data/interim/03A05_trajectory_history/03A05_teste_nov_dez_2025_A_B.parquet": "526c80faafd6bd9f22a53197acb90bf06fd8800cbba0443a05c21bf9b9a32c70",
+  "data/interim/03A05_trajectory_history/03A05_previsoes_pareadas_com_contextos.parquet": "eb204d81dae4ccc3f073fbe630bd88283bb8a9c3f774dca5bae5b36ac2c699be",
+  "outputs/03A05A_ablacao_controlada.zip": "d1f91f7717a7302947fe74e4db839ac4db87219e39281c7ab8e0ce8e7bb2ffa1"
+}

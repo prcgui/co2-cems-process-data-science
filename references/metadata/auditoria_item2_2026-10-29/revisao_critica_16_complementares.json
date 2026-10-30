@@ -1,0 +1,1517 @@
+[
+  {
+    "index": 4,
+    "title": "A Comparison of Machine Learning Models for Predicting Coal-Fired Power Plant Performance",
+    "filename": "A Comparison of Machine Learning Models for Predicting Coal-Fired Power Plant Performance.pdf",
+    "doi": "10.1109/CONMEDIA60526.2023.10428164",
+    "relevance_and_critical_limits": "Prediz eficiência térmica, comparando NN/RF/AdaBoost/GB. Ajuda a motivar comparadores e variáveis físicas. R2 de eficiência não mede desempenho na massa de CO2; entrada de cofiring e validação não se transferem diretamente.",
+    "used_in_article": false,
+    "metadata_status": "identidade e conteúdo conferidos no PDF; consulta suplementar Crossref não obtida",
+    "metadata_fetch_error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "index": 6,
+    "title": "A Hybrid Predictive Model as an Emission Reduction Strategy Based on Power Plants’ Fuel Consumption Activity",
+    "filename": "A Hybrid Predictive Model as an Emission Reduction Strategy Based on Power Plants’ Fuel Consumption Activity.pdf",
+    "doi": "10.1109/ACCESS.2024.3380809",
+    "relevance_and_critical_limits": "Modelo híbrido de séries e regressão para emissões, carvão e eletricidade. Regressão linear é um comparador prioritário. O artigo declara corte temporal e partição 85/15. Seus problemas de MAPE com valores zero reforçam a escolha criteriosa das métricas. Não confundir variáveis e emissões contabilizadas com a massa CEMS da Iatan.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "A Hybrid Predictive Model as an Emission Reduction Strategy Based on Power Plants’ Fuel Consumption Activity"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0000-3274-8492",
+          "authenticated-orcid": false,
+          "given": "Neng Ayu",
+          "family": "Herawati",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Electrical Engineering and Informatics, Institut Teknologi Bandung, Bandung, Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Asyraf Atthariq Putra",
+          "family": "Gary",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Independent Researcher, Jakarta, Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Erna",
+          "family": "Hikmawati",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Applied Science, Telkom University, Bandung, Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1705-1202",
+          "authenticated-orcid": false,
+          "given": "Kridanto",
+          "family": "Surendro",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electrical Engineering and Informatics, Institut Teknologi Bandung, Bandung, Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "container-title": [
+        "IEEE Access"
+      ],
+      "volume": "12",
+      "issue": null,
+      "page": "47119-47133",
+      "article-number": null,
+      "DOI": "10.1109/access.2024.3380809"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 12,
+    "title": "Comparative Analysis of Modular Neural Network and Support Vector Machine Models for CO2 Emission Prediction in Thermal Power Plants",
+    "filename": "Comparative Analysis of Modular Neural Network and Support Vector Machine Models for CO2 Emission Prediction in Thermal Power Plants.pdf",
+    "doi": "10.1109/CCIC68129.2026.11486103",
+    "relevance_and_critical_limits": "MNN por subsistemas versus SVM. O método declara partição aleatória 70/15/15 e inclui variáveis internas da planta. O R2 muito alto não é comparação válida com teste temporal da Iatan; não adotar sua avaliação aleatória como confirmação de generalização temporal.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "Comparative Analysis of Modular Neural Network and Support Vector Machine Models for $\\text{CO}_{2}$ Emission Prediction in Thermal Power Plants"
+      ],
+      "author": [
+        {
+          "given": "Divya",
+          "family": "Sakhamoori",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Sri Venkateswara College of Engineering,Dept of Electrical &#x0026; Electronics Engineering,Tirupathi,AP"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jaya Prakash",
+          "family": "Parala",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Sree Venkateswara College of Engineering,Dept of Mechanical Engineering,Nellore,AP"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "F Anand",
+          "family": "Raju",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Siddharth Institute of Engineering &#x0026; Technology,Dept of Mechanical Engineering,Tirupathi,AP"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "C",
+          "family": "Sreedhar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Siddharth Institute of Engineering &#x0026; Technology,Dept of Mechanical Engineering,Tirupathi,AP"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "J",
+          "family": "Suresh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Siddharth Institute of Engineering &#x0026; Technology,Dept of Mechanical Engineering,Tirupathi,AP"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "D",
+          "family": "Krishnaiah",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Siddharth Institute of Engineering &#x0026; Technology,Dept of Mechanical Engineering,Tirupathi,AP"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            6
+          ]
+        ]
+      },
+      "container-title": [
+        "2026 Contemporary Computing Innovations Conference (CCIC)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-6",
+      "article-number": null,
+      "DOI": "10.1109/ccic68129.2026.11486103"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 16,
+    "title": "Dynamic prediction method of power carbon emission intensity based on ISSA-CNN-BiLSTM",
+    "filename": "Dynamic prediction method of power carbon emission intensity based on ISSA-CNN-BiLSTM.pdf",
+    "doi": "10.11930/j.issn.1004-9649.202509020",
+    "relevance_and_critical_limits": "Intensidade dinâmica de carbono e previsão na rede com ISSA-CNN-BiLSTM. O texto declara 288 pontos e divisão cronológica 60/40. A formulação liga carga e consumo, mas o alvo é intensidade/agregação, não massa horária intraplanta. Não converter as melhorias reportadas em promessa para a Iatan.",
+    "used_in_article": false,
+    "metadata_status": "identidade e conteúdo conferidos no PDF; consulta suplementar Crossref não obtida",
+    "metadata_fetch_error": "HTTP Error 404: Not Found"
+  },
+  {
+    "index": 20,
+    "title": "NOx emission reduction of coal‐fired power plants through data‐driven model and particle swarm optimization",
+    "filename": "NOx emission reduction of coal-fired power plants through data-driven model and particle swarm optimization.pdf",
+    "doi": "10.1002/ep.14358",
+    "relevance_and_critical_limits": "Extra Trees/PSO para NOx; dados em estado estável, seleção por correlação e Isolation Forest. Traz alternativas de modelos e seleção, mas sua filtragem excluiria condições transitórias de interesse aqui. Não copiar remoção de anomalias ou estado estável sem definir uma análise distinta.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "<scp>NOx</scp> emission reduction of <scp>coal‐fired</scp> power plants through data‐driven model and particle swarm optimization"
+      ],
+      "author": [
+        {
+          "given": "Misganaw",
+          "family": "Abebe",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Research Institute of Mechanical Technology Pusan National University  Busan South Korea"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jin",
+          "family": "Seo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Mechanical Engineering Pusan National University  Busan South Korea"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Young‐Jin",
+          "family": "Kang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Research Institute of Mechanical Technology Pusan National University  Busan South Korea"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hyunho",
+          "family": "Choi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Korea Western Power Co.  Taean‐gun South Korea"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0342-5189",
+          "authenticated-orcid": false,
+          "given": "Yoojeong",
+          "family": "Noh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Mechanical Engineering Pusan National University  Busan South Korea"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            12
+          ]
+        ]
+      },
+      "container-title": [
+        "Environmental Progress &amp; Sustainable Energy"
+      ],
+      "volume": "43",
+      "issue": "3",
+      "page": null,
+      "article-number": "e14358",
+      "DOI": "10.1002/ep.14358"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 24,
+    "title": "Inferring Carbon Dioxide Emissions From Power Plants Using Satellite Imagery and Machine Learning",
+    "filename": "Inferring Carbon Dioxide Emissions From Power Plants Using Satellite Imagery and Machine Learning.pdf",
+    "doi": "10.1109/IGARSS52108.2023.10283046",
+    "relevance_and_critical_limits": "Artigo de conferência de sensoriamento remoto, relacionado ao trabalho ampliado de 2024 já citado. Publicações diferentes não são duplicatas binárias. Para sustentar a validação por plantas, utilizar prioritariamente a versão de 2024 e seu protocolo explícito.",
+    "used_in_article": false,
+    "metadata_status": "identidade e conteúdo conferidos no PDF; consulta suplementar Crossref não obtida",
+    "metadata_fetch_error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "index": 26,
+    "title": "Machine Learning-Based Forecasting and Monitoring for Emission and Fuel Mix Optimization",
+    "filename": "Machine Learning-Based Forecasting and Monitoring for Emission and Fuel Mix Optimization.pdf",
+    "doi": "10.1109/ICT-PEP67281.2025.11232419",
+    "relevance_and_critical_limits": "Regressão multivariada/ETS para gestão anual de cotas e mistura de combustíveis. Pode motivar uma aplicação posterior e comparadores simples; não fornece validação do estimador horário ou de uma regra automática de decisão para a Iatan.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "Machine Learning-Based Forecasting and Monitoring for Emission and Fuel Mix Optimization"
+      ],
+      "author": [
+        {
+          "given": "Fajar Arian",
+          "family": "Abadi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "PT PLN Nusantara Power Services,Department of Maintenance,Sidoarjo,Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Qorik Catur Wijaya",
+          "family": "Putra",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PT PLN Nusantara Power Services,Departement of Environmental,Sidoarjo,Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Akhmad Erieck",
+          "family": "Al Habsyi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PT PLN Nusantara Power Services,Department of Engineering,Sidoarjo,Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ton Sejati",
+          "family": "Utomo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PT PLN Nusantara Power,Departement of Management,Surabaya,Indonesia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            3
+          ]
+        ]
+      },
+      "container-title": [
+        "2025 International Conference on Technology and Policy in Energy and Electric Power (ICT-PEP)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "468-473",
+      "article-number": null,
+      "DOI": "10.1109/ict-pep67281.2025.11232419"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 27,
+    "title": "Multi-objective optimization of boiler combustion efficiency and emissions using genetic algorithm and recurrent neural network in 660-MW coal-fired power plant",
+    "filename": "Multi-objective optimization of boiler combustion efficiency and emissions using genetic algorithm and recurrent neural network in 660-MW coal-fired power plant.pdf",
+    "doi": "10.15587/1729-4061.2025.327063",
+    "relevance_and_critical_limits": "RNN e algoritmo genético para eficiência, emissão e capacidade em caldeira com cofiring. O resumo usa valores de CO2 em mg/Nm3 e notação ambígua de consumo de carvão. Não transportar esses números/unidades para o artigo. Sem confirmação independente dessas grandezas, restringir o uso à descrição do tipo de abordagem.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "Multi-objective optimization of boiler combustion efficiency and emissions using genetic algorithm and recurrent neural network in 660-MW coal-fired power plant"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0009-0544-6558",
+          "authenticated-orcid": false,
+          "given": "Mohamad Arwan",
+          "family": "Efendy",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universitas Indonesia",
+              "place": [
+                "Indonesia"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5068-192X",
+          "authenticated-orcid": false,
+          "given": "Ahmad Syihan",
+          "family": "Auzani",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universitas Indonesia",
+              "place": [
+                "Indonesia"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8529-3292",
+          "authenticated-orcid": false,
+          "given": "Sholahudin",
+          "family": "Sholahudin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universitas Indonesia",
+              "place": [
+                "Indonesia"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            27
+          ]
+        ]
+      },
+      "container-title": [
+        "Eastern-European Journal of Enterprise Technologies"
+      ],
+      "volume": "3",
+      "issue": "8 (135)",
+      "page": "23-33",
+      "article-number": null,
+      "DOI": "10.15587/1729-4061.2025.327063"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 32,
+    "title": "Prediction of Carbon Emissions from Thermal Power Plants Based on PCA-BiLSTM",
+    "filename": "Prediction of Carbon Emissions from Thermal Power Plants Based on PCA-BiLSTM.pdf",
+    "doi": "10.1109/EIECS59936.2023.10435557",
+    "relevance_and_critical_limits": "PCA-BiLSTM para emissões. A redução é parte do estimador da fonte; no projeto PCA é diagnóstico. BiLSTM exige especificar quais observações estariam disponíveis no instante de previsão; não se conclui vazamento apenas por bidirecionalidade, mas a adaptação precisa impedir acesso ao futuro.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "Prediction of Carbon Emissions from Thermal Power Plants Based on PCA-BiLSTM"
+      ],
+      "author": [
+        {
+          "given": "Lin",
+          "family": "Qiao",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "State Grid Liaoning Information and Communication Company,Shenyang,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Shuo",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "State Grid Liaoning Information and Communication Company,Shenyang,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ruiting",
+          "family": "Qu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "State Grid Liaoning Information and Communication Company,Shenyang,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ran",
+          "family": "Ran",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "State Grid Liaoning Information and Communication Company,Shenyang,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yanliang",
+          "family": "Guo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Northeastern University,College of Computer Science and Engineering,Shenyang,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Wenjun",
+          "family": "Tan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Northeastern University,College of Computer Science and Engineering,Shenyang,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            22
+          ]
+        ]
+      },
+      "container-title": [
+        "2023 3rd International Conference on Electronic Information Engineering and Computer Science (EIECS)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "39-42",
+      "article-number": null,
+      "DOI": "10.1109/eiecs59936.2023.10435557"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 33,
+    "title": "Prediction the Carbon Emission Intensity of Coal-fired Power Plant Based on Electricity Data",
+    "filename": "Prediction the Carbon Emission Intensity of Coal-fired Power Plant Based on Electricity Data.pdf",
+    "doi": "10.1109/ICESEP66633.2025.11155360",
+    "relevance_and_critical_limits": "LightGBM com otimização bayesiana para intensidade de carbono e dados elétricos. O texto declara validação cruzada de dez partes, sem equivaler isso ao teste temporal usado aqui. É uma alternativa de família de modelo; intensidade e massa não são intercambiáveis.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "Prediction the Carbon Emission Intensity of Coal-fired Power Plant Based on Electricity Data"
+      ],
+      "author": [
+        {
+          "given": "Yaodong",
+          "family": "Li",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Guangdong Power Grid Corporation,Grid Planning &#x0026; Research Center,Guangzhou,China,510700"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Xianfu",
+          "family": "Gong",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Guangdong Power Grid Corporation,Grid Planning &#x0026; Research Center,Guangzhou,China,510700"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bo",
+          "family": "Peng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Guangdong Power Grid Corporation,Grid Planning &#x0026; Research Center,Guangzhou,China,510700"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Hui",
+          "family": "Liao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Chinese Academy of Sciences,Guangzhou Institute of Energy Conversion,Guangzhou,China,510640"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            20
+          ]
+        ]
+      },
+      "container-title": [
+        "2025 7th International Conference on Energy Systems and Electrical Power (ICESEP)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1037-1041",
+      "article-number": null,
+      "DOI": "10.1109/icesep66633.2025.11155360"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 36,
+    "title": "Prediction of unburned carbon and NOx emissions of solid fuel using petrographic UBC index and artificial neural network",
+    "filename": "Prediction of unburned carbon and NOx emissions of solid fuel using petrographic UBC index and artificial neural network.pdf",
+    "doi": "10.1016/j.fuel.2024.132490",
+    "relevance_and_critical_limits": "DTF, caracterização petrográfica e ANN para carbono não queimado/NOx. Partição aleatória 60/20/20 em amostras experimentais. Apoia a relevância física do combustível, mas não possui o alvo nem as séries CEMS necessários para replicação no estudo atual.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "Prediction of unburned carbon and NOx emissions of solid fuel using petrographic UBC index and artificial neural network"
+      ],
+      "author": [
+        {
+          "given": "Ji-Hwan",
+          "family": "Lee",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-0746-6454",
+          "authenticated-orcid": false,
+          "given": "Dae-Gyun",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0662-6341",
+          "authenticated-orcid": false,
+          "given": "Gyeong-Min",
+          "family": "Kim",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Byoung-Hwa",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8186-3323",
+          "authenticated-orcid": false,
+          "given": "Chung-Hwan",
+          "family": "Jeon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10
+          ]
+        ]
+      },
+      "container-title": [
+        "Fuel"
+      ],
+      "volume": "374",
+      "issue": null,
+      "page": "132490",
+      "article-number": "132490",
+      "DOI": "10.1016/j.fuel.2024.132490"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 38,
+    "title": "Hybrid CF-CNN-BiLSTM hypertuned by Bayesian optimization for thermal power generation and decarbonization forecasting",
+    "filename": "Hybrid CF-CNN-BiLSTM hypertuned by Bayesian optimization for thermal power generation and decarbonization forecasting.pdf",
+    "doi": "10.1016/j.ijepes.2025.111199",
+    "relevance_and_critical_limits": "CF-CNN-BiLSTM/otimização bayesiana em geração de Candiota III. A avaliação de 50 sementes é uma ideia útil de robustez. A Tabela 1 compara partições treino/teste; antes de adaptar filtros e escolher a divisão, seria necessário separar validação e teste e comprovar disponibilidade temporal do filtro. Geração não é massa de CO2.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "Hybrid CF-CNN-BiLSTM hypertuned by Bayesian optimization for thermal power generation and decarbonization forecasting"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7064-7991",
+          "authenticated-orcid": false,
+          "given": "William Gouvêa",
+          "family": "Buratto",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6298-133X",
+          "authenticated-orcid": false,
+          "given": "Rafael Ninno",
+          "family": "Muniz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1798-1215",
+          "authenticated-orcid": false,
+          "given": "Ademir",
+          "family": "Nied",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5910-9524",
+          "authenticated-orcid": false,
+          "given": "Carlos Frederico de Oliveira",
+          "family": "Barros",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9181-0097",
+          "authenticated-orcid": false,
+          "given": "Erlon Cristian",
+          "family": "Finardi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6536-2251",
+          "authenticated-orcid": false,
+          "given": "Gabriel Villarrubia",
+          "family": "Gonzalez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11
+          ]
+        ]
+      },
+      "container-title": [
+        "International Journal of Electrical Power &amp; Energy Systems"
+      ],
+      "volume": "172",
+      "issue": null,
+      "page": "111199",
+      "article-number": "111199",
+      "DOI": "10.1016/j.ijepes.2025.111199"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 41,
+    "title": "Operational guide to stabilize, standardize and increase power plant efficiency",
+    "filename": "Operational guide to stabilize, standardize and increase power plant efficiency.pdf",
+    "doi": "10.1016/j.apenergy.2022.118973",
+    "relevance_and_critical_limits": "Modelos ANN e balanços de massa/energia, com guia operacional e fatores controláveis. Fundamenta a relevância de conhecimento de domínio e mostra variáveis não disponíveis no recorte público. Ganhos de eficiência por intervenção não são resultados obtidos pelo modelo Iatan.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "Operational guide to stabilize, standardize and increase power plant efficiency"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3671-3363",
+          "authenticated-orcid": false,
+          "given": "Lara Werncke",
+          "family": "Vieira",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3297-4761",
+          "authenticated-orcid": false,
+          "given": "Augusto Delavald",
+          "family": "Marques",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3628-0038",
+          "authenticated-orcid": false,
+          "given": "Jéssica",
+          "family": "Duarte",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rafael Petri",
+          "family": "Zanardo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paulo Smith",
+          "family": "Schneider",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2196-7603",
+          "authenticated-orcid": false,
+          "given": "Felipe Antonio Chegury",
+          "family": "Viana",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9616-6093",
+          "authenticated-orcid": false,
+          "given": "Antônio José",
+          "family": "da Silva Neto",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8784-3566",
+          "authenticated-orcid": false,
+          "given": "Felipe Roman",
+          "family": "Centeno",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1840-7277",
+          "authenticated-orcid": false,
+          "given": "Julian David",
+          "family": "Hunt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Julio Cezar Mairesse",
+          "family": "Siluk",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            6
+          ]
+        ]
+      },
+      "container-title": [
+        "Applied Energy"
+      ],
+      "volume": "315",
+      "issue": null,
+      "page": "118973",
+      "article-number": "118973",
+      "DOI": "10.1016/j.apenergy.2022.118973"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 43,
+    "title": "Hybrid modeling-based digital twin for performance optimization with flexible operation in the direct air-cooling power unit",
+    "filename": "Hybrid modeling-based digital twin for performance optimization with flexible operation in the direct air-cooling power unit.pdf",
+    "doi": "10.1016/j.energy.2022.124492",
+    "relevance_and_critical_limits": "Gêmeo digital com PSO-XGBoost para resfriamento direto e operação flexível. O método declara 80% dos dados de treino selecionados aleatoriamente após filtragem de estado estável. É fonte de contexto físico; não copiar seu protocolo para estudar rampas e partidas em teste temporal.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "Hybrid modeling-based digital twin for performance optimization with flexible operation in the direct air-cooling power unit"
+      ],
+      "author": [
+        {
+          "given": "Guanjia",
+          "family": "Zhao",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhipeng",
+          "family": "Cui",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jing",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenhao",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Suxia",
+          "family": "Ma",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            9
+          ]
+        ]
+      },
+      "container-title": [
+        "Energy"
+      ],
+      "volume": "254",
+      "issue": null,
+      "page": "124492",
+      "article-number": "124492",
+      "DOI": "10.1016/j.energy.2022.124492"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 44,
+    "title": "Machine learning-assisted synergetic optimization of carbon emission and thermal efficiency for a 660 MW pulverized coal-fired boiler",
+    "filename": "Machine learning-assisted synergetic optimization of carbon emission and thermal efficiency for a 660 MW pulverized coal-fired boiler.pdf",
+    "doi": "10.1016/j.energy.2025.139291",
+    "relevance_and_critical_limits": "GPR/SHAP, balanço reverso e NSGA-II em caldeira de 660 MW, com 25 dias, partição 80/20 e validação em cinco partes. Reforça variáveis físicas e análise por carga. O ganho de otimização depende de medições internas e intervenções; não é melhora demonstrada por acrescentar trajetória aos dados públicos da Iatan.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "Machine learning-assisted synergetic optimization of carbon emission and thermal efficiency for a 660 MW pulverized coal-fired boiler"
+      ],
+      "author": [
+        {
+          "given": "Yue",
+          "family": "Yin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiahui",
+          "family": "Lu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yushuang",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhenkun",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3545-454X",
+          "authenticated-orcid": false,
+          "given": "Yudong",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0484-3665",
+          "authenticated-orcid": false,
+          "given": "Hongjian",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lunbo",
+          "family": "Duan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      },
+      "container-title": [
+        "Energy"
+      ],
+      "volume": "341",
+      "issue": null,
+      "page": "139291",
+      "article-number": "139291",
+      "DOI": "10.1016/j.energy.2025.139291"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  },
+  {
+    "index": 56,
+    "title": "Forecasting Air Pollutant Emissions Using Deep Sparse Transformer Networks: A Case Study of the Ekibastuz Coal-Fired Power Plant",
+    "filename": "Forecasting Air Pollutant Emissions Using Deep Sparse Transformer Networks - A Case Study of the Ekibastuz Coal-Fired Power Plant.pdf",
+    "doi": "10.3390/su17115115",
+    "relevance_and_critical_limits": "Transformer esparso para SO2, NOx e PM2.5, 67.527 registros em dez minutos. Reporta piora com o horizonte e limitações computacionais. É inspiração metodológica de horizonte/janela; memória de outros poluentes não prova memória ou melhora de CO2 na Iatan.",
+    "used_in_article": false,
+    "publisher_metadata": {
+      "title": [
+        "Forecasting Air Pollutant Emissions Using Deep Sparse Transformer Networks: A Case Study of the Ekibastuz Coal-Fired Power Plant"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2306-8377",
+          "authenticated-orcid": false,
+          "given": "Yurii",
+          "family": "Andrashko",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of System Analysis and Optimization Theory, Uzhhorod National University, 88000 Uzhhorod, Ukraine"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1277-8031",
+          "authenticated-orcid": false,
+          "given": "Oleksandr",
+          "family": "Kuchanskyi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computational and Data Science, Astana IT University, Astana 010000, Kazakhstan"
+            },
+            {
+              "name": "Department of Information Control Systems and Technologies, Uzhhorod National University, 88000 Uzhhorod, Ukraine"
+            },
+            {
+              "name": "Department of Biomedical Cybernetics, National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic Institute”, 03056 Kyiv, Ukraine"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrii",
+          "family": "Biloshchytskyi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Administration, Astana IT University, Astana 010000, Kazakhstan"
+            },
+            {
+              "name": "Department of Information Technology, Kyiv National University of Construction and Architecture, 03037 Kyiv, Ukraine"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4079-2025",
+          "authenticated-orcid": false,
+          "given": "Alexandr",
+          "family": "Neftissov",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Research and Innovation Center “Industry 4.0”, Astana IT University, Astana 010000, Kazakhstan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Svitlana",
+          "family": "Biloshchytska",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computational and Data Science, Astana IT University, Astana 010000, Kazakhstan"
+            },
+            {
+              "name": "Department of Information Technology, Kyiv National University of Construction and Architecture, 03037 Kyiv, Ukraine"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            3
+          ]
+        ]
+      },
+      "container-title": [
+        "Sustainability"
+      ],
+      "volume": "17",
+      "issue": "11",
+      "page": "5115",
+      "article-number": null,
+      "DOI": "10.3390/su17115115"
+    },
+    "metadata_status": "metadados editoriais consultados; conteúdo crítico confrontado com o PDF"
+  }
+]

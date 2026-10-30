@@ -1,0 +1,71 @@
+[
+  {
+    "key": "diebold_mariano1994",
+    "title": "Comparing Predictive Accuracy",
+    "source": "C:\\Users\\prcgu\\OneDrive\\Documentos\\ChatGPT\\Modelagem Matemática com IA\\auditoria_resultados_recebidos_2026-10-29\\novas_referencias_2026-10-29\\a071dcc079fb98ed.pdf",
+    "authors": "DIEBOLD, F. X.; MARIANO, R. S.",
+    "year": 1994,
+    "version": "NBER Technical Working Paper 169, novembro de 1994; capa e resumo conferidos visualmente.",
+    "doi": "10.3386/t0169",
+    "official_url": "https://www.nber.org/papers/t0169",
+    "reference": "DIEBOLD, F. X.; MARIANO, R. S. Comparing Predictive Accuracy. Cambridge, MA: National Bureau of Economic Research, nov. 1994. Technical Working Paper 169. DOI: https://doi.org/10.3386/t0169.",
+    "published_related_version": "Journal of Business & Economic Statistics, v. 13, n. 3, p. 253-263, 1995. DOI: 10.1080/07350015.1995.10524599; metadados conferidos, PDF fornecido é de 1994.",
+    "notebooks": [
+      "03A.05",
+      "03A.05A"
+    ],
+    "theoretical_contribution": "Fundamenta a comparação pareada de acurácia por uma função de perda, distinguindo diferença amostral de erro e evidência estatística.",
+    "possible_code_contribution": "Usar previsões já salvas para formar d(t)=|erro_A(t)|-|erro_B(t)|, auditar sua dependência temporal e definir um protocolo de incerteza. Um teste DM/HAC só seria apropriado após verificar suas hipóteses; reamostragem em blocos é outra opção a ser especificada. Não há necessidade de retreinar para calcular as diferenças.",
+    "limits": "Os dados ON não são uma série horária sem lacunas. O período de teste já foi consultado e a escolha de modelos interfere na inferência. Não aplicar DM como teste automático de superioridade entre modelos, nem tratar um valor-p como correção do processo de seleção. Nenhum teste novo foi executado.",
+    "filename": "Comparing Predictive Accuracy.pdf",
+    "relative_path": "referências\\Comparing Predictive Accuracy.pdf",
+    "sha256": "a071dcc079fb98ed2799f9b619c75cbcacc8bc93a65cd79ffe62fe72d1212190",
+    "use_status": "Incluído na biblioteca e analisado; não citado automaticamente na versão atual do artigo."
+  },
+  {
+    "key": "grinsztajn2022",
+    "title": "Why do tree-based models still outperform deep learning on typical tabular data?",
+    "source": "C:\\Users\\prcgu\\OneDrive\\Documentos\\ChatGPT\\Modelagem Matemática com IA\\auditoria_resultados_recebidos_2026-10-29\\novas_referencias_2026-10-29\\grinsztajn2022_publicado.pdf",
+    "authors": "GRINSZTAJN, L.; OYALLON, E.; VAROQUAUX, G.",
+    "year": 2022,
+    "version": "Versão publicada no NeurIPS 2022, 14 páginas, obtida no portal oficial. O ZIP contém arXiv:2207.08815v1, com título ligeiramente diferente.",
+    "doi": "10.52202/068431-0037",
+    "official_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html",
+    "reference": "GRINSZTAJN, L.; OYALLON, E.; VAROQUAUX, G. Why do tree-based models still outperform deep learning on typical tabular data? Advances in Neural Information Processing Systems, v. 35, Datasets and Benchmarks Track, 2022. DOI: https://doi.org/10.52202/068431-0037.",
+    "notebooks": [
+      "03A",
+      "03A.02",
+      "03A.03",
+      "03A.05A"
+    ],
+    "theoretical_contribution": "É a contribuição teórica mais imediata para discutir redes versus árvores em dados tabulares, atributos pouco informativos, orientação das variáveis e comparação que considera também o orçamento de busca.",
+    "possible_code_contribution": "Registrar amostras, número de ajustes, complexidade selecionada, tempo de treinamento e busca por família. Em um novo experimento, usar protocolo e orçamento comparáveis e múltiplas sementes. O efeito de retirar variáveis deve continuar sendo medido por ablação, sem exclusão automática por correlação.",
+    "limits": "O benchmark cobre 45 bases e destaca amostras médias em torno de 10 mil registros. Não prova que XGBoost seja universalmente superior, não explica causalmente o resultado Iatan e não torna equivalentes os orçamentos diferentes já usados no projeto.",
+    "filename": "Why do tree-based models still outperform deep learning on typical tabular data.pdf",
+    "relative_path": "referências\\Why do tree-based models still outperform deep learning on typical tabular data.pdf",
+    "sha256": "9c640759c303b9c783559a0da5d8327fdcea01e7a718322f08a746bc9f37a0b0",
+    "use_status": "Incluído na biblioteca e analisado; não citado automaticamente na versão atual do artigo."
+  },
+  {
+    "key": "si2019",
+    "title": "Development of Predictive Emissions Monitoring System Using Open Source Machine Learning Library - Keras: A Case Study on a Cogeneration Unit",
+    "source": "C:\\Users\\prcgu\\OneDrive\\Documentos\\ChatGPT\\Modelagem Matemática com IA\\auditoria_resultados_recebidos_2026-10-29\\novas_referencias_2026-10-29\\8e9178f9a01ee09f.pdf",
+    "authors": "SI, M.; TARNOCZI, T. J.; WIENS, B. M.; DU, K.",
+    "year": 2019,
+    "version": "Artigo publicado, IEEE Access, v. 7, p. 113463-113475; DOI e autores conferidos nos metadados editoriais e no PDF.",
+    "doi": "10.1109/ACCESS.2019.2930555",
+    "official_url": "https://doi.org/10.1109/ACCESS.2019.2930555",
+    "reference": "SI, M.; TARNOCZI, T. J.; WIENS, B. M.; DU, K. Development of Predictive Emissions Monitoring System Using Open Source Machine Learning Library - Keras: A Case Study on a Cogeneration Unit. IEEE Access, v. 7, p. 113463-113475, 2019. DOI: https://doi.org/10.1109/ACCESS.2019.2930555.",
+    "notebooks": [
+      "03A",
+      "03A.01"
+    ],
+    "theoretical_contribution": "Referência aplicada direta para PEMS com redes neurais, Keras e variáveis de operação. Complementa os artigos fundamentais de retropropagação, ReLU e Adam, sem substituí-los.",
+    "possible_code_contribution": "Documentar claramente ajuste, validação e teste; em um experimento futuro, avaliar estabilidade entre inicializações e registrar o critério de escolha da arquitetura. Não adotar automaticamente a arquitetura ou o otimizador vencedor da fonte.",
+    "limits": "A fonte prevê NOx de cogeração a gás, usa embaralhamento e divisão aleatória, e reporta coeficiente r. Esse desenho não substitui validação cronológica, r não deve ser chamado de R2 e seus erros não são comparáveis à massa horária de CO2 da Iatan.",
+    "filename": "Development of Predictive Emissions Monitoring System Using Open Source Machine Learning Library - Keras - A Case Study on a Cogeneration Unit.pdf",
+    "relative_path": "referências\\Development of Predictive Emissions Monitoring System Using Open Source Machine Learning Library - Keras - A Case Study on a Cogeneration Unit.pdf",
+    "sha256": "8e9178f9a01ee09f975e40369b0080af13fba44f93794c8d19970372b524876c",
+    "use_status": "Incluído na biblioteca e analisado; não citado automaticamente na versão atual do artigo."
+  }
+]

@@ -1,0 +1,73 @@
+ANÁLISE DO PACOTE NOVAS_REFERENCIAS.ZIP — 29/10/2026
+
+25 PDFs no ZIP; 20 conteúdos binários diferentes; cinco cópias repetidas dentro do pacote.
+Quinze conteúdos distintos já eram conhecidos. Dos cinco conteúdos binários restantes:
+- três são obras novas e pertinentes (Diebold/Mariano, Grinsztajn/Oyallon/Varoquaux, Si e colaboradores);
+- um é preprint de uma obra já usada (Cerqueira/Torgo/Mozetic);
+- um é novo, mas distante do escopo (abstração de eventos em mineração de processos).
+
+Os três pertinentes foram selecionados para a pasta referências. Para Grinsztajn foi
+obtida a versão publicada oficial; o preprint fornecido ficou preservado no ZIP.
+O arquivo original ZIP não foi alterado. Não foram reintroduzidas cópias repetidas.
+
+PRIORIDADE DE USO
+
+1. Para melhorar a fundamentação agora: Grinsztajn, na comparação MLP/XGBoost, e Si,
+   na contextualização de redes neurais/Keras em PEMS. A inclusão de citações e notas
+   teóricas pode ser feita sem novo treinamento; as fontes não legitimam copiar seus
+   protocolos ou alegar superioridade universal de um modelo.
+2. Para um experimento estatístico complementar: Diebold/Mariano. Primeiro definir
+   perda, unidade temporal, dependência e finalidade da inferência. Não transformar
+   teste já consultado em avaliação cega nem aplicar teste de acurácia de previsões
+   como comparação automática de modelos ajustados/selecionados.
+3. Para aprimorar código em nova execução: registrar orçamento e tempo de busca,
+   repetir sementes sob protocolo comum e manter separação cronológica. A revisão
+   bibliográfica não alterou cálculos ou resultados já executados.
+
+Os registros abaixo são análises de aplicação e referências prontas para uso. Não
+foram adicionados automaticamente à lista de citações do artigo: a presença de um
+PDF na biblioteca não significa que ele já sustente uma afirmação no manuscrito.
+
+DIEBOLD, F. X.; MARIANO, R. S. Comparing Predictive Accuracy. Cambridge, MA: National Bureau of Economic Research, nov. 1994. Technical Working Paper 169. DOI: https://doi.org/10.3386/t0169.
+Versão guardada: NBER Technical Working Paper 169, novembro de 1994; capa e resumo conferidos visualmente.
+Arquivo: Comparing Predictive Accuracy.pdf
+Notebooks relacionados: 03A.05, 03A.05A
+Contribuição teórica: Fundamenta a comparação pareada de acurácia por uma função de perda, distinguindo diferença amostral de erro e evidência estatística.
+Possível contribuição ao código: Usar previsões já salvas para formar d(t)=|erro_A(t)|-|erro_B(t)|, auditar sua dependência temporal e definir um protocolo de incerteza. Um teste DM/HAC só seria apropriado após verificar suas hipóteses; reamostragem em blocos é outra opção a ser especificada. Não há necessidade de retreinar para calcular as diferenças.
+Limites: Os dados ON não são uma série horária sem lacunas. O período de teste já foi consultado e a escolha de modelos interfere na inferência. Não aplicar DM como teste automático de superioridade entre modelos, nem tratar um valor-p como correção do processo de seleção. Nenhum teste novo foi executado.
+
+GRINSZTAJN, L.; OYALLON, E.; VAROQUAUX, G. Why do tree-based models still outperform deep learning on typical tabular data? Advances in Neural Information Processing Systems, v. 35, Datasets and Benchmarks Track, 2022. DOI: https://doi.org/10.52202/068431-0037.
+Versão guardada: Versão publicada no NeurIPS 2022, 14 páginas, obtida no portal oficial. O ZIP contém arXiv:2207.08815v1, com título ligeiramente diferente.
+Arquivo: Why do tree-based models still outperform deep learning on typical tabular data.pdf
+Notebooks relacionados: 03A, 03A.02, 03A.03, 03A.05A
+Contribuição teórica: É a contribuição teórica mais imediata para discutir redes versus árvores em dados tabulares, atributos pouco informativos, orientação das variáveis e comparação que considera também o orçamento de busca.
+Possível contribuição ao código: Registrar amostras, número de ajustes, complexidade selecionada, tempo de treinamento e busca por família. Em um novo experimento, usar protocolo e orçamento comparáveis e múltiplas sementes. O efeito de retirar variáveis deve continuar sendo medido por ablação, sem exclusão automática por correlação.
+Limites: O benchmark cobre 45 bases e destaca amostras médias em torno de 10 mil registros. Não prova que XGBoost seja universalmente superior, não explica causalmente o resultado Iatan e não torna equivalentes os orçamentos diferentes já usados no projeto.
+
+SI, M.; TARNOCZI, T. J.; WIENS, B. M.; DU, K. Development of Predictive Emissions Monitoring System Using Open Source Machine Learning Library - Keras: A Case Study on a Cogeneration Unit. IEEE Access, v. 7, p. 113463-113475, 2019. DOI: https://doi.org/10.1109/ACCESS.2019.2930555.
+Versão guardada: Artigo publicado, IEEE Access, v. 7, p. 113463-113475; DOI e autores conferidos nos metadados editoriais e no PDF.
+Arquivo: Development of Predictive Emissions Monitoring System Using Open Source Machine Learning Library - Keras - A Case Study on a Cogeneration Unit.pdf
+Notebooks relacionados: 03A, 03A.01
+Contribuição teórica: Referência aplicada direta para PEMS com redes neurais, Keras e variáveis de operação. Complementa os artigos fundamentais de retropropagação, ReLU e Adam, sem substituí-los.
+Possível contribuição ao código: Documentar claramente ajuste, validação e teste; em um experimento futuro, avaliar estabilidade entre inicializações e registrar o critério de escolha da arquitetura. Não adotar automaticamente a arquitetura ou o otimizador vencedor da fonte.
+Limites: A fonte prevê NOx de cogeração a gás, usa embaralhamento e divisão aleatória, e reporta coeficiente r. Esse desenho não substitui validação cronológica, r não deve ser chamado de R2 e seus erros não são comparáveis à massa horária de CO2 da Iatan.
+
+VERSÕES E MATERIAL NÃO IMPORTADO
+
+Cerqueira: o PDF do ZIP é arXiv:1905.11744v1, de maio de 2019, com 62 séries reais.
+A versão publicada de 2020 já citada foi consultada no portal do periódico e contém
+174 séries reais. É a mesma obra em versões diferentes; não substituir a versão final
+por esse preprint nem misturar números das duas versões.
+
+Event abstraction in process mining: literature review and taxonomy é um trabalho
+de mineração de processos e abstração de eventos. Não estuda o estimador horário
+de CO2, validação temporal de regressão ou atributos operacionais da Iatan. Não foi
+importado para a biblioteca ativa.
+
+O PDF XGBoost e as demais obras conhecidas não são referências novas. Há títulos
+e nomes de arquivo diferentes que correspondem ao mesmo conteúdo binário.
+
+Diebold/Mariano: a versão fornecida é NBER 1994. A publicação de 1995 tem páginas
+253-263 conforme metadados editoriais. A capa e o resumo do PDF foram usados para
+confirmar a identidade e o conteúdo; o texto de resumo atualmente apresentado na
+página HTML do NBER não foi usado como evidência de conteúdo, pois diverge do PDF.

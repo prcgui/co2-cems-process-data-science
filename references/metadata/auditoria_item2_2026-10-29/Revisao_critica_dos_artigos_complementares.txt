@@ -1,0 +1,83 @@
+REVISÃO CRÍTICA DOS 16 ARTIGOS COMPLEMENTARES MANTIDOS
+
+Estes artigos não integram automaticamente as referências do artigo. Foram conferidos alvo, desenho, contribuições possíveis e limites. Números de desempenho de outros alvos e protocolos não foram importados para o estudo.
+
+A Comparison of Machine Learning Models for Predicting Coal-Fired Power Plant Performance
+DOI: 10.1109/CONMEDIA60526.2023.10428164
+Prediz eficiência térmica, comparando NN/RF/AdaBoost/GB. Ajuda a motivar comparadores e variáveis físicas. R2 de eficiência não mede desempenho na massa de CO2; entrada de cofiring e validação não se transferem diretamente.
+identidade e conteúdo conferidos no PDF; consulta suplementar Crossref não obtida
+
+A Hybrid Predictive Model as an Emission Reduction Strategy Based on Power Plants’ Fuel Consumption Activity
+DOI: 10.1109/ACCESS.2024.3380809
+Modelo híbrido de séries e regressão para emissões, carvão e eletricidade. Regressão linear é um comparador prioritário. O artigo declara corte temporal e partição 85/15. Seus problemas de MAPE com valores zero reforçam a escolha criteriosa das métricas. Não confundir variáveis e emissões contabilizadas com a massa CEMS da Iatan.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Comparative Analysis of Modular Neural Network and Support Vector Machine Models for CO2 Emission Prediction in Thermal Power Plants
+DOI: 10.1109/CCIC68129.2026.11486103
+MNN por subsistemas versus SVM. O método declara partição aleatória 70/15/15 e inclui variáveis internas da planta. O R2 muito alto não é comparação válida com teste temporal da Iatan; não adotar sua avaliação aleatória como confirmação de generalização temporal.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Dynamic prediction method of power carbon emission intensity based on ISSA-CNN-BiLSTM
+DOI: 10.11930/j.issn.1004-9649.202509020
+Intensidade dinâmica de carbono e previsão na rede com ISSA-CNN-BiLSTM. O texto declara 288 pontos e divisão cronológica 60/40. A formulação liga carga e consumo, mas o alvo é intensidade/agregação, não massa horária intraplanta. Não converter as melhorias reportadas em promessa para a Iatan.
+identidade e conteúdo conferidos no PDF; consulta suplementar Crossref não obtida
+
+NOx emission reduction of coal‐fired power plants through data‐driven model and particle swarm optimization
+DOI: 10.1002/ep.14358
+Extra Trees/PSO para NOx; dados em estado estável, seleção por correlação e Isolation Forest. Traz alternativas de modelos e seleção, mas sua filtragem excluiria condições transitórias de interesse aqui. Não copiar remoção de anomalias ou estado estável sem definir uma análise distinta.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Inferring Carbon Dioxide Emissions From Power Plants Using Satellite Imagery and Machine Learning
+DOI: 10.1109/IGARSS52108.2023.10283046
+Artigo de conferência de sensoriamento remoto, relacionado ao trabalho ampliado de 2024 já citado. Publicações diferentes não são duplicatas binárias. Para sustentar a validação por plantas, utilizar prioritariamente a versão de 2024 e seu protocolo explícito.
+identidade e conteúdo conferidos no PDF; consulta suplementar Crossref não obtida
+
+Machine Learning-Based Forecasting and Monitoring for Emission and Fuel Mix Optimization
+DOI: 10.1109/ICT-PEP67281.2025.11232419
+Regressão multivariada/ETS para gestão anual de cotas e mistura de combustíveis. Pode motivar uma aplicação posterior e comparadores simples; não fornece validação do estimador horário ou de uma regra automática de decisão para a Iatan.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Multi-objective optimization of boiler combustion efficiency and emissions using genetic algorithm and recurrent neural network in 660-MW coal-fired power plant
+DOI: 10.15587/1729-4061.2025.327063
+RNN e algoritmo genético para eficiência, emissão e capacidade em caldeira com cofiring. O resumo usa valores de CO2 em mg/Nm3 e notação ambígua de consumo de carvão. Não transportar esses números/unidades para o artigo. Sem confirmação independente dessas grandezas, restringir o uso à descrição do tipo de abordagem.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Prediction of Carbon Emissions from Thermal Power Plants Based on PCA-BiLSTM
+DOI: 10.1109/EIECS59936.2023.10435557
+PCA-BiLSTM para emissões. A redução é parte do estimador da fonte; no projeto PCA é diagnóstico. BiLSTM exige especificar quais observações estariam disponíveis no instante de previsão; não se conclui vazamento apenas por bidirecionalidade, mas a adaptação precisa impedir acesso ao futuro.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Prediction the Carbon Emission Intensity of Coal-fired Power Plant Based on Electricity Data
+DOI: 10.1109/ICESEP66633.2025.11155360
+LightGBM com otimização bayesiana para intensidade de carbono e dados elétricos. O texto declara validação cruzada de dez partes, sem equivaler isso ao teste temporal usado aqui. É uma alternativa de família de modelo; intensidade e massa não são intercambiáveis.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Prediction of unburned carbon and NOx emissions of solid fuel using petrographic UBC index and artificial neural network
+DOI: 10.1016/j.fuel.2024.132490
+DTF, caracterização petrográfica e ANN para carbono não queimado/NOx. Partição aleatória 60/20/20 em amostras experimentais. Apoia a relevância física do combustível, mas não possui o alvo nem as séries CEMS necessários para replicação no estudo atual.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Hybrid CF-CNN-BiLSTM hypertuned by Bayesian optimization for thermal power generation and decarbonization forecasting
+DOI: 10.1016/j.ijepes.2025.111199
+CF-CNN-BiLSTM/otimização bayesiana em geração de Candiota III. A avaliação de 50 sementes é uma ideia útil de robustez. A Tabela 1 compara partições treino/teste; antes de adaptar filtros e escolher a divisão, seria necessário separar validação e teste e comprovar disponibilidade temporal do filtro. Geração não é massa de CO2.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Operational guide to stabilize, standardize and increase power plant efficiency
+DOI: 10.1016/j.apenergy.2022.118973
+Modelos ANN e balanços de massa/energia, com guia operacional e fatores controláveis. Fundamenta a relevância de conhecimento de domínio e mostra variáveis não disponíveis no recorte público. Ganhos de eficiência por intervenção não são resultados obtidos pelo modelo Iatan.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Hybrid modeling-based digital twin for performance optimization with flexible operation in the direct air-cooling power unit
+DOI: 10.1016/j.energy.2022.124492
+Gêmeo digital com PSO-XGBoost para resfriamento direto e operação flexível. O método declara 80% dos dados de treino selecionados aleatoriamente após filtragem de estado estável. É fonte de contexto físico; não copiar seu protocolo para estudar rampas e partidas em teste temporal.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Machine learning-assisted synergetic optimization of carbon emission and thermal efficiency for a 660 MW pulverized coal-fired boiler
+DOI: 10.1016/j.energy.2025.139291
+GPR/SHAP, balanço reverso e NSGA-II em caldeira de 660 MW, com 25 dias, partição 80/20 e validação em cinco partes. Reforça variáveis físicas e análise por carga. O ganho de otimização depende de medições internas e intervenções; não é melhora demonstrada por acrescentar trajetória aos dados públicos da Iatan.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF
+
+Forecasting Air Pollutant Emissions Using Deep Sparse Transformer Networks: A Case Study of the Ekibastuz Coal-Fired Power Plant
+DOI: 10.3390/su17115115
+Transformer esparso para SO2, NOx e PM2.5, 67.527 registros em dez minutos. Reporta piora com o horizonte e limitações computacionais. É inspiração metodológica de horizonte/janela; memória de outros poluentes não prova memória ou melhora de CO2 na Iatan.
+metadados editoriais consultados; conteúdo crítico confrontado com o PDF

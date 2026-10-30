@@ -1,0 +1,54 @@
+{
+  "verificacoes": [
+    {
+      "verificacao": "25 tabelas originais idênticas em XML",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Três tabelas complementares",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Todas as equações originais idênticas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "40 referências completas e distintas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Citação aplicada Si et al. (2019)",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Citação aplicada Grinsztajn, Oyallon e Varoquaux (2022)",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Citação aplicada Diebold e Mariano (1994)",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Citação aplicada Künsch, 1989",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Referências novas correspondentes aos PDFs guardados",
+      "aprovada": true
+    },
+    {
+      "verificacao": "C não apresentado como executado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Limites de inferência explicitados",
+      "aprovada": true
+    },
+    {
+      "verificacao": "PDF renderizado existe",
+      "aprovada": true
+    }
+  ],
+  "total": 12,
+  "falhas": 0
+}

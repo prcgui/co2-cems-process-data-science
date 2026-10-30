@@ -1,0 +1,1218 @@
+{
+  "total": 303,
+  "falhas": 0,
+  "verificacoes": [
+    {
+      "verificacao": "105 registros de sensibilidade: sete pares, cinco contextos, três tamanhos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "25 registros de métricas: cinco modelos, cinco contextos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Sem limites inferenciais na sobreposição de uma hora",
+      "aprovada": true
+    },
+    {
+      "verificacao": "53 dias com observações; oito dias sem horas elegíveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Partidas concentradas em sete blocos diários",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Predição B recebida idêntica à ablação",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Percentis independentes A/B global 1d",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 7",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 8",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 9",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 10",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 11",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 12",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 13",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 14",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 15",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 16",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 17",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 18",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 19",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 20",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 21",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 22",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 23",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 24",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 25",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 26",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 27",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 28",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 29",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 30",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 31",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 32",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 33",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 34",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 35",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 1d réplica 36",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Percentis independentes A/B partidas 1d",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 38",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 39",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 40",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 41",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 42",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 43",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 44",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 45",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 46",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 47",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 48",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 49",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 50",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 51",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 52",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 53",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 54",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 55",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 56",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 57",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 58",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 59",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 60",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 61",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 62",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 63",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 64",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 65",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 66",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 1d réplica 67",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Percentis independentes A/B rampas 1d",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 69",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 70",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 71",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 72",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 73",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 74",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 75",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 76",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 77",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 78",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 79",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 80",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 81",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 82",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 83",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 84",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 85",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 86",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 87",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 88",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 89",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 90",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 91",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 92",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 93",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 94",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 95",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 96",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 97",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 1d réplica 98",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Percentis independentes A/B global 3d",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 100",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 101",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 102",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 103",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 104",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 105",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 106",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 107",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 108",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 109",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 110",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 111",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 112",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 113",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 114",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 115",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 116",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 117",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 118",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 119",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 120",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 121",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 122",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 123",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 124",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 125",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 126",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 127",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 128",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 3d réplica 129",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Percentis independentes A/B partidas 3d",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 131",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 132",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 133",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 134",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 135",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 136",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 137",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 138",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 139",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 140",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 141",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 142",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 143",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 144",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 145",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 146",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 147",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 148",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 149",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 150",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 151",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 152",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 153",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 154",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 155",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 156",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 157",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 158",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 159",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 3d réplica 160",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Percentis independentes A/B rampas 3d",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 162",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 163",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 164",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 165",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 166",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 167",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 168",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 169",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 170",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 171",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 172",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 173",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 174",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 175",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 176",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 177",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 178",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 179",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 180",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 181",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 182",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 183",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 184",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 185",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 186",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 187",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 188",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 189",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 190",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 3d réplica 191",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Percentis independentes A/B global 7d",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 193",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 194",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 195",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 196",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 197",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 198",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 199",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 200",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 201",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 202",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 203",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 204",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 205",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 206",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 207",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 208",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 209",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 210",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 211",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 212",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 213",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 214",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 215",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 216",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 217",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 218",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 219",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 220",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 221",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas global 7d réplica 222",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Percentis independentes A/B partidas 7d",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 224",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 225",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 226",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 227",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 228",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 229",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 230",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 231",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 232",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 233",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 234",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 235",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 236",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 237",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 238",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 239",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 240",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 241",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 242",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 243",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 244",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 245",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 246",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 247",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 248",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 249",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 250",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 251",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 252",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas partidas 7d réplica 253",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Percentis independentes A/B rampas 7d",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 255",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 256",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 257",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 258",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 259",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 260",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 261",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 262",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 263",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 264",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 265",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 266",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 267",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 268",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 269",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 270",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 271",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 272",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 273",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 274",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 275",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 276",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 277",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 278",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 279",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 280",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 281",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 282",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 283",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Reamostragem de linhas vs somas rampas 7d réplica 284",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Insumo preservado data/interim/03A05_trajectory_history/03A05_treino_selecao_A_B.parquet",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Insumo preservado data/interim/03A05_trajectory_history/03A05_validacao_outubro_2025_A_B.parquet",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Insumo preservado data/interim/03A05_trajectory_history/03A05_teste_nov_dez_2025_A_B.parquet",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Insumo preservado data/interim/03A05_trajectory_history/03A05_previsoes_pareadas_com_contextos.parquet",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Insumo preservado outputs/03A05A_ablacao_controlada.zip",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGB B/C: dez linhas de validação",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Busca: 300 ajustes únicos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Busca: trinta configurações, cinco folds, dois cenários",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Código e saídas preservados 03A.01_modelagem_preditiva_co2.ipynb",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Código e saídas preservados 03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Código e saídas preservados 03A.03_otimizacao_pareada_xgboost.ipynb",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Código e saídas preservados 03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Código e saídas preservados 03A_05A_ablacao_controlada_features_Colab.ipynb",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Código e saídas preservados 03A_modelagem_preditiva_co2.ipynb",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Estrutura e sintaxe 03A_05B_incerteza_pareada_calendario.ipynb",
+      "aprovada": true
+    },
+    {
+      "verificacao": "B executado em ordem, sem erros",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Estrutura e sintaxe 03A_05C_MLP_XGBoost_sementes_protocolo_comum_Colab.ipynb",
+      "aprovada": true
+    },
+    {
+      "verificacao": "C sem resultados de treinamento",
+      "aprovada": true
+    }
+  ]
+}

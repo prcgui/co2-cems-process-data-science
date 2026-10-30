@@ -1,0 +1,2613 @@
+[
+  {
+    "key": "ashraf2026",
+    "authors": "ASHRAF, W. M.; DUA, V.; DEBNATH, R.",
+    "title": "Domain consistent industrial decarbonisation of global coal power plants",
+    "year": "2026",
+    "doi": "10.1038/s44458-025-00010-w",
+    "official_url": "https://www.nature.com/articles/s44458-025-00010-w",
+    "canonical_reference": "ASHRAF, W. M.; DUA, V.; DEBNATH, R. Domain consistent industrial decarbonisation of global coal power plants. Communications Sustainability, [s. l.], v. 1, art. 10, 2026. DOI: https://doi.org/10.1038/s44458-025-00010-w. Disponível em: https://www.nature.com/articles/s44458-025-00010-w. Acesso em: 29 out. 2026.",
+    "claim_supported": "Consistência com restrições e conhecimento de domínio na aplicação industrial de modelos.",
+    "limits": "Otimização de outra unidade; não demonstra redução de emissões pelo estimador Iatan.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "be18748536decd05877d78832e070aee9962aa6d6c4a5c7e4fe23733370d2210"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "domain.consisten",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "constraint",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 19,
+        "text": "Outras fontes ajudam a delimitar o alcance do problema. Guevara et al. (2024) tratam emissões de usinas em escala de inventário global e com perfis temporais, uma finalidade distinta da estimação horária condicionada à operação de uma única unidade. Em outro processo industrial, o preprint de Fayaz et al. (2026) compara plantas de cimento, mas restringe a análise de memória de curto prazo à planta com dados de um minuto, a única com CO₂ disponível. Nessa análise, o histórico beneficiou mais a estimação de NOx do que a de CO e CO₂, indicando dependência do poluente, do processo e da resolução temporal. Ashraf, Dua e Debnath (2026) ressaltam, por sua vez, que a aplicação industrial de modelos precisa permanecer coerente com restrições e conhecimento do domínio."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 85,
+        "text": "O alcance dos resultados é limitado pela seleção retrospectiva de uma unidade, pelo teste de dois meses e pelas amostras reduzidas de validação e partida. Foi utilizada uma semente por configuração, sem estimação da incerteza considerando dependência temporal. Além disso, a reutilização do teste durante o desenvolvimento permite influência indireta sobre decisões posteriores. Couture et al. (2024) adotam validação por plantas não vistas, e Jin et al. (2026) mostram que a transferência entre usinas depende da relação entre domínio de origem, domínio-alvo e estratégia de adaptação; nenhum desses problemas foi testado de forma equivalente aqui. Potts et al. (2026), em preprint, propõem diagnósticos explícitos para condições fora da distribuição, e a coerência com restrições físicas e operacionais é um requisito de implantação destacado por Ashraf, Dua e Debnath (2026). Por fim, a continuidade documental do monitoramento não comprova homogeneidade instrumental ou estabilidade de calibração. Lu, Tang e Duan (2024) mostram, em outra usina a carvão, que a operação dinâmica pode afetar a vazão de gases usada em medições associadas ao CEMS; essa evidência justifica cautela metrológica, mas não demonstra erro nos dados da Iatan. As diferenças anuais observadas neste estudo, portanto, não podem ser atribuídas exclusivamente à operação."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 18,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "bergstra2012",
+    "authors": "BERGSTRA, J.; BENGIO, Y.",
+    "title": "Random Search for Hyper-Parameter Optimization",
+    "year": "2012",
+    "doi": "",
+    "official_url": "https://jmlr.org/papers/v13/bergstra12a.html",
+    "canonical_reference": "BERGSTRA, J.; BENGIO, Y. Random Search for Hyper-Parameter Optimization. Journal of Machine Learning Research, [s. l.], v. 13, n. 10, p. 281-305, 2012. Disponível em: https://jmlr.org/papers/v13/bergstra12a.html. Acesso em: 29 out. 2026.",
+    "claim_supported": "Amostragem aleatória de hiperparâmetros comparada em validação.",
+    "limits": "Não prescreve 30 candidatos, pareamento A/B ou suficiência do orçamento.",
+    "source_files": [
+      {
+        "kind": "Original/manuscrito identificado",
+        "sha256": "01e88a175a36afa399e05dc97dce9c5de980130445269cc0e5100d0471887029"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "random.*search",
+        "pdf_page": 1,
+        "location": "Original/manuscrito identificado"
+      },
+      {
+        "pattern": "validation",
+        "pdf_page": 1,
+        "location": "Original/manuscrito identificado"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 42,
+        "text": "Uma comparação adicional examinou A e B sob o mesmo orçamento de busca aleatória. A adoção da amostragem aleatória de hiperparâmetros segue Bergstra e Bengio (2012): as mesmas configurações foram avaliadas nas cinco partições temporais, com seleção pelo menor MAE médio. O espaço de busca, a amostragem e as configurações escolhidas estão no Apêndice A. Nesse protocolo, o número de árvores integrou a busca, sem interrupção antecipada. Após a seleção, os modelos foram reajustados com janeiro a outubro e avaliados em novembro e dezembro. Como a seleção de complexidade e o reajuste diferem do experimento anterior, a comparação entre etapas envolve o procedimento completo de modelagem."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "cawley2010",
+    "authors": "CAWLEY, G. C.; TALBOT, N. L. C.",
+    "title": "On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation",
+    "year": "2010",
+    "doi": "",
+    "official_url": "https://jmlr.org/papers/v11/cawley10a.html",
+    "canonical_reference": "CAWLEY, G. C.; TALBOT, N. L. C. On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation. Journal of Machine Learning Research, [s. l.], v. 11, n. 70, p. 2079-2107, 2010. Disponível em: https://jmlr.org/papers/v11/cawley10a.html. Acesso em: 29 out. 2026.",
+    "claim_supported": "A seleção em amostra finita também pode sobreajustar o critério de avaliação.",
+    "limits": "Separar linhas de ajuste não garante independência de todo o desenvolvimento.",
+    "source_files": [
+      {
+        "kind": "Original/manuscrito identificado",
+        "sha256": "db01ac8fabef3064a0297bfcf64fb9791bf35c4d03be7a51f5862260adfca206"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "selection bias",
+        "pdf_page": 1,
+        "location": "Original/manuscrito identificado"
+      },
+      {
+        "pattern": "model selection",
+        "pdf_page": 1,
+        "location": "Original/manuscrito identificado"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 83,
+        "text": "Quanto ao histórico, ampliar a amostra modifica tanto sua quantidade quanto a composição dos regimes e a distância temporal dos exemplos. A exclusão de 2023 e 2024, decidida após análises exploratórias, também altera essa composição. Sem manter as demais decisões em uma comparação específica, seu efeito permanece indeterminado. A inversão entre validação e teste reforça os cuidados com avaliação temporal e viés de seleção discutidos por Cerqueira, Torgo e Mozetič (2020) e Cawley e Talbot (2010). Huang et al. (2027) reforçam essa cautela ao avaliar previsão de carbono sob histórico reduzido e regimes operacionais distintos, além de empregar calibração conformal para intervalos de previsão. A calibração de incerteza não foi aplicada retrospectivamente neste trabalho e permanece como possibilidade para uma etapa futura previamente especificada. Em um preprint voltado a frotas, Potts et al. (2026) associam situações fora da distribuição conhecida a menor confiança e usam, entre outros sinais, a quantidade de atributos fora da faixa observada no treinamento. Esse princípio motivou a inclusão de um diagnóstico adicional de cobertura operacional no Notebook 03A.05. Na execução recebida de 29 de outubro de 2026, o diagnóstico não encontrou valores do teste fora dos mínimos e máximos de treinamento de cada um dos sete atributos. Esse controle marginal não avalia combinações multivariadas inéditas, não calibra confiança e não reproduz o sistema de Potts et al.; o treinamento dos modelos permaneceu inalterado. Aqui, os indicadores disponíveis descrevem diferenças entre períodos, sem identificar sua causa física ou demonstrar mudança na relação condicional entre carga e emissão."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 11,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 12,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 11,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 12,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 6,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 7,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 14,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 15,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 11,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 12,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 10,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 11,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 18,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 19,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.06_modelo_hibrido_regime_operacional.ipynb",
+        "cell_index": 0,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_05A_ablacao_controlada_features_Colab.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 5,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 6,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "cerqueira2020",
+    "authors": "CERQUEIRA, V.; TORGO, L.; MOZETIČ, I.",
+    "title": "Evaluating time series forecasting models: an empirical study on performance estimation methods",
+    "year": "2020",
+    "doi": "10.1007/s10994-020-05910-7",
+    "official_url": "https://link.springer.com/article/10.1007/s10994-020-05910-7",
+    "canonical_reference": "CERQUEIRA, V.; TORGO, L.; MOZETIČ, I. Evaluating time series forecasting models: an empirical study on performance estimation methods. Machine Learning, [s. l.], v. 109, n. 11, p. 1997-2028, 2020. DOI: https://doi.org/10.1007/s10994-020-05910-7. Disponível em: https://link.springer.com/article/10.1007/s10994-020-05910-7. Acesso em: 29 out. 2026.",
+    "claim_supported": "Adequação da avaliação depende da estrutura temporal e da estacionariedade.",
+    "limits": "Benchmark autoregressivo; não é regra universal nem validação automática do desenho Iatan.",
+    "source_files": [
+      {
+        "kind": "Página oficial",
+        "sha256": "7af36d3657f842f380661148c5b3b89891393b09a22f23d741f7d814e5dc1ed0"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "non.stationary",
+        "pdf_page": null,
+        "location": "Página oficial"
+      },
+      {
+        "pattern": "holdout approach repeated",
+        "pdf_page": null,
+        "location": "Página oficial"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 18,
+        "text": "Além do método, a organização da avaliação influencia a leitura dos resultados. Cerqueira, Torgo e Mozetič (2020) mostram que a adequação dos procedimentos de estimação de desempenho depende da dependência temporal e da estacionariedade; em suas séries não estacionárias, avaliações fora da amostra repetidas em diferentes períodos tiveram melhor desempenho. Aqui, essa evidência fundamenta o cuidado com a cronologia, sem reproduzir seu benchmark de previsão autoregressiva. Para transferência entre domínios, Couture et al. (2024) separam plantas entre treino e teste para avaliar unidades não vistas. Em um preprint sobre frotas de turbinas a gás, Potts et al. (2026) combinam diagnósticos de faixa operacional, distância no espaço de atributos e incerteza para reconhecer situações fora da distribuição conhecida. No presente caso, a análise permanece temporal e dentro de uma única unidade; as mudanças de distribuição são tratadas de modo descritivo, distinguindo-as de concept drift (Gama et al., 2014)."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 83,
+        "text": "Quanto ao histórico, ampliar a amostra modifica tanto sua quantidade quanto a composição dos regimes e a distância temporal dos exemplos. A exclusão de 2023 e 2024, decidida após análises exploratórias, também altera essa composição. Sem manter as demais decisões em uma comparação específica, seu efeito permanece indeterminado. A inversão entre validação e teste reforça os cuidados com avaliação temporal e viés de seleção discutidos por Cerqueira, Torgo e Mozetič (2020) e Cawley e Talbot (2010). Huang et al. (2027) reforçam essa cautela ao avaliar previsão de carbono sob histórico reduzido e regimes operacionais distintos, além de empregar calibração conformal para intervalos de previsão. A calibração de incerteza não foi aplicada retrospectivamente neste trabalho e permanece como possibilidade para uma etapa futura previamente especificada. Em um preprint voltado a frotas, Potts et al. (2026) associam situações fora da distribuição conhecida a menor confiança e usam, entre outros sinais, a quantidade de atributos fora da faixa observada no treinamento. Esse princípio motivou a inclusão de um diagnóstico adicional de cobertura operacional no Notebook 03A.05. Na execução recebida de 29 de outubro de 2026, o diagnóstico não encontrou valores do teste fora dos mínimos e máximos de treinamento de cada um dos sete atributos. Esse controle marginal não avalia combinações multivariadas inéditas, não calibra confiança e não reproduz o sistema de Potts et al.; o treinamento dos modelos permaneceu inalterado. Aqui, os indicadores disponíveis descrevem diferenças entre períodos, sem identificar sua causa física ou demonstrar mudança na relação condicional entre carga e emissão."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 11,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 12,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 11,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 12,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 6,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 7,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 14,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 15,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 10,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 11,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.06_modelo_hibrido_regime_operacional.ipynb",
+        "cell_index": 0,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_05A_ablacao_controlada_features_Colab.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 5,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 6,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "chen2016",
+    "authors": "CHEN, T.; GUESTRIN, C.",
+    "title": "XGBoost: A Scalable Tree Boosting System",
+    "year": "2016",
+    "doi": "10.1145/2939672.2939785",
+    "official_url": "https://www.kdd.org/kdd2016/papers/files/rfp0697-chenAemb.pdf",
+    "canonical_reference": "CHEN, T.; GUESTRIN, C. XGBoost: A Scalable Tree Boosting System. In: ACM SIGKDD INTERNATIONAL CONFERENCE ON KNOWLEDGE DISCOVERY AND DATA MINING, 22., 2016, San Francisco. Proceedings [...]. New York: ACM, 2016. p. 785-794. DOI: https://doi.org/10.1145/2939672.2939785. Disponível em: https://www.kdd.org/kdd2016/papers/files/rfp0697-chenAemb.pdf. Versão dos autores consultada: arXiv:1603.02754, https://arxiv.org/abs/1603.02754. Acesso em: 29 out. 2026.",
+    "claim_supported": "XGBoost: predição aditiva de árvores, objetivo regularizado e recursos computacionais.",
+    "limits": "Versão dos autores consultada; parâmetros, hist e versão 3.4.1 são da implementação do projeto.",
+    "source_files": [
+      {
+        "kind": "Original/manuscrito identificado",
+        "sha256": "52bc282c922a239134ee4d6f4367c58bf920a9bdd53acbb3b2aa3342e2bb7214"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "regulariz",
+        "pdf_page": 2,
+        "location": "Original/manuscrito identificado"
+      },
+      {
+        "pattern": "tree ensemble",
+        "pdf_page": 2,
+        "location": "Original/manuscrito identificado"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 17,
+        "text": "Entre os métodos aplicáveis a dados tabulares, o gradient boosting combina modelos sequencialmente para construir uma função preditiva (Friedman, 2001). O XGBoost acrescenta regularização e recursos computacionais ao ajuste de conjuntos de árvores (Chen; Guestrin, 2016). Seu uso em estudos de emissões com dados públicos ou operacionais aparece, entre outros, em Gu, Sward e Zhang (2023), Potts, Hackney e Leontidis (2023) e Wang et al. (2025). Neste estudo, a comparação com MLP permite verificar se a mudança de família de modelo altera a resposta obtida para os mesmos tipos de atributos."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 12,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 13,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 28,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 29,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 15,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 16,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.06_modelo_hibrido_regime_operacional.ipynb",
+        "cell_index": 0,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_05A_ablacao_controlada_features_Colab.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "costa2026",
+    "authors": "COSTA, G. P. R.; CALMON, F.; MENEZES, T.",
+    "title": "co2-cems-thermal-modeling",
+    "year": "2026",
+    "doi": "",
+    "official_url": "https://github.com/prcgui/co2-cems-thermal-modeling",
+    "canonical_reference": "COSTA, G. P. R.; CALMON, F.; MENEZES, T. co2-cems-thermal-modeling. [S. l.]: GitHub, 2026. Repositório de código, relatórios e resultados. Versão consultada em 24 out. 2026, com links específicos no Apêndice B. Disponível em: https://github.com/prcgui/co2-cems-thermal-modeling. Acesso em: 29 out. 2026.",
+    "claim_supported": "Repositório público de código, resultados e documentação.",
+    "limits": "Links do apêndice apontam a versões históricas; esta revisão local não constitui publicação.",
+    "source_files": [
+      {
+        "kind": "Página oficial",
+        "sha256": "2b8b4fcd7a88f213ae3a6a8181d5b6eb4cff30e90f59ada4976217485095e383"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "co2.cems.thermal.modeling",
+        "pdf_page": null,
+        "location": "Página oficial"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 90,
+        "text": "Os dados de origem podem ser consultados no CAMPD da EPA (United States, 2026). O recorte corresponde à Iatan Unit 2, Facility ID 6065, com registros de outubro de 2010 a dezembro de 2025. O repositório público do projeto reúne códigos, relatórios e resultados (Costa; Calmon; Menezes, 2026). O Apêndice B apresenta links com nomes descritivos para versões específicas desses materiais."
+      }
+    ],
+    "notebook_locations": [],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "couture2024",
+    "authors": "COUTURE, H. D. et al.",
+    "title": "Estimating Carbon Dioxide Emissions from Power Plant Water Vapor Plumes Using Satellite Imagery and Machine Learning",
+    "year": "2024",
+    "doi": "10.3390/rs16071290",
+    "official_url": "https://www.mdpi.com/2072-4292/16/7/1290",
+    "canonical_reference": "COUTURE, H. D. et al. Estimating Carbon Dioxide Emissions from Power Plant Water Vapor Plumes Using Satellite Imagery and Machine Learning. Remote Sensing, Basel, v. 16, n. 7, art. 1290, 2024. DOI: https://doi.org/10.3390/rs16071290. Disponível em: https://www.mdpi.com/2072-4292/16/7/1290. Acesso em: 29 out. 2026.",
+    "claim_supported": "Validação de generalização com plantas separadas entre partições.",
+    "limits": "Sensoriamento remoto, geração e fatores de emissão; não é protocolo implementado no caso Iatan.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "62694c73c8e9aa7ff6ae7d7be8a91b9b80230e9d2e819396019f3be48c007597"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "Each plant was assigned to a single fold",
+        "pdf_page": 12,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "unseen plants",
+        "pdf_page": 12,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 18,
+        "text": "Além do método, a organização da avaliação influencia a leitura dos resultados. Cerqueira, Torgo e Mozetič (2020) mostram que a adequação dos procedimentos de estimação de desempenho depende da dependência temporal e da estacionariedade; em suas séries não estacionárias, avaliações fora da amostra repetidas em diferentes períodos tiveram melhor desempenho. Aqui, essa evidência fundamenta o cuidado com a cronologia, sem reproduzir seu benchmark de previsão autoregressiva. Para transferência entre domínios, Couture et al. (2024) separam plantas entre treino e teste para avaliar unidades não vistas. Em um preprint sobre frotas de turbinas a gás, Potts et al. (2026) combinam diagnósticos de faixa operacional, distância no espaço de atributos e incerteza para reconhecer situações fora da distribuição conhecida. No presente caso, a análise permanece temporal e dentro de uma única unidade; as mudanças de distribuição são tratadas de modo descritivo, distinguindo-as de concept drift (Gama et al., 2014)."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 85,
+        "text": "O alcance dos resultados é limitado pela seleção retrospectiva de uma unidade, pelo teste de dois meses e pelas amostras reduzidas de validação e partida. Foi utilizada uma semente por configuração, sem estimação da incerteza considerando dependência temporal. Além disso, a reutilização do teste durante o desenvolvimento permite influência indireta sobre decisões posteriores. Couture et al. (2024) adotam validação por plantas não vistas, e Jin et al. (2026) mostram que a transferência entre usinas depende da relação entre domínio de origem, domínio-alvo e estratégia de adaptação; nenhum desses problemas foi testado de forma equivalente aqui. Potts et al. (2026), em preprint, propõem diagnósticos explícitos para condições fora da distribuição, e a coerência com restrições físicas e operacionais é um requisito de implantação destacado por Ashraf, Dua e Debnath (2026). Por fim, a continuidade documental do monitoramento não comprova homogeneidade instrumental ou estabilidade de calibração. Lu, Tang e Duan (2024) mostram, em outra usina a carvão, que a operação dinâmica pode afetar a vazão de gases usada em medições associadas ao CEMS; essa evidência justifica cautela metrológica, mas não demonstra erro nos dados da Iatan. As diferenças anuais observadas neste estudo, portanto, não podem ser atribuídas exclusivamente à operação."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 18,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "epa_data2026",
+    "authors": "UNITED STATES EPA",
+    "title": "Power Sector Data",
+    "year": "2026",
+    "doi": "",
+    "official_url": "https://www.epa.gov/power-sector/power-sector-data",
+    "canonical_reference": "UNITED STATES. Environmental Protection Agency. Power Sector Data. Washington, DC: Office of Atmospheric Protection, Clean Air and Power Division, 2026. Conjunto de dados horários disponibilizado pelo CAMPD. Recorte: Iatan Unit 2, Facility ID 6065, out. 2010 a dez. 2025. Disponível em: https://www.epa.gov/power-sector/power-sector-data. Acesso em: 29 out. 2026.",
+    "claim_supported": "EPA disponibiliza dados horários por CAMPD/API e planos de monitoramento por ECMPS.",
+    "limits": "Disponibilidade pública não garante identidade com cópias históricas preservadas.",
+    "source_files": [
+      {
+        "kind": "Página oficial",
+        "sha256": "d96f8e1f7635ff5116a285e81237813a59787582d59a4fa3eb7490fb805720a6"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "CAMPD",
+        "pdf_page": null,
+        "location": "Página oficial"
+      },
+      {
+        "pattern": "Hourly Emissions",
+        "pdf_page": null,
+        "location": "Página oficial"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 11,
+        "text": "Essa questão pode ser examinada em escala horária com os dados públicos do Clean Air Markets Program Data (CAMPD), da United States Environmental Protection Agency (EPA) (United States, 2026). Gu, Sward e Zhang (2023) mostraram que informações públicas, incluindo CEMS e bases auxiliares, podem sustentar modelos de XGBoost e redes neurais para estimar taxas de CO₂, NOx e SO₂ de unidades geradoras. A literatura de monitoramento preditivo também destaca a qualidade dos dados e a transferibilidade como condições centrais para o uso de aprendizado de máquina em emissões (Zuo et al., 2024). No presente estudo, a interpretação dos campos horários segue ainda os procedimentos de monitoramento, cálculo e reporte da EPA (United States, 2022)."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 90,
+        "text": "Os dados de origem podem ser consultados no CAMPD da EPA (United States, 2026). O recorte corresponde à Iatan Unit 2, Facility ID 6065, com registros de outubro de 2010 a dezembro de 2025. O repositório público do projeto reúne códigos, relatórios e resultados (Costa; Calmon; Menezes, 2026). O Apêndice B apresenta links com nomes descritivos para versões específicas desses materiais."
+      }
+    ],
+    "notebook_locations": [],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "epa_ecmps2024",
+    "authors": "UNITED STATES EPA CAMD",
+    "title": "ECMPS Reporting Instructions: Monitoring Plan",
+    "year": "2024",
+    "doi": "",
+    "official_url": "https://www.epa.gov/system/files/documents/2024-12/ecmps_monitoring_plan_reporting_instructions-12202024.pdf",
+    "canonical_reference": "UNITED STATES. Environmental Protection Agency. Clean Air Markets Division. ECMPS Reporting Instructions: Monitoring Plan. [S. l.]: EPA, 20 dez. 2024. Disponível em: https://www.epa.gov/system/files/documents/2024-12/ecmps_monitoring_plan_reporting_instructions-12202024.pdf. Acesso em: 29 out. 2026.",
+    "claim_supported": "Interpretação dos campos e vigências reportados no plano de monitoramento.",
+    "limits": "Auditoria documental, sem calibração ou prova de estabilidade instrumental.",
+    "source_files": [
+      {
+        "kind": "Documento oficial",
+        "sha256": "62c540258dd387c8fa9f6ffa018f6f9a05b849faa28e9f3d7f7a91f20ca8bb15"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "methodology was last used",
+        "pdf_page": 38,
+        "location": "Documento oficial"
+      },
+      {
+        "pattern": "last date that the component was an active part",
+        "pdf_page": 66,
+        "location": "Documento oficial"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 173,
+        "text": "A auditoria confrontou o XML preservado do plano da unidade com uma exportação oficial do ECMPS, ambos atualizados em janeiro de 2026. O ZIP público da EPA e o original preservado apresentaram o mesmo SHA-256; as fontes concordaram nos 24 registros de CO₂ e fluxo examinados. O método CO₂/CEM e a rotina SPTS têm vigência desde 1º de outubro de 2010, sem término declarado. A fórmula F-11 está registrada desde o mesmo início. As datas finais foram tratadas como inclusivas (United States, 2024); o alvo reportado não foi recalculado."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "01_selecao_unidade_estudo.ipynb",
+        "cell_index": 6,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "01_selecao_unidade_estudo.ipynb",
+        "cell_index": 7,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "epa_guide2022",
+    "authors": "UNITED STATES EPA CAMD",
+    "title": "CAMD’s Power Sector Emissions Data Guide",
+    "year": "2022",
+    "doi": "",
+    "official_url": "https://www.epa.gov/system/files/documents/2022-07/CAMD%27s%20Power%20Sector%20Emissions%20Data%20Guide%20-%2007182022.pdf",
+    "canonical_reference": "UNITED STATES. Environmental Protection Agency. Clean Air Markets Division. CAMD’s Power Sector Emissions Data Guide. [S. l.]: EPA, 18 jul. 2022. Disponível em: https://www.epa.gov/system/files/documents/2022-07/CAMD%27s%20Power%20Sector%20Emissions%20Data%20Guide%20-%2007182022.pdf. Acesso em: 29 out. 2026.",
+    "claim_supported": "Campos de massa de CO2, carga, tempo de operação e métodos de determinação.",
+    "limits": "Horas parciais, massa e intensidade são conceitos distintos; não recalcula medições da Iatan.",
+    "source_files": [
+      {
+        "kind": "Documento oficial",
+        "sha256": "17103f476fba3d30c7e120ddc4e47810428a3f990597dd39a91e6a1827b5f885"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "Operating Time",
+        "pdf_page": 8,
+        "location": "Documento oficial"
+      },
+      {
+        "pattern": "CO2",
+        "pdf_page": 1,
+        "location": "Documento oficial"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 11,
+        "text": "Essa questão pode ser examinada em escala horária com os dados públicos do Clean Air Markets Program Data (CAMPD), da United States Environmental Protection Agency (EPA) (United States, 2026). Gu, Sward e Zhang (2023) mostraram que informações públicas, incluindo CEMS e bases auxiliares, podem sustentar modelos de XGBoost e redes neurais para estimar taxas de CO₂, NOx e SO₂ de unidades geradoras. A literatura de monitoramento preditivo também destaca a qualidade dos dados e a transferibilidade como condições centrais para o uso de aprendizado de máquina em emissões (Zuo et al., 2024). No presente estudo, a interpretação dos campos horários segue ainda os procedimentos de monitoramento, cálculo e reporte da EPA (United States, 2022)."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "01_selecao_unidade_estudo.ipynb",
+        "cell_index": 2,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "01_selecao_unidade_estudo.ipynb",
+        "cell_index": 3,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "01_selecao_unidade_estudo.ipynb",
+        "cell_index": 15,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "01_selecao_unidade_estudo.ipynb",
+        "cell_index": 16,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 3,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 4,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 3,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 4,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "fayaz2026",
+    "authors": "FAYAZ, S. J. et al.",
+    "title": "A Multi-Plant Machine Learning Framework for Emission Prediction, Forecasting, and Control in Cement Manufacturing",
+    "year": "2026",
+    "doi": "10.48550/arXiv.2604.19903",
+    "official_url": "https://arxiv.org/abs/2604.19903",
+    "canonical_reference": "FAYAZ, S. J. et al. A Multi-Plant Machine Learning Framework for Emission Prediction, Forecasting, and Control in Cement Manufacturing. arXiv, 2026. Preprint arXiv:2604.19903v1, submetido em 21 abr. 2026. DOI: https://doi.org/10.48550/arXiv.2604.19903. Disponível em: https://arxiv.org/abs/2604.19903. Acesso em: 29 out. 2026.",
+    "claim_supported": "Benefício da história operacional varia por poluente; comparação de memória de CO2 em uma planta.",
+    "limits": "Preprint v1. Histórico de um minuto restrito à planta 1; não é efeito multiplanta de CO2.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "b08ddb50caeaeb464516e54e76dd5cf67a6c62e6173864feee753a9d010be023"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "CO and CO.?2 predictions show only marginal",
+        "pdf_page": 6,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "EPH models are developed exclusively",
+        "pdf_page": 6,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 19,
+        "text": "Outras fontes ajudam a delimitar o alcance do problema. Guevara et al. (2024) tratam emissões de usinas em escala de inventário global e com perfis temporais, uma finalidade distinta da estimação horária condicionada à operação de uma única unidade. Em outro processo industrial, o preprint de Fayaz et al. (2026) compara plantas de cimento, mas restringe a análise de memória de curto prazo à planta com dados de um minuto, a única com CO₂ disponível. Nessa análise, o histórico beneficiou mais a estimação de NOx do que a de CO e CO₂, indicando dependência do poluente, do processo e da resolução temporal. Ashraf, Dua e Debnath (2026) ressaltam, por sua vez, que a aplicação industrial de modelos precisa permanecer coerente com restrições e conhecimento do domínio."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 81,
+        "text": "Nas rampas, as métricas e a frequência de melhorias favoreceram B. Esse comportamento é compatível com a evidência de que variações de despacho podem deslocar unidades térmicas para condições de menor eficiência e alterar a intensidade de CO₂ (Suri; de Chalendar; Azevedo, 2025). Em uma unidade a carvão de 1.000 MW, Liu et al. (2025a) também identificaram aumento da intensidade de carbono sob regimes de regulação profunda de carga, embora em um desenho de ciclo de vida e em uma instalação distintos da Iatan. Ao mesmo tempo, Fayaz et al. (2026), em preprint sobre plantas de cimento, restringiram a comparação com histórico de um minuto a uma planta e observaram ali maior benefício para NOx do que para CO e CO₂. A comparação entre setores e instalações não permite transferir resultados diretamente, mas reforça que a memória do processo e o efeito dos regimes não devem ser tratados como universais. No presente estudo, a associação observada nas rampas permanece descritiva: o desenho não identifica o mecanismo responsável, e os limiares de 130 e 56 MW por intervalo horário definiram grupos diferentes entre etapas."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 21,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "friedman2001",
+    "authors": "FRIEDMAN, J. H.",
+    "title": "Greedy function approximation: A gradient boosting machine",
+    "year": "2001",
+    "doi": "10.1214/aos/1013203451",
+    "official_url": "https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-5/Greedy-function-approximation-A-gradient-boosting-machine/10.1214/aos/1013203451.full",
+    "canonical_reference": "FRIEDMAN, J. H. Greedy function approximation: A gradient boosting machine. The Annals of Statistics, [s. l.], v. 29, n. 5, p. 1189-1232, 2001. DOI: https://doi.org/10.1214/aos/1013203451. Disponível em: https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-5/Greedy-function-approximation-A-gradient-boosting-machine/10.1214/aos/1013203451.full. Acesso em: 29 out. 2026.",
+    "claim_supported": "Boosting como expansão aditiva e ajuste sequencial em espaço de funções.",
+    "limits": "Não fundamenta escolhas específicas de hiperparâmetros nem garante desempenho na Iatan.",
+    "source_files": [
+      {
+        "kind": "Resumo/metadados depositados pelo editor",
+        "sha256": "c4937c43b0fad5ff8e9b5f747bf59fbf859b222605d4a64210e3e54ae507addf"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "stagewise additive",
+        "pdf_page": null,
+        "location": "Resumo/metadados depositados pelo editor"
+      },
+      {
+        "pattern": "gradient descent",
+        "pdf_page": null,
+        "location": "Resumo/metadados depositados pelo editor"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 17,
+        "text": "Entre os métodos aplicáveis a dados tabulares, o gradient boosting combina modelos sequencialmente para construir uma função preditiva (Friedman, 2001). O XGBoost acrescenta regularização e recursos computacionais ao ajuste de conjuntos de árvores (Chen; Guestrin, 2016). Seu uso em estudos de emissões com dados públicos ou operacionais aparece, entre outros, em Gu, Sward e Zhang (2023), Potts, Hackney e Leontidis (2023) e Wang et al. (2025). Neste estudo, a comparação com MLP permite verificar se a mudança de família de modelo altera a resposta obtida para os mesmos tipos de atributos."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 12,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 13,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 15,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 16,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.06_modelo_hibrido_regime_operacional.ipynb",
+        "cell_index": 0,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_05A_ablacao_controlada_features_Colab.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "gama2014",
+    "authors": "GAMA, J. et al.",
+    "title": "A survey on concept drift adaptation",
+    "year": "2014",
+    "doi": "10.1145/2523813",
+    "official_url": "https://doi.org/10.1145/2523813",
+    "canonical_reference": "GAMA, J.; ŽLIOBAITĖ, I.; BIFET, A.; PECHENIZKIY, M.; BOUCHACHIA, A. A survey on concept drift adaptation. ACM Computing Surveys, [s. l.], v. 46, n. 4, art. 44, p. 1-37, 2014. DOI: https://doi.org/10.1145/2523813. Disponível em: https://dl.acm.org/doi/10.1145/2523813. Manuscrito aceito consultado: https://www.win.tue.nl/~mpechen/publications/pubs/Gama_ACMCS_AdaptationCD_accepted.pdf, com metadados da publicação final conferidos. Acesso em: 29 out. 2026.",
+    "claim_supported": "Concept drift envolve mudança da relação entre entradas e variável-alvo ao longo do tempo.",
+    "limits": "Manuscrito aceito consultado e metadados finais de 2014 conferidos; mudança marginal não basta para diagnosticar drift condicional.",
+    "source_files": [
+      {
+        "kind": "Original/manuscrito identificado",
+        "sha256": "3bb1c56b9eeae5878da926a6a7fd4e087a5fcd1da0af5bfb9c8b18b8282ddefa"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "relation between the input",
+        "pdf_page": 1,
+        "location": "Original/manuscrito identificado"
+      },
+      {
+        "pattern": "target variable changes",
+        "pdf_page": 1,
+        "location": "Original/manuscrito identificado"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 18,
+        "text": "Além do método, a organização da avaliação influencia a leitura dos resultados. Cerqueira, Torgo e Mozetič (2020) mostram que a adequação dos procedimentos de estimação de desempenho depende da dependência temporal e da estacionariedade; em suas séries não estacionárias, avaliações fora da amostra repetidas em diferentes períodos tiveram melhor desempenho. Aqui, essa evidência fundamenta o cuidado com a cronologia, sem reproduzir seu benchmark de previsão autoregressiva. Para transferência entre domínios, Couture et al. (2024) separam plantas entre treino e teste para avaliar unidades não vistas. Em um preprint sobre frotas de turbinas a gás, Potts et al. (2026) combinam diagnósticos de faixa operacional, distância no espaço de atributos e incerteza para reconhecer situações fora da distribuição conhecida. No presente caso, a análise permanece temporal e dentro de uma única unidade; as mudanças de distribuição são tratadas de modo descritivo, distinguindo-as de concept drift (Gama et al., 2014)."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 27,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 28,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 8,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "glorot2011",
+    "authors": "GLOROT, X.; BORDES, A.; BENGIO, Y.",
+    "title": "Deep Sparse Rectifier Neural Networks",
+    "year": "2011",
+    "doi": "",
+    "official_url": "https://proceedings.mlr.press/v15/glorot11a.html",
+    "canonical_reference": "GLOROT, X.; BORDES, A.; BENGIO, Y. Deep Sparse Rectifier Neural Networks. In: INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE AND STATISTICS, 14., 2011, Fort Lauderdale. Proceedings [...]. [S. l.]: PMLR, 2011. v. 15, p. 315-323. Disponível em: https://proceedings.mlr.press/v15/glorot11a.html. Acesso em: 29 out. 2026.",
+    "claim_supported": "Unidades retificadoras e redes com ativações de tipo ReLU.",
+    "limits": "A arquitetura 64/32 e seus parâmetros são escolhas próprias; não replica o benchmark da fonte.",
+    "source_files": [
+      {
+        "kind": "Original/manuscrito identificado",
+        "sha256": "a58d20ef28b21cf6dbfa7e15a007e6beb3eba947bf834740c1f62951cd4ffd29"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "rectif",
+        "pdf_page": 1,
+        "location": "Original/manuscrito identificado"
+      },
+      {
+        "pattern": "max",
+        "pdf_page": 1,
+        "location": "Original/manuscrito identificado"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 39,
+        "text": "Utilizou-se uma rede perceptron multicamadas (MLP), com aprendizagem por retropropagação, ativações ReLU e otimizador Adam, fundamentados, respectivamente, em Rumelhart, Hinton e Williams (1986), Glorot, Bordes e Bengio (2011) e Kingma e Ba (2015). A arquitetura e os parâmetros foram escolhas do estudo, apresentadas no Apêndice A. A estrutura das camadas ocultas foi mantida entre cenários, embora a dimensão da entrada alterasse o total de parâmetros. Os modelos selecionados foram aplicados ao teste sem reajuste incluindo outubro, com comparação de B e C sobre os mesmos horários."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 16,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 17,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 10,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 11,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "gu2023",
+    "authors": "GU, J.; SWARD, J. A.; ZHANG, K. M.",
+    "title": "Predicting power plant emissions using public data and machine learning",
+    "year": "2023",
+    "doi": "10.1039/D3VA00191A",
+    "official_url": "https://pubs.rsc.org/en/content/articlehtml/2023/va/d3va00191a",
+    "canonical_reference": "GU, J.; SWARD, J. A.; ZHANG, K. M. Predicting power plant emissions using public data and machine learning. Environmental Science: Advances, [s. l.], v. 2, n. 12, p. 1696-1707, 2023. DOI: https://doi.org/10.1039/D3VA00191A. Disponível em: https://pubs.rsc.org/en/content/articlelanding/2023/va/d3va00191a. Acesso em: 29 out. 2026.",
+    "claim_supported": "Uso de dados públicos, XGBoost/redes, carga, tempo de operação e fatores de rampa/capacidade.",
+    "limits": "Fonte exclui horas parciais; alvo/rampa/protocolo diferem da Iatan. No modelo reduzido de CO2 há estimação intermediária de heat input.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "b2526fa3a5401497f548e160661ae4fa4f9b54550da6d1c0282e7cc28af81aca"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "Hourly ramping factor",
+        "pdf_page": 3,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "partial operating hours",
+        "pdf_page": 3,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 11,
+        "text": "Essa questão pode ser examinada em escala horária com os dados públicos do Clean Air Markets Program Data (CAMPD), da United States Environmental Protection Agency (EPA) (United States, 2026). Gu, Sward e Zhang (2023) mostraram que informações públicas, incluindo CEMS e bases auxiliares, podem sustentar modelos de XGBoost e redes neurais para estimar taxas de CO₂, NOx e SO₂ de unidades geradoras. A literatura de monitoramento preditivo também destaca a qualidade dos dados e a transferibilidade como condições centrais para o uso de aprendizado de máquina em emissões (Zuo et al., 2024). No presente estudo, a interpretação dos campos horários segue ainda os procedimentos de monitoramento, cálculo e reporte da EPA (United States, 2022)."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 15,
+        "text": "Entre os trabalhos mais próximos deste estudo, Gu, Sward e Zhang (2023) utilizaram somente informações públicas para modelar emissões de unidades térmicas de Nova York, comparando XGBoost, redes neurais e regressão linear em versões com maior e menor disponibilidade de atributos. Em uma usina a carvão, Wang et al. (2025) compararam regressão linear, XGBoost e LSTM após seleção de atributos e identificaram o XGBoost como o modelo de melhor desempenho em seu conjunto de dados. X. Liu et al. (2025b), por sua vez, compararam modelos lineares e não lineares em 365 registros diários de uma unidade de 1.000 MW: na Tabela 1 do estudo, a regressão linear apresentou o menor MAE, enquanto ElasticNet apresentou o maior R². As diferenças de frequência, variáveis e protocolo de avaliação impedem comparar diretamente os erros, mas mostram que a escolha da família de modelo depende da estrutura dos dados disponíveis."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 17,
+        "text": "Entre os métodos aplicáveis a dados tabulares, o gradient boosting combina modelos sequencialmente para construir uma função preditiva (Friedman, 2001). O XGBoost acrescenta regularização e recursos computacionais ao ajuste de conjuntos de árvores (Chen; Guestrin, 2016). Seu uso em estudos de emissões com dados públicos ou operacionais aparece, entre outros, em Gu, Sward e Zhang (2023), Potts, Hackney e Leontidis (2023) e Wang et al. (2025). Neste estudo, a comparação com MLP permite verificar se a mudança de família de modelo altera a resposta obtida para os mesmos tipos de atributos."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 84,
+        "text": "A comparação com a literatura também depende do desenho de cada estudo. Gu, Sward e Zhang (2023) e Wang et al. (2025) encontraram bom desempenho do XGBoost em problemas de emissões, mas utilizaram conjuntos de atributos, frequências e esquemas de validação distintos. Potts, Hackney e Leontidis (2023) chegaram a resultado semelhante para dados tabulares de turbina a gás, enquanto X. Liu et al. (2025b) obtiveram maior R² com ElasticNet e menor MAE com regressão linear em dados diários de uma usina a carvão. Assim, a convergência sobre uma família de modelo não é esperada a priori, e os valores de MAE ou R² não devem ser comparados fora de seus respectivos alvos, escalas e protocolos."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "01_selecao_unidade_estudo.ipynb",
+        "cell_index": 17,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "01_selecao_unidade_estudo.ipynb",
+        "cell_index": 18,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 8,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 8,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 9,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 12,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 28,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 6,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 7,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 17,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 18,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "guevara2024",
+    "authors": "GUEVARA, M. et al.",
+    "title": "A global catalogue of CO2 emissions and co-emitted species from power plants, including high-resolution vertical and temporal profiles",
+    "year": "2024",
+    "doi": "10.5194/essd-16-337-2024",
+    "official_url": "https://essd.copernicus.org/articles/16/337/2024/",
+    "canonical_reference": "GUEVARA, M.; ENCISO, S.; TENA, C.; JORBA, O.; DELLAERT, S.; DENIER VAN DER GON, H.; PÉREZ GARCÍA-PANDO, C. A global catalogue of CO₂ emissions and co-emitted species from power plants, including high-resolution vertical and temporal profiles. Earth System Science Data, [s. l.], v. 16, p. 337-373, 2024. DOI: https://doi.org/10.5194/essd-16-337-2024. Disponível em: https://essd.copernicus.org/articles/16/337/2024/. Acesso em: 29 out. 2026.",
+    "claim_supported": "Inventário global com perfis temporais e verticais, distinto da regressão horária intraplanta.",
+    "limits": "Versão final de 2024 conferida; o preprint de 2023 não é usado como cópia da versão final.",
+    "source_files": [
+      {
+        "kind": "PDF final publicado",
+        "sha256": "9ab2c0189345befbd2d4ef47800e33c8dc02b4ea0a529b9f47103f8e73f799f0"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "country. and fuel.dependent",
+        "pdf_page": 1,
+        "location": "PDF final publicado"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 19,
+        "text": "Outras fontes ajudam a delimitar o alcance do problema. Guevara et al. (2024) tratam emissões de usinas em escala de inventário global e com perfis temporais, uma finalidade distinta da estimação horária condicionada à operação de uma única unidade. Em outro processo industrial, o preprint de Fayaz et al. (2026) compara plantas de cimento, mas restringe a análise de memória de curto prazo à planta com dados de um minuto, a única com CO₂ disponível. Nessa análise, o histórico beneficiou mais a estimação de NOx do que a de CO e CO₂, indicando dependência do poluente, do processo e da resolução temporal. Ashraf, Dua e Debnath (2026) ressaltam, por sua vez, que a aplicação industrial de modelos precisa permanecer coerente com restrições e conhecimento do domínio."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "01_selecao_unidade_estudo.ipynb",
+        "cell_index": 17,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "hyndman2006",
+    "authors": "HYNDMAN, R. J.; KOEHLER, A. B.",
+    "title": "Another look at measures of forecast accuracy",
+    "year": "2006",
+    "doi": "10.1016/j.ijforecast.2006.03.001",
+    "official_url": "https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy/",
+    "canonical_reference": "HYNDMAN, R. J.; KOEHLER, A. B. Another look at measures of forecast accuracy. International Journal of Forecasting, [s. l.], v. 22, n. 4, p. 679-688, 2006. DOI: https://doi.org/10.1016/j.ijforecast.2006.03.001. Disponível em: https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy/. Manuscrito dos autores consultado, de 2 nov. 2005: https://robjhyndman.com/papers/mase.pdf, correspondente à publicação de 2006. Acesso em: 29 out. 2026.",
+    "claim_supported": "Definições e interpretação de MAE/RMSE como medidas dependentes da escala.",
+    "limits": "Manuscrito dos autores de 2005 explicitado; citação da publicação de 2006. NMAE/viés do projeto têm convenções próprias.",
+    "source_files": [
+      {
+        "kind": "Original/manuscrito identificado",
+        "sha256": "b86b2d78457b62195faa87e2071beb3cacea2d6cb413c296dab746b00bb90a80"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "MAE",
+        "pdf_page": 8,
+        "location": "Original/manuscrito identificado"
+      },
+      {
+        "pattern": "RMSE",
+        "pdf_page": 6,
+        "location": "Original/manuscrito identificado"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 52,
+        "text": "O desempenho foi avaliado principalmente por MAE, RMSE e R², com mediana do erro absoluto, NMAE e viés como medidas complementares. MAE e RMSE correspondem às medidas discutidas por Hyndman e Koehler (2006); o cálculo de R² segue a documentação do Scikit-learn (2025). As equações e convenções adotadas estão reunidas no Apêndice A. As métricas absolutas foram expressas na unidade do alvo; o NMAE utilizou a média observada como denominador. O viés foi calculado como observado menos estimado, de modo que valores negativos indicam superestimação média."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 153,
+        "text": "Para cada observação, eᵢ = yᵢ − ŷᵢ representa o resíduo; n é o número de observações e ȳ, a média observada. MAE e RMSE seguem Hyndman e Koehler (2006), e R² segue a documentação do Scikit-learn (2025). A mediana do erro absoluto corresponde à mediana de |eᵢ|. As demais convenções foram definidas no protocolo."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 20,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 21,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 14,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 15,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 11,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 12,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 1,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 2,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 1,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 2,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 21,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 22,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.06_modelo_hibrido_regime_operacional.ipynb",
+        "cell_index": 0,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_05A_ablacao_controlada_features_Colab.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 14,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 15,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "jolliffe2016",
+    "authors": "JOLLIFFE, I. T.; CADIMA, J.",
+    "title": "Principal component analysis: a review and recent developments",
+    "year": "2016",
+    "doi": "10.1098/rsta.2015.0202",
+    "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4792409/",
+    "canonical_reference": "JOLLIFFE, I. T.; CADIMA, J. Principal component analysis: a review and recent developments. Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences, [s. l.], v. 374, n. 2065, art. 20150202, 2016. DOI: https://doi.org/10.1098/rsta.2015.0202. Disponível em: https://pmc.ncbi.nlm.nih.gov/articles/PMC4792409/. Acesso em: 29 out. 2026.",
+    "claim_supported": "PCA representa combinações lineares e variância; padronização e dependências entre atributos.",
+    "limits": "PCA é diagnóstico descritivo no projeto; não constitui seleção aplicada ao estimador.",
+    "source_files": [
+      {
+        "kind": "Página oficial",
+        "sha256": "896341415ce87e885555b6147fcfaaf858f1f41ba7662a9316d69ed461e8f1fb"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "linear combinations",
+        "pdf_page": null,
+        "location": "Página oficial"
+      },
+      {
+        "pattern": "variance",
+        "pdf_page": null,
+        "location": "Página oficial"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 35,
+        "text": "A correlação entre os atributos de B foi examinada por PCA, após padronização por escore z (Jolliffe; Cadima, 2016). A análise teve finalidade exploratória sobre as horas ON de 2025; os estimadores preservaram os atributos originais e sua interpretação operacional."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "kaya2019",
+    "authors": "KAYA, H.; TÜFEKCİ, P.; UZUN, E.",
+    "title": "Predicting CO and NOx emissions from gas turbines: novel data and a benchmark PEMS",
+    "year": "2019",
+    "doi": "10.3906/elk-1807-87",
+    "official_url": "https://journals.tubitak.gov.tr/elektrik/vol27/iss6/53/",
+    "canonical_reference": "KAYA, H.; TÜFEKCI, P.; UZUN, E. Predicting CO and NOx emissions from gas turbines: novel data and a benchmark PEMS. Turkish Journal of Electrical Engineering and Computer Sciences, [s. l.], v. 27, n. 6, p. 4783-4796, 2019. DOI: https://doi.org/10.3906/elk-1807-87. Disponível em: https://journals.tubitak.gov.tr/elektrik/vol27/iss6/53/. Acesso em: 29 out. 2026.",
+    "claim_supported": "Benchmark de PEMS com cinco anos de dados de turbina a gás.",
+    "limits": "Poluentes CO/NOx e tecnologia distintos; não suporta transferência de desempenho numérico.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "2d54c7f535aab92eda8db6f708ea0ffedf153ef50b027631c07a562dc12e0ed0"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "five years",
+        "pdf_page": 2,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "benchmark experimental procedure",
+        "pdf_page": 2,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 16,
+        "text": "Em sistemas de monitoramento preditivo, Kaya, Tüfekci e Uzun (2019) propuseram um procedimento de referência com cinco anos de dados de turbina a gás, enquanto Potts, Hackney e Leontidis (2023) compararam XGBoost e um modelo profundo para dados tabulares, examinando também o compromisso entre acrescentar atributos e perder observações por valores ausentes. A revisão de Zuo et al. (2024) chega a uma conclusão convergente: qualidade dos dados, parametrização e transferibilidade condicionam o desempenho de modelos de emissões. Essas evidências reforçam, neste trabalho, a necessidade de preservar a completude das amostras e de interpretar ganhos de desempenho dentro do protocolo em que foram obtidos."
+      }
+    ],
+    "notebook_locations": [],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "kingma2015",
+    "authors": "KINGMA, D. P.; BA, J.",
+    "title": "Adam: A Method for Stochastic Optimization",
+    "year": "2015",
+    "doi": "",
+    "official_url": "https://arxiv.org/abs/1412.6980",
+    "canonical_reference": "KINGMA, D. P.; BA, J. Adam: A Method for Stochastic Optimization. [S. l.: s. n.], 2015. Trabalho apresentado na 3rd International Conference on Learning Representations, San Diego, 2015. Disponível em: https://arxiv.org/abs/1412.6980. Acesso em: 29 out. 2026.",
+    "claim_supported": "Adam como algoritmo de otimização de primeira ordem com estimativas de momentos.",
+    "limits": "ICLR 2015 verificado no PDF; usar Adam não replica os experimentos nem prova convergência da rede Iatan.",
+    "source_files": [
+      {
+        "kind": "Original/manuscrito identificado",
+        "sha256": "eab9c73ae2ceda884b94830bda99312254bac4806f6c9f045cbab90721ecda31"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "ADAM",
+        "pdf_page": 1,
+        "location": "Original/manuscrito identificado"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 39,
+        "text": "Utilizou-se uma rede perceptron multicamadas (MLP), com aprendizagem por retropropagação, ativações ReLU e otimizador Adam, fundamentados, respectivamente, em Rumelhart, Hinton e Williams (1986), Glorot, Bordes e Bengio (2011) e Kingma e Ba (2015). A arquitetura e os parâmetros foram escolhas do estudo, apresentadas no Apêndice A. A estrutura das camadas ocultas foi mantida entre cenários, embora a dimensão da entrada alterasse o total de parâmetros. Os modelos selecionados foram aplicados ao teste sem reajuste incluindo outubro, com comparação de B e C sobre os mesmos horários."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 16,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 17,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 10,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 11,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "liu_x2025",
+    "authors": "LIU, X. et al.",
+    "title": "Multi-Factor Carbon Emissions Prediction in Coal-Fired Power Plants: A Machine Learning Approach for Carbon Footprint Management",
+    "year": "2025",
+    "doi": "10.3390/en18071715",
+    "official_url": "https://www.mdpi.com/1996-1073/18/7/1715",
+    "canonical_reference": "LIU, X.; YU, H.; LIU, H.; SUN, Z. Multi-Factor Carbon Emissions Prediction in Coal-Fired Power Plants: A Machine Learning Approach for Carbon Footprint Management. Energies, Basel, v. 18, n. 7, art. 1715, 2025b. DOI: https://doi.org/10.3390/en18071715. Disponível em: https://www.mdpi.com/1996-1073/18/7/1715. Acesso em: 29 out. 2026.",
+    "claim_supported": "Em dados diários, regressão linear tem menor MAE e ElasticNet maior R2 na Tabela 1.",
+    "limits": "Citação 2025b. Não transferir unidades de intensidade do resumo; nenhuma métrica torna um modelo vencedor universal.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "55438c56bee556f864e9808de37edc5f3fdb4c39e06d3e06df3f398572eb5c8d"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "403.95",
+        "pdf_page": 7,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "435.42",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 15,
+        "text": "Entre os trabalhos mais próximos deste estudo, Gu, Sward e Zhang (2023) utilizaram somente informações públicas para modelar emissões de unidades térmicas de Nova York, comparando XGBoost, redes neurais e regressão linear em versões com maior e menor disponibilidade de atributos. Em uma usina a carvão, Wang et al. (2025) compararam regressão linear, XGBoost e LSTM após seleção de atributos e identificaram o XGBoost como o modelo de melhor desempenho em seu conjunto de dados. X. Liu et al. (2025b), por sua vez, compararam modelos lineares e não lineares em 365 registros diários de uma unidade de 1.000 MW: na Tabela 1 do estudo, a regressão linear apresentou o menor MAE, enquanto ElasticNet apresentou o maior R². As diferenças de frequência, variáveis e protocolo de avaliação impedem comparar diretamente os erros, mas mostram que a escolha da família de modelo depende da estrutura dos dados disponíveis."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 84,
+        "text": "A comparação com a literatura também depende do desenho de cada estudo. Gu, Sward e Zhang (2023) e Wang et al. (2025) encontraram bom desempenho do XGBoost em problemas de emissões, mas utilizaram conjuntos de atributos, frequências e esquemas de validação distintos. Potts, Hackney e Leontidis (2023) chegaram a resultado semelhante para dados tabulares de turbina a gás, enquanto X. Liu et al. (2025b) obtiveram maior R² com ElasticNet e menor MAE com regressão linear em dados diários de uma usina a carvão. Assim, a convergência sobre uma família de modelo não é esperada a priori, e os valores de MAE ou R² não devem ser comparados fora de seus respectivos alvos, escalas e protocolos."
+      }
+    ],
+    "notebook_locations": [],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "nist2012",
+    "authors": "GUTHRIE, W. F.",
+    "title": "NIST/SEMATECH e-Handbook of Statistical Methods",
+    "year": "2020",
+    "doi": "10.18434/M32189",
+    "official_url": "https://www.itl.nist.gov/div898/handbook/eda/section3/boxplot.htm",
+    "canonical_reference": "GUTHRIE, W. F. NIST/SEMATECH e-Handbook of Statistical Methods (NIST Handbook 151). Gaithersburg: National Institute of Standards and Technology, 2020. Seções 1.3.3.7, Box Plot, e 1.3.5.17, Detection of Outliers. DOI: https://doi.org/10.18434/M32189. Disponível em: https://www.itl.nist.gov/div898/handbook/eda/section3/boxplot.htm e https://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm. Acesso em: 29 out. 2026.",
+    "claim_supported": "Cercas Q1-1,5 IQR e Q3+1,5 IQR e distinção entre sinalizar e apagar extremos.",
+    "limits": "Chave interna legada; DOI 10.18434/M32189 identifica Guthrie/2020 no DataCite. Manter extremos é decisão contextual do projeto.",
+    "source_files": [
+      {
+        "kind": "NIST Box Plot",
+        "sha256": "1df075d8f8c5a46cf050ff841fd84d1bf29e2204c4eb7de7a82f31f2b0de55e7"
+      },
+      {
+        "kind": "NIST Outliers",
+        "sha256": "1b3ff92c7b593f1f94b25d607c792a2fbdf5231b1d65be46663ab36b44202f46"
+      },
+      {
+        "kind": "DataCite",
+        "sha256": "1e9a6e411dfe7ef561fa3a0fc037a16afe3399e4a27dcc199abbe77fc353942a"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "1.5",
+        "pdf_page": null,
+        "location": "NIST Box Plot"
+      },
+      {
+        "pattern": "typically do not want to simply delete",
+        "pdf_page": null,
+        "location": "NIST Outliers"
+      },
+      {
+        "pattern": "1.5",
+        "pdf_page": null,
+        "location": "DataCite"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 30,
+        "text": "Definiu-se ON por Operating Time > 0 e OFF por Operating Time = 0, preservando horas parcialmente operadas e horas ON com carga zero. Em 2025, os valores ausentes de carga e CO₂ estavam associados às horas OFF e receberam zero apenas em colunas tratadas, com preservação dos originais. Não houve interpolação nem imputação estatística de valores ON. Os valores extremos foram sinalizados pela regra do intervalo interquartil descrita por Guthrie (2020). Os registros identificados foram mantidos, pois o sinal estatístico isolado não demonstrava erro de medição e poderia corresponder a condições operacionais relevantes."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 134,
+        "text": "Extremos foram sinalizados com IQR = Q3 − Q1, abaixo de Q1 − 1,5 × IQR ou acima de Q3 + 1,5 × IQR (Guthrie, 2020). Houve três registros sinalizados de CO₂ e nenhum de carga, todos preservados. A média das três horas anteriores usa shift(1).rolling(3, min_periods=1).mean()."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 5,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 6,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "potts2023",
+    "authors": "POTTS, R.; HACKNEY, R.; LEONTIDIS, G.",
+    "title": "Tabular Machine Learning Methods for Predicting Gas Turbine Emissions",
+    "year": "2023",
+    "doi": "10.3390/make5030055",
+    "official_url": "https://www.mdpi.com/2504-4990/5/3/55",
+    "canonical_reference": "POTTS, R.; HACKNEY, R.; LEONTIDIS, G. Tabular Machine Learning Methods for Predicting Gas Turbine Emissions. Machine Learning and Knowledge Extraction, Basel, v. 5, n. 3, p. 1055-1075, 2023. DOI: https://doi.org/10.3390/make5030055. Disponível em: https://www.mdpi.com/2504-4990/5/3/55. Acesso em: 29 out. 2026.",
+    "claim_supported": "Comparação XGBoost/SAINT e compromisso entre atributos adicionais e observações completas.",
+    "limits": "CO/NOx em turbina; não estabelece superioridade universal de XGBoost.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "a2047aff42889cd1cc2bba7fb8511b02e12bb79cdd33cd1884942ce590a02554"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "SAINT",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "missing values",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 16,
+        "text": "Em sistemas de monitoramento preditivo, Kaya, Tüfekci e Uzun (2019) propuseram um procedimento de referência com cinco anos de dados de turbina a gás, enquanto Potts, Hackney e Leontidis (2023) compararam XGBoost e um modelo profundo para dados tabulares, examinando também o compromisso entre acrescentar atributos e perder observações por valores ausentes. A revisão de Zuo et al. (2024) chega a uma conclusão convergente: qualidade dos dados, parametrização e transferibilidade condicionam o desempenho de modelos de emissões. Essas evidências reforçam, neste trabalho, a necessidade de preservar a completude das amostras e de interpretar ganhos de desempenho dentro do protocolo em que foram obtidos."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 17,
+        "text": "Entre os métodos aplicáveis a dados tabulares, o gradient boosting combina modelos sequencialmente para construir uma função preditiva (Friedman, 2001). O XGBoost acrescenta regularização e recursos computacionais ao ajuste de conjuntos de árvores (Chen; Guestrin, 2016). Seu uso em estudos de emissões com dados públicos ou operacionais aparece, entre outros, em Gu, Sward e Zhang (2023), Potts, Hackney e Leontidis (2023) e Wang et al. (2025). Neste estudo, a comparação com MLP permite verificar se a mudança de família de modelo altera a resposta obtida para os mesmos tipos de atributos."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 84,
+        "text": "A comparação com a literatura também depende do desenho de cada estudo. Gu, Sward e Zhang (2023) e Wang et al. (2025) encontraram bom desempenho do XGBoost em problemas de emissões, mas utilizaram conjuntos de atributos, frequências e esquemas de validação distintos. Potts, Hackney e Leontidis (2023) chegaram a resultado semelhante para dados tabulares de turbina a gás, enquanto X. Liu et al. (2025b) obtiveram maior R² com ElasticNet e menor MAE com regressão linear em dados diários de uma usina a carvão. Assim, a convergência sobre uma família de modelo não é esperada a priori, e os valores de MAE ou R² não devem ser comparados fora de seus respectivos alvos, escalas e protocolos."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 12,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "potts2026",
+    "authors": "POTTS, R.; DURRANT, A.; HACKNEY, R.; LEONTIDIS, G.",
+    "title": "Trust-Aware Predictive Emissions Monitoring for Gas Turbine Fleets with Limited Labelled Data",
+    "year": "2026",
+    "doi": "10.48550/arXiv.2606.06156",
+    "official_url": "https://arxiv.org/abs/2606.06156",
+    "canonical_reference": "POTTS, R.; DURRANT, A.; HACKNEY, R.; LEONTIDIS, G. Trust-Aware Predictive Emissions Monitoring for Gas Turbine Fleets with Limited Labelled Data. arXiv, 2026. Preprint arXiv:2606.06156v1, submetido em 4 jun. 2026. DOI: https://doi.org/10.48550/arXiv.2606.06156. Disponível em: https://arxiv.org/abs/2606.06156. Acesso em: 29 out. 2026.",
+    "claim_supported": "Sistema de confiança combina faixa operacional, distância no espaço de atributos e incerteza.",
+    "limits": "Preprint v1. O controle min/max da Iatan é só um diagnóstico marginal; não há escore de confiança calibrado.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "d828fedc4837da55dc6c425ead9d339f4fe18bfbf3aae7a11cb70a7fcd6af85d"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "operating.range",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "uncertainty",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 18,
+        "text": "Além do método, a organização da avaliação influencia a leitura dos resultados. Cerqueira, Torgo e Mozetič (2020) mostram que a adequação dos procedimentos de estimação de desempenho depende da dependência temporal e da estacionariedade; em suas séries não estacionárias, avaliações fora da amostra repetidas em diferentes períodos tiveram melhor desempenho. Aqui, essa evidência fundamenta o cuidado com a cronologia, sem reproduzir seu benchmark de previsão autoregressiva. Para transferência entre domínios, Couture et al. (2024) separam plantas entre treino e teste para avaliar unidades não vistas. Em um preprint sobre frotas de turbinas a gás, Potts et al. (2026) combinam diagnósticos de faixa operacional, distância no espaço de atributos e incerteza para reconhecer situações fora da distribuição conhecida. No presente caso, a análise permanece temporal e dentro de uma única unidade; as mudanças de distribuição são tratadas de modo descritivo, distinguindo-as de concept drift (Gama et al., 2014)."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 83,
+        "text": "Quanto ao histórico, ampliar a amostra modifica tanto sua quantidade quanto a composição dos regimes e a distância temporal dos exemplos. A exclusão de 2023 e 2024, decidida após análises exploratórias, também altera essa composição. Sem manter as demais decisões em uma comparação específica, seu efeito permanece indeterminado. A inversão entre validação e teste reforça os cuidados com avaliação temporal e viés de seleção discutidos por Cerqueira, Torgo e Mozetič (2020) e Cawley e Talbot (2010). Huang et al. (2027) reforçam essa cautela ao avaliar previsão de carbono sob histórico reduzido e regimes operacionais distintos, além de empregar calibração conformal para intervalos de previsão. A calibração de incerteza não foi aplicada retrospectivamente neste trabalho e permanece como possibilidade para uma etapa futura previamente especificada. Em um preprint voltado a frotas, Potts et al. (2026) associam situações fora da distribuição conhecida a menor confiança e usam, entre outros sinais, a quantidade de atributos fora da faixa observada no treinamento. Esse princípio motivou a inclusão de um diagnóstico adicional de cobertura operacional no Notebook 03A.05. Na execução recebida de 29 de outubro de 2026, o diagnóstico não encontrou valores do teste fora dos mínimos e máximos de treinamento de cada um dos sete atributos. Esse controle marginal não avalia combinações multivariadas inéditas, não calibra confiança e não reproduz o sistema de Potts et al.; o treinamento dos modelos permaneceu inalterado. Aqui, os indicadores disponíveis descrevem diferenças entre períodos, sem identificar sua causa física ou demonstrar mudança na relação condicional entre carga e emissão."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 85,
+        "text": "O alcance dos resultados é limitado pela seleção retrospectiva de uma unidade, pelo teste de dois meses e pelas amostras reduzidas de validação e partida. Foi utilizada uma semente por configuração, sem estimação da incerteza considerando dependência temporal. Além disso, a reutilização do teste durante o desenvolvimento permite influência indireta sobre decisões posteriores. Couture et al. (2024) adotam validação por plantas não vistas, e Jin et al. (2026) mostram que a transferência entre usinas depende da relação entre domínio de origem, domínio-alvo e estratégia de adaptação; nenhum desses problemas foi testado de forma equivalente aqui. Potts et al. (2026), em preprint, propõem diagnósticos explícitos para condições fora da distribuição, e a coerência com restrições físicas e operacionais é um requisito de implantação destacado por Ashraf, Dua e Debnath (2026). Por fim, a continuidade documental do monitoramento não comprova homogeneidade instrumental ou estabilidade de calibração. Lu, Tang e Duan (2024) mostram, em outra usina a carvão, que a operação dinâmica pode afetar a vazão de gases usada em medições associadas ao CEMS; essa evidência justifica cautela metrológica, mas não demonstra erro nos dados da Iatan. As diferenças anuais observadas neste estudo, portanto, não podem ser atribuídas exclusivamente à operação."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 18,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 23,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 24,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "rumelhart1986",
+    "authors": "RUMELHART, D. E.; HINTON, G. E.; WILLIAMS, R. J.",
+    "title": "Learning representations by back-propagating errors",
+    "year": "1986",
+    "doi": "10.1038/323533a0",
+    "official_url": "https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf",
+    "canonical_reference": "RUMELHART, D. E.; HINTON, G. E.; WILLIAMS, R. J. Learning representations by back-propagating errors. Nature, [s. l.], v. 323, n. 6088, p. 533-536, 1986. DOI: https://doi.org/10.1038/323533a0. Disponível em: https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf. Acesso em: 29 out. 2026.",
+    "claim_supported": "Retropropagação ajusta pesos para reduzir discrepância entre saída e resposta desejada.",
+    "limits": "Artigo original usa outras ativações; ReLU e Adam têm referências próprias.",
+    "source_files": [
+      {
+        "kind": "Original/manuscrito identificado",
+        "sha256": "d26997baf588222109d32545604a2a2ed400dc769a21fd49a5acdc4a955396ae"
+      }
+    ],
+    "evidence": [
+      {
+        "pdf_page": 1,
+        "location": "Nature 323, p. 533, abertura do artigo, conferida visualmente na imagem rumelhart_p1.png"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 39,
+        "text": "Utilizou-se uma rede perceptron multicamadas (MLP), com aprendizagem por retropropagação, ativações ReLU e otimizador Adam, fundamentados, respectivamente, em Rumelhart, Hinton e Williams (1986), Glorot, Bordes e Bengio (2011) e Kingma e Ba (2015). A arquitetura e os parâmetros foram escolhas do estudo, apresentadas no Apêndice A. A estrutura das camadas ocultas foi mantida entre cenários, embora a dimensão da entrada alterasse o total de parâmetros. Os modelos selecionados foram aplicados ao teste sem reajuste incluindo outubro, com comparação de B e C sobre os mesmos horários."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 16,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 17,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 21,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 22,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 10,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 11,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "saito2023",
+    "authors": "SAITO, T.; FUJIWARA, K.",
+    "title": "Causal analysis of nitrogen oxides emissions process in coal-fired power plant with LiNGAM",
+    "year": "2023",
+    "doi": "10.3389/frans.2023.1045324",
+    "official_url": "https://www.frontiersin.org/journals/analytical-science/articles/10.3389/frans.2023.1045324/full",
+    "canonical_reference": "SAITO, T.; FUJIWARA, K. Causal analysis of nitrogen oxides emissions process in coal-fired power plant with LiNGAM. Frontiers in Analytical Science, [s. l.], v. 3, art. 1045324, 2023. DOI: https://doi.org/10.3389/frans.2023.1045324. Disponível em: https://www.frontiersin.org/journals/analytical-science/articles/10.3389/frans.2023.1045324/full. Acesso em: 29 out. 2026.",
+    "claim_supported": "Aplicação exploratória de LiNGAM a NOx em unidade a carvão.",
+    "limits": "Inferência causal depende das hipóteses de LiNGAM; arquivo originalmente nomeado Adams 2020 foi identificado corretamente.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "adc09549eea5dc98c71c33b9d87df7107d708c6dba382e44180da89ce53aee92"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "LiNGAM",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "causal",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 23,
+        "text": "A pesquisa é quantitativa, observacional e retrospectiva, voltada à estimação de emissões. A pergunta foi delimitada a partir da literatura e examinada por comparações empíricas. A interpretação dos padrões e a escolha do histórico tiveram caráter exploratório. O objetivo é avaliar capacidade de estimação, sem atribuir causalidade às variáveis. Essa distinção é relevante na modelagem preditiva (Shmueli, 2010) e também separa este trabalho de desenhos voltados explicitamente à identificação causal, como a aplicação exploratória de LiNGAM a dados de NOx de uma usina a carvão realizada por Saito e Fujiwara (2023), cuja interpretação causal depende das hipóteses do método."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "shmueli2010",
+    "authors": "SHMUELI, G.",
+    "title": "To Explain or to Predict?",
+    "year": "2010",
+    "doi": "10.1214/10-STS330",
+    "official_url": "https://www.stat.berkeley.edu/~aldous/157/Papers/shmueli.pdf",
+    "canonical_reference": "SHMUELI, G. To Explain or to Predict? Statistical Science, [s. l.], v. 25, n. 3, p. 289-310, 2010. DOI: https://doi.org/10.1214/10-STS330. Disponível em: https://www.stat.berkeley.edu/~aldous/157/Papers/shmueli.pdf. Acesso em: 29 out. 2026.",
+    "claim_supported": "Diferença entre explicação causal, descrição e predição.",
+    "limits": "Bom ajuste preditivo não estabelece mecanismo causal.",
+    "source_files": [
+      {
+        "kind": "Original/manuscrito identificado",
+        "sha256": "9052507576bd8c6e076be08d0addb028a4ba67198ce1e447f0cc38dcb5a88faa"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "causal explanation",
+        "pdf_page": 1,
+        "location": "Original/manuscrito identificado"
+      },
+      {
+        "pattern": "prediction",
+        "pdf_page": 1,
+        "location": "Original/manuscrito identificado"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 23,
+        "text": "A pesquisa é quantitativa, observacional e retrospectiva, voltada à estimação de emissões. A pergunta foi delimitada a partir da literatura e examinada por comparações empíricas. A interpretação dos padrões e a escolha do histórico tiveram caráter exploratório. O objetivo é avaliar capacidade de estimação, sem atribuir causalidade às variáveis. Essa distinção é relevante na modelagem preditiva (Shmueli, 2010) e também separa este trabalho de desenhos voltados explicitamente à identificação causal, como a aplicação exploratória de LiNGAM a dados de NOx de uma usina a carvão realizada por Saito e Fujiwara (2023), cuja interpretação causal depende das hipóteses do método."
+      }
+    ],
+    "notebook_locations": [],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "sklearn2025",
+    "authors": "SCIKIT-LEARN",
+    "title": "User Guide, version 1.8.0",
+    "year": "2025",
+    "doi": "",
+    "official_url": "https://scikit-learn.org/1.8/",
+    "canonical_reference": "SCIKIT-LEARN. User Guide. Version 1.8.0. [S. l.]: The scikit-learn developers, [2025]. Seções MinMaxScaler e Regression metrics. Disponível em: https://scikit-learn.org/1.8/modules/generated/sklearn.preprocessing.MinMaxScaler.html e https://scikit-learn.org/1.8/modules/model_evaluation.html#regression-metrics. Acesso em: 29 out. 2026.",
+    "claim_supported": "MinMaxScaler ajustado no treino e definições de métricas de regressão/R2.",
+    "limits": "Documentação 1.8; não prescreve divisão temporal, denominador NMAE ou sinal de viés adotados.",
+    "source_files": [
+      {
+        "kind": "MinMaxScaler 1.8",
+        "sha256": "792d05fe8522815eb1c617086e4d212d9515b0deab284ff11bdbe458f5756750"
+      },
+      {
+        "kind": "Métricas 1.8",
+        "sha256": "18e1fc77450ad2529302c6366d31c77a39f3bd887653303dcca67d40f657eb16"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "X_std",
+        "pdf_page": null,
+        "location": "MinMaxScaler 1.8"
+      },
+      {
+        "pattern": "r2_score",
+        "pdf_page": null,
+        "location": "MinMaxScaler 1.8"
+      },
+      {
+        "pattern": "r2_score",
+        "pdf_page": null,
+        "location": "Métricas 1.8"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 38,
+        "text": "Os experimentos iniciais separaram cronologicamente janeiro a setembro de 2025 para treinamento, outubro para validação e novembro e dezembro para teste. Nas redes neurais, entradas e resposta foram normalizadas por MinMaxScaler ajustado exclusivamente no treinamento, conforme a documentação do Scikit-learn (2025). As previsões retornaram à unidade original antes da avaliação."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 52,
+        "text": "O desempenho foi avaliado principalmente por MAE, RMSE e R², com mediana do erro absoluto, NMAE e viés como medidas complementares. MAE e RMSE correspondem às medidas discutidas por Hyndman e Koehler (2006); o cálculo de R² segue a documentação do Scikit-learn (2025). As equações e convenções adotadas estão reunidas no Apêndice A. As métricas absolutas foram expressas na unidade do alvo; o NMAE utilizou a média observada como denominador. O viés foi calculado como observado menos estimado, de modo que valores negativos indicam superestimação média."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 153,
+        "text": "Para cada observação, eᵢ = yᵢ − ŷᵢ representa o resíduo; n é o número de observações e ȳ, a média observada. MAE e RMSE seguem Hyndman e Koehler (2006), e R² segue a documentação do Scikit-learn (2025). A mediana do erro absoluto corresponde à mediana de |eᵢ|. As demais convenções foram definidas no protocolo."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 11,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 12,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 14,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 15,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 20,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 21,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 14,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 15,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 10,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 11,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 12,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 1,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 2,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 1,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 2,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.06_modelo_hibrido_regime_operacional.ipynb",
+        "cell_index": 0,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 8,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 14,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 15,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "suri2025",
+    "authors": "SURI, D.; DE CHALENDAR, J.; AZEVEDO, I. M. L.",
+    "title": "Assessing the real implications for CO2 as generation from renewables increases",
+    "year": "2025",
+    "doi": "10.1038/s41467-025-59800-4",
+    "official_url": "https://www.nature.com/articles/s41467-025-59800-4",
+    "canonical_reference": "SURI, D.; DE CHALENDAR, J.; AZEVEDO, I. M. L. Assessing the real implications for CO₂ as generation from renewables increases. Nature Communications, [s. l.], v. 16, art. 7124, 2025. DOI: https://doi.org/10.1038/s41467-025-59800-4. Disponível em: https://www.nature.com/articles/s41467-025-59800-4. Acesso em: 29 out. 2026.",
+    "claim_supported": "Operação térmica em regimes menos eficientes sob rampas/partidas/baixa utilização.",
+    "limits": "Cenários e regressões de CAISO/ERCOT; associação Iatan não é identificação desse mecanismo.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "e06c321e24b146935971507c6093a9dea8fe14625dc6e58387ae7420b43d66c5"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "ramping",
+        "pdf_page": 2,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "startup",
+        "pdf_page": 2,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 10,
+        "text": "Em usinas térmicas, a relação entre carga e emissão varia com o regime operacional. Com dados horários de CEMS, Suri, de Chalendar e Azevedo (2025) mostram que menor utilização e maior necessidade de partidas e rampas podem degradar a eficiência e elevar a intensidade de CO₂. Em uma termelétrica a carvão, Wang et al. (2025) identificam geração, tempo de operação e taxa de carga entre os atributos mais relevantes para a predição. Essas evidências motivam testar se a trajetória recente acrescenta informação à carga atual, sem presumir uma relação causal."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 81,
+        "text": "Nas rampas, as métricas e a frequência de melhorias favoreceram B. Esse comportamento é compatível com a evidência de que variações de despacho podem deslocar unidades térmicas para condições de menor eficiência e alterar a intensidade de CO₂ (Suri; de Chalendar; Azevedo, 2025). Em uma unidade a carvão de 1.000 MW, Liu et al. (2025a) também identificaram aumento da intensidade de carbono sob regimes de regulação profunda de carga, embora em um desenho de ciclo de vida e em uma instalação distintos da Iatan. Ao mesmo tempo, Fayaz et al. (2026), em preprint sobre plantas de cimento, restringiram a comparação com histórico de um minuto a uma planta e observaram ali maior benefício para NOx do que para CO e CO₂. A comparação entre setores e instalações não permite transferir resultados diretamente, mas reforça que a memória do processo e o efeito dos regimes não devem ser tratados como universais. No presente estudo, a associação observada nas rampas permanece descritiva: o desenho não identifica o mecanismo responsável, e os limiares de 130 e 56 MW por intervalo horário definiram grupos diferentes entre etapas."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "01_selecao_unidade_estudo.ipynb",
+        "cell_index": 17,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "01_selecao_unidade_estudo.ipynb",
+        "cell_index": 18,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "02_tratamento_dados.ipynb",
+        "cell_index": 8,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 8,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+        "cell_index": 9,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 6,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 7,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 17,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_modelagem_preditiva_co2.ipynb",
+        "cell_index": 18,
+        "cell_type": "code"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "wang2025",
+    "authors": "WANG, S.; FANG, B.; ZHANG, J.; XING, S.; WU, J.; XIAO, H.",
+    "title": "Comparative study of machine learning methods for carbon metering in power generation enterprises",
+    "year": "2025",
+    "doi": "10.1038/s41598-025-25227-6",
+    "official_url": "https://www.nature.com/articles/s41598-025-25227-6",
+    "canonical_reference": "WANG, S.; FANG, B.; ZHANG, J.; XING, S.; WU, J.; XIAO, H. Comparative study of machine learning methods for carbon metering in power generation enterprises. Scientific Reports, [s. l.], v. 15, art. 41333, 2025. DOI: https://doi.org/10.1038/s41598-025-25227-6. Disponível em: https://www.nature.com/articles/s41598-025-25227-6. Acesso em: 29 out. 2026.",
+    "claim_supported": "Comparação aplicada de regressão linear, XGBoost e LSTM com seleção e entradas operacionais.",
+    "limits": "Não importar a precisão de 90,39% como se fosse resultado do mesmo alvo/amostra/protocolo Iatan.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "a3f6e964b89aeb4b253ddeee55a12553a2538f2ca5c5df5ce0cff33b546f09df"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "operating time and load rate",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "XGBoost",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 10,
+        "text": "Em usinas térmicas, a relação entre carga e emissão varia com o regime operacional. Com dados horários de CEMS, Suri, de Chalendar e Azevedo (2025) mostram que menor utilização e maior necessidade de partidas e rampas podem degradar a eficiência e elevar a intensidade de CO₂. Em uma termelétrica a carvão, Wang et al. (2025) identificam geração, tempo de operação e taxa de carga entre os atributos mais relevantes para a predição. Essas evidências motivam testar se a trajetória recente acrescenta informação à carga atual, sem presumir uma relação causal."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 15,
+        "text": "Entre os trabalhos mais próximos deste estudo, Gu, Sward e Zhang (2023) utilizaram somente informações públicas para modelar emissões de unidades térmicas de Nova York, comparando XGBoost, redes neurais e regressão linear em versões com maior e menor disponibilidade de atributos. Em uma usina a carvão, Wang et al. (2025) compararam regressão linear, XGBoost e LSTM após seleção de atributos e identificaram o XGBoost como o modelo de melhor desempenho em seu conjunto de dados. X. Liu et al. (2025b), por sua vez, compararam modelos lineares e não lineares em 365 registros diários de uma unidade de 1.000 MW: na Tabela 1 do estudo, a regressão linear apresentou o menor MAE, enquanto ElasticNet apresentou o maior R². As diferenças de frequência, variáveis e protocolo de avaliação impedem comparar diretamente os erros, mas mostram que a escolha da família de modelo depende da estrutura dos dados disponíveis."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 17,
+        "text": "Entre os métodos aplicáveis a dados tabulares, o gradient boosting combina modelos sequencialmente para construir uma função preditiva (Friedman, 2001). O XGBoost acrescenta regularização e recursos computacionais ao ajuste de conjuntos de árvores (Chen; Guestrin, 2016). Seu uso em estudos de emissões com dados públicos ou operacionais aparece, entre outros, em Gu, Sward e Zhang (2023), Potts, Hackney e Leontidis (2023) e Wang et al. (2025). Neste estudo, a comparação com MLP permite verificar se a mudança de família de modelo altera a resposta obtida para os mesmos tipos de atributos."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 84,
+        "text": "A comparação com a literatura também depende do desenho de cada estudo. Gu, Sward e Zhang (2023) e Wang et al. (2025) encontraram bom desempenho do XGBoost em problemas de emissões, mas utilizaram conjuntos de atributos, frequências e esquemas de validação distintos. Potts, Hackney e Leontidis (2023) chegaram a resultado semelhante para dados tabulares de turbina a gás, enquanto X. Liu et al. (2025b) obtiveram maior R² com ElasticNet e menor MAE com regressão linear em dados diários de uma usina a carvão. Assim, a convergência sobre uma família de modelo não é esperada a priori, e os valores de MAE ou R² não devem ser comparados fora de seus respectivos alvos, escalas e protocolos."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+        "cell_index": 12,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+        "cell_index": 9,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "zuo2024",
+    "authors": "ZUO, Z.; NIU, Y.; LI, J.; FU, H.; ZHOU, M.",
+    "title": "Machine Learning for Advanced Emission Monitoring and Reduction Strategies in Fossil Fuel Power Plants",
+    "year": "2024",
+    "doi": "10.3390/app14188442",
+    "official_url": "https://www.mdpi.com/2076-3417/14/18/8442",
+    "canonical_reference": "ZUO, Z.; NIU, Y.; LI, J.; FU, H.; ZHOU, M. Machine Learning for Advanced Emission Monitoring and Reduction Strategies in Fossil Fuel Power Plants. Applied Sciences, Basel, v. 14, n. 18, art. 8442, 2024. DOI: https://doi.org/10.3390/app14188442. Disponível em: https://www.mdpi.com/2076-3417/14/18/8442. Acesso em: 29 out. 2026.",
+    "claim_supported": "Revisão de monitoramento preditivo: qualidade, parametrização e transferibilidade.",
+    "limits": "Fonte de síntese; os fundamentos dos algoritmos são citados nas fontes originais.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "02a898ad736eec757ac35771bf094ef11a834b012e243721af2d9a81a8ce5b10"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "quality",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "transfer",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 11,
+        "text": "Essa questão pode ser examinada em escala horária com os dados públicos do Clean Air Markets Program Data (CAMPD), da United States Environmental Protection Agency (EPA) (United States, 2026). Gu, Sward e Zhang (2023) mostraram que informações públicas, incluindo CEMS e bases auxiliares, podem sustentar modelos de XGBoost e redes neurais para estimar taxas de CO₂, NOx e SO₂ de unidades geradoras. A literatura de monitoramento preditivo também destaca a qualidade dos dados e a transferibilidade como condições centrais para o uso de aprendizado de máquina em emissões (Zuo et al., 2024). No presente estudo, a interpretação dos campos horários segue ainda os procedimentos de monitoramento, cálculo e reporte da EPA (United States, 2022)."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 16,
+        "text": "Em sistemas de monitoramento preditivo, Kaya, Tüfekci e Uzun (2019) propuseram um procedimento de referência com cinco anos de dados de turbina a gás, enquanto Potts, Hackney e Leontidis (2023) compararam XGBoost e um modelo profundo para dados tabulares, examinando também o compromisso entre acrescentar atributos e perder observações por valores ausentes. A revisão de Zuo et al. (2024) chega a uma conclusão convergente: qualidade dos dados, parametrização e transferibilidade condicionam o desempenho de modelos de emissões. Essas evidências reforçam, neste trabalho, a necessidade de preservar a completude das amostras e de interpretar ganhos de desempenho dentro do protocolo em que foram obtidos."
+      }
+    ],
+    "notebook_locations": [],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "zhang2026ccssta",
+    "authors": "ZHANG, K.; WU, Z.; LIU, Z.; WANG, J.",
+    "title": "Dynamic Prediction of CO₂ Emissions from Coal-Fired Power Plants Based on XGBoost Hybrid Feature Selection and LSTM",
+    "year": "2026",
+    "doi": "10.1109/CCSSTA69471.2026.11635773",
+    "official_url": "https://ieeexplore.ieee.org/document/11635773",
+    "canonical_reference": "ZHANG, K.; WU, Z.; LIU, Z.; WANG, J. Dynamic Prediction of CO₂ Emissions from Coal-Fired Power Plants Based on XGBoost Hybrid Feature Selection and LSTM. In: 2026 IEEE 27th China Conference on System Simulation Technology and its Applications (CCSSTA). [S. l.]: IEEE, 2026. p. 865-870. DOI: https://doi.org/10.1109/CCSSTA69471.2026.11635773. Acesso em: 29 out. 2026.",
+    "claim_supported": "Seleção XGBoost/cotovelo/Pearson antes de LSTM para CO2 de unidade de 1.000 MW.",
+    "limits": "Dados de um minuto e regime estável; limiar 0,6 da fonte difere do alerta 0,90 e da ablação própria.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "c42669630bdbb79339f1b3db79da1d3f2c0456f07708be2cf06b2687069b0e6d"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "steady.state operation",
+        "pdf_page": 2,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "Pearson",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "0.6",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 20,
+        "text": "A busca bibliográfica ampliada acrescentou evidências diretamente relacionadas às decisões do presente estudo. Zhang et al. (2026) propõem, para a predição dinâmica de CO₂ em uma unidade a carvão, uma seleção em duas etapas que combina importância por XGBoost e correlação de Pearson para reduzir redundância e multicolinearidade antes de um modelo LSTM. Huang et al. (2027), em artigo disponibilizado online em outubro de 2026, avaliam uma unidade de ciclo combinado gás-vapor, com previsão de curto horizonte, histórico reduzido, regimes operacionais e calibração conformal, mostrando que a utilidade do histórico deve ser interpretada em conjunto com a condição operacional. Jin et al. (2026) tratam transferência entre usinas e evidenciam que o desempenho depende da relação entre domínio de origem e domínio-alvo. Liu et al. (2025a) mostram que a regulação profunda de carga pode elevar a intensidade de carbono em uma unidade a carvão, enquanto Lu, Tang e Duan (2024) destacam que a operação dinâmica pode afetar a medição da vazão de gases associada ao CEMS. Esses trabalhos não são diretamente comparáveis à Iatan quanto a alvo, instalação e protocolo, mas ajudam a interpretar redundância de atributos, valor do histórico, diferenças entre regimes, transferência e limitações metrológicas."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 36,
+        "text": "Após a ampliação bibliográfica, foi incorporada ao Notebook 03A.05 uma auditoria diagnóstica adicional das sete variáveis de B, motivada por Zhang et al. (2026). Na fonte, atributos de uma unidade de 1.000 MW, amostrados a cada minuto em condição estável, são filtrados antes de um LSTM; o presente estudo utiliza XGBoost e não reproduz esse protocolo. O limiar descritivo de |r| ≥ 0,90 e as variantes da ablação complementar do Notebook 03A.05A são escolhas próprias. A rotina calcula a matriz de correlação de Pearson e verifica explicitamente as identidades delta_load_1h = load_current_mw - load_lag_1h e abs_delta_load_1h = |delta_load_1h|. Esse controle não integra a seleção de atributos, não remove variáveis e não reabre o ajuste dos modelos, pois o período de teste já havia sido consultado em etapas anteriores. Seu objetivo é registrar redundâncias estruturais da representação para comparações complementares documentadas separadamente, sem alterar as métricas reportadas neste artigo."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 12,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 13,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A_05A_ablacao_controlada_features_Colab.ipynb",
+        "cell_index": 0,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A_05A_ablacao_controlada_features_Colab.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "jin2026transfer",
+    "authors": "JIN, X.; ZHANG, L.; LI, F.; XIE, W.; MA, D.; WU, Y.",
+    "title": "An explainable transfer learning approach to predict carbon emission intensity of coal-fired power plants with multi-source monitoring data",
+    "year": "2026",
+    "doi": "10.1016/j.eswa.2025.129743",
+    "official_url": "https://www.sciencedirect.com/science/article/pii/S0957417425033585",
+    "canonical_reference": "JIN, X.; ZHANG, L.; LI, F.; XIE, W.; MA, D.; WU, Y. An explainable transfer learning approach to predict carbon emission intensity of coal-fired power plants with multi-source monitoring data. Expert Systems with Applications, [s. l.], v. 298, art. 129743, 2026. DOI: https://doi.org/10.1016/j.eswa.2025.129743. Acesso em: 29 out. 2026.",
+    "claim_supported": "Transferência entre três plantas e dependência da fonte/qualidade/modelo para estimar intensidade.",
+    "limits": "Não é experimento intraplanta nem evidência de transferência executada na Iatan.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "6971e2c1c3ef97d17297edd6375dc3be343213984da40b074458ee240f6ca48f"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "three Chinese power plants",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "source data quality",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 20,
+        "text": "A busca bibliográfica ampliada acrescentou evidências diretamente relacionadas às decisões do presente estudo. Zhang et al. (2026) propõem, para a predição dinâmica de CO₂ em uma unidade a carvão, uma seleção em duas etapas que combina importância por XGBoost e correlação de Pearson para reduzir redundância e multicolinearidade antes de um modelo LSTM. Huang et al. (2027), em artigo disponibilizado online em outubro de 2026, avaliam uma unidade de ciclo combinado gás-vapor, com previsão de curto horizonte, histórico reduzido, regimes operacionais e calibração conformal, mostrando que a utilidade do histórico deve ser interpretada em conjunto com a condição operacional. Jin et al. (2026) tratam transferência entre usinas e evidenciam que o desempenho depende da relação entre domínio de origem e domínio-alvo. Liu et al. (2025a) mostram que a regulação profunda de carga pode elevar a intensidade de carbono em uma unidade a carvão, enquanto Lu, Tang e Duan (2024) destacam que a operação dinâmica pode afetar a medição da vazão de gases associada ao CEMS. Esses trabalhos não são diretamente comparáveis à Iatan quanto a alvo, instalação e protocolo, mas ajudam a interpretar redundância de atributos, valor do histórico, diferenças entre regimes, transferência e limitações metrológicas."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 85,
+        "text": "O alcance dos resultados é limitado pela seleção retrospectiva de uma unidade, pelo teste de dois meses e pelas amostras reduzidas de validação e partida. Foi utilizada uma semente por configuração, sem estimação da incerteza considerando dependência temporal. Além disso, a reutilização do teste durante o desenvolvimento permite influência indireta sobre decisões posteriores. Couture et al. (2024) adotam validação por plantas não vistas, e Jin et al. (2026) mostram que a transferência entre usinas depende da relação entre domínio de origem, domínio-alvo e estratégia de adaptação; nenhum desses problemas foi testado de forma equivalente aqui. Potts et al. (2026), em preprint, propõem diagnósticos explícitos para condições fora da distribuição, e a coerência com restrições físicas e operacionais é um requisito de implantação destacado por Ashraf, Dua e Debnath (2026). Por fim, a continuidade documental do monitoramento não comprova homogeneidade instrumental ou estabilidade de calibração. Lu, Tang e Duan (2024) mostram, em outra usina a carvão, que a operação dinâmica pode afetar a vazão de gases usada em medições associadas ao CEMS; essa evidência justifica cautela metrológica, mas não demonstra erro nos dados da Iatan. As diferenças anuais observadas neste estudo, portanto, não podem ser atribuídas exclusivamente à operação."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 18,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "huang2027reducedhistory",
+    "authors": "HUANG, R.; LUO, W.; JIANG, Y.; LIANG, X.; LIU, Z.; WANG, Z.; LI, L.; ZHONG, D.; YAO, S.",
+    "title": "A domain-informed forecasting framework for short-horizon carbon emissions prediction in power plants under reduced-history conditions",
+    "year": "2027",
+    "doi": "10.1016/j.epsr.2026.114351",
+    "official_url": "https://www.sciencedirect.com/science/article/pii/S0378779626016342",
+    "canonical_reference": "HUANG, R.; LUO, W.; JIANG, Y.; LIANG, X.; LIU, Z.; WANG, Z.; LI, L.; ZHONG, D.; YAO, S. A domain-informed forecasting framework for short-horizon carbon emissions prediction in power plants under reduced-history conditions. Electric Power Systems Research, [s. l.], v. 265, art. 114351, 2027. Disponibilizado online em 12 out. 2026. DOI: https://doi.org/10.1016/j.epsr.2026.114351. Acesso em: 29 out. 2026.",
+    "claim_supported": "Previsão de curto horizonte em uma unidade CGVC, histórico reduzido, origem móvel e calibração conformal.",
+    "limits": "Fascículo 2027, online 12/10/2026. Calibração em conjunto separado da fonte não foi implementada na Iatan.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "4249443adec705faf95b17679200bd38344cc0cbaee45b13da0020cd749f633c"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "split.conformal",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "12 October 2026",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 20,
+        "text": "A busca bibliográfica ampliada acrescentou evidências diretamente relacionadas às decisões do presente estudo. Zhang et al. (2026) propõem, para a predição dinâmica de CO₂ em uma unidade a carvão, uma seleção em duas etapas que combina importância por XGBoost e correlação de Pearson para reduzir redundância e multicolinearidade antes de um modelo LSTM. Huang et al. (2027), em artigo disponibilizado online em outubro de 2026, avaliam uma unidade de ciclo combinado gás-vapor, com previsão de curto horizonte, histórico reduzido, regimes operacionais e calibração conformal, mostrando que a utilidade do histórico deve ser interpretada em conjunto com a condição operacional. Jin et al. (2026) tratam transferência entre usinas e evidenciam que o desempenho depende da relação entre domínio de origem e domínio-alvo. Liu et al. (2025a) mostram que a regulação profunda de carga pode elevar a intensidade de carbono em uma unidade a carvão, enquanto Lu, Tang e Duan (2024) destacam que a operação dinâmica pode afetar a medição da vazão de gases associada ao CEMS. Esses trabalhos não são diretamente comparáveis à Iatan quanto a alvo, instalação e protocolo, mas ajudam a interpretar redundância de atributos, valor do histórico, diferenças entre regimes, transferência e limitações metrológicas."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 65,
+        "text": "A ampliação da janela histórica não produziu melhoria monotônica nos backtests. A janela com menor erro variou entre os anos-alvo, e essa ordenação foi conhecida apenas após a avaliação. Os resultados descrevem, portanto, o comportamento retrospectivo das janelas. O modelo treinado somente com dados de 2011 a 2022 foi avaliado em todo o ano de 2025. Suas métricas devem ser distinguidas da comparação incremental da Tabela 5, cujo teste abrange apenas novembro e dezembro. Esse comportamento é compatível com a preocupação de Huang et al. (2027) em avaliar modelos sob diferentes quantidades de histórico e condições operacionais, sem pressupor ganho monotônico apenas pela ampliação da série de treinamento."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 83,
+        "text": "Quanto ao histórico, ampliar a amostra modifica tanto sua quantidade quanto a composição dos regimes e a distância temporal dos exemplos. A exclusão de 2023 e 2024, decidida após análises exploratórias, também altera essa composição. Sem manter as demais decisões em uma comparação específica, seu efeito permanece indeterminado. A inversão entre validação e teste reforça os cuidados com avaliação temporal e viés de seleção discutidos por Cerqueira, Torgo e Mozetič (2020) e Cawley e Talbot (2010). Huang et al. (2027) reforçam essa cautela ao avaliar previsão de carbono sob histórico reduzido e regimes operacionais distintos, além de empregar calibração conformal para intervalos de previsão. A calibração de incerteza não foi aplicada retrospectivamente neste trabalho e permanece como possibilidade para uma etapa futura previamente especificada. Em um preprint voltado a frotas, Potts et al. (2026) associam situações fora da distribuição conhecida a menor confiança e usam, entre outros sinais, a quantidade de atributos fora da faixa observada no treinamento. Esse princípio motivou a inclusão de um diagnóstico adicional de cobertura operacional no Notebook 03A.05. Na execução recebida de 29 de outubro de 2026, o diagnóstico não encontrou valores do teste fora dos mínimos e máximos de treinamento de cada um dos sete atributos. Esse controle marginal não avalia combinações multivariadas inéditas, não calibra confiança e não reproduz o sistema de Potts et al.; o treinamento dos modelos permaneceu inalterado. Aqui, os indicadores disponíveis descrevem diferenças entre períodos, sem identificar sua causa física ou demonstrar mudança na relação condicional entre carga e emissão."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 14,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+        "cell_index": 15,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 6,
+        "cell_type": "markdown"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 7,
+        "cell_type": "code"
+      },
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 20,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "liu2025deepload",
+    "authors": "LIU, X.; YU, H.; LIU, H.; SUN, Z.",
+    "title": "Life cycle carbon footprint analysis of deep load regulation in coal-fired power plants based on machine learning: A case study of a 1000 MW unit in Hunan province",
+    "year": "2025",
+    "doi": "10.1016/j.csite.2025.105861",
+    "official_url": "https://www.sciencedirect.com/science/article/pii/S2214157X25001212",
+    "canonical_reference": "LIU, X.; YU, H.; LIU, H.; SUN, Z. Life cycle carbon footprint analysis of deep load regulation in coal-fired power plants based on machine learning: a case study of a 1000 MW unit in Hunan province. Case Studies in Thermal Engineering, [s. l.], v. 68, art. 105861, 2025a. DOI: https://doi.org/10.1016/j.csite.2025.105861. Acesso em: 29 out. 2026.",
+    "claim_supported": "Intensidade de carbono de ciclo de vida varia sob regulação profunda de carga.",
+    "limits": "Citação 2025a. Não é a massa direta horária CEMS; percentuais da fonte não foram transferidos para a Iatan.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "fc75916a9290e6eeaa96d85d35733c3504d91fa8aabc45e6d7375f46aa36ec0f"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "life.cycle",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "15.*30",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 20,
+        "text": "A busca bibliográfica ampliada acrescentou evidências diretamente relacionadas às decisões do presente estudo. Zhang et al. (2026) propõem, para a predição dinâmica de CO₂ em uma unidade a carvão, uma seleção em duas etapas que combina importância por XGBoost e correlação de Pearson para reduzir redundância e multicolinearidade antes de um modelo LSTM. Huang et al. (2027), em artigo disponibilizado online em outubro de 2026, avaliam uma unidade de ciclo combinado gás-vapor, com previsão de curto horizonte, histórico reduzido, regimes operacionais e calibração conformal, mostrando que a utilidade do histórico deve ser interpretada em conjunto com a condição operacional. Jin et al. (2026) tratam transferência entre usinas e evidenciam que o desempenho depende da relação entre domínio de origem e domínio-alvo. Liu et al. (2025a) mostram que a regulação profunda de carga pode elevar a intensidade de carbono em uma unidade a carvão, enquanto Lu, Tang e Duan (2024) destacam que a operação dinâmica pode afetar a medição da vazão de gases associada ao CEMS. Esses trabalhos não são diretamente comparáveis à Iatan quanto a alvo, instalação e protocolo, mas ajudam a interpretar redundância de atributos, valor do histórico, diferenças entre regimes, transferência e limitações metrológicas."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 81,
+        "text": "Nas rampas, as métricas e a frequência de melhorias favoreceram B. Esse comportamento é compatível com a evidência de que variações de despacho podem deslocar unidades térmicas para condições de menor eficiência e alterar a intensidade de CO₂ (Suri; de Chalendar; Azevedo, 2025). Em uma unidade a carvão de 1.000 MW, Liu et al. (2025a) também identificaram aumento da intensidade de carbono sob regimes de regulação profunda de carga, embora em um desenho de ciclo de vida e em uma instalação distintos da Iatan. Ao mesmo tempo, Fayaz et al. (2026), em preprint sobre plantas de cimento, restringiram a comparação com histórico de um minuto a uma planta e observaram ali maior benefício para NOx do que para CO e CO₂. A comparação entre setores e instalações não permite transferir resultados diretamente, mas reforça que a memória do processo e o efeito dos regimes não devem ser tratados como universais. No presente estudo, a associação observada nas rampas permanece descritiva: o desenho não identifica o mecanismo responsável, e os limiares de 130 e 56 MW por intervalo horário definiram grupos diferentes entre etapas."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 6,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "lu2024softmeasurement",
+    "authors": "LU, J.; TANG, H.; DUAN, L.",
+    "title": "Leveraging long short-term memory networks and transfer learning for the soft-measurement of flue gas flowrate from coal-fired boilers",
+    "year": "2024",
+    "doi": "10.1002/apj.3136",
+    "official_url": "https://onlinelibrary.wiley.com/doi/10.1002/apj.3136",
+    "canonical_reference": "LU, J.; TANG, H.; DUAN, L. Leveraging long short-term memory networks and transfer learning for the soft-measurement of flue gas flowrate from coal-fired boilers. Asia-Pacific Journal of Chemical Engineering, [s. l.], v. 19, n. 6, e3136, 2024. DOI: https://doi.org/10.1002/apj.3136. Acesso em: 29 out. 2026.",
+    "claim_supported": "Dinâmica de vazão de gases pode afetar a quantificação CEMS; proposta LSTM-AM/transferência.",
+    "limits": "Outra unidade, outro instrumento/alvo; não demonstra erro de medição na Iatan.",
+    "source_files": [
+      {
+        "kind": "Páginas do PDF da biblioteca",
+        "sha256": "006433432088211d4ca105312b6eb54726f80d1d419e6ff55932cec052cdcca0"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "fluctuations in flue gas flowrate",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      },
+      {
+        "pattern": "accuracy",
+        "pdf_page": 1,
+        "location": "Páginas do PDF da biblioteca"
+      }
+    ],
+    "article_occurrences": [
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 20,
+        "text": "A busca bibliográfica ampliada acrescentou evidências diretamente relacionadas às decisões do presente estudo. Zhang et al. (2026) propõem, para a predição dinâmica de CO₂ em uma unidade a carvão, uma seleção em duas etapas que combina importância por XGBoost e correlação de Pearson para reduzir redundância e multicolinearidade antes de um modelo LSTM. Huang et al. (2027), em artigo disponibilizado online em outubro de 2026, avaliam uma unidade de ciclo combinado gás-vapor, com previsão de curto horizonte, histórico reduzido, regimes operacionais e calibração conformal, mostrando que a utilidade do histórico deve ser interpretada em conjunto com a condição operacional. Jin et al. (2026) tratam transferência entre usinas e evidenciam que o desempenho depende da relação entre domínio de origem e domínio-alvo. Liu et al. (2025a) mostram que a regulação profunda de carga pode elevar a intensidade de carbono em uma unidade a carvão, enquanto Lu, Tang e Duan (2024) destacam que a operação dinâmica pode afetar a medição da vazão de gases associada ao CEMS. Esses trabalhos não são diretamente comparáveis à Iatan quanto a alvo, instalação e protocolo, mas ajudam a interpretar redundância de atributos, valor do histórico, diferenças entre regimes, transferência e limitações metrológicas."
+      },
+      {
+        "document": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+        "paragraph_index": 85,
+        "text": "O alcance dos resultados é limitado pela seleção retrospectiva de uma unidade, pelo teste de dois meses e pelas amostras reduzidas de validação e partida. Foi utilizada uma semente por configuração, sem estimação da incerteza considerando dependência temporal. Além disso, a reutilização do teste durante o desenvolvimento permite influência indireta sobre decisões posteriores. Couture et al. (2024) adotam validação por plantas não vistas, e Jin et al. (2026) mostram que a transferência entre usinas depende da relação entre domínio de origem, domínio-alvo e estratégia de adaptação; nenhum desses problemas foi testado de forma equivalente aqui. Potts et al. (2026), em preprint, propõem diagnósticos explícitos para condições fora da distribuição, e a coerência com restrições físicas e operacionais é um requisito de implantação destacado por Ashraf, Dua e Debnath (2026). Por fim, a continuidade documental do monitoramento não comprova homogeneidade instrumental ou estabilidade de calibração. Lu, Tang e Duan (2024) mostram, em outra usina a carvão, que a operação dinâmica pode afetar a vazão de gases usada em medições associadas ao CEMS; essa evidência justifica cautela metrológica, mas não demonstra erro nos dados da Iatan. As diferenças anuais observadas neste estudo, portanto, não podem ser atribuídas exclusivamente à operação."
+      }
+    ],
+    "notebook_locations": [
+      {
+        "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+        "cell_index": 18,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "artigo e/ou notebooks principais",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "jacobs1991",
+    "authors": "JACOBS, R. A.; JORDAN, M. I.; NOWLAN, S. J.; HINTON, G. E.",
+    "title": "Adaptive Mixtures of Local Experts",
+    "year": "1991",
+    "doi": "10.1162/neco.1991.3.1.79",
+    "official_url": "https://www.cs.toronto.edu/~hinton/absps/jjnh91.pdf",
+    "canonical_reference": "JACOBS, R. A.; JORDAN, M. I.; NOWLAN, S. J.; HINTON, G. E. Adaptive Mixtures of Local Experts. Neural Computation, v. 3, n. 1, p. 79-87, 1991. DOI: https://doi.org/10.1162/neco.1991.3.1.79. Disponível em: https://www.cs.toronto.edu/~hinton/absps/jjnh91.pdf. Acesso em: 29 out. 2026.",
+    "claim_supported": "Especialistas e uma rede que aprende a alocação de casos.",
+    "limits": "Apenas analogia no notebook histórico; seleção Iatan é determinística, não reprodução de MoE treinado.",
+    "source_files": [
+      {
+        "kind": "Original/manuscrito identificado",
+        "sha256": "4af682881464b93b8fe0371c9f3f451b080a4976156e982b39e1d28cac4be621"
+      }
+    ],
+    "evidence": [
+      {
+        "pdf_page": 1,
+        "location": "Neural Computation 3, p. 79, resumo e seção 1, conferidos visualmente na imagem jacobs_p1.png"
+      }
+    ],
+    "article_occurrences": [],
+    "notebook_locations": [
+      {
+        "notebook": "03A.06_modelo_hibrido_regime_operacional.ipynb",
+        "cell_index": 0,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "notebook complementar/histórico",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "kunsch1989",
+    "authors": "KÜNSCH, H. R.",
+    "title": "The Jackknife and the Bootstrap for General Stationary Observations",
+    "year": "1989",
+    "doi": "10.1214/aos/1176347265",
+    "official_url": "https://doi.org/10.1214/aos/1176347265",
+    "canonical_reference": "KÜNSCH, H. R. The Jackknife and the Bootstrap for General Stationary Observations. The Annals of Statistics, v. 17, n. 3, p. 1217-1241, 1989. DOI: https://doi.org/10.1214/aos/1176347265. Acesso em: 29 out. 2026.",
+    "claim_supported": "Reamostragem de blocos para sequências dependentes sob condições de estacionariedade/regularidade.",
+    "limits": "Resumo primário depositado pelo editor e metadados conferidos. Adaptação semanal do 03A.06 não garante cobertura nominal.",
+    "source_files": [
+      {
+        "kind": "Resumo/metadados depositados pelo editor",
+        "sha256": "4d33f45e4d537a943061589f660e9c476070ba8c567a6861a70e45ef7569b77c"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "stationary sequence",
+        "pdf_page": null,
+        "location": "Resumo/metadados depositados pelo editor"
+      },
+      {
+        "pattern": "blocks of length",
+        "pdf_page": null,
+        "location": "Resumo/metadados depositados pelo editor"
+      }
+    ],
+    "article_occurrences": [],
+    "notebook_locations": [
+      {
+        "notebook": "03A.06_modelo_hibrido_regime_operacional.ipynb",
+        "cell_index": 0,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "notebook complementar/histórico",
+    "disposition": "conferida; formulação revisada quando necessário"
+  },
+  {
+    "key": "sklearn161",
+    "authors": "SCIKIT-LEARN",
+    "title": "User Guide, version 1.6.1",
+    "year": "2025",
+    "doi": "",
+    "official_url": "https://scikit-learn.org/1.6/modules/model_evaluation.html#regression-metrics",
+    "canonical_reference": "SCIKIT-LEARN. User Guide. Version 1.6.1. [S. l.]: The scikit-learn developers, [2025]. Seção Regression metrics. Disponível em: https://scikit-learn.org/1.6/modules/model_evaluation.html#regression-metrics. Acesso em: 29 out. 2026.",
+    "claim_supported": "Definições de métricas na documentação correspondente ao scikit-learn 1.6.1 da ablação recebida.",
+    "limits": "Versão distinta da documentação 1.8 citada nos notebooks anteriores.",
+    "source_files": [
+      {
+        "kind": "Métricas 1.6",
+        "sha256": "705912206a93dcaf784e9e40feecee066a205ab5afe2b8c60c366c7143cf36c8"
+      }
+    ],
+    "evidence": [
+      {
+        "pattern": "r2_score",
+        "pdf_page": null,
+        "location": "Métricas 1.6"
+      },
+      {
+        "pattern": "mean_absolute_error",
+        "pdf_page": null,
+        "location": "Métricas 1.6"
+      }
+    ],
+    "article_occurrences": [],
+    "notebook_locations": [
+      {
+        "notebook": "03A_05A_ablacao_controlada_features_Colab.ipynb",
+        "cell_index": 7,
+        "cell_type": "markdown"
+      }
+    ],
+    "scope": "notebook complementar/histórico",
+    "disposition": "conferida; formulação revisada quando necessário"
+  }
+]

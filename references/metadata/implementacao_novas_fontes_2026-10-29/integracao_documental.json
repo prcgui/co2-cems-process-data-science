@@ -1,0 +1,93 @@
+{
+  "alteracoes": [
+    {
+      "antes": "Após a ampliação bibliográfica, foi incorporada ao Notebook 03A.05 uma auditoria diagnóstica adicional das sete variáveis de B, motivada por Zhang et al. (2026). Na fonte, atributos de uma unidade de 1.000 MW, amostrados a cada minuto em condição estável, são filtrados antes de um LSTM; o presente estudo utiliza XGBoost e não reproduz esse protocolo. O limiar descritivo de |r| ≥ 0,90 e as variantes da ablação complementar do Notebook 03A.05A são escolhas próprias. A rotina calcula a matriz de correlação de Pearson e verifica explicitamente as identidades delta_load_1h = load_current_mw - load_lag_1h e abs_delta_load_1h = |delta_load_1h|. Esse controle não integra a seleção de atributos, não remove variáveis e não reabre o ajuste dos modelos, pois o período de teste já havia sido consultado em etapas anteriores. Seu objetivo é registrar redundâncias estruturais da representação para comparações complementares documentadas separadamente, sem alterar as métricas reportadas neste artigo.",
+      "depois": "Após a ampliação bibliográfica, incorporou-se ao Notebook 03A.05 uma auditoria das sete variáveis de B, motivada por Zhang et al. (2026). A fonte filtra atributos de uma unidade de 1.000 MW, amostrados a cada minuto em condição estável, antes de um LSTM; o presente estudo utiliza XGBoost e não reproduz esse protocolo. O limiar descritivo de |r| ≥ 0,90 é escolha própria. A rotina calcula correlações de Pearson no treinamento e verifica as identidades delta_load_1h = load_current_mw − load_lag_1h e abs_delta_load_1h = |delta_load_1h|. Na ablação separada do Notebook 03A.05A, retiraram-se a média de três horas, o delta e, conjuntamente, o delta e seu módulo, mantendo parâmetros, semente, 721 árvores, 88.686 observações de reajuste e 1.144 de teste. A previsão do B completo foi reproduzida exatamente antes da comparação. As variantes são diagnósticos retrospectivos, sem nova seleção pelo teste; seus resultados são apresentados no Apêndice D. Como discutido por Grinsztajn, Oyallon e Varoquaux (2022), a representação é relevante para modelos tabulares; correlação isolada não determina quais atributos devem ser excluídos."
+    },
+    {
+      "antes": "A comparação entre MLP e XGBoost verificou o alinhamento dos horários e da resposta, sem timestamps duplicados. Seu alcance permanece restrito às configurações e aos procedimentos de seleção de cada família.",
+      "depois": "A comparação entre MLP e XGBoost verificou o alinhamento dos horários e da resposta, sem timestamps duplicados. Seu alcance permanece restrito às configurações e aos procedimentos de seleção de cada família. A auditoria de orçamento contabilizou três ajustes finais de MLP, um por cenário, e 18 de XGBoost de referência, correspondentes a cinco validações por cenário e um ajuste final por cenário. Na MLP, selecionaram-se 24, 38 e 57 épocas para A, B e C, respectivamente. A busca posterior avaliou 30 configurações × cinco partições × dois cenários, totalizando 300 ajustes de seleção e dois reajustes finais. Esses números descrevem o procedimento, mas não equivalem a tempos ou custos computacionais; os experimentos originais não registraram duração comparável por ajuste. Não houve orçamento comum entre MLP e XGBoost."
+    },
+    {
+      "antes": "A análise foi descritiva, com uma semente por configuração e sem intervalos de confiança ou testes que considerassem a dependência temporal. Embora novembro e dezembro tenham permanecido fora do ajuste de cada modelo, sua consulta em diferentes etapas impede tratar o teste como avaliação inteiramente independente da seleção realizada na pesquisa.",
+      "depois": "Os resultados principais são descritivos e utilizam uma semente por configuração. O complemento 03A.05B compara perdas pareadas, seguindo a formulação de Diebold e Mariano (1994), sem executar um teste DM/HAC. Para examinar a sensibilidade à dependência temporal, reamostram-se blocos não sobrepostos de 1, 3 e 7 dias de calendário, ancorados em 1º de novembro de 2025, com 10.000 réplicas e semente 42. A adaptação utiliza o princípio de blocos para observações dependentes (Künsch, 1989), sem assumir suas garantias automaticamente. Preservam-se as horas sem observações elegíveis e o último bloco parcial; cada réplica usa a razão entre somas das diferenças de perda e contagens ON. Os percentis 2,5 e 97,5 são limites exploratórios, condicionais aos modelos salvos, sem cobertura nominal demonstrada. Não são intervalos de previsão nem incorporam a variabilidade do treinamento. A consulta ao teste em diferentes etapas impede tratá-lo como avaliação inteiramente independente da seleção. O protocolo e a sensibilidade estão no Apêndice D."
+    },
+    {
+      "antes": "Os resultados mostram comportamentos distintos para a abrangência histórica e a representação da trajetória. O histórico ampliado apresentou menor erro em comparação aos dados recentes. Já na comparação entre representações com histórico e amostra comuns, o acréscimo da trajetória não reduziu o erro global. O melhor desempenho global do modelo com carga atual se refere ao conjunto observado e não demonstra que essa variável determine integralmente a emissão. B acrescenta informação, mas também relações algébricas e atributos correlacionados. O desenho compara as configurações resultantes sem separar completamente o valor dos atributos da complexidade selecionada para o modelo.",
+      "depois": "Os resultados mostram comportamentos distintos para a abrangência histórica e a representação da trajetória. O histórico ampliado apresentou menor erro em comparação aos dados recentes. Já na comparação entre representações com histórico e amostra comuns, o acréscimo da trajetória não reduziu o erro global. O melhor desempenho global do modelo com carga atual se refere ao conjunto observado e não demonstra que essa variável determine integralmente a emissão. B acrescenta informação, mas também relações algébricas e atributos correlacionados. O desenho compara as configurações resultantes sem separar completamente o valor dos atributos da complexidade selecionada para o modelo. A ablação de complexidade fixada acrescenta um controle parcial: retirar a média de três horas reduz o MAE global de B em 2,28%, mas aumenta seu erro nas rampas. Retirar delta e módulo reduz o MAE nas rampas em 6,96% frente ao B completo, porém os limites exploratórios dessa redução incluem zero com blocos de três e sete dias. Nenhuma variante supera o MAE global de A. Assim, as redundâncias sugerem alternativas para avaliação futura, sem justificar seleção retrospectiva de uma nova representação final."
+    },
+    {
+      "antes": "A comparação com a literatura também depende do desenho de cada estudo. Gu, Sward e Zhang (2023) e Wang et al. (2025) encontraram bom desempenho do XGBoost em problemas de emissões, mas utilizaram conjuntos de atributos, frequências e esquemas de validação distintos. Potts, Hackney e Leontidis (2023) chegaram a resultado semelhante para dados tabulares de turbina a gás, enquanto X. Liu et al. (2025b) obtiveram maior R² com ElasticNet e menor MAE com regressão linear em dados diários de uma usina a carvão. Assim, a convergência sobre uma família de modelo não é esperada a priori, e os valores de MAE ou R² não devem ser comparados fora de seus respectivos alvos, escalas e protocolos.",
+      "depois": "A comparação com a literatura também depende do desenho de cada estudo. Gu, Sward e Zhang (2023) e Wang et al. (2025) encontraram bom desempenho do XGBoost em problemas de emissões, mas utilizaram conjuntos de atributos, frequências e esquemas de validação distintos. Potts, Hackney e Leontidis (2023) chegaram a resultado semelhante para dados tabulares de turbina a gás, enquanto X. Liu et al. (2025b) obtiveram maior R² com ElasticNet e menor MAE com regressão linear em dados diários de uma usina a carvão. Assim, a convergência sobre uma família de modelo não é esperada a priori, e os valores de MAE ou R² não devem ser comparados fora de seus respectivos alvos, escalas e protocolos. O benchmark de Grinsztajn, Oyallon e Varoquaux (2022) reforça a necessidade de considerar atributos e orçamento ao interpretar redes e árvores. A aplicação de Si et al. (2019), por sua vez, mostra a viabilidade de redes em PEMS de NOx, sem transferir seu particionamento aleatório para este problema temporal. O desempenho inferior da MLP executada aqui permanece restrito à arquitetura e ao procedimento utilizados."
+    },
+    {
+      "antes": "O alcance dos resultados é limitado pela seleção retrospectiva de uma unidade, pelo teste de dois meses e pelas amostras reduzidas de validação e partida. Foi utilizada uma semente por configuração, sem estimação da incerteza considerando dependência temporal. Além disso, a reutilização do teste durante o desenvolvimento permite influência indireta sobre decisões posteriores. Couture et al. (2024) adotam validação por plantas não vistas, e Jin et al. (2026) mostram que a transferência entre usinas depende da relação entre domínio de origem, domínio-alvo e estratégia de adaptação; nenhum desses problemas foi testado de forma equivalente aqui. Potts et al. (2026), em preprint, propõem diagnósticos explícitos para condições fora da distribuição, e a coerência com restrições físicas e operacionais é um requisito de implantação destacado por Ashraf, Dua e Debnath (2026). Por fim, a continuidade documental do monitoramento não comprova homogeneidade instrumental ou estabilidade de calibração. Lu, Tang e Duan (2024) mostram, em outra usina a carvão, que a operação dinâmica pode afetar a vazão de gases usada em medições associadas ao CEMS; essa evidência justifica cautela metrológica, mas não demonstra erro nos dados da Iatan. As diferenças anuais observadas neste estudo, portanto, não podem ser atribuídas exclusivamente à operação.",
+      "depois": "O alcance dos resultados é limitado pela seleção retrospectiva de uma unidade, pelo teste de dois meses e pelas amostras reduzidas de validação e partida. Foi utilizada uma semente por configuração. A reamostragem complementar em calendário examina apenas a sensibilidade temporal das perdas dos modelos salvos; não estima a incerteza de treinamento ou seleção. Há somente 61 dias no teste, com 30 horas de partida concentradas em poucos blocos, o que limita especialmente a interpretação desse contexto. Além disso, a reutilização do teste durante o desenvolvimento permite influência indireta sobre decisões posteriores. Couture et al. (2024) adotam validação por plantas não vistas, e Jin et al. (2026) mostram que a transferência entre usinas depende da relação entre domínio de origem, domínio-alvo e estratégia de adaptação; nenhum desses problemas foi testado de forma equivalente aqui. Potts et al. (2026), em preprint, propõem diagnósticos explícitos para condições fora da distribuição, e a coerência com restrições físicas e operacionais é um requisito de implantação destacado por Ashraf, Dua e Debnath (2026). Por fim, a continuidade documental do monitoramento não comprova homogeneidade instrumental ou estabilidade de calibração. Lu, Tang e Duan (2024) mostram, em outra usina a carvão, que a operação dinâmica pode afetar a vazão de gases usada em medições associadas ao CEMS; essa evidência justifica cautela metrológica, mas não demonstra erro nos dados da Iatan. As diferenças anuais observadas neste estudo, portanto, não podem ser atribuídas exclusivamente à operação."
+    },
+    {
+      "antes": "Os arquivos anuais preservados e os dados volumosos de reprodução integram um pacote complementar no Drive, com acesso restrito aos colaboradores autorizados. Uma nova consulta à EPA permite obter dados públicos, mas não garante arquivos idênticos aos preservados. A reprodução computacional verificada abrange as duas etapas finais; as anteriores permanecem documentadas por códigos e resultados salvos. Para auditoria bibliográfica, o repositório mantém um registro das fontes com DOI ou URL oficial. A busca ampliada de 29 de outubro de 2026 acrescentou cinco fontes diretamente incorporadas à fundamentação e aos controles metodológicos; as cópias fornecidas permanecem organizadas na biblioteca privada do projeto quando a licença de redistribuição pública não está confirmada.",
+      "depois": "Os arquivos anuais preservados e os dados volumosos de reprodução integram um pacote complementar no Drive, com acesso restrito aos colaboradores autorizados. Uma nova consulta à EPA permite obter dados públicos, mas não garante arquivos idênticos aos preservados. Além da reprodução local das duas etapas finais em 24 de outubro, foram inspecionadas as novas execuções completas dos oito notebooks principais recebidas em 29 de outubro de 2026, com resultados salvos e sem erros de execução registrados. A ablação foi executada separadamente no Colab e o complemento de reamostragem foi executado sem retreinamento, a partir das previsões preservadas. Essa inspeção não equivale a uma reprodução local independente de todos os ajustes. O registro bibliográfico reúne DOI ou URL oficial e a aplicação de cada fonte; as cópias de artigos permanecem na biblioteca privada quando a licença de redistribuição pública não está confirmada. As novas versões locais e os complementos descritos no Apêndice D ainda não estão representados pelos links públicos históricos do Apêndice B."
+    }
+  ],
+  "notebooks": [
+    {
+      "notebook": "03A_modelagem_preditiva_co2.ipynb",
+      "celulas_codigo_identicas": true,
+      "saidas_identicas": true,
+      "referencias_adicionadas": [
+        "grinsztajn2022",
+        "si2019"
+      ]
+    },
+    {
+      "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+      "celulas_codigo_identicas": true,
+      "saidas_identicas": true,
+      "referencias_adicionadas": [
+        "si2019"
+      ]
+    },
+    {
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "celulas_codigo_identicas": true,
+      "saidas_identicas": true,
+      "referencias_adicionadas": [
+        "grinsztajn2022"
+      ]
+    },
+    {
+      "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+      "celulas_codigo_identicas": true,
+      "saidas_identicas": true,
+      "referencias_adicionadas": [
+        "grinsztajn2022"
+      ]
+    },
+    {
+      "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "celulas_codigo_identicas": true,
+      "saidas_identicas": true,
+      "referencias_adicionadas": [
+        "diebold_mariano1994",
+        "kunsch1989"
+      ]
+    },
+    {
+      "notebook": "03A_05A_ablacao_controlada_features_Colab.ipynb",
+      "celulas_codigo_identicas": true,
+      "saidas_identicas": true,
+      "referencias_adicionadas": [
+        "grinsztajn2022",
+        "diebold_mariano1994",
+        "kunsch1989"
+      ]
+    }
+  ],
+  "referencias_artigo": 40,
+  "fontes_catalogo": 42,
+  "tabelas_anteriores_preservadas": true,
+  "equacoes_preservadas": true,
+  "novas_tabelas": 3,
+  "execucao_03A05B": "C:\\Users\\prcgu\\OneDrive\\Área de Trabalho\\MOD MAT IA\\co2-cems-thermal-modeling\\co2-cems-thermal-modeling\\outputs\\03A05B_incerteza_pareada\\20261030T012750_082008Z",
+  "treinamento_03A05C": "não executado"
+}

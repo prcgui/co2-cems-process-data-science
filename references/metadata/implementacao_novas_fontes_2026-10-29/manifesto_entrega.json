@@ -1,0 +1,39 @@
+{
+  "data_local_protocolo": "2026-10-29",
+  "artigo": "Artigo_CO2_Modelagem_Matematica_IA.docx",
+  "execucao_B": "outputs\\03A05B_incerteza_pareada\\20261030T014827_916461Z",
+  "status_B": "executado e verificado; sem treinamento",
+  "notebook_C": "notebooks/03A_05C_MLP_XGBoost_sementes_protocolo_comum_Colab.ipynb",
+  "status_C": "preparado; pré-voo em dados reais e teste de APIs em dados artificiais; treinamento completo não executado",
+  "resultados_B": {
+    "outputs\\03A05B_incerteza_pareada\\20261030T014827_916461Z\\autocorrelacao_calendario.csv": "7dfb9608d745d381a0e04a6c93be2a81508103a2595cfa24062e977433c1ff98",
+    "outputs\\03A05B_incerteza_pareada\\20261030T014827_916461Z\\contagens_blocos.csv": "eceaca6dc9ef46c5b9db369f4311709c1009f411d90a2207483b1e2f557243bb",
+    "outputs\\03A05B_incerteza_pareada\\20261030T014827_916461Z\\metricas_contextos.csv": "362632f83f6a48ad41489179bc41b77cd035a8f2ec705548e25180d00e2ce18b",
+    "outputs\\03A05B_incerteza_pareada\\20261030T014827_916461Z\\protocolo.json": "0212363057ba45553baee7bc246319450e0a24cd477dff53a9d8280d7026c2c5",
+    "outputs\\03A05B_incerteza_pareada\\20261030T014827_916461Z\\sensibilidade_blocos_calendario.csv": "97891bf5e68ea66f7bb48ec869632d7e5ef0b3ef5a8b8385688b3bee3b2cf6ae",
+    "outputs\\03A05B_incerteza_pareada\\20261030T014827_916461Z\\sorteios_blocos.npz": "ee0d431667d2d783be4d84ae8939299d8c0e22e6c66094b306413cb99c8eb30f"
+  },
+  "entregas": {
+    "Artigo_CO2_Modelagem_Matematica_IA.docx": "769229e4d693ff6df8ca111b4e8bfe8bb367d9f31721f8d914c52b2b873ef526",
+    "references\\metadata\\source_registry.csv": "7e13854f6718ae90d0125678e4fbcb6e1ebaccbf81850bc6b9713b2f39f23722",
+    "outputs\\tables\\auditoria_orcamento_original.csv": "c6114c1ab0f7b7a3a2a0ec54fd14d6b9353c2c3c2280d713e1d3fc9c46a72517",
+    "outputs\\03A05BC_insumos.zip": "032b9dc69e6fa4c38bd83e9975059e240ec3a64c9e3c3527b3449725027130ab",
+    "LEIA_PRIMEIRO_complementos_03A05.txt": "489b6b19bb7c11aa1ee06ad2aa49e83c0161216fc34723bbdae8a27bceb9fd45",
+    "notebooks\\03A.01_modelagem_preditiva_co2.ipynb": "40dd48bda4c67181e21ae3ccc009066ddddab5a8438ac200bd4e20df6cedff9a",
+    "notebooks\\03A.02_comparacao_modelos_gradient_boosting.ipynb": "c1f2d2717209a2401aaa4e96c09701c6a9614b3fa524386cca1ef7faceb9987d",
+    "notebooks\\03A.03_otimizacao_pareada_xgboost.ipynb": "13f0b8a8612de8d76f54cf6e2fb6776750e89accddadef4fa81f3feac1eb7432",
+    "notebooks\\03A.05_trajetoria_operacional_historico_ampliado.ipynb": "2670e056e3b334cec04466f55cc1c47d08fa8d74fb46eb39f0ea902005ed8d17",
+    "notebooks\\03A_05A_ablacao_controlada_features_Colab.ipynb": "620ee6f374569d29633b2b732af45cbb62224ef073e1e3d0246a5153fb65b922",
+    "notebooks\\03A_modelagem_preditiva_co2.ipynb": "02998988e1904f10ec3e6115da52fac9d61ec372ecd9269f535c03a8c83b2c43",
+    "notebooks\\03A_05B_incerteza_pareada_calendario.ipynb": "ee6e4805de1d9af4536fdda2511330955a7882490be42e1db1bed6ff8cdca50b",
+    "notebooks\\03A_05C_MLP_XGBoost_sementes_protocolo_comum_Colab.ipynb": "2ea494bce41cd416abdfc833a5b89a32c09b807bd687f6a177ea737e2f8253a3",
+    "references\\metadata\\implementacao_novas_fontes_2026-10-29\\Aplicacao_novas_fontes.json": "f855c1db3804b851160136a8e4231f4571d5538937c281516bee25d0f562707a",
+    "references\\metadata\\implementacao_novas_fontes_2026-10-29\\verificacao_complementos.json": "a16eec76e516ce2c39ee9317b97bc45607044845abaf1961618a9927585caabc",
+    "references\\metadata\\implementacao_novas_fontes_2026-10-29\\verificacao_documental.json": "15b0e170c8248f20f1da8d1e743ac1ece2c59beae89031806ff6b02fd64bba73",
+    "references\\metadata\\implementacao_novas_fontes_2026-10-29\\integracao_documental.json": "a54ccc60b985ca9e1e3fed1e25e6bf921ac337e46aefdf18c0fdb64aa9516a41",
+    "references\\metadata\\implementacao_novas_fontes_2026-10-29\\hashes_insumos.json": "501926675f06a145bb607215792ff8958d0c3d99537d2c80b2863b2b17209051"
+  },
+  "backup": "references\\private_library\\Antes_dos_complementos_03A05BC_2026-10-29.zip",
+  "publicacao_externa": false,
+  "correcao_carregamento": "references/metadata/implementacao_novas_fontes_2026-10-29/correcao_carregamento.json"
+}

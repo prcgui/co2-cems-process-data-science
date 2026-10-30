@@ -1,0 +1,35 @@
+{
+  "problema": "5B exigia ZIP não produzido automaticamente pelo 5A",
+  "solucao": "ler o Parquet da pasta original do 5A; conferir hashes; ZIP somente como alternativa",
+  "nao_reexecutar_5A": true,
+  "resultados_sensibilidade_identicos": true,
+  "testes_carregamento": [
+    {
+      "caso": "saida_original_5A_sem_ZIP_sem_upload",
+      "aprovado": true
+    },
+    {
+      "caso": "zip_5A_direto",
+      "aprovado": true
+    },
+    {
+      "caso": "pacote_completo",
+      "aprovado": true
+    },
+    {
+      "caso": "insumos_completos_sem_upload",
+      "aprovado": true
+    },
+    {
+      "caso": "C_diretorio_existente_sem_arquivos",
+      "aprovado": true
+    }
+  ],
+  "execucao_local_B": "outputs\\03A05B_incerteza_pareada\\20261030T014827_916461Z",
+  "treinamento_C": "não executado",
+  "notebook_hashes": {
+    "03A_05B_incerteza_pareada_calendario.ipynb": "ee6e4805de1d9af4536fdda2511330955a7882490be42e1db1bed6ff8cdca50b",
+    "03A_05C_MLP_XGBoost_sementes_protocolo_comum_Colab.ipynb": "2ea494bce41cd416abdfc833a5b89a32c09b807bd687f6a177ea737e2f8253a3"
+  },
+  "backup": "references\\private_library\\Antes_correcao_carregamento_03A05BC_20261030T014827_916461Z.zip"
+}

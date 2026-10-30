@@ -1,0 +1,327 @@
+{
+  "article_reference_keys": [
+    "ashraf2026",
+    "bergstra2012",
+    "cawley2010",
+    "cerqueira2020",
+    "chen2016",
+    "costa2026",
+    "couture2024",
+    "fayaz2026",
+    "friedman2001",
+    "gama2014",
+    "glorot2011",
+    "gu2023",
+    "guevara2024",
+    "nist2012",
+    "huang2027reducedhistory",
+    "hyndman2006",
+    "jin2026transfer",
+    "jolliffe2016",
+    "kaya2019",
+    "kingma2015",
+    "liu2025deepload",
+    "liu_x2025",
+    "lu2024softmeasurement",
+    "potts2026",
+    "potts2023",
+    "rumelhart1986",
+    "saito2023",
+    "sklearn2025",
+    "shmueli2010",
+    "suri2025",
+    "epa_guide2022",
+    "epa_ecmps2024",
+    "epa_data2026",
+    "wang2025",
+    "zhang2026ccssta",
+    "zuo2024"
+  ],
+  "article_paragraph_changes": [
+    {
+      "original_paragraph": 15,
+      "before": "Entre os trabalhos mais próximos deste estudo, Gu, Sward e Zhang (2023) utilizaram somente informações públicas para modelar emissões de unidades térmicas de Nova York, comparando XGBoost, redes neurais e regressão linear em versões com maior e menor disponibilidade de atributos. Em uma usina a carvão, Wang et al. (2025) compararam regressão linear, XGBoost e LSTM após seleção de atributos e identificaram o XGBoost como o modelo de melhor desempenho em seu conjunto de dados. X. Liu et al. (2025a), por sua vez, obtiveram bom desempenho com modelos lineares regularizados em dados diários de uma unidade de 1.000 MW. As diferenças de frequência, variáveis e protocolo de avaliação impedem comparar diretamente os erros, mas mostram que a escolha da família de modelo depende da estrutura dos dados disponíveis.",
+      "after": "Entre os trabalhos mais próximos deste estudo, Gu, Sward e Zhang (2023) utilizaram somente informações públicas para modelar emissões de unidades térmicas de Nova York, comparando XGBoost, redes neurais e regressão linear em versões com maior e menor disponibilidade de atributos. Em uma usina a carvão, Wang et al. (2025) compararam regressão linear, XGBoost e LSTM após seleção de atributos e identificaram o XGBoost como o modelo de melhor desempenho em seu conjunto de dados. X. Liu et al. (2025b), por sua vez, obtiveram bom desempenho com modelos lineares regularizados em dados diários de uma unidade de 1.000 MW. As diferenças de frequência, variáveis e protocolo de avaliação impedem comparar diretamente os erros, mas mostram que a escolha da família de modelo depende da estrutura dos dados disponíveis.",
+      "reason": "Desambiguação dos dois trabalhos de Liu e correção do registro NIST/DataCite."
+    },
+    {
+      "original_paragraph": 20,
+      "before": "A busca bibliográfica ampliada acrescentou evidências diretamente relacionadas às decisões do presente estudo. Zhang et al. (2026) propõem, para a predição dinâmica de CO₂ em uma unidade a carvão, uma seleção em duas etapas que combina importância por XGBoost e correlação de Pearson para reduzir redundância e multicolinearidade antes de um modelo LSTM. Huang et al. (2027) avaliam previsão de curto horizonte sob disponibilidade reduzida de histórico, mudanças de regime e calibração conformal, mostrando que a utilidade do histórico deve ser interpretada em conjunto com a condição operacional. Jin et al. (2026) tratam transferência entre usinas e evidenciam que o desempenho depende da relação entre domínio de origem e domínio-alvo. Liu et al. (2025b) mostram que a regulação profunda de carga pode elevar a intensidade de carbono em uma unidade a carvão, enquanto Lu, Tang e Duan (2024) destacam que a operação dinâmica pode afetar a medição da vazão de gases associada ao CEMS. Esses trabalhos não são diretamente comparáveis à Iatan quanto a alvo, instalação e protocolo, mas ajudam a interpretar redundância de atributos, valor do histórico, diferenças entre regimes, transferência e limitações metrológicas.",
+      "after": "A busca bibliográfica ampliada acrescentou evidências diretamente relacionadas às decisões do presente estudo. Zhang et al. (2026) propõem, para a predição dinâmica de CO₂ em uma unidade a carvão, uma seleção em duas etapas que combina importância por XGBoost e correlação de Pearson para reduzir redundância e multicolinearidade antes de um modelo LSTM. Huang et al. (2027) avaliam previsão de curto horizonte sob disponibilidade reduzida de histórico, mudanças de regime e calibração conformal, mostrando que a utilidade do histórico deve ser interpretada em conjunto com a condição operacional. Jin et al. (2026) tratam transferência entre usinas e evidenciam que o desempenho depende da relação entre domínio de origem e domínio-alvo. Liu et al. (2025a) mostram que a regulação profunda de carga pode elevar a intensidade de carbono em uma unidade a carvão, enquanto Lu, Tang e Duan (2024) destacam que a operação dinâmica pode afetar a medição da vazão de gases associada ao CEMS. Esses trabalhos não são diretamente comparáveis à Iatan quanto a alvo, instalação e protocolo, mas ajudam a interpretar redundância de atributos, valor do histórico, diferenças entre regimes, transferência e limitações metrológicas.",
+      "reason": "Desambiguação dos dois trabalhos de Liu e correção do registro NIST/DataCite."
+    },
+    {
+      "original_paragraph": 30,
+      "before": "Definiu-se ON por Operating Time > 0 e OFF por Operating Time = 0, preservando horas parcialmente operadas e horas ON com carga zero. Em 2025, os valores ausentes de carga e CO₂ estavam associados às horas OFF e receberam zero apenas em colunas tratadas, com preservação dos originais. Não houve interpolação nem imputação estatística de valores ON. Os valores extremos foram sinalizados pela regra do intervalo interquartil descrita por NIST e SEMATECH (2012). Os registros identificados foram mantidos, pois o sinal estatístico isolado não demonstrava erro de medição e poderia corresponder a condições operacionais relevantes.",
+      "after": "Definiu-se ON por Operating Time > 0 e OFF por Operating Time = 0, preservando horas parcialmente operadas e horas ON com carga zero. Em 2025, os valores ausentes de carga e CO₂ estavam associados às horas OFF e receberam zero apenas em colunas tratadas, com preservação dos originais. Não houve interpolação nem imputação estatística de valores ON. Os valores extremos foram sinalizados pela regra do intervalo interquartil descrita por Guthrie (2020). Os registros identificados foram mantidos, pois o sinal estatístico isolado não demonstrava erro de medição e poderia corresponder a condições operacionais relevantes.",
+      "reason": "Desambiguação dos dois trabalhos de Liu e correção do registro NIST/DataCite."
+    },
+    {
+      "original_paragraph": 81,
+      "before": "Nas rampas, as métricas e a frequência de melhorias favoreceram B. Esse comportamento é compatível com a evidência de que variações de despacho podem deslocar unidades térmicas para condições de menor eficiência e alterar a intensidade de CO₂ (Suri; de Chalendar; Azevedo, 2025). Em uma unidade a carvão de 1.000 MW, Liu et al. (2025b) também identificaram aumento da intensidade de carbono sob regimes de regulação profunda de carga, embora em um desenho de ciclo de vida e em uma instalação distintos da Iatan. Ao mesmo tempo, Fayaz et al. (2026) encontraram, em plantas de cimento, forte efeito do histórico para NOx e efeito apenas marginal para CO e CO₂. A comparação entre setores e instalações não permite transferir resultados diretamente, mas reforça que a memória do processo e o efeito dos regimes não devem ser tratados como universais. No presente estudo, a associação observada nas rampas permanece descritiva: o desenho não identifica o mecanismo responsável, e os limiares de 130 e 56 MW por intervalo horário definiram grupos diferentes entre etapas.",
+      "after": "Nas rampas, as métricas e a frequência de melhorias favoreceram B. Esse comportamento é compatível com a evidência de que variações de despacho podem deslocar unidades térmicas para condições de menor eficiência e alterar a intensidade de CO₂ (Suri; de Chalendar; Azevedo, 2025). Em uma unidade a carvão de 1.000 MW, Liu et al. (2025a) também identificaram aumento da intensidade de carbono sob regimes de regulação profunda de carga, embora em um desenho de ciclo de vida e em uma instalação distintos da Iatan. Ao mesmo tempo, Fayaz et al. (2026) encontraram, em plantas de cimento, forte efeito do histórico para NOx e efeito apenas marginal para CO e CO₂. A comparação entre setores e instalações não permite transferir resultados diretamente, mas reforça que a memória do processo e o efeito dos regimes não devem ser tratados como universais. No presente estudo, a associação observada nas rampas permanece descritiva: o desenho não identifica o mecanismo responsável, e os limiares de 130 e 56 MW por intervalo horário definiram grupos diferentes entre etapas.",
+      "reason": "Desambiguação dos dois trabalhos de Liu e correção do registro NIST/DataCite."
+    },
+    {
+      "original_paragraph": 84,
+      "before": "A comparação com a literatura também depende do desenho de cada estudo. Gu, Sward e Zhang (2023) e Wang et al. (2025) encontraram bom desempenho do XGBoost em problemas de emissões, mas utilizaram conjuntos de atributos, frequências e esquemas de validação distintos. Potts, Hackney e Leontidis (2023) chegaram a resultado semelhante para dados tabulares de turbina a gás, enquanto X. Liu et al. (2025a) favoreceram um modelo linear regularizado em dados diários de uma usina a carvão. Assim, a convergência sobre uma família de modelo não é esperada a priori, e os valores de MAE ou R² não devem ser comparados fora de seus respectivos alvos, escalas e protocolos.",
+      "after": "A comparação com a literatura também depende do desenho de cada estudo. Gu, Sward e Zhang (2023) e Wang et al. (2025) encontraram bom desempenho do XGBoost em problemas de emissões, mas utilizaram conjuntos de atributos, frequências e esquemas de validação distintos. Potts, Hackney e Leontidis (2023) chegaram a resultado semelhante para dados tabulares de turbina a gás, enquanto X. Liu et al. (2025b) favoreceram um modelo linear regularizado em dados diários de uma usina a carvão. Assim, a convergência sobre uma família de modelo não é esperada a priori, e os valores de MAE ou R² não devem ser comparados fora de seus respectivos alvos, escalas e protocolos.",
+      "reason": "Desambiguação dos dois trabalhos de Liu e correção do registro NIST/DataCite."
+    },
+    {
+      "original_paragraph": 134,
+      "before": "Extremos foram sinalizados com IQR = Q3 − Q1, abaixo de Q1 − 1,5 × IQR ou acima de Q3 + 1,5 × IQR (National Institute of Standards and Technology; SEMATECH, 2012). Houve três registros sinalizados de CO₂ e nenhum de carga, todos preservados. A média das três horas anteriores usa shift(1).rolling(3, min_periods=1).mean().",
+      "after": "Extremos foram sinalizados com IQR = Q3 − Q1, abaixo de Q1 − 1,5 × IQR ou acima de Q3 + 1,5 × IQR (Guthrie, 2020). Houve três registros sinalizados de CO₂ e nenhum de carga, todos preservados. A média das três horas anteriores usa shift(1).rolling(3, min_periods=1).mean().",
+      "reason": "Desambiguação dos dois trabalhos de Liu e correção do registro NIST/DataCite."
+    },
+    {
+      "original_paragraph": 15,
+      "before": "Entre os trabalhos mais próximos deste estudo, Gu, Sward e Zhang (2023) utilizaram somente informações públicas para modelar emissões de unidades térmicas de Nova York, comparando XGBoost, redes neurais e regressão linear em versões com maior e menor disponibilidade de atributos. Em uma usina a carvão, Wang et al. (2025) compararam regressão linear, XGBoost e LSTM após seleção de atributos e identificaram o XGBoost como o modelo de melhor desempenho em seu conjunto de dados. X. Liu et al. (2025b), por sua vez, obtiveram bom desempenho com modelos lineares regularizados em dados diários de uma unidade de 1.000 MW. As diferenças de frequência, variáveis e protocolo de avaliação impedem comparar diretamente os erros, mas mostram que a escolha da família de modelo depende da estrutura dos dados disponíveis.",
+      "after": "Entre os trabalhos mais próximos deste estudo, Gu, Sward e Zhang (2023) utilizaram somente informações públicas para modelar emissões de unidades térmicas de Nova York, comparando XGBoost, redes neurais e regressão linear em versões com maior e menor disponibilidade de atributos. Em uma usina a carvão, Wang et al. (2025) compararam regressão linear, XGBoost e LSTM após seleção de atributos e identificaram o XGBoost como o modelo de melhor desempenho em seu conjunto de dados. X. Liu et al. (2025b), por sua vez, compararam modelos lineares e não lineares em 365 registros diários de uma unidade de 1.000 MW: na Tabela 1 do estudo, a regressão linear apresentou o menor MAE, enquanto ElasticNet apresentou o maior R². As diferenças de frequência, variáveis e protocolo de avaliação impedem comparar diretamente os erros, mas mostram que a escolha da família de modelo depende da estrutura dos dados disponíveis.",
+      "reason": "A afirmação sobre o modelo de melhor desempenho deve identificar a métrica efetivamente usada."
+    },
+    {
+      "original_paragraph": 18,
+      "before": "Além do método, a organização da avaliação influencia a leitura dos resultados. Cerqueira, Torgo e Mozetič (2020) mostram que procedimentos de estimação de desempenho devem respeitar as características temporais dos dados. Para transferência entre domínios, Couture et al. (2024) separam plantas entre treino e teste para avaliar unidades não vistas. Em um preprint sobre frotas de turbinas a gás, Potts et al. (2026) combinam diagnósticos de faixa operacional, distância no espaço de atributos e incerteza para reconhecer situações fora da distribuição conhecida. No presente caso, a análise permanece temporal e dentro de uma única unidade; as mudanças de distribuição são tratadas de modo descritivo, distinguindo-as de concept drift (Gama et al., 2014).",
+      "after": "Além do método, a organização da avaliação influencia a leitura dos resultados. Cerqueira, Torgo e Mozetič (2020) mostram que a adequação dos procedimentos de estimação de desempenho depende da dependência temporal e da estacionariedade; em suas séries não estacionárias, avaliações fora da amostra repetidas em diferentes períodos tiveram melhor desempenho. Aqui, essa evidência fundamenta o cuidado com a cronologia, sem reproduzir seu benchmark de previsão autoregressiva. Para transferência entre domínios, Couture et al. (2024) separam plantas entre treino e teste para avaliar unidades não vistas. Em um preprint sobre frotas de turbinas a gás, Potts et al. (2026) combinam diagnósticos de faixa operacional, distância no espaço de atributos e incerteza para reconhecer situações fora da distribuição conhecida. No presente caso, a análise permanece temporal e dentro de uma única unidade; as mudanças de distribuição são tratadas de modo descritivo, distinguindo-as de concept drift (Gama et al., 2014).",
+      "reason": "Delimitação da conclusão de Cerqueira à situação examinada pela fonte."
+    },
+    {
+      "original_paragraph": 19,
+      "before": "Outras fontes ajudam a delimitar o alcance do problema. Guevara et al. (2024) tratam emissões de usinas em escala de inventário global e com perfis temporais, uma finalidade distinta da estimação horária condicionada à operação de uma única unidade. Em outro processo industrial, Fayaz et al. (2026) encontraram forte benefício do histórico para NOx, mas efeito apenas marginal para CO e CO₂, indicando que a utilidade da memória pode depender do poluente e do processo. Ashraf, Dua e Debnath (2026) ressaltam, por sua vez, que a aplicação industrial de modelos precisa permanecer coerente com restrições e conhecimento do domínio.",
+      "after": "Outras fontes ajudam a delimitar o alcance do problema. Guevara et al. (2024) tratam emissões de usinas em escala de inventário global e com perfis temporais, uma finalidade distinta da estimação horária condicionada à operação de uma única unidade. Em outro processo industrial, o preprint de Fayaz et al. (2026) compara plantas de cimento, mas restringe a análise de memória de curto prazo à planta com dados de um minuto, a única com CO₂ disponível. Nessa análise, o histórico beneficiou mais a estimação de NOx do que a de CO e CO₂, indicando dependência do poluente, do processo e da resolução temporal. Ashraf, Dua e Debnath (2026) ressaltam, por sua vez, que a aplicação industrial de modelos precisa permanecer coerente com restrições e conhecimento do domínio.",
+      "reason": "A análise temporal de CO2 de Fayaz não foi realizada nas quatro plantas."
+    },
+    {
+      "original_paragraph": 20,
+      "before": "A busca bibliográfica ampliada acrescentou evidências diretamente relacionadas às decisões do presente estudo. Zhang et al. (2026) propõem, para a predição dinâmica de CO₂ em uma unidade a carvão, uma seleção em duas etapas que combina importância por XGBoost e correlação de Pearson para reduzir redundância e multicolinearidade antes de um modelo LSTM. Huang et al. (2027) avaliam previsão de curto horizonte sob disponibilidade reduzida de histórico, mudanças de regime e calibração conformal, mostrando que a utilidade do histórico deve ser interpretada em conjunto com a condição operacional. Jin et al. (2026) tratam transferência entre usinas e evidenciam que o desempenho depende da relação entre domínio de origem e domínio-alvo. Liu et al. (2025a) mostram que a regulação profunda de carga pode elevar a intensidade de carbono em uma unidade a carvão, enquanto Lu, Tang e Duan (2024) destacam que a operação dinâmica pode afetar a medição da vazão de gases associada ao CEMS. Esses trabalhos não são diretamente comparáveis à Iatan quanto a alvo, instalação e protocolo, mas ajudam a interpretar redundância de atributos, valor do histórico, diferenças entre regimes, transferência e limitações metrológicas.",
+      "after": "A busca bibliográfica ampliada acrescentou evidências diretamente relacionadas às decisões do presente estudo. Zhang et al. (2026) propõem, para a predição dinâmica de CO₂ em uma unidade a carvão, uma seleção em duas etapas que combina importância por XGBoost e correlação de Pearson para reduzir redundância e multicolinearidade antes de um modelo LSTM. Huang et al. (2027), em artigo disponibilizado online em outubro de 2026, avaliam uma unidade de ciclo combinado gás-vapor, com previsão de curto horizonte, histórico reduzido, regimes operacionais e calibração conformal, mostrando que a utilidade do histórico deve ser interpretada em conjunto com a condição operacional. Jin et al. (2026) tratam transferência entre usinas e evidenciam que o desempenho depende da relação entre domínio de origem e domínio-alvo. Liu et al. (2025a) mostram que a regulação profunda de carga pode elevar a intensidade de carbono em uma unidade a carvão, enquanto Lu, Tang e Duan (2024) destacam que a operação dinâmica pode afetar a medição da vazão de gases associada ao CEMS. Esses trabalhos não são diretamente comparáveis à Iatan quanto a alvo, instalação e protocolo, mas ajudam a interpretar redundância de atributos, valor do histórico, diferenças entre regimes, transferência e limitações metrológicas.",
+      "reason": "Distinguir tecnologia da unidade, ano do fascículo e disponibilização online."
+    },
+    {
+      "original_paragraph": 23,
+      "before": "A pesquisa é quantitativa, observacional e retrospectiva, voltada à estimação de emissões. A pergunta foi delimitada a partir da literatura e examinada por comparações empíricas. A interpretação dos padrões e a escolha do histórico tiveram caráter exploratório. O objetivo é avaliar capacidade de estimação, sem atribuir causalidade às variáveis. Essa distinção é relevante na modelagem preditiva (Shmueli, 2010) e também separa este trabalho de desenhos voltados explicitamente à identificação causal, como a aplicação de LiNGAM a dados operacionais de uma usina a carvão realizada por Saito e Fujiwara (2023).",
+      "after": "A pesquisa é quantitativa, observacional e retrospectiva, voltada à estimação de emissões. A pergunta foi delimitada a partir da literatura e examinada por comparações empíricas. A interpretação dos padrões e a escolha do histórico tiveram caráter exploratório. O objetivo é avaliar capacidade de estimação, sem atribuir causalidade às variáveis. Essa distinção é relevante na modelagem preditiva (Shmueli, 2010) e também separa este trabalho de desenhos voltados explicitamente à identificação causal, como a aplicação exploratória de LiNGAM a dados de NOx de uma usina a carvão realizada por Saito e Fujiwara (2023), cuja interpretação causal depende das hipóteses do método.",
+      "reason": "Especificar alvo e alcance da comparação com análise causal."
+    },
+    {
+      "original_paragraph": 36,
+      "before": "Após a ampliação bibliográfica, foi incorporada ao Notebook 03A.05 uma auditoria diagnóstica adicional das sete variáveis de B, motivada por Zhang et al. (2026). A rotina calcula a matriz de correlação de Pearson e verifica explicitamente as identidades delta_load_1h = load_current_mw - load_lag_1h e abs_delta_load_1h = |delta_load_1h|. Esse controle não integra a seleção de atributos, não remove variáveis e não reabre o ajuste dos modelos, pois o período de teste já havia sido consultado em etapas anteriores. Seu objetivo é registrar redundâncias estruturais da representação para futuras comparações previamente especificadas, sem alterar as métricas reportadas neste artigo.",
+      "after": "Após a ampliação bibliográfica, foi incorporada ao Notebook 03A.05 uma auditoria diagnóstica adicional das sete variáveis de B, motivada por Zhang et al. (2026). Na fonte, atributos de uma unidade de 1.000 MW, amostrados a cada minuto em condição estável, são filtrados antes de um LSTM; o presente estudo utiliza XGBoost e não reproduz esse protocolo. O limiar descritivo de |r| ≥ 0,90 e as variantes da ablação complementar do Notebook 03A.05A são escolhas próprias. A rotina calcula a matriz de correlação de Pearson e verifica explicitamente as identidades delta_load_1h = load_current_mw - load_lag_1h e abs_delta_load_1h = |delta_load_1h|. Esse controle não integra a seleção de atributos, não remove variáveis e não reabre o ajuste dos modelos, pois o período de teste já havia sido consultado em etapas anteriores. Seu objetivo é registrar redundâncias estruturais da representação para futuras comparações previamente especificadas, sem alterar as métricas reportadas neste artigo.",
+      "reason": "Explicitar a adaptação do método e a autoria das decisões da ablação."
+    },
+    {
+      "original_paragraph": 36,
+      "before": "Após a ampliação bibliográfica, foi incorporada ao Notebook 03A.05 uma auditoria diagnóstica adicional das sete variáveis de B, motivada por Zhang et al. (2026). Na fonte, atributos de uma unidade de 1.000 MW, amostrados a cada minuto em condição estável, são filtrados antes de um LSTM; o presente estudo utiliza XGBoost e não reproduz esse protocolo. O limiar descritivo de |r| ≥ 0,90 e as variantes da ablação complementar do Notebook 03A.05A são escolhas próprias. A rotina calcula a matriz de correlação de Pearson e verifica explicitamente as identidades delta_load_1h = load_current_mw - load_lag_1h e abs_delta_load_1h = |delta_load_1h|. Esse controle não integra a seleção de atributos, não remove variáveis e não reabre o ajuste dos modelos, pois o período de teste já havia sido consultado em etapas anteriores. Seu objetivo é registrar redundâncias estruturais da representação para futuras comparações previamente especificadas, sem alterar as métricas reportadas neste artigo.",
+      "after": "Após a ampliação bibliográfica, foi incorporada ao Notebook 03A.05 uma auditoria diagnóstica adicional das sete variáveis de B, motivada por Zhang et al. (2026). Na fonte, atributos de uma unidade de 1.000 MW, amostrados a cada minuto em condição estável, são filtrados antes de um LSTM; o presente estudo utiliza XGBoost e não reproduz esse protocolo. O limiar descritivo de |r| ≥ 0,90 e as variantes da ablação complementar do Notebook 03A.05A são escolhas próprias. A rotina calcula a matriz de correlação de Pearson e verifica explicitamente as identidades delta_load_1h = load_current_mw - load_lag_1h e abs_delta_load_1h = |delta_load_1h|. Esse controle não integra a seleção de atributos, não remove variáveis e não reabre o ajuste dos modelos, pois o período de teste já havia sido consultado em etapas anteriores. Seu objetivo é registrar redundâncias estruturais da representação para comparações complementares documentadas separadamente, sem alterar as métricas reportadas neste artigo.",
+      "reason": "A ablação complementar já foi executada e possui registro próprio."
+    },
+    {
+      "original_paragraph": 81,
+      "before": "Nas rampas, as métricas e a frequência de melhorias favoreceram B. Esse comportamento é compatível com a evidência de que variações de despacho podem deslocar unidades térmicas para condições de menor eficiência e alterar a intensidade de CO₂ (Suri; de Chalendar; Azevedo, 2025). Em uma unidade a carvão de 1.000 MW, Liu et al. (2025a) também identificaram aumento da intensidade de carbono sob regimes de regulação profunda de carga, embora em um desenho de ciclo de vida e em uma instalação distintos da Iatan. Ao mesmo tempo, Fayaz et al. (2026) encontraram, em plantas de cimento, forte efeito do histórico para NOx e efeito apenas marginal para CO e CO₂. A comparação entre setores e instalações não permite transferir resultados diretamente, mas reforça que a memória do processo e o efeito dos regimes não devem ser tratados como universais. No presente estudo, a associação observada nas rampas permanece descritiva: o desenho não identifica o mecanismo responsável, e os limiares de 130 e 56 MW por intervalo horário definiram grupos diferentes entre etapas.",
+      "after": "Nas rampas, as métricas e a frequência de melhorias favoreceram B. Esse comportamento é compatível com a evidência de que variações de despacho podem deslocar unidades térmicas para condições de menor eficiência e alterar a intensidade de CO₂ (Suri; de Chalendar; Azevedo, 2025). Em uma unidade a carvão de 1.000 MW, Liu et al. (2025a) também identificaram aumento da intensidade de carbono sob regimes de regulação profunda de carga, embora em um desenho de ciclo de vida e em uma instalação distintos da Iatan. Ao mesmo tempo, Fayaz et al. (2026), em preprint sobre plantas de cimento, restringiram a comparação com histórico de um minuto a uma planta e observaram ali maior benefício para NOx do que para CO e CO₂. A comparação entre setores e instalações não permite transferir resultados diretamente, mas reforça que a memória do processo e o efeito dos regimes não devem ser tratados como universais. No presente estudo, a associação observada nas rampas permanece descritiva: o desenho não identifica o mecanismo responsável, e os limiares de 130 e 56 MW por intervalo horário definiram grupos diferentes entre etapas.",
+      "reason": "Corrigir o alcance da evidência de memória em Fayaz."
+    },
+    {
+      "original_paragraph": 83,
+      "before": "Quanto ao histórico, ampliar a amostra modifica tanto sua quantidade quanto a composição dos regimes e a distância temporal dos exemplos. A exclusão de 2023 e 2024, decidida após análises exploratórias, também altera essa composição. Sem manter as demais decisões em uma comparação específica, seu efeito permanece indeterminado. A inversão entre validação e teste reforça os cuidados com avaliação temporal e viés de seleção discutidos por Cerqueira, Torgo e Mozetič (2020) e Cawley e Talbot (2010). Huang et al. (2027) reforçam essa cautela ao avaliar previsão de carbono sob histórico reduzido e regimes operacionais distintos, além de empregar calibração conformal para intervalos de previsão. A calibração de incerteza não foi aplicada retrospectivamente neste trabalho e permanece como possibilidade para uma etapa futura previamente especificada. Em um preprint voltado a frotas, Potts et al. (2026) associam situações fora da distribuição conhecida a menor confiança e usam, entre outros sinais, a quantidade de atributos fora da faixa observada no treinamento. Esse princípio motivou a inclusão de um diagnóstico adicional de cobertura operacional no Notebook 03A.05. A célula foi incorporada e documentada, mas não foi executada nesta revisão e, portanto, não integra os resultados numéricos do artigo nem altera o treinamento dos modelos. Aqui, os indicadores disponíveis descrevem diferenças entre períodos, sem identificar sua causa física ou demonstrar mudança na relação condicional entre carga e emissão.",
+      "after": "Quanto ao histórico, ampliar a amostra modifica tanto sua quantidade quanto a composição dos regimes e a distância temporal dos exemplos. A exclusão de 2023 e 2024, decidida após análises exploratórias, também altera essa composição. Sem manter as demais decisões em uma comparação específica, seu efeito permanece indeterminado. A inversão entre validação e teste reforça os cuidados com avaliação temporal e viés de seleção discutidos por Cerqueira, Torgo e Mozetič (2020) e Cawley e Talbot (2010). Huang et al. (2027) reforçam essa cautela ao avaliar previsão de carbono sob histórico reduzido e regimes operacionais distintos, além de empregar calibração conformal para intervalos de previsão. A calibração de incerteza não foi aplicada retrospectivamente neste trabalho e permanece como possibilidade para uma etapa futura previamente especificada. Em um preprint voltado a frotas, Potts et al. (2026) associam situações fora da distribuição conhecida a menor confiança e usam, entre outros sinais, a quantidade de atributos fora da faixa observada no treinamento. Esse princípio motivou a inclusão de um diagnóstico adicional de cobertura operacional no Notebook 03A.05. Na execução recebida de 29 de outubro de 2026, o diagnóstico não encontrou valores do teste fora dos mínimos e máximos de treinamento de cada um dos sete atributos. Esse controle marginal não avalia combinações multivariadas inéditas, não calibra confiança e não reproduz o sistema de Potts et al.; o treinamento dos modelos permaneceu inalterado. Aqui, os indicadores disponíveis descrevem diferenças entre períodos, sem identificar sua causa física ou demonstrar mudança na relação condicional entre carga e emissão.",
+      "reason": "Distinguir o princípio bibliográfico adaptado do sistema completo e registrar a execução efetivamente recebida."
+    },
+    {
+      "original_paragraph": 84,
+      "before": "A comparação com a literatura também depende do desenho de cada estudo. Gu, Sward e Zhang (2023) e Wang et al. (2025) encontraram bom desempenho do XGBoost em problemas de emissões, mas utilizaram conjuntos de atributos, frequências e esquemas de validação distintos. Potts, Hackney e Leontidis (2023) chegaram a resultado semelhante para dados tabulares de turbina a gás, enquanto X. Liu et al. (2025b) favoreceram um modelo linear regularizado em dados diários de uma usina a carvão. Assim, a convergência sobre uma família de modelo não é esperada a priori, e os valores de MAE ou R² não devem ser comparados fora de seus respectivos alvos, escalas e protocolos.",
+      "after": "A comparação com a literatura também depende do desenho de cada estudo. Gu, Sward e Zhang (2023) e Wang et al. (2025) encontraram bom desempenho do XGBoost em problemas de emissões, mas utilizaram conjuntos de atributos, frequências e esquemas de validação distintos. Potts, Hackney e Leontidis (2023) chegaram a resultado semelhante para dados tabulares de turbina a gás, enquanto X. Liu et al. (2025b) obtiveram maior R² com ElasticNet e menor MAE com regressão linear em dados diários de uma usina a carvão. Assim, a convergência sobre uma família de modelo não é esperada a priori, e os valores de MAE ou R² não devem ser comparados fora de seus respectivos alvos, escalas e protocolos.",
+      "reason": "A comparação entre modelos depende da métrica, conforme a Tabela 1 da fonte."
+    }
+  ],
+  "notebook_changes": [
+    {
+      "notebook": "01_selecao_unidade_estudo.ipynb",
+      "reference_keys": [
+        "epa_ecmps2024",
+        "epa_guide2022",
+        "gu2023",
+        "guevara2024",
+        "suri2025"
+      ],
+      "code_cells_preserved": true,
+      "outputs_execution_counts_metadata_preserved": true,
+      "original_sha256": "581a70a91f324baf23ba46be9f69d489b0b9a5b947535077937700138d91d5a5",
+      "new_sha256": "1ed68aca196c472f34a4b261ce6d75ceed914c5b14316b8bad8d7c286159a5fa"
+    },
+    {
+      "notebook": "02_tratamento_dados.ipynb",
+      "reference_keys": [
+        "cawley2010",
+        "cerqueira2020",
+        "epa_guide2022",
+        "gu2023",
+        "jolliffe2016",
+        "nist2012",
+        "sklearn2025",
+        "suri2025"
+      ],
+      "code_cells_preserved": true,
+      "outputs_execution_counts_metadata_preserved": true,
+      "original_sha256": "2427df7d8e491c131647d26bd6a1b8c298a53bb268fc31eb9418fec1614b6637",
+      "new_sha256": "85ceb81c48c7c683df5c978ea90b8a8be81c6efb39c33bbcd8bb5461463c0546"
+    },
+    {
+      "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+      "reference_keys": [
+        "cawley2010",
+        "cerqueira2020",
+        "gama2014",
+        "glorot2011",
+        "gu2023",
+        "hyndman2006",
+        "kingma2015",
+        "rumelhart1986",
+        "sklearn2025",
+        "suri2025"
+      ],
+      "code_cells_preserved": true,
+      "outputs_execution_counts_metadata_preserved": true,
+      "original_sha256": "0393d1a703655c500142ba5e2cdec3e22e2410b6a1495c29f8f7c3eebe241e68",
+      "new_sha256": "e46491df387d62424e49060fac1dc9c2ecdf23296d45f4ccd3b6d56cc580fe6b"
+    },
+    {
+      "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+      "reference_keys": [
+        "cawley2010",
+        "cerqueira2020",
+        "chen2016",
+        "friedman2001",
+        "gu2023",
+        "hyndman2006",
+        "potts2023",
+        "rumelhart1986",
+        "sklearn2025",
+        "wang2025"
+      ],
+      "code_cells_preserved": true,
+      "outputs_execution_counts_metadata_preserved": true,
+      "original_sha256": "eb4901fe834e6c7a973be3a1d33c2f65be66e31930947fa5fccd4826ce097391",
+      "new_sha256": "1e4fb812cdbe4eb93c81317bc551d59ba7d6528b8efdd905790658a488248a08"
+    },
+    {
+      "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+      "reference_keys": [
+        "bergstra2012",
+        "cawley2010",
+        "cerqueira2020",
+        "chen2016",
+        "friedman2001",
+        "hyndman2006",
+        "sklearn2025",
+        "wang2025"
+      ],
+      "code_cells_preserved": true,
+      "outputs_execution_counts_metadata_preserved": true,
+      "original_sha256": "02d1774e916a45f2856b7e64f460140a8d4afe33c9a6a0aa092f6cae91685572",
+      "new_sha256": "6df68a29250150c0b61927cba4d20d5ed5069415a1a0adcf6cf2a11862d6ec11"
+    },
+    {
+      "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+      "reference_keys": [
+        "cawley2010",
+        "cerqueira2020",
+        "chen2016",
+        "couture2024",
+        "epa_guide2022",
+        "friedman2001",
+        "gama2014",
+        "gu2023",
+        "huang2027reducedhistory",
+        "hyndman2006",
+        "potts2026",
+        "sklearn2025"
+      ],
+      "code_cells_preserved": true,
+      "outputs_execution_counts_metadata_preserved": true,
+      "original_sha256": "39e3b54581ea9654137ac47f38d3579be98b717424c26eec6e219589a80e0c09",
+      "new_sha256": "9a33313139c455f56fe2cbaaf9c6f3e68366b3fcee2dd34b17ba6ea130f279eb"
+    },
+    {
+      "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "reference_keys": [
+        "ashraf2026",
+        "cawley2010",
+        "cerqueira2020",
+        "chen2016",
+        "couture2024",
+        "fayaz2026",
+        "friedman2001",
+        "gu2023",
+        "huang2027reducedhistory",
+        "hyndman2006",
+        "jin2026transfer",
+        "liu2025deepload",
+        "lu2024softmeasurement",
+        "potts2026",
+        "saito2023",
+        "sklearn2025",
+        "suri2025",
+        "zhang2026ccssta"
+      ],
+      "code_cells_preserved": true,
+      "outputs_execution_counts_metadata_preserved": true,
+      "original_sha256": "d4f4b3fe4776425141f80d244465a4a0329d0fd334a2efd7b31d71503565a69b",
+      "new_sha256": "9db0fea0e79b0c639c466514f0214d6ada82ba3a94881482b010d17446924b58"
+    },
+    {
+      "notebook": "03A.06_modelo_hibrido_regime_operacional.ipynb",
+      "reference_keys": [
+        "cawley2010",
+        "cerqueira2020",
+        "chen2016",
+        "friedman2001",
+        "hyndman2006",
+        "jacobs1991",
+        "kunsch1989",
+        "sklearn2025"
+      ],
+      "code_cells_preserved": true,
+      "outputs_execution_counts_metadata_preserved": true,
+      "original_sha256": "47e1a14ab58c31e0b83e78aedb43da8e3c4d38d1577190124bda8a36d7aeaba3",
+      "new_sha256": "a8d84690809b1f944270be0bd9af5a8e930f80153bfe2ad0dcf6b62c179210c0"
+    },
+    {
+      "notebook": "03A_05A_ablacao_controlada_features_Colab.ipynb",
+      "reference_keys": [
+        "cawley2010",
+        "cerqueira2020",
+        "chen2016",
+        "friedman2001",
+        "hyndman2006",
+        "sklearn161",
+        "zhang2026ccssta"
+      ],
+      "code_cells_preserved": true,
+      "outputs_execution_counts_metadata_preserved": true,
+      "original_sha256": "583742fa6697f98a998bf97b973209710f609c98f8e655238e922a921f2f5da2",
+      "new_sha256": "59dd324c5469d5631384be7658821fb3d396b46ed352aa609fc802b2ef84e286"
+    },
+    {
+      "notebook": "03A_modelagem_preditiva_co2.ipynb",
+      "reference_keys": [
+        "cawley2010",
+        "cerqueira2020",
+        "glorot2011",
+        "gu2023",
+        "hyndman2006",
+        "kingma2015",
+        "rumelhart1986",
+        "sklearn2025",
+        "suri2025"
+      ],
+      "code_cells_preserved": true,
+      "outputs_execution_counts_metadata_preserved": true,
+      "original_sha256": "5dae1b19a99f28b7cd0959c52344936ea754d183001f22899a4c88454adf4342",
+      "new_sha256": "aa095cd4409bb6394e3e137a24a6d2122a669f3229ae97bddbf71b2c5154f4ba"
+    }
+  ],
+  "tables_preserved": true,
+  "math_preserved": true
+}

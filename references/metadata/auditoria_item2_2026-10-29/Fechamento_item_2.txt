@@ -1,0 +1,21 @@
+FECHAMENTO DO ITEM 2 DA REVISÃO BIBLIOGRÁFICA
+
+As pendências de identidade, versão, metadados, uso das fontes e correspondência das citações foram tratadas nos arquivos do projeto.
+
+- 36 referências do artigo reconciliadas com citações no corpo/apêndices e evidência primária do uso efetivo.
+- Catálogo com 39 fontes: 36 do artigo, duas fontes do notebook histórico e documentação das métricas na versão usada pela ablação.
+- Dez notebooks revisados: sem citações detectadas sem entrada correspondente e sem entradas finais sem uso explícito.
+- Referências completas acrescentadas ao 03A.05A e ao histórico 03A.06; este último não foi reexecutado nem incorporado aos resultados principais.
+- Guevara: original final de 2024, 37 páginas, conferido e disponibilizado; preprint de 2023 arquivado.
+- Guthrie/NIST: autoria/ano reconciliados com o DOI no DataCite (2020); cercas IQR e sinalização de extremos conferidas nas seções específicas.
+- Huang: fascículo de 2027, disponibilizado online em 12/10/2026, explicitados.
+- Fayaz e Potts: condição de preprint e versão v1 explicitadas; no uso de Fayaz, análise temporal de CO2 restrita à planta 1.
+- Liu: menor MAE de regressão linear versus maior R2 de ElasticNet explicitados, sem importar unidades de intensidade problemáticas; sufixos 2025a/2025b uniformizados.
+- Versões consultadas de Chen, Gama e Hyndman distinguidas das publicações finais citadas.
+- Demais 16 artigos mantidos: revisão crítica separada de alvo, protocolo, contribuição possível e limites, sem inclusão automática na bibliografia.
+
+Os registros de trechos de trabalho ficam na biblioteca privada. A matriz pública usa paráfrases e localizadores. A verificação trata da sustentação das afirmações e procedimentos usados, sem alegar réplica independente dos experimentos dos outros autores.
+
+Cálculos, saídas e metadados de execução dos notebooks, tabelas e equações do artigo foram preservados. A revisão das 23 páginas não encontrou sobreposição, corte ou perda de conteúdo nas alterações. Nenhum modelo foi treinado nesta revisão.
+
+Os protocolos originais de execução mantêm seus hashes anteriores; o backup permite conferir os notebooks anteriores à revisão editorial. Upload/sincronização externa e integração completa da ablação aos resultados do artigo são etapas distintas deste fechamento bibliográfico.

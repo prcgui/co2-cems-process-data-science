@@ -42,7 +42,7 @@ Os oito notebooks, da seleção da unidade até 03A.05, incluem notas metodológ
 
 A revisão documental de 24 de outubro de 2026 explicita as fontes de retropropagação, ReLU, Adam, gradient boosting, XGBoost, busca aleatória, PCA, IQR, normalização e avaliação temporal. As arquiteturas, os hiperparâmetros, os períodos, as regras operacionais e os limiares pertencem ao protocolo do projeto. As referências não são apresentadas como origem de decisões que não prescrevem.
 
-Essa atualização preserva as instruções executáveis e as saídas dos notebooks. Ela não representa nova execução dos oito experimentos. A reprodução integral já documentada permanece restrita a 03A.04 e 03A.05, conforme o [guia de reprodução](reproducibility/README.md).
+A documentação bibliográfica preserva código e saídas. A inspeção das novas execuções recebidas e dos complementos está descrita na seção de auditoria consolidada abaixo; a reprodução independente anterior de 03A.04 e 03A.05 continua registrada no [guia de reprodução](reproducibility/README.md).
 
 ## Fonte dos dados
 
@@ -486,3 +486,19 @@ As técnicas citadas foram conferidas por confronto com as fontes, extração da
 ## Biblioteca de referências
 
 A documentação bibliográfica auditada está em [`references/`](references/README.md). O registro mestre [`source_registry.csv`](references/source_registry.csv) informa DOI/URL, status de acesso, condição de redistribuição e finalidade de cada uma das 22 fontes. PDFs públicos arquivados ficam em [`references/public_pdfs/`](references/public_pdfs/).
+
+## Auditoria consolidada e complementos executados
+
+As oito execuções principais recebidas em 29 de outubro de 2026 foram inspecionadas integralmente. A ablação 03A.05A, a sensibilidade temporal 03A.05B e a comparação de cinco sementes 03A.05C também estão concluídas no Colab. A conferência final dos três complementos reuniu 376 verificações aprovadas, incluindo recálculo das métricas e recarga dos 20 modelos de 03A.05C. Isso não constitui novo treinamento local independente de todos os ajustes. O notebook 03A.06 permanece histórico.
+
+- [Artigo atualizado](Artigo_CO2_Modelagem_Matematica_IA.docx)
+- [Relatório final de auditoria](outputs/auditoria_consolidada_2026-10-29/Relatorio_final_auditoria.txt)
+- [Resultados, protocolos e verificações](outputs/auditoria_consolidada_2026-10-29/)
+- [Ablação executada 03A.05A](notebooks/03A_05A_ablacao_controlada_features_Colab.ipynb)
+- [Sensibilidade de calendário 03A.05B](notebooks/03A_05B_incerteza_pareada_calendario.ipynb)
+- [MLP e XGBoost com cinco sementes 03A.05C](notebooks/03A_05C_MLP_XGBoost_sementes_protocolo_comum_Colab.ipynb)
+- [Catálogo de fontes](references/metadata/source_registry.csv) e [índice dos PDFs preservados no Drive](references/metadata/pdfs_referencias_utilizadas.csv)
+
+Os resultados principais mantêm os ganhos descritivos já existentes de 13,28% com histórico ampliado e 22,90% nas rampas. A ablação não identificou ganho global consistente. Em 03A.05C, XGBoost teve menor MAE no teste em todos os pares de mesma semente/cenário, com inversão da ordenação na validação. Esses protocolos permanecem separados; cinco sementes não equivalem a novos períodos de teste. Os limites de 03A.05B são exploratórios.
+
+Os PDFs privados e os dados volumosos permanecem no Drive do projeto. O índice identifica as versões e o conteúdo por SHA-256; links históricos continuam representando suas versões preservadas.
