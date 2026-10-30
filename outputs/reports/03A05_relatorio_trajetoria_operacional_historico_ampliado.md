@@ -88,7 +88,7 @@ A comparação foi estruturada para que a única diferença entre os modelos fos
 
 As features temporais foram calculadas utilizando a série horária completa, incluindo horas OFF quando necessário para reconstrução das transições operacionais.
 
-Dois blocos temporais separados para a construção dos atributos foram estabelecidos:
+Dois blocos temporais independentes foram estabelecidos:
 
 - 2011 a 2022;
 - 2025.

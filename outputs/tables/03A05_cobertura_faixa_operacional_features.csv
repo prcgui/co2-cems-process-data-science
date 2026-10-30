@@ -1,0 +1,8 @@
+feature,train_min,train_max,test_min,test_max,n_below_train_min,n_above_train_max,n_outside_train_range,pct_outside_train_range
+load_current_mw,0.0,955.0,0.0,948.0,0,0,0,0.0
+load_lag_1h,0.0,955.0,0.0,948.0,0,0,0,0.0
+delta_load_1h,-802.0,448.0,-776.0,244.0,0,0,0,0.0
+abs_delta_load_1h,0.0,802.0,0.0,776.0,0,0,0,0.0
+load_mean_previous_3h,0.0,955.0,0.0,945.6666666666666,0,0,0,0.0
+operating_time_lag_1h,0.0,1.0,0.0,1.0,0,0,0,0.0
+hours_since_startup,1.0,9539.0,1.0,530.0,0,0,0,0.0

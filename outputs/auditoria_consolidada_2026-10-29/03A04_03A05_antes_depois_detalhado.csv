@@ -1,0 +1,87 @@
+file,scenario,metric,before,after,absolute_difference,relative_difference_pct
+03A04_comparacao_2025_vs_historico_2025.csv,A_2025_only,n_train_final,5105.0,5105.0,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_2025_only,selected_trees,119.0,119.0,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_2025_only,validation_RMSE,56.95679562132791,56.95679562132791,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_2025_only,MAE,23.346986814032068,23.346986814032068,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_2025_only,MedianAE,20.09307861328125,20.09307861328125,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_2025_only,RMSE,28.578568933554948,28.578568933554948,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_2025_only,R2,0.9801634789816612,0.9801634789816612,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_2025_only,NMAE_pct,3.96692286511156,3.96692286511156,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_2025_only,Bias,9.064455650516322,9.064455650516322,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_history_plus_2025,n_train_final,88937.0,88937.0,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_history_plus_2025,selected_trees,524.0,524.0,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_history_plus_2025,validation_RMSE,75.39778808761727,75.39778808761727,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_history_plus_2025,MAE,20.24535208220582,20.24535208220582,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_history_plus_2025,MedianAE,17.528372192382818,17.528372192382818,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_history_plus_2025,RMSE,25.12395225282117,25.12395225282117,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_history_plus_2025,R2,0.984669353488544,0.984669353488544,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_history_plus_2025,NMAE_pct,3.439919280669959,3.439919280669959,0.0,0.0
+03A04_comparacao_2025_vs_historico_2025.csv,A_history_plus_2025,Bias,-10.435409924753897,-10.435409924753897,0.0,-0.0
+03A05_resultado_final_A_B.csv,A,n_features,1.0,1.0,0.0,0.0
+03A05_resultado_final_A_B.csv,A,selected_trees,498.0,498.0,0.0,0.0
+03A05_resultado_final_A_B.csv,A,n_train,88686.0,88686.0,0.0,0.0
+03A05_resultado_final_A_B.csv,A,n_test,1144.0,1144.0,0.0,0.0
+03A05_resultado_final_A_B.csv,A,MAE,20.151419005413988,20.151419005413988,0.0,0.0
+03A05_resultado_final_A_B.csv,A,MedianAE,17.385278167724596,17.385278167724596,0.0,0.0
+03A05_resultado_final_A_B.csv,A,RMSE,25.065266220558023,25.065266220558023,0.0,0.0
+03A05_resultado_final_A_B.csv,A,R2,0.9847408903252828,0.9847408903252828,0.0,0.0
+03A05_resultado_final_A_B.csv,A,NMAE_pct,3.423958965401702,3.423958965401702,0.0,0.0
+03A05_resultado_final_A_B.csv,A,Bias,-10.346744499393276,-10.346744499393276,0.0,-0.0
+03A05_resultado_final_A_B.csv,B,n_features,7.0,7.0,0.0,0.0
+03A05_resultado_final_A_B.csv,B,selected_trees,721.0,721.0,0.0,0.0
+03A05_resultado_final_A_B.csv,B,n_train,88686.0,88686.0,0.0,0.0
+03A05_resultado_final_A_B.csv,B,n_test,1144.0,1144.0,0.0,0.0
+03A05_resultado_final_A_B.csv,B,MAE,21.1719865784345,21.1719865784345,0.0,0.0
+03A05_resultado_final_A_B.csv,B,MedianAE,17.855572509765636,17.855572509765636,0.0,0.0
+03A05_resultado_final_A_B.csv,B,RMSE,26.577858364597997,26.577858364597997,0.0,0.0
+03A05_resultado_final_A_B.csv,B,R2,0.9828436650475074,0.9828436650475074,0.0,0.0
+03A05_resultado_final_A_B.csv,B,NMAE_pct,3.5973651900701986,3.5973651900701986,0.0,0.0
+03A05_resultado_final_A_B.csv,B,Bias,-2.5503327508606275,-2.5503327508606275,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,n,1144.0,1144.0,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,MAE_A,20.151419005413988,20.151419005413988,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,MAE_B,21.1719865784345,21.1719865784345,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,ganho_B_vs_A_pct,-5.06449482662397,-5.06449482662397,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,RMSE_A,25.065266220558023,25.065266220558023,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,RMSE_B,26.577858364597997,26.577858364597997,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,ganho_RMSE_B_vs_A_pct,-6.034614317399004,-6.034614317399004,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,Bias_A,-10.346744499393276,-10.346744499393276,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,Bias_B,-2.5503327508606275,-2.5503327508606275,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,B_win_pct,50.96153846153846,50.96153846153846,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,mean_AE_reduction_B,-1.0205675730205075,-1.0205675730205075,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Todas as horas,median_AE_reduction_B,0.2814270019531477,0.2814270019531477,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,n,30.0,30.0,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,MAE_A,11.728783042399089,11.728783042399089,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,MAE_B,10.451706706237792,10.451706706237792,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,ganho_B_vs_A_pct,10.888395936259666,10.888395936259666,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,RMSE_A,16.353259316312176,16.353259316312176,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,RMSE_B,13.16593734991276,13.16593734991276,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,ganho_RMSE_B_vs_A_pct,19.49043860155817,19.49043860155817,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,Bias_A,-10.127421144612631,-10.127421144612631,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,Bias_B,-8.533026270039876,-8.533026270039876,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,B_win_pct,43.333333333333336,43.333333333333336,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,mean_AE_reduction_B,1.2770763361612956,1.2770763361612956,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Primeiras 6 h após startup,median_AE_reduction_B,-1.7739013671874986,-1.7739013671874986,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,n,258.0,258.0,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,MAE_A,24.05770015509553,24.05770015509553,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,MAE_B,18.54911714122092,18.54911714122092,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,ganho_B_vs_A_pct,22.897379958856423,22.897379958856423,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,RMSE_A,29.36094649078208,29.36094649078208,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,RMSE_B,22.4808860113766,22.4808860113766,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,ganho_RMSE_B_vs_A_pct,23.43269308966413,23.43269308966413,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,Bias_A,-17.90282921842826,-17.90282921842826,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,Bias_B,-3.5881529816915823,-3.5881529816915823,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,B_win_pct,61.627906976744185,61.627906976744185,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,mean_AE_reduction_B,5.508583013874617,5.508583013874617,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Rampas intensas,median_AE_reduction_B,3.8455810546875,3.8455810546875,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,n,857.0,857.0,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,MAE_A,19.254376063129865,19.254376063129865,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,MAE_B,22.341563622064044,22.341563622064044,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,ganho_B_vs_A_pct,-16.03369306183763,-16.03369306183763,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,RMSE_A,23.871129473664123,23.871129473664123,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,RMSE_B,28.026185490128224,28.026185490128224,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,ganho_RMSE_B_vs_A_pct,-17.406197813338395,-17.406197813338395,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,Bias_A,-8.075204445517327,-8.075204445517327,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,Bias_B,-2.054885894526122,-2.054885894526122,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,B_win_pct,47.957992998833134,47.957992998833134,0.0,0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,mean_AE_reduction_B,-3.087187558934179,-3.087187558934179,0.0,-0.0
+03A05_comparacao_contextos_operacionais.csv,Demais horas,median_AE_reduction_B,-0.819671630859375,-0.819671630859375,0.0,-0.0

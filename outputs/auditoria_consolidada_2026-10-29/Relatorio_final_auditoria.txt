@@ -1,0 +1,50 @@
+RELATÓRIO CONSOLIDADO DE AUDITORIA DOS NOTEBOOKS E DO ARTIGO
+
+1. Notebooks executados
+Execuções completas recebidas do Colab foram inspecionadas. Esta consolidação não é uma nova execução local de todos os treinamentos.
+01_selecao_unidade_estudo.ipynb: 17/17 células com execução; 0 erros salvos.
+02_tratamento_dados.ipynb: 13/13 células com execução; 0 erros salvos.
+03A.01_modelagem_preditiva_co2.ipynb: 19/19 células com execução; 0 erros salvos.
+03A.02_comparacao_modelos_gradient_boosting.ipynb: 22/22 células com execução; 0 erros salvos.
+03A.03_otimizacao_pareada_xgboost.ipynb: 18/18 células com execução; 0 erros salvos.
+03A.04_volume_dados_generalizacao_temporal_iatan.ipynb: 10/10 células com execução; 0 erros salvos.
+03A.05_trajetoria_operacional_historico_ampliado.ipynb: 12/12 células com execução; 0 erros salvos.
+03A.06_modelo_hibrido_regime_operacional.ipynb: 8/8 células com execução; 0 erros salvos.
+03A_modelagem_preditiva_co2.ipynb: 15/15 células com execução; 0 erros salvos.
+03A.05A, 03A.05B e 03A.05C: execução completa recebida do Drive, sem erros salvos. Código e saídas preservados; apenas documentação em Markdown foi completada. O 03A.06 é histórico e não integra as conclusões.
+
+2. Erros encontrados
+A execução inicial de 03A.05B exigia ZIP que não era saída obrigatória de 03A.05A. O carregamento foi corrigido e executado integralmente; lê a pasta original ou pacote portátil. Não foi necessário reexecutar 03A.05A. A primeira tentativa local de ablação reproduzia baseline divergente; foi arquivada e não sustenta o artigo. A versão validada reproduziu exatamente as 1.144 previsões de B.
+
+3. Resultados principais atualizados
+As métricas completas estão em metricas_independentes.csv, 5A/ablacao_metricas.csv, 5B/metricas_contextos.csv e 5C/metricas_e_tempos.csv.
+03A.05C MLP A: MAE médio 57.282686; DP sementes 1.248247; RMSE médio 60.508778.
+03A.05C MLP B: MAE médio 56.382355; DP sementes 1.820140; RMSE médio 60.379398.
+03A.05C XGBoost A: MAE médio 20.451809; DP sementes 0.024797; RMSE médio 25.269438.
+03A.05C XGBoost B: MAE médio 21.223633; DP sementes 0.617455; RMSE médio 26.615099.
+Menor MAE de teste do XGBoost em dez de dez pares de família por cenário/semente. Na validação, a MLP teve menor MAE nos mesmos pares. Ganho de B depende da semente; não é ganho global estável.
+
+4. Comparação antes versus depois
+03A04_03A05_antes_depois_detalhado.csv registra métricas anteriores e atuais, diferença absoluta e percentual. As métricas dos experimentos principais permaneceram iguais: os ganhos arredondados de 13,28% com histórico e 22,90% nas rampas já existiam antes dos novos referenciais. Não são atribuídos à revisão bibliográfica. A ablação e 03A.05C são experimentos separados, com protocolos explicitados.
+
+5. Efeito das novas referências
+A — melhora empírica geral causada pelas novas fontes: não demonstrada.
+B — simplificação com equivalência: não demonstrada; menor MAE pontual não equivale a teste de equivalência.
+C — metodologia fortalecida: Zhang motivou auditoria de redundâncias e ablação; Grinsztajn motivou documentação do orçamento e comparação de cinco sementes; Diebold–Mariano fundamentou diferenças pareadas de perda; Künsch fundamentou o princípio de blocos, adaptado sem importar garantias assintóticas; Si acrescentou contexto de redes/Keras em PEMS.
+D — hipótese não confirmada: retirada de atributos não gerou ganho global consistente. A vantagem pontual da remoção conjunta de delta e módulo nas rampas depende do comprimento de bloco.
+
+6. Auditoria das features do 03A.05
+A usa carga atual. B usa carga atual, carga defasada, delta, módulo do delta, média das três horas anteriores, Operating Time defasado e horas desde a partida. Correlações e pares |r| >= 0,90 estão nas tabelas 03A05_correlacao_pearson_features_B.csv e 03A05_pares_alta_correlacao_features_B.csv. Delta é identidade algébrica da carga atual menos a defasada. A ablação mantém amostras, parâmetros, semente e 721 árvores. Retirar média de 3 h reduz MAE global de B em 2,28%, mas piora rampas; retirar delta e módulo reduz MAE das rampas em 6,96%, com sensibilidade temporal. Nenhuma variante supera A globalmente.
+
+7. Alterações feitas no artigo
+5A integra método, discussão e Tabela D1. 5B integra método, discussão e Tabelas D2/D3. 5C foi incorporado ao resumo/abstract, método, resultados, discussão, conclusões e seção D3/Tabela D4. Foram preservadas as 28 tabelas anteriores, equações e 40 referências; adicionou-se uma tabela. A revisão visual cobriu as 29 páginas da versão final.
+
+8. Referências
+source_registry.csv reúne 42 fontes do artigo e dos notebooks; o artigo possui 40 referências. O índice pdfs_referencias_utilizadas.csv informa arquivos, versões e SHA-256. Fontes web/dados/repositório são identificadas sem inventar PDF editorial. PDFs privados são destinados ao Drive, mantendo a política existente de redistribuição do GitHub.
+
+9. Arquivos atualizados
+Artigo_CO2_Modelagem_Matematica_IA.docx; notebooks executados; outputs/tables; outputs/reports; outputs/figures; outputs/auditoria_consolidada_2026-10-29; references/metadata; README dos dois repositórios.
+Destinos GitHub: prcgui/co2-cems-thermal-modeling e prcgui/co2-cems-process-data-science. Os arquivos comuns mantêm o mesmo conteúdo; os READMEs preservam o contexto de cada disciplina.
+
+10. Pendências
+Amostra temporal externa, novas unidades e avaliação confirmatória continuam fora do escopo. O teste foi reutilizado; cinco sementes não corrigem esse limite. Os percentis de 5B são exploratórios, sem cobertura nominal demonstrada. O 03A.06 permanece histórico. A situação dos envios é registrada separadamente em sincronizacao_destinos.json; este relatório não antecipa sucesso de publicação.

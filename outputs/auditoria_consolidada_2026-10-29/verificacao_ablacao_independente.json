@@ -1,0 +1,2054 @@
+{
+  "status": "aprovado",
+  "source_hashes": {
+    "C:\\Users\\prcgu\\OneDrive\\Área de Trabalho\\MOD MAT IA\\co2-cems-thermal-modeling\\co2-cems-thermal-modeling\\outputs\\03A05A_ablacao_controlada.zip": "d1f91f7717a7302947fe74e4db839ac4db87219e39281c7ab8e0ce8e7bb2ffa1",
+    "C:\\Users\\prcgu\\OneDrive\\Área de Trabalho\\MOD MAT IA\\co2-cems-thermal-modeling\\co2-cems-thermal-modeling\\notebooks\\03A_05A_ablacao_controlada_features_Colab.ipynb": "583742fa6697f98a998bf97b973209710f609c98f8e655238e922a921f2f5da2"
+  },
+  "zip_run": "03A05A_ablacao_controlada/20261029T235706_270875Z",
+  "check_count": 301,
+  "failed_count": 0,
+  "checks": [
+    {
+      "check": "Três células de código executadas em ordem",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Nenhum erro salvo nas células",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Código executado corresponde ao notebook entregue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Protocolo e diagnóstico de reprodução concordam",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Reprodução exata das 1.144 previsões",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Ambiente e protocolo concordam",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Integridade do insumo: data/interim/03A05_trajectory_history/03A05_treino_final_A_B.parquet",
+      "passed": true,
+      "detail": {
+        "expected": "e4fbf1fd9c7b7b325943a4e78d370e6b4571dfabbd01f48eabf668bc5da2f4f6",
+        "actual": "e4fbf1fd9c7b7b325943a4e78d370e6b4571dfabbd01f48eabf668bc5da2f4f6"
+      }
+    },
+    {
+      "check": "Integridade do insumo: data/interim/03A05_trajectory_history/03A05_teste_nov_dez_2025_A_B.parquet",
+      "passed": true,
+      "detail": {
+        "expected": "526c80faafd6bd9f22a53197acb90bf06fd8800cbba0443a05c21bf9b9a32c70",
+        "actual": "526c80faafd6bd9f22a53197acb90bf06fd8800cbba0443a05c21bf9b9a32c70"
+      }
+    },
+    {
+      "check": "Integridade do insumo: data/interim/03A05_trajectory_history/03A05_previsoes_pareadas_com_contextos.parquet",
+      "passed": true,
+      "detail": {
+        "expected": "eb204d81dae4ccc3f073fbe630bd88283bb8a9c3f774dca5bae5b36ac2c699be",
+        "actual": "eb204d81dae4ccc3f073fbe630bd88283bb8a9c3f774dca5bae5b36ac2c699be"
+      }
+    },
+    {
+      "check": "Integridade do insumo: outputs/tables/03A05_selecao_complexidade_A_B.csv",
+      "passed": true,
+      "detail": {
+        "expected": "d5d78cc165ec4ff3883e2b888804b9e624d2ba4516bd175eb95a7abac8ee569d",
+        "actual": "d5d78cc165ec4ff3883e2b888804b9e624d2ba4516bd175eb95a7abac8ee569d"
+      }
+    },
+    {
+      "check": "Integridade do insumo: notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+      "passed": true,
+      "detail": {
+        "expected": "d4f4b3fe4776425141f80d244465a4a0329d0fd334a2efd7b31d71503565a69b",
+        "actual": "d4f4b3fe4776425141f80d244465a4a0329d0fd334a2efd7b31d71503565a69b"
+      }
+    },
+    {
+      "check": "Tamanhos das amostras",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Separação temporal de treino e teste",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Alinhamento dos horários e alvos",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Previsões A e B originais preservadas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Modelo completo coincide exatamente com B original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV e Parquet contêm as mesmas colunas e horários",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV reconstrói exatamente o tipo original do Parquet: CO2 Mass (short tons)",
+      "passed": true,
+      "detail": {
+        "original_dtype": "float64",
+        "max_difference_if_csv_read_as_float64": 0.0
+      }
+    },
+    {
+      "check": "CSV reconstrói exatamente o tipo original do Parquet: pred_A",
+      "passed": true,
+      "detail": {
+        "original_dtype": "float32",
+        "max_difference_if_csv_read_as_float64": 3.0273437459982233e-05
+      }
+    },
+    {
+      "check": "CSV reconstrói exatamente o tipo original do Parquet: pred_B",
+      "passed": true,
+      "detail": {
+        "original_dtype": "float32",
+        "max_difference_if_csv_read_as_float64": 3.046874996925908e-05
+      }
+    },
+    {
+      "check": "CSV reconstrói exatamente o tipo original do Parquet: intense_ramp",
+      "passed": true,
+      "detail": {
+        "original_dtype": "bool",
+        "max_difference_if_csv_read_as_float64": 0.0
+      }
+    },
+    {
+      "check": "CSV reconstrói exatamente o tipo original do Parquet: startup_first_6h",
+      "passed": true,
+      "detail": {
+        "original_dtype": "bool",
+        "max_difference_if_csv_read_as_float64": 0.0
+      }
+    },
+    {
+      "check": "CSV reconstrói exatamente o tipo original do Parquet: regular_other",
+      "passed": true,
+      "detail": {
+        "original_dtype": "bool",
+        "max_difference_if_csv_read_as_float64": 0.0
+      }
+    },
+    {
+      "check": "CSV reconstrói exatamente o tipo original do Parquet: pred_B_completo",
+      "passed": true,
+      "detail": {
+        "original_dtype": "float32",
+        "max_difference_if_csv_read_as_float64": 3.046874996925908e-05
+      }
+    },
+    {
+      "check": "CSV reconstrói exatamente o tipo original do Parquet: pred_B_sem_media3h",
+      "passed": true,
+      "detail": {
+        "original_dtype": "float32",
+        "max_difference_if_csv_read_as_float64": 3.046874996925908e-05
+      }
+    },
+    {
+      "check": "CSV reconstrói exatamente o tipo original do Parquet: pred_B_sem_delta",
+      "passed": true,
+      "detail": {
+        "original_dtype": "float32",
+        "max_difference_if_csv_read_as_float64": 3.046874996925908e-05
+      }
+    },
+    {
+      "check": "CSV reconstrói exatamente o tipo original do Parquet: pred_B_sem_delta_e_absdelta",
+      "passed": true,
+      "detail": {
+        "original_dtype": "float32",
+        "max_difference_if_csv_read_as_float64": 3.046874996925908e-05
+      }
+    },
+    {
+      "check": "Correlações calculadas apenas no treino",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Limiar de rampas obtido do treino",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contextos de rampa preservados",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Interseção dos contextos",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Demais horas são o complemento da união",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Uma linha por variante e contexto",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Modelo salvo: atributos e 721 árvores em B_completo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Previsões reproduzidas pelo modelo salvo: B_completo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_completo/global",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/global/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_completo/primeiras_6h_startup",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/primeiras_6h_startup/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_completo/rampas_intensas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/rampas_intensas/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_completo/startup_e_rampa",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/startup_e_rampa/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_completo/demais_horas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_completo/demais_horas/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Modelo salvo: atributos e 721 árvores em B_sem_media3h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Previsões reproduzidas pelo modelo salvo: B_sem_media3h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_media3h/global",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/global/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_media3h/primeiras_6h_startup",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/primeiras_6h_startup/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_media3h/rampas_intensas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/rampas_intensas/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_media3h/startup_e_rampa",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/startup_e_rampa/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_media3h/demais_horas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_media3h/demais_horas/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Modelo salvo: atributos e 721 árvores em B_sem_delta",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Previsões reproduzidas pelo modelo salvo: B_sem_delta",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_delta/global",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/global/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_delta/primeiras_6h_startup",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/primeiras_6h_startup/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_delta/rampas_intensas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/rampas_intensas/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_delta/startup_e_rampa",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/startup_e_rampa/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_delta/demais_horas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta/demais_horas/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Modelo salvo: atributos e 721 árvores em B_sem_delta_e_absdelta",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Previsões reproduzidas pelo modelo salvo: B_sem_delta_e_absdelta",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_delta_e_absdelta/global",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/global/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_delta_e_absdelta/primeiras_6h_startup",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/primeiras_6h_startup/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_delta_e_absdelta/rampas_intensas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/rampas_intensas/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_delta_e_absdelta/startup_e_rampa",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/startup_e_rampa/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Contagens: B_sem_delta_e_absdelta/demais_horas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/MAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/RMSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/NMAE_pct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/MedianAE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/Bias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/MAE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/MAE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/RMSE_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/RMSE_difference_pct_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/R2_difference_vs_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Métrica: B_sem_delta_e_absdelta/demais_horas/NMAE_difference_pp_vs_B",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "recalculated_metrics": [
+    {
+      "variant": "B_completo",
+      "regime": "global",
+      "n_test": 1144,
+      "MAE": 21.1719865784345,
+      "RMSE": 26.577858364597994,
+      "R2": 0.9828436650475074,
+      "NMAE_pct": 3.5973651900701986,
+      "MedianAE": 17.855572509765636,
+      "Bias": -2.5503327508606275,
+      "MAE_difference_vs_B": 0.0,
+      "MAE_difference_pct_vs_B": 0.0,
+      "RMSE_difference_vs_B": 0.0,
+      "RMSE_difference_pct_vs_B": 0.0,
+      "R2_difference_vs_B": 0.0,
+      "NMAE_difference_pp_vs_B": 0.0
+    },
+    {
+      "variant": "B_completo",
+      "regime": "primeiras_6h_startup",
+      "n_test": 30,
+      "MAE": 10.451706706237793,
+      "RMSE": 13.16593734991276,
+      "R2": 0.733215113387387,
+      "NMAE_pct": 22.913274169530087,
+      "MedianAE": 9.375540924072265,
+      "Bias": -8.533026270039876,
+      "MAE_difference_vs_B": 0.0,
+      "MAE_difference_pct_vs_B": 0.0,
+      "RMSE_difference_vs_B": 0.0,
+      "RMSE_difference_pct_vs_B": 0.0,
+      "R2_difference_vs_B": 0.0,
+      "NMAE_difference_pp_vs_B": 0.0
+    },
+    {
+      "variant": "B_completo",
+      "regime": "rampas_intensas",
+      "n_test": 258,
+      "MAE": 18.54911714122092,
+      "RMSE": 22.4808860113766,
+      "R2": 0.9804160560364605,
+      "NMAE_pct": 3.2165918563603952,
+      "MedianAE": 16.575708007812523,
+      "Bias": -3.5881529816915823,
+      "MAE_difference_vs_B": 0.0,
+      "MAE_difference_pct_vs_B": 0.0,
+      "RMSE_difference_vs_B": 0.0,
+      "RMSE_difference_pct_vs_B": 0.0,
+      "R2_difference_vs_B": 0.0,
+      "NMAE_difference_pp_vs_B": 0.0
+    },
+    {
+      "variant": "B_completo",
+      "regime": "startup_e_rampa",
+      "n_test": 1,
+      "MAE": 25.19080200195313,
+      "RMSE": 25.19080200195313,
+      "R2": null,
+      "NMAE_pct": 15.304253950153786,
+      "MedianAE": 25.19080200195313,
+      "Bias": -25.19080200195313,
+      "MAE_difference_vs_B": 0.0,
+      "MAE_difference_pct_vs_B": 0.0,
+      "RMSE_difference_vs_B": 0.0,
+      "RMSE_difference_pct_vs_B": 0.0,
+      "R2_difference_vs_B": null,
+      "NMAE_difference_pp_vs_B": 0.0
+    },
+    {
+      "variant": "B_completo",
+      "regime": "demais_horas",
+      "n_test": 857,
+      "MAE": 22.341563622064044,
+      "RMSE": 28.026185490128224,
+      "R2": 0.9784985471814286,
+      "NMAE_pct": 3.658794425012036,
+      "MedianAE": 18.609265136718705,
+      "Bias": -2.054885894526122,
+      "MAE_difference_vs_B": 0.0,
+      "MAE_difference_pct_vs_B": 0.0,
+      "RMSE_difference_vs_B": 0.0,
+      "RMSE_difference_pct_vs_B": 0.0,
+      "R2_difference_vs_B": 0.0,
+      "NMAE_difference_pp_vs_B": 0.0
+    },
+    {
+      "variant": "B_sem_media3h",
+      "regime": "global",
+      "n_test": 1144,
+      "MAE": 20.689602011473863,
+      "RMSE": 25.8586068964373,
+      "R2": 0.9837596718872277,
+      "NMAE_pct": 3.5154024775499266,
+      "MedianAE": 17.195513916015614,
+      "Bias": -3.9870321571110017,
+      "MAE_difference_vs_B": -0.48238456696063636,
+      "MAE_difference_pct_vs_B": -2.278409563380257,
+      "RMSE_difference_vs_B": -0.7192514681606923,
+      "RMSE_difference_pct_vs_B": -2.7062055124755346,
+      "R2_difference_vs_B": 0.0009160068397202625,
+      "NMAE_difference_pp_vs_B": -0.08196271252027199
+    },
+    {
+      "variant": "B_sem_media3h",
+      "regime": "primeiras_6h_startup",
+      "n_test": 30,
+      "MAE": 10.23911909535726,
+      "RMSE": 13.16812830505158,
+      "R2": 0.7331263141872286,
+      "NMAE_pct": 22.44721839987824,
+      "MedianAE": 9.031967544555663,
+      "Bias": -8.244001789855957,
+      "MAE_difference_vs_B": -0.2125876108805329,
+      "MAE_difference_pct_vs_B": -2.0339990094981886,
+      "RMSE_difference_vs_B": 0.002190955138820172,
+      "RMSE_difference_pct_vs_B": 0.016641087380198094,
+      "R2_difference_vs_B": -8.879920015836262e-05,
+      "NMAE_difference_pp_vs_B": -0.4660557696518488
+    },
+    {
+      "variant": "B_sem_media3h",
+      "regime": "rampas_intensas",
+      "n_test": 258,
+      "MAE": 19.279614983610404,
+      "RMSE": 23.19769783495616,
+      "R2": 0.9791472620775808,
+      "NMAE_pct": 3.343267071845298,
+      "MedianAE": 16.975811767578136,
+      "Bias": -5.895560179717781,
+      "MAE_difference_vs_B": 0.7304978423894859,
+      "MAE_difference_pct_vs_B": 3.9381811912014397,
+      "RMSE_difference_vs_B": 0.7168118235795582,
+      "RMSE_difference_pct_vs_B": 3.1885390247377687,
+      "R2_difference_vs_B": -0.0012687939588796882,
+      "NMAE_difference_pp_vs_B": 0.1266752154849029
+    },
+    {
+      "variant": "B_sem_media3h",
+      "regime": "startup_e_rampa",
+      "n_test": 1,
+      "MAE": 29.154898071289068,
+      "RMSE": 29.154898071289068,
+      "R2": null,
+      "NMAE_pct": 17.712574769920455,
+      "MedianAE": 29.154898071289068,
+      "Bias": -29.154898071289068,
+      "MAE_difference_vs_B": 3.9640960693359375,
+      "MAE_difference_pct_vs_B": 15.736283700013143,
+      "RMSE_difference_vs_B": 3.9640960693359375,
+      "RMSE_difference_pct_vs_B": 15.736283700013143,
+      "R2_difference_vs_B": null,
+      "NMAE_difference_pp_vs_B": 2.4083208197666686
+    },
+    {
+      "variant": "B_sem_media3h",
+      "regime": "demais_horas",
+      "n_test": 857,
+      "MAE": 21.489784551417948,
+      "RMSE": 26.935363580604324,
+      "R2": 0.9801397136622798,
+      "NMAE_pct": 3.519301748145673,
+      "MedianAE": 17.70408935546874,
+      "Bias": -3.2928180930494846,
+      "MAE_difference_vs_B": -0.8517790706460957,
+      "MAE_difference_pct_vs_B": -3.812531141754538,
+      "RMSE_difference_vs_B": -1.0908219095238998,
+      "RMSE_difference_pct_vs_B": -3.892152608167543,
+      "R2_difference_vs_B": 0.0016411664808512194,
+      "NMAE_difference_pp_vs_B": -0.13949267686636313
+    },
+    {
+      "variant": "B_sem_delta",
+      "regime": "global",
+      "n_test": 1144,
+      "MAE": 21.26097495843314,
+      "RMSE": 26.71019612500812,
+      "R2": 0.9826723883830651,
+      "NMAE_pct": 3.612485344210761,
+      "MedianAE": 17.59986877441409,
+      "Bias": -3.1397471215041364,
+      "MAE_difference_vs_B": 0.08898837999863929,
+      "MAE_difference_pct_vs_B": 0.4203119044543513,
+      "RMSE_difference_vs_B": 0.13233776041012746,
+      "RMSE_difference_pct_vs_B": 0.49792484629387346,
+      "R2_difference_vs_B": -0.00017127666444227696,
+      "NMAE_difference_pp_vs_B": 0.015120154140562558
+    },
+    {
+      "variant": "B_sem_delta",
+      "regime": "primeiras_6h_startup",
+      "n_test": 30,
+      "MAE": 10.345159350585938,
+      "RMSE": 12.903623649938124,
+      "R2": 0.7437398768942529,
+      "NMAE_pct": 22.67969042663455,
+      "MedianAE": 9.706046295166015,
+      "Bias": -8.390996634928387,
+      "MAE_difference_vs_B": -0.10654735565185547,
+      "MAE_difference_pct_vs_B": -1.0194254263589886,
+      "RMSE_difference_vs_B": -0.2623136999746354,
+      "RMSE_difference_pct_vs_B": -1.9923663086272692,
+      "R2_difference_vs_B": 0.01052476350686593,
+      "NMAE_difference_pp_vs_B": -0.23358374289553652
+    },
+    {
+      "variant": "B_sem_delta",
+      "regime": "rampas_intensas",
+      "n_test": 258,
+      "MAE": 18.902162964813467,
+      "RMSE": 23.43457063491902,
+      "R2": 0.9787192312518082,
+      "NMAE_pct": 3.277813331886378,
+      "MedianAE": 17.484619140625,
+      "Bias": -4.528385395375333,
+      "MAE_difference_vs_B": 0.35304582359254866,
+      "MAE_difference_pct_vs_B": 1.9033025717865026,
+      "RMSE_difference_vs_B": 0.9536846235424186,
+      "RMSE_difference_pct_vs_B": 4.24220212254891,
+      "R2_difference_vs_B": -0.0016968247846523843,
+      "NMAE_difference_pp_vs_B": 0.06122147552598278
+    },
+    {
+      "variant": "B_sem_delta",
+      "regime": "startup_e_rampa",
+      "n_test": 1,
+      "MAE": 21.035848999023443,
+      "RMSE": 21.035848999023443,
+      "R2": null,
+      "NMAE_pct": 12.779981165870865,
+      "MedianAE": 21.035848999023443,
+      "Bias": -21.035848999023443,
+      "MAE_difference_vs_B": -4.1549530029296875,
+      "MAE_difference_pct_vs_B": -16.493929024600085,
+      "RMSE_difference_vs_B": -4.1549530029296875,
+      "RMSE_difference_pct_vs_B": -16.493929024600085,
+      "R2_difference_vs_B": null,
+      "NMAE_difference_pp_vs_B": -2.524272784282921
+    },
+    {
+      "variant": "B_sem_delta",
+      "regime": "demais_horas",
+      "n_test": 857,
+      "MAE": 22.352950263718878,
+      "RMSE": 27.959137334851267,
+      "R2": 0.9786013016793722,
+      "NMAE_pct": 3.6606591727848894,
+      "MedianAE": 18.09846191406251,
+      "Bias": -2.5587552216395193,
+      "MAE_difference_vs_B": 0.011386641654834051,
+      "MAE_difference_pct_vs_B": 0.05096618055679958,
+      "RMSE_difference_vs_B": -0.06704815527695729,
+      "RMSE_difference_pct_vs_B": -0.23923396675075148,
+      "R2_difference_vs_B": 0.00010275449794361347,
+      "NMAE_difference_pp_vs_B": 0.0018647477728532813
+    },
+    {
+      "variant": "B_sem_delta_e_absdelta",
+      "regime": "global",
+      "n_test": 1144,
+      "MAE": 21.09711296432335,
+      "RMSE": 26.612166114285504,
+      "R2": 0.9827993443104469,
+      "NMAE_pct": 3.5846432977687672,
+      "MedianAE": 17.02612915039063,
+      "Bias": -2.8676411592576887,
+      "MAE_difference_vs_B": -0.0748736141111479,
+      "MAE_difference_pct_vs_B": -0.3536447268836507,
+      "RMSE_difference_vs_B": 0.03430774968751038,
+      "RMSE_difference_pct_vs_B": 0.12908395107262827,
+      "R2_difference_vs_B": -4.432073706051032e-05,
+      "NMAE_difference_pp_vs_B": -0.012721892301431392
+    },
+    {
+      "variant": "B_sem_delta_e_absdelta",
+      "regime": "primeiras_6h_startup",
+      "n_test": 30,
+      "MAE": 9.901131424458821,
+      "RMSE": 12.589679701590182,
+      "R2": 0.7560577544998911,
+      "NMAE_pct": 21.706248107955023,
+      "MedianAE": 8.692817687988281,
+      "Bias": -7.609892547098796,
+      "MAE_difference_vs_B": -0.550575281778972,
+      "MAE_difference_pct_vs_B": -5.267802639834674,
+      "RMSE_difference_vs_B": -0.5762576483225779,
+      "RMSE_difference_pct_vs_B": -4.376882807560955,
+      "R2_difference_vs_B": 0.022842641112504114,
+      "NMAE_difference_pp_vs_B": -1.207026061575064
+    },
+    {
+      "variant": "B_sem_delta_e_absdelta",
+      "regime": "rampas_intensas",
+      "n_test": 258,
+      "MAE": 17.25768435113005,
+      "RMSE": 21.98807205561101,
+      "R2": 0.981265262444039,
+      "NMAE_pct": 2.992645230544346,
+      "MedianAE": 14.88228149414067,
+      "Bias": -3.676470361162526,
+      "MAE_difference_vs_B": -1.2914327900908695,
+      "MAE_difference_pct_vs_B": -6.962233190176869,
+      "RMSE_difference_vs_B": -0.49281395576559106,
+      "RMSE_difference_pct_vs_B": -2.1921464995472095,
+      "R2_difference_vs_B": 0.0008492064075784622,
+      "NMAE_difference_pp_vs_B": -0.2239466258160494
+    },
+    {
+      "variant": "B_sem_delta_e_absdelta",
+      "regime": "startup_e_rampa",
+      "n_test": 1,
+      "MAE": 5.572290039062494,
+      "RMSE": 5.572290039062494,
+      "R2": null,
+      "NMAE_pct": 3.3853523931120866,
+      "MedianAE": 5.572290039062494,
+      "Bias": 5.572290039062494,
+      "MAE_difference_vs_B": -19.618511962890636,
+      "MAE_difference_pct_vs_B": -77.87966401930969,
+      "RMSE_difference_vs_B": -19.618511962890636,
+      "RMSE_difference_pct_vs_B": -77.87966401930969,
+      "R2_difference_vs_B": null,
+      "NMAE_difference_pp_vs_B": -11.9189015570417
+    },
+    {
+      "variant": "B_sem_delta_e_absdelta",
+      "regime": "demais_horas",
+      "n_test": 857,
+      "MAE": 22.626782982379996,
+      "RMSE": 28.183609267496163,
+      "R2": 0.9782563204047886,
+      "NMAE_pct": 3.7055037343102852,
+      "MedianAE": 18.442980957031295,
+      "Bias": -2.448288292367372,
+      "MAE_difference_vs_B": 0.28521936031595274,
+      "MAE_difference_pct_vs_B": 1.276631148745011,
+      "RMSE_difference_vs_B": 0.15742377736793856,
+      "RMSE_difference_pct_vs_B": 0.5617024743641563,
+      "R2_difference_vs_B": -0.0002422267766399866,
+      "NMAE_difference_pp_vs_B": 0.046709309298249124
+    }
+  ],
+  "comparison_with_A": [
+    {
+      "variant": "B_completo",
+      "regime": "global",
+      "MAE_A": 20.151419005413988,
+      "MAE": 21.1719865784345,
+      "MAE_difference_pct_vs_A": 5.064494826623966
+    },
+    {
+      "variant": "B_completo",
+      "regime": "primeiras_6h_startup",
+      "MAE_A": 11.728783042399089,
+      "MAE": 10.451706706237793,
+      "MAE_difference_pct_vs_A": -10.888395936259665
+    },
+    {
+      "variant": "B_completo",
+      "regime": "rampas_intensas",
+      "MAE_A": 24.057700155095535,
+      "MAE": 18.54911714122092,
+      "MAE_difference_pct_vs_A": -22.897379958856423
+    },
+    {
+      "variant": "B_completo",
+      "regime": "startup_e_rampa",
+      "MAE_A": 6.527075195312506,
+      "MAE": 25.19080200195313,
+      "MAE_difference_pct_vs_A": 285.94318662123266
+    },
+    {
+      "variant": "B_completo",
+      "regime": "demais_horas",
+      "MAE_A": 19.254376063129865,
+      "MAE": 22.341563622064044,
+      "MAE_difference_pct_vs_A": 16.03369306183764
+    },
+    {
+      "variant": "B_sem_media3h",
+      "regime": "global",
+      "MAE_A": 20.151419005413988,
+      "MAE": 20.689602011473863,
+      "MAE_difference_pct_vs_A": 2.6706953287770174
+    },
+    {
+      "variant": "B_sem_media3h",
+      "regime": "primeiras_6h_startup",
+      "MAE_A": 11.728783042399089,
+      "MAE": 10.23911909535726,
+      "MAE_difference_pct_vs_A": -12.700925080264092
+    },
+    {
+      "variant": "B_sem_media3h",
+      "regime": "rampas_intensas",
+      "MAE_A": 24.057700155095535,
+      "MAE": 19.279614983610404,
+      "MAE_difference_pct_vs_A": -19.860939078472594
+    },
+    {
+      "variant": "B_sem_media3h",
+      "regime": "startup_e_rampa",
+      "MAE_A": 6.527075195312506,
+      "MAE": 29.154898071289068,
+      "MAE_difference_pct_vs_A": 346.67630138882106
+    },
+    {
+      "variant": "B_sem_media3h",
+      "regime": "demais_horas",
+      "MAE_A": 19.254376063129865,
+      "MAE": 21.489784551417948,
+      "MAE_difference_pct_vs_A": 11.60987237892719
+    },
+    {
+      "variant": "B_sem_delta",
+      "regime": "global",
+      "MAE_A": 20.151419005413988,
+      "MAE": 21.26097495843314,
+      "MAE_difference_pct_vs_A": 5.506093405735113
+    },
+    {
+      "variant": "B_sem_delta",
+      "regime": "primeiras_6h_startup",
+      "MAE_A": 11.728783042399089,
+      "MAE": 10.345159350585938,
+      "MAE_difference_pct_vs_A": -11.796822285921781
+    },
+    {
+      "variant": "B_sem_delta",
+      "regime": "rampas_intensas",
+      "MAE_A": 24.057700155095535,
+      "MAE": 18.902162964813467,
+      "MAE_difference_pct_vs_A": -21.42988380869857
+    },
+    {
+      "variant": "B_sem_delta",
+      "regime": "startup_e_rampa",
+      "MAE_A": 6.527075195312506,
+      "MAE": 21.035848999023443,
+      "MAE_difference_pct_vs_A": 222.2859913446467
+    },
+    {
+      "variant": "B_sem_delta",
+      "regime": "demais_horas",
+      "MAE_A": 19.254376063129865,
+      "MAE": 22.352950263718878,
+      "MAE_difference_pct_vs_A": 16.092831003350263
+    },
+    {
+      "variant": "B_sem_delta_e_absdelta",
+      "regime": "global",
+      "MAE_A": 20.151419005413988,
+      "MAE": 21.09711296432335,
+      "MAE_difference_pct_vs_A": 4.692939780842664
+    },
+    {
+      "variant": "B_sem_delta_e_absdelta",
+      "regime": "primeiras_6h_startup",
+      "MAE_A": 11.728783042399089,
+      "MAE": 9.901131424458821,
+      "MAE_difference_pct_vs_A": -15.582619367528405
+    },
+    {
+      "variant": "B_sem_delta_e_absdelta",
+      "regime": "rampas_intensas",
+      "MAE_A": 24.057700155095535,
+      "MAE": 17.25768435113005,
+      "MAE_difference_pct_vs_A": -28.26544416185689
+    },
+    {
+      "variant": "B_sem_delta_e_absdelta",
+      "regime": "startup_e_rampa",
+      "MAE_A": 6.527075195312506,
+      "MAE": 5.572290039062494,
+      "MAE_difference_pct_vs_A": -14.628070424800699
+    },
+    {
+      "variant": "B_sem_delta_e_absdelta",
+      "regime": "demais_horas",
+      "MAE_A": 19.254376063129865,
+      "MAE": 22.626782982379996,
+      "MAE_difference_pct_vs_A": 17.515015330504234
+    }
+  ],
+  "csv_precision_note": "Previsões float32: o CSV reconstrói exatamente o tipo float32 do Parquet. A leitura indiscriminada como float64 produz diferenças decimais de até 0,00003047 short ton. As métricas foram recalculadas do Parquet.",
+  "methodological_limits": [
+    "Teste histórico já reutilizado; comparação exploratória, sem teste formal de equivalência.",
+    "Uma semente e um período de teste; ganho descritivo não garante ganho futuro.",
+    "As variantes mantêm colsample_bytree=0.8, mas o número efetivo de colunas amostradas muda.",
+    "Startup: 30 observações; interseção startup/rampa: uma observação, R2 indefinido.",
+    "A verificação não reexecutou o treinamento nem alterou os arquivos recebidos."
+  ]
+}

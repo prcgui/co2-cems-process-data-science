@@ -127,10 +127,10 @@ O menor MAE neste período foi obtido por:
 
 ## 6. Comparação MLP x XGBoost
 
-Os modelos XGBoost apresentaram menor MAE neste holdout, sob
-os procedimentos de ajuste e seleção adotados para cada família.
+A comparação com os modelos anteriores mostra forte efeito da
+família de algoritmo.
 
-### Redução de MAE observada na comparação MLP x XGBoost
+### Redução de MAE ao substituir MLP por XGBoost
 
 - Cenário A: **+65.86%**
 - Cenário B: **+62.24%**
@@ -147,11 +147,14 @@ no holdout histórico foi:
 - Cenário B: **+62.24%**
 - Cenário C: **+60.06%**
 
-A redução de erro também ocorre em A, que utiliza apenas carga
-instantânea. Portanto, o resultado não exige a inclusão dos
-atributos de trajetória para ser observado nesta comparação.
-A diferença caracteriza os procedimentos completos; não permite
-separar a família de algoritmo das escolhas de ajuste e seleção.
+O fato de o Cenário A, utilizando apenas carga instantânea,
+também apresentar forte melhora demonstra que o ganho do
+Gradient Boosting não pode ser atribuído principalmente às
+features de trajetória.
+
+Os resultados indicam que a família de modelo possui papel
+determinante na capacidade de representar a relação entre carga
+operacional e massa horária de CO₂.
 
 
 ---
@@ -232,18 +235,20 @@ mostrar benefício consistente e reproduzível.
 
 ## 10. Diagnóstico final
 
-Os experimentos permitem comparar os procedimentos de modelagem
-e os conjuntos de atributos adotados.
+Os experimentos realizados até este ponto permitem separar dois
+efeitos.
 
-### Comparação dos procedimentos MLP e XGBoost
+### Efeito da família de modelo
 
-Neste holdout, os modelos XGBoost apresentaram erros inferiores
-aos das MLPs avaliadas, inclusive com apenas a carga instantânea.
-O resultado caracteriza os procedimentos completos, que também
-diferem no ajuste e na seleção, sem identificar isoladamente a
-origem da diferença de desempenho.
+A mudança de MLP para XGBoost produziu uma redução muito
+expressiva do erro, inclusive quando apenas a carga instantânea
+foi utilizada.
 
-### Comparação das representações de trajetória operacional
+Portanto, o principal ganho observado decorre da capacidade do
+Gradient Boosting de representar a relação não linear entre as
+variáveis operacionais e a massa horária de CO₂.
+
+### Efeito da trajetória operacional
 
 Quando a família XGBoost é mantida fixa, os Cenários B e C
 apresentam apenas pequeno ganho médio na validação temporal em
@@ -320,9 +325,9 @@ O conjunto de validação de cada fold também é utilizado pelo **early stoppin
 
 A configuração do XGBoost foi mantida fixa nesta etapa, sem *random search* ou outra busca de hiperparâmetros. O **early stopping** acompanha o RMSE de validação e interrompe o treinamento quando novas árvores deixam de proporcionar melhora conforme o critério especificado. Dessa maneira, o número efetivo de árvores é condicionado ao período de validação de cada ajuste, mantendo os demais parâmetros de referência.
 
-### 13.4. Comparações entre procedimentos e variáveis
+### 13.4. Comparações controladas de algoritmos e variáveis
 
-MLP e XGBoost utilizam, dentro de cada cenário, os mesmos atributos, mas mantêm procedimentos próprios de ajuste e seleção. A comparação descreve esses procedimentos completos. Entre A, B e C, mantém-se o XGBoost, a amostra e a regra de seleção de árvores; muda a representação operacional e pode mudar a complexidade selecionada. As diferenças nas métricas não identificam efeitos causais.
+A comparação entre MLP e XGBoost utiliza, dentro de cada cenário, o mesmo conjunto de variáveis de entrada. A comparação dos Cenários A, B e C, por sua vez, mantém o XGBoost como família de modelo, alterando a representação da operação. Esse desenho ajuda a distinguir **efeito da família de algoritmo** e **valor incremental das variáveis de trajetória**, sem atribuir causalidade à diferença observada nas métricas.
 
 ### 13.5. Importância por ganho das variáveis
 

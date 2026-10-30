@@ -1,0 +1,106 @@
+referencia,candidata,contexto,bloco_dias,n,n_blocos,blocos_com_observacoes,d_medio,ganho_mae_pct,percentil_2_5,percentil_97_5,replicas_validas,replicas_sem_contexto,inferencia
+A,B_completo,global,1,1144,61,53,-1.0205675730205077,-5.064494826623954,-3.0484882087630556,0.8490603073978761,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,global,1,1144,61,53,0.4823845669606348,2.278409563380251,-0.19494829251824572,1.167400673901274,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,global,1,1144,61,53,-0.08898837999864039,-0.42031190445436406,-0.47806458397412904,0.2758596055463768,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,global,1,1144,61,53,0.07487361411114679,0.3536447268836456,-0.28638508613444164,0.4352933116085765,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,global,1,1144,61,53,-0.5381830060598728,-2.670695328777004,-2.080438942215578,0.8812842693770175,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,global,1,1144,61,53,-1.1095559530191481,-5.506093405735094,-2.9779733315388683,0.6314169236584123,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,global,1,1144,61,53,-0.945693958909361,-4.692939780842659,-2.8906672905325355,0.8640753471725273,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,partidas,1,30,61,7,1.2770763361612956,10.88839593625967,-1.5849033381737119,4.221178819509652,9995,5.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,partidas,1,30,61,7,0.21258761088053385,2.033999009498202,-0.32653045654296875,0.5928501549519989,9995,5.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,partidas,1,30,61,7,0.10654735565185547,1.019425426358987,-0.2168656794230143,0.46355133056640624,9995,5.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,partidas,1,30,61,7,0.5505752817789717,5.26780263983467,0.13550737644064018,1.2104993483599509,9995,5.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,partidas,1,30,61,7,1.4896639470418294,12.700925080264106,-1.5212454460407128,4.482066581032492,9995,5.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,partidas,1,30,61,7,1.383623691813151,11.796822285921786,-1.3718609195285376,4.139813307542067,9995,5.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,partidas,1,30,61,7,1.827651617940267,15.5826193675284,-0.8777630615234371,4.532352052188447,9995,5.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,rampas,1,258,61,47,5.508583013874617,22.897379958856426,3.1097781328769396,8.079482825901094,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,rampas,1,258,61,47,-0.7304978423894838,-3.938181191201436,-1.7186830884880686,0.26821940067522465,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,rampas,1,258,61,47,-0.353045823592549,-1.9033025717865042,-1.3878131855385285,0.6690985867493234,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,rampas,1,258,61,47,1.2914327900908704,6.962233190176874,0.12145005176038615,2.423796894452191,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,rampas,1,258,61,47,4.778085171485133,19.8609390784726,2.5026765064311904,7.153402979722722,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,rampas,1,258,61,47,5.155537190282068,21.42988380869857,2.5601420599362754,8.015548757577783,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,rampas,1,258,61,47,6.800015803965487,28.265444161856895,4.328304598804462,9.483888971906426,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,demais,1,857,61,50,-3.087187558934179,-16.03369306183763,-5.604393350857858,-0.673849433058734,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,demais,1,857,61,50,0.8517790706460924,3.8125311417545276,0.0004183600342611925,1.722397915770508,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,demais,1,857,61,50,-0.011386641654834221,-0.0509661805568032,-0.3738497019001547,0.3214708559662299,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,demais,1,857,61,50,-0.28521936031595235,-1.276631148745005,-0.666529730849586,0.08975458958961428,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,demais,1,857,61,50,-2.235408488288087,-11.609872378927212,-4.091234624461907,-0.4324517070017213,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,demais,1,857,61,50,-3.0985742005890136,-16.09283100335026,-5.476318098916099,-0.8339529233500947,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,demais,1,857,61,50,-3.3724069192501323,-17.515015330504227,-5.789859187973364,-1.0417678219079962,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,sobreposicao,1,1,61,1,-18.663726806640625,-285.94318662123266,,,0,,apenas descritivo n=1
+B_completo,B_sem_media3h,sobreposicao,1,1,61,1,-3.9640960693359375,-15.736283700013153,,,0,,apenas descritivo n=1
+B_completo,B_sem_delta,sobreposicao,1,1,61,1,4.1549530029296875,16.49392902460009,,,0,,apenas descritivo n=1
+B_completo,B_sem_delta_e_absdelta,sobreposicao,1,1,61,1,19.618511962890636,77.87966401930969,,,0,,apenas descritivo n=1
+A,B_sem_media3h,sobreposicao,1,1,61,1,-22.627822875976562,-346.67630138882106,,,0,,apenas descritivo n=1
+A,B_sem_delta,sobreposicao,1,1,61,1,-14.508773803710938,-222.2859913446467,,,0,,apenas descritivo n=1
+A,B_sem_delta_e_absdelta,sobreposicao,1,1,61,1,0.9547851562500114,14.628070424800702,,,0,,apenas descritivo n=1
+A,B_completo,global,3,1144,21,19,-1.0205675730205077,-5.064494826623954,-3.858398368316807,1.4117102502828007,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,global,3,1144,21,19,0.4823845669606348,2.278409563380251,-0.30396966716800977,1.3570504274376076,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,global,3,1144,21,19,-0.08898837999864039,-0.42031190445436406,-0.5780528251970765,0.33602506205631444,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,global,3,1144,21,19,0.07487361411114679,0.3536447268836456,-0.39869762078422344,0.4998634585780105,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,global,3,1144,21,19,-0.5381830060598728,-2.670695328777004,-2.6359339015125833,1.319740698159342,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,global,3,1144,21,19,-1.1095559530191481,-5.506093405735094,-3.7630957278006423,1.141155762662955,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,global,3,1144,21,19,-0.945693958909361,-4.692939780842659,-3.7061328524293176,1.4098275574378571,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,partidas,3,30,21,5,1.2770763361612956,10.88839593625967,-0.036861461215549535,2.825852826436361,9961,39.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,partidas,3,30,21,5,0.21258761088053385,2.033999009498202,-0.30008411407470703,0.6438717312282987,9961,39.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,partidas,3,30,21,5,0.10654735565185547,1.019425426358987,-0.22836526234944662,0.5228596793280708,9961,39.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,partidas,3,30,21,5,0.5505752817789717,5.26780263983467,0.12935765584309897,1.2518389807807087,9961,39.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,partidas,3,30,21,5,1.4896639470418294,12.700925080264106,-0.32641393025716187,3.3828032175699874,9961,39.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,partidas,3,30,21,5,1.383623691813151,11.796822285921786,0.33234094848632767,2.8105001322428387,9961,39.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,partidas,3,30,21,5,1.827651617940267,15.5826193675284,0.9365151316324875,3.206125967237685,9961,39.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,rampas,3,258,21,19,5.508583013874617,22.897379958856426,2.9011032380503963,8.313191122111027,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,rampas,3,258,21,19,-0.7304978423894838,-3.938181191201436,-1.9395541641716156,0.478840445456211,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,rampas,3,258,21,19,-0.353045823592549,-1.9033025717865042,-1.6457291536126792,0.9448236008171822,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,rampas,3,258,21,19,1.2914327900908704,6.962233190176874,-0.11161995449284043,2.6632576942324517,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,rampas,3,258,21,19,4.778085171485133,19.8609390784726,2.392656730145262,7.263311453968857,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,rampas,3,258,21,19,5.155537190282068,21.42988380869857,1.8387144399802473,8.820865939648293,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,rampas,3,258,21,19,6.800015803965487,28.265444161856895,3.750560609225524,10.13026930267366,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,demais,3,857,21,19,-3.087187558934179,-16.03369306183763,-6.547403696754072,0.10066064693517301,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,demais,3,857,21,19,0.8517790706460924,3.8125311417545276,-0.09385505989740292,1.8832475090338572,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,demais,3,857,21,19,-0.011386641654834221,-0.0509661805568032,-0.42339536533242605,0.36024402832458097,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,demais,3,857,21,19,-0.28521936031595235,-1.276631148745005,-0.7260484801718892,0.09403436590999695,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,demais,3,857,21,19,-2.235408488288087,-11.609872378927212,-4.919057551881817,0.26029225688892077,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,demais,3,857,21,19,-3.0985742005890136,-16.09283100335026,-6.462281411910935,-0.09055340591873587,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,demais,3,857,21,19,-3.3724069192501323,-17.515015330504227,-6.8289223345560925,-0.22873527529453652,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,sobreposicao,3,1,21,1,-18.663726806640625,-285.94318662123266,,,0,,apenas descritivo n=1
+B_completo,B_sem_media3h,sobreposicao,3,1,21,1,-3.9640960693359375,-15.736283700013153,,,0,,apenas descritivo n=1
+B_completo,B_sem_delta,sobreposicao,3,1,21,1,4.1549530029296875,16.49392902460009,,,0,,apenas descritivo n=1
+B_completo,B_sem_delta_e_absdelta,sobreposicao,3,1,21,1,19.618511962890636,77.87966401930969,,,0,,apenas descritivo n=1
+A,B_sem_media3h,sobreposicao,3,1,21,1,-22.627822875976562,-346.67630138882106,,,0,,apenas descritivo n=1
+A,B_sem_delta,sobreposicao,3,1,21,1,-14.508773803710938,-222.2859913446467,,,0,,apenas descritivo n=1
+A,B_sem_delta_e_absdelta,sobreposicao,3,1,21,1,0.9547851562500114,14.628070424800702,,,0,,apenas descritivo n=1
+A,B_completo,global,7,1144,9,9,-1.0205675730205077,-5.064494826623954,-4.003093159115761,2.0114659879548147,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,global,7,1144,9,9,0.4823845669606348,2.278409563380251,-0.39946433748517807,1.368345711272147,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,global,7,1144,9,9,-0.08898837999864039,-0.42031190445436406,-0.5697183587602682,0.33859720674100746,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,global,7,1144,9,9,0.07487361411114679,0.3536447268836456,-0.39105121851329977,0.51351220701593,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,global,7,1144,9,9,-0.5381830060598728,-2.670695328777004,-2.8261474467233327,1.8170445901517231,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,global,7,1144,9,9,-1.1095559530191481,-5.506093405735094,-3.7945731019927535,1.6156768021435364,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,global,7,1144,9,9,-0.945693958909361,-4.692939780842659,-3.7420059976034743,1.9462628644097975,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,partidas,7,30,9,5,1.2770763361612956,10.88839593625967,0.004722614288329652,2.690714331563314,9993,7.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,partidas,7,30,9,5,0.21258761088053385,2.033999009498202,-0.22879494561089408,0.5822710461086698,9993,7.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,partidas,7,30,9,5,0.10654735565185547,1.019425426358987,-0.22836526234944662,0.5082540512084961,9993,7.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,partidas,7,30,9,5,0.5505752817789717,5.26780263983467,0.12935765584309897,1.2362776184081992,9993,7.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,partidas,7,30,9,5,1.4896639470418294,12.700925080264106,-0.2724269755772182,3.184705285814062,9993,7.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,partidas,7,30,9,5,1.383623691813151,11.796822285921786,0.34790397135416623,2.7011395060221357,9993,7.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,partidas,7,30,9,5,1.827651617940267,15.5826193675284,0.9365151316324875,3.015847142537435,9993,7.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,rampas,7,258,9,9,5.508583013874617,22.897379958856426,2.3068906527399267,9.099275731481391,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,rampas,7,258,9,9,-0.7304978423894838,-3.938181191201436,-1.6650744950690006,0.3637317930841616,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,rampas,7,258,9,9,-0.353045823592549,-1.9033025717865042,-1.5701414338152653,0.8647161220449814,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,rampas,7,258,9,9,1.2914327900908704,6.962233190176874,-0.16478004139915553,2.8327325478478445,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,rampas,7,258,9,9,4.778085171485133,19.8609390784726,1.9377400131246256,7.97910600966901,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,rampas,7,258,9,9,5.155537190282068,21.42988380869857,1.4919570851261907,9.406636695933758,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,rampas,7,258,9,9,6.800015803965487,28.265444161856895,3.3297245147716668,10.6310327681222,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,demais,7,857,9,9,-3.087187558934179,-16.03369306183763,-6.8282097135211925,0.9429904397066061,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_media3h,demais,7,857,9,9,0.8517790706460924,3.8125311417545276,-0.29898840736230664,1.9050561795289493,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta,demais,7,857,9,9,-0.011386641654834221,-0.0509661805568032,-0.4252139704393059,0.3515797191276284,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+B_completo,B_sem_delta_e_absdelta,demais,7,857,9,9,-0.28521936031595235,-1.276631148745005,-0.656057859452814,0.10596833454166166,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_media3h,demais,7,857,9,9,-2.235408488288087,-11.609872378927212,-5.161538539048123,1.08586370967618,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta,demais,7,857,9,9,-3.0985742005890136,-16.09283100335026,-6.616115796857894,0.6889041626462754,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_sem_delta_e_absdelta,demais,7,857,9,9,-3.3724069192501323,-17.515015330504227,-7.024397793562052,0.7104680796413805,10000,0.0,sensibilidade exploratoria; cobertura nao demonstrada
+A,B_completo,sobreposicao,7,1,9,1,-18.663726806640625,-285.94318662123266,,,0,,apenas descritivo n=1
+B_completo,B_sem_media3h,sobreposicao,7,1,9,1,-3.9640960693359375,-15.736283700013153,,,0,,apenas descritivo n=1
+B_completo,B_sem_delta,sobreposicao,7,1,9,1,4.1549530029296875,16.49392902460009,,,0,,apenas descritivo n=1
+B_completo,B_sem_delta_e_absdelta,sobreposicao,7,1,9,1,19.618511962890636,77.87966401930969,,,0,,apenas descritivo n=1
+A,B_sem_media3h,sobreposicao,7,1,9,1,-22.627822875976562,-346.67630138882106,,,0,,apenas descritivo n=1
+A,B_sem_delta,sobreposicao,7,1,9,1,-14.508773803710938,-222.2859913446467,,,0,,apenas descritivo n=1
+A,B_sem_delta_e_absdelta,sobreposicao,7,1,9,1,0.9547851562500114,14.628070424800702,,,0,,apenas descritivo n=1

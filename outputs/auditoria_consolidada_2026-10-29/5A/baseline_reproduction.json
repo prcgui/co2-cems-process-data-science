@@ -1,0 +1,7 @@
+{
+  "max_absolute_prediction_difference": 0.0,
+  "exact_prediction_equality": true,
+  "n_predictions": 1144,
+  "tolerance_absolute": 1e-06,
+  "passed": true
+}

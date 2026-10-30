@@ -1,0 +1,67 @@
+{
+  "natureza": "retrospectiva condicional aos modelos salvos; sem treinamento",
+  "perda": "absoluta; d=erro absoluto referencia - candidata",
+  "semente": 42,
+  "replicas": 10000,
+  "blocos_dias": [
+    1,
+    3,
+    7
+  ],
+  "ancora": "2025-11-01 00:00:00",
+  "fim_exclusivo": "2026-01-01 00:00:00",
+  "horas_calendario": 1464,
+  "dias": 61,
+  "n_ON": 1144,
+  "pares": [
+    [
+      "A",
+      "B_completo"
+    ],
+    [
+      "B_completo",
+      "B_sem_media3h"
+    ],
+    [
+      "B_completo",
+      "B_sem_delta"
+    ],
+    [
+      "B_completo",
+      "B_sem_delta_e_absdelta"
+    ],
+    [
+      "A",
+      "B_sem_media3h"
+    ],
+    [
+      "A",
+      "B_sem_delta"
+    ],
+    [
+      "A",
+      "B_sem_delta_e_absdelta"
+    ]
+  ],
+  "contextos": {
+    "global": 1144,
+    "partidas": 30,
+    "rampas": 258,
+    "demais": 857,
+    "sobreposicao": 1
+  },
+  "intervalos": "percentis exploratorios 2.5 e 97.5; sem cobertura nominal demonstrada",
+  "exclusoes_inferencia": [
+    "sobreposicao n=1"
+  ],
+  "teste_reutilizado": true,
+  "novos_ajustes": 0,
+  "hashes_insumos": {
+    "data/interim/03A05_trajectory_history/03A05_previsoes_pareadas_com_contextos.parquet": "eb204d81dae4ccc3f073fbe630bd88283bb8a9c3f774dca5bae5b36ac2c699be",
+    "outputs/03A05A_ablacao_controlada/20261029T235706_270875Z/ablacao_previsoes.parquet": "f4aeee282d9859d3a9cdc90855f7e0469ad029ee8b227fe9a0ad8af086f021b8"
+  },
+  "python": "3.13.18 (main, Oct 26 2026, 15:28:15) [GCC 13.3.0]",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "numpy": "2.1.3",
+  "pandas": "2.2.3"
+}

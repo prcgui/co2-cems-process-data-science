@@ -1,0 +1,31 @@
+{
+  "python": "3.13.18",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "xgboost": "3.4.1",
+  "numpy": "2.1.3",
+  "pandas": "2.2.3",
+  "scikit_learn": "1.6.1",
+  "pyarrow": "23.0.1",
+  "fixed_params": {
+    "objective": "reg:squarederror",
+    "n_estimators": 721,
+    "learning_rate": 0.03,
+    "max_depth": 4,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "eval_metric": "rmse",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "input_hashes": {
+    "data/interim/03A05_trajectory_history/03A05_treino_final_A_B.parquet": "e4fbf1fd9c7b7b325943a4e78d370e6b4571dfabbd01f48eabf668bc5da2f4f6",
+    "data/interim/03A05_trajectory_history/03A05_teste_nov_dez_2025_A_B.parquet": "526c80faafd6bd9f22a53197acb90bf06fd8800cbba0443a05c21bf9b9a32c70",
+    "data/interim/03A05_trajectory_history/03A05_previsoes_pareadas_com_contextos.parquet": "eb204d81dae4ccc3f073fbe630bd88283bb8a9c3f774dca5bae5b36ac2c699be",
+    "outputs/tables/03A05_selecao_complexidade_A_B.csv": "d5d78cc165ec4ff3883e2b888804b9e624d2ba4516bd175eb95a7abac8ee569d",
+    "notebooks/03A.05_trajetoria_operacional_historico_ampliado.ipynb": "d4f4b3fe4776425141f80d244465a4a0329d0fd334a2efd7b31d71503565a69b"
+  },
+  "run_id_utc": "20261029T235706_270875Z"
+}

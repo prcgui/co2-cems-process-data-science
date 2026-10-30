@@ -1,0 +1,7 @@
+﻿etapa,notebook,configs_por_cenario,cenarios,sementes,ajustes_selecao,reajustes_finais,total_ajustes,complexidade_selecionada,tempo_por_ajuste_s,observacao,evidencia
+MLP A/B,03A,1,2,1,2,0,2,24/38 melhores épocas; até 500; parada 30,,Seleção de época no próprio ajuste; um por cenário.,"03A, células 11–12; saídas preservadas"
+MLP C,03A.01,1,1,1,1,0,1,57 melhores épocas; até 500; parada 30,,Um ajuste; sem reamostragem de sementes.,"03A.01, células 17–18; saída preservada"
+XGBoost referência,03A.02,1,3,1,15,3,18,até 3000 árvores; parada 50; por fold/cenário,,"15 folds/seleção; 3 ajustes finais com seleção em outubro, sem refit incluindo outubro.","03A.02, células 16/20/27; tabelas de CV e teste"
+Busca pareada XGBoost,03A.03,30,2,1,300,2,302,n_estimators integra busca; sem early stopping,,"Log ~2,3 min acumulados e arredondados só da busca; não é tempo comparável por ajuste.","03A.03, células 10/15/20; 300 linhas em 03A03_tuning_results_AB.csv"
+Comparação final ampliada,03A.05,1,2,1,2,2,4,A 498; B 721 árvores,,"Seleção em outubro, reajuste com outubro; mesma amostra A/B.",03A05_selecao_complexidade_A_B.csv; código e modelos salvos
+Ablação controlada,03A.05A,1,4,1,0,4,4,721 árvores fixadas em todas as variantes,,Inclui reprodução B completo; não repete seleção de complexidade.,03A05A_ablacao_controlada.zip: protocolo e quatro modelos

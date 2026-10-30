@@ -1,0 +1,1357 @@
+[
+  {
+    "check": "01_selecao_unidade_estudo.ipynb all code cells executed",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "01_selecao_unidade_estudo.ipynb ordered counters",
+    "passed": true,
+    "detail": "[18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]"
+  },
+  {
+    "check": "01_selecao_unidade_estudo.ipynb no stored errors",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "01_selecao_unidade_estudo.ipynb statuses ok",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "01_selecao_unidade_estudo.ipynb chronological metadata",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "02_tratamento_dados.ipynb all code cells executed",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "02_tratamento_dados.ipynb ordered counters",
+    "passed": true,
+    "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+  },
+  {
+    "check": "02_tratamento_dados.ipynb no stored errors",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "02_tratamento_dados.ipynb statuses ok",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "02_tratamento_dados.ipynb chronological metadata",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "02_tratamento_dados.ipynb after predecessor",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A_modelagem_preditiva_co2.ipynb all code cells executed",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A_modelagem_preditiva_co2.ipynb ordered counters",
+    "passed": true,
+    "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+  },
+  {
+    "check": "03A_modelagem_preditiva_co2.ipynb no stored errors",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A_modelagem_preditiva_co2.ipynb statuses ok",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A_modelagem_preditiva_co2.ipynb chronological metadata",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A_modelagem_preditiva_co2.ipynb after predecessor",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.01_modelagem_preditiva_co2.ipynb all code cells executed",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.01_modelagem_preditiva_co2.ipynb ordered counters",
+    "passed": true,
+    "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+  },
+  {
+    "check": "03A.01_modelagem_preditiva_co2.ipynb no stored errors",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.01_modelagem_preditiva_co2.ipynb statuses ok",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.01_modelagem_preditiva_co2.ipynb chronological metadata",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.01_modelagem_preditiva_co2.ipynb after predecessor",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.02_comparacao_modelos_gradient_boosting.ipynb all code cells executed",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.02_comparacao_modelos_gradient_boosting.ipynb ordered counters",
+    "passed": true,
+    "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]"
+  },
+  {
+    "check": "03A.02_comparacao_modelos_gradient_boosting.ipynb no stored errors",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.02_comparacao_modelos_gradient_boosting.ipynb statuses ok",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.02_comparacao_modelos_gradient_boosting.ipynb chronological metadata",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.02_comparacao_modelos_gradient_boosting.ipynb after predecessor",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.03_otimizacao_pareada_xgboost.ipynb all code cells executed",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.03_otimizacao_pareada_xgboost.ipynb ordered counters",
+    "passed": true,
+    "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]"
+  },
+  {
+    "check": "03A.03_otimizacao_pareada_xgboost.ipynb no stored errors",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.03_otimizacao_pareada_xgboost.ipynb statuses ok",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.03_otimizacao_pareada_xgboost.ipynb chronological metadata",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.03_otimizacao_pareada_xgboost.ipynb after predecessor",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb all code cells executed",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb ordered counters",
+    "passed": true,
+    "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+  },
+  {
+    "check": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb no stored errors",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb statuses ok",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb chronological metadata",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb after predecessor",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05_trajetoria_operacional_historico_ampliado.ipynb all code cells executed",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05_trajetoria_operacional_historico_ampliado.ipynb ordered counters",
+    "passed": true,
+    "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]"
+  },
+  {
+    "check": "03A.05_trajetoria_operacional_historico_ampliado.ipynb no stored errors",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05_trajetoria_operacional_historico_ampliado.ipynb statuses ok",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05_trajetoria_operacional_historico_ampliado.ipynb chronological metadata",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05_trajetoria_operacional_historico_ampliado.ipynb after predecessor",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input pipeline/selected_unit.json",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2010.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2011.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2012.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2013.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2014.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2015.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2016.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2017.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2018.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2019.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2020.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2021.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2022.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2023.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2024.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Preserved input data/interim/03A04_multiyear/iatan_unit2_2025.parquet",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Raw pipeline identical to annual 2025",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Raw 2025 complete hourly calendar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ON/OFF counts",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "No operational missing target/load 2025",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A unique timestamps",
+    "passed": true,
+    "detail": "1144"
+  },
+  {
+    "check": "03A.01 unique timestamps",
+    "passed": true,
+    "detail": "1144"
+  },
+  {
+    "check": "03A.02 unique timestamps",
+    "passed": true,
+    "detail": "1144"
+  },
+  {
+    "check": "03A.03 unique timestamps",
+    "passed": true,
+    "detail": "1144"
+  },
+  {
+    "check": "03A.04 unique timestamps",
+    "passed": true,
+    "detail": "1144"
+  },
+  {
+    "check": "03A.05 unique timestamps",
+    "passed": true,
+    "detail": "1144"
+  },
+  {
+    "check": "03A.04 backtest 2021/1 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/1 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/1 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/1 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/1 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/1 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/2 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/2 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/2 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/2 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/2 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/2 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/3 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/3 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/3 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/3 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/3 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/3 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/5 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/5 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/5 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/5 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/5 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/5 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/10 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/10 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/10 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/10 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/10 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2021/10 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/1 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/1 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/1 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/1 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/1 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/1 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/2 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/2 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/2 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/2 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/2 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/2 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/3 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/3 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/3 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/3 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/3 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/3 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/5 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/5 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/5 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/5 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/5 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/5 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/10 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/10 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/10 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/10 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/10 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2022/10 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/1 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/1 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/1 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/1 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/1 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/1 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/2 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/2 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/2 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/2 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/2 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/2 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/3 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/3 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/3 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/3 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/3 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/3 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/5 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/5 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/5 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/5 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/5 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/5 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/10 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/10 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/10 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/10 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/10 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2023/10 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/1 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/1 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/1 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/1 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/1 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/1 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/2 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/2 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/2 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/2 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/2 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/2 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/3 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/3 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/3 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/3 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/3 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/3 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/5 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/5 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/5 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/5 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/5 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/5 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/10 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/10 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/10 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/10 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/10 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2024/10 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/1 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/1 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/1 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/1 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/1 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/1 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/2 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/2 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/2 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/2 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/2 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/2 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/3 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/3 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/3 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/3 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/3 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/3 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/5 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/5 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/5 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/5 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/5 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/5 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/10 MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/10 RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/10 R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/10 NMAE_pct",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/10 Bias",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04 backtest 2025/10 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 shared train size",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 selection/validation/test sizes",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 temporal isolation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 selected historical years",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 no feature/target missing values",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 train-only Pearson independently reproduced",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 delta algebraic identity",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 absolute delta identity",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 ramp threshold",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 context Todas as horas",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 context Primeiras 6 h após startup",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 context Rampas intensas",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 context Demais horas",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05 one overlapping startup/ramp hour",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A/A exported MAE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A/A exported RMSE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A/A exported R2",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A/B exported MAE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A/B exported RMSE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A/B exported R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.01/C exported MAE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.01/C exported RMSE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.01/C exported R2",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.02/B exported MAE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.02/B exported RMSE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.02/B exported R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.02/C exported MAE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.02/C exported RMSE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.02/C exported R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.03/A exported MAE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.03/A exported RMSE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.03/A exported R2",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.03/B exported MAE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.03/B exported RMSE",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.03/B exported R2",
+    "passed": false,
+    "detail": ""
+  },
+  {
+    "check": "03A.04/A_2025_only exported MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04/A_2025_only exported RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04/A_2025_only exported R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04/A_history_plus_2025 exported MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04/A_history_plus_2025 exported RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.04/A_history_plus_2025 exported R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05/A exported MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05/A exported RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05/A exported R2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05/B exported MAE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05/B exported RMSE",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "03A.05/B exported R2",
+    "passed": true,
+    "detail": ""
+  }
+]

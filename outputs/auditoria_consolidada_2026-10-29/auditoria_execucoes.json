@@ -1,0 +1,2804 @@
+[
+  {
+    "name": "01_selecao_unidade_estudo.ipynb",
+    "bytes": 1418231,
+    "code_cells": 17,
+    "executed": 17,
+    "outputs": 40,
+    "errors": [],
+    "counts": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "cells": [
+      {
+        "index": 1,
+        "execution_count": 18,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793313880299,
+          "user_tz": 180,
+          "elapsed": 2442,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 1 — CONFIGURAÇÃO GERAL DO PROJETO"
+      },
+      {
+        "index": 3,
+        "execution_count": 19,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793313885379,
+          "user_tz": 180,
+          "elapsed": 5081,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 1 — CATÁLOGO EPA"
+      },
+      {
+        "index": 4,
+        "execution_count": 20,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793313903344,
+          "user_tz": 180,
+          "elapsed": 17961,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 2 — UNIDADES EPA EM 2025"
+      },
+      {
+        "index": 5,
+        "execution_count": 21,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793313903432,
+          "user_tz": 180,
+          "elapsed": 81,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 3 — CANDIDATAS: CARVÃO + GERAÇÃO A VAPOR"
+      },
+      {
+        "index": 7,
+        "execution_count": 22,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793313903604,
+          "user_tz": 180,
+          "elapsed": 146,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 4 — MONITORING PLANS DAS CANDIDATAS"
+      },
+      {
+        "index": 8,
+        "execution_count": 23,
+        "id": null,
+        "n_outputs": 0,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793313903699,
+          "user_tz": 180,
+          "elapsed": 94,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 5 — DOWNLOAD DOS MONITORING PLANS NECESSÁRIOS"
+      },
+      {
+        "index": 9,
+        "execution_count": 24,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793313906625,
+          "user_tz": 180,
+          "elapsed": 2925,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 6 — IDENTIFICAR CO2-CEM NA UNIDADE CORRETA"
+      },
+      {
+        "index": 10,
+        "execution_count": 25,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793313906677,
+          "user_tz": 180,
+          "elapsed": 50,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 7 — CEMS VÁLIDO AO LONGO DE 2025"
+      },
+      {
+        "index": 11,
+        "execution_count": 26,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793313906683,
+          "user_tz": 180,
+          "elapsed": 4,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "DIAGNÓSTICO DA ETAPA 7"
+      },
+      {
+        "index": 12,
+        "execution_count": 27,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793313906764,
+          "user_tz": 180,
+          "elapsed": 40,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 8 — ARQUIVOS HORÁRIOS 2025"
+      },
+      {
+        "index": 13,
+        "execution_count": 28,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793313906814,
+          "user_tz": 180,
+          "elapsed": 39,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "print(\"candidates_meta:\", len(candidates_meta))\nprint(\"mp_candidates:\", len(mp_c"
+      },
+      {
+        "index": 14,
+        "execution_count": 29,
+        "id": null,
+        "n_outputs": 4,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314216218,
+          "user_tz": 180,
+          "elapsed": 309298,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 9 — EXTRAÇÃO HORÁRIA DAS UNIDADES CANDIDATAS"
+      },
+      {
+        "index": 16,
+        "execution_count": 30,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314226428,
+          "user_tz": 180,
+          "elapsed": 10185,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 10 — QUALIDADE E RIQUEZA OPERACIONAL DAS CANDIDATAS"
+      },
+      {
+        "index": 18,
+        "execution_count": 31,
+        "id": null,
+        "n_outputs": 6,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314230985,
+          "user_tz": 180,
+          "elapsed": 4555,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 11 — COMPARAÇÃO APROFUNDADA DAS TRÊS FINALISTAS"
+      },
+      {
+        "index": 19,
+        "execution_count": 32,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314231592,
+          "user_tz": 180,
+          "elapsed": 600,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 12 — SELEÇÃO DEFINITIVA DA UNIDADE DE ESTUDO"
+      },
+      {
+        "index": 20,
+        "execution_count": 33,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314232250,
+          "user_tz": 180,
+          "elapsed": 654,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "ETAPA 13 — RELATÓRIO DA SELEÇÃO DA UNIDADE DE ESTUDO"
+      },
+      {
+        "index": 21,
+        "execution_count": 34,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314233007,
+          "user_tz": 180,
+          "elapsed": 746,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "# ============================================================\n# EXPORTAÇÃO PARA"
+      }
+    ],
+    "metadata": {
+      "colab": {
+        "provenance": []
+      },
+      "kernelspec": {
+        "name": "python3",
+        "display_name": "Python 3"
+      },
+      "language_info": {
+        "name": "python"
+      }
+    }
+  },
+  {
+    "name": "02_tratamento_dados.ipynb",
+    "bytes": 907963,
+    "code_cells": 13,
+    "executed": 13,
+    "outputs": 63,
+    "errors": [],
+    "counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "cells": [
+      {
+        "index": 1,
+        "execution_count": 1,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314397167,
+          "user_tz": 180,
+          "elapsed": 30317,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 1 — CARREGAMENTO DOS DADOS DA UNIDADE SELECIONADA"
+      },
+      {
+        "index": 2,
+        "execution_count": 2,
+        "id": null,
+        "n_outputs": 7,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314397289,
+          "user_tz": 180,
+          "elapsed": 106,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 2 — AUDITORIA INICIAL DA BASE"
+      },
+      {
+        "index": 4,
+        "execution_count": 3,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314398505,
+          "user_tz": 180,
+          "elapsed": 1156,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 3 — TRATAMENTO DOS DADOS FALTANTES"
+      },
+      {
+        "index": 6,
+        "execution_count": 4,
+        "id": null,
+        "n_outputs": 10,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314399565,
+          "user_tz": 180,
+          "elapsed": 1061,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 4 — DETECÇÃO E ANÁLISE DE OUTLIERS"
+      },
+      {
+        "index": 8,
+        "execution_count": 5,
+        "id": null,
+        "n_outputs": 7,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314400320,
+          "user_tz": 180,
+          "elapsed": 753,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 5 — FEATURE ENGINEERING ORIENTADA AO PROCESSO"
+      },
+      {
+        "index": 10,
+        "execution_count": 6,
+        "id": null,
+        "n_outputs": 14,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314404060,
+          "user_tz": 180,
+          "elapsed": 3716,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 6 — PCA EXPLORATÓRIA DAS VARIÁVEIS OPERACIONAIS"
+      },
+      {
+        "index": 12,
+        "execution_count": 7,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314405092,
+          "user_tz": 180,
+          "elapsed": 1018,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 7 — FECHAMENTO DA PCA E PREPARAÇÃO EXPERIMENTAL"
+      },
+      {
+        "index": 13,
+        "execution_count": 8,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314406158,
+          "user_tz": 180,
+          "elapsed": 1068,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 8 — RELATÓRIO DO TRATAMENTO E PREPARAÇÃO DOS DADOS"
+      },
+      {
+        "index": 14,
+        "execution_count": 9,
+        "id": null,
+        "n_outputs": 0,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314406171,
+          "user_tz": 180,
+          "elapsed": 9,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "# ============================================================\n# FIGURAS PARA A "
+      },
+      {
+        "index": 15,
+        "execution_count": 10,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314410431,
+          "user_tz": 180,
+          "elapsed": 4248,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "# ============================================================\n# FIGURA 1\n# COMP"
+      },
+      {
+        "index": 16,
+        "execution_count": 11,
+        "id": null,
+        "n_outputs": 4,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314413967,
+          "user_tz": 180,
+          "elapsed": 3531,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "# ============================================================\n# FIGURA 2\n# EXEM"
+      },
+      {
+        "index": 17,
+        "execution_count": 12,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314417682,
+          "user_tz": 180,
+          "elapsed": 3714,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "# ============================================================\n# FIGURA 3\n# MESM"
+      },
+      {
+        "index": 18,
+        "execution_count": 13,
+        "id": null,
+        "n_outputs": 4,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793314420334,
+          "user_tz": 180,
+          "elapsed": 2650,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "# ============================================================\n# FIGURA 4\n# STAR"
+      }
+    ],
+    "metadata": {
+      "colab": {
+        "provenance": []
+      },
+      "kernelspec": {
+        "name": "python3",
+        "display_name": "Python 3"
+      },
+      "language_info": {
+        "name": "python"
+      }
+    }
+  },
+  {
+    "name": "03A.01_modelagem_preditiva_co2.ipynb",
+    "bytes": 513239,
+    "code_cells": 19,
+    "executed": 19,
+    "outputs": 30,
+    "errors": [],
+    "counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "cells": [
+      {
+        "index": 4,
+        "execution_count": 1,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315193037,
+          "user_tz": 180,
+          "elapsed": 36955,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 1: CONFIGURAÇÃO DO AMBIENTE"
+      },
+      {
+        "index": 5,
+        "execution_count": 2,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315195775,
+          "user_tz": 180,
+          "elapsed": 2718,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 2: CARREGAMENTO DOS DADOS E DO BASELINE 3A"
+      },
+      {
+        "index": 9,
+        "execution_count": 3,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315195833,
+          "user_tz": 180,
+          "elapsed": 9,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 4: ENRIQUECIMENTO DA TRAJETÓRIA OPERACIONAL"
+      },
+      {
+        "index": 10,
+        "execution_count": 4,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315195916,
+          "user_tz": 180,
+          "elapsed": 82,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 5: DEFINIÇÃO DOS CENÁRIOS B E C"
+      },
+      {
+        "index": 12,
+        "execution_count": 5,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315195998,
+          "user_tz": 180,
+          "elapsed": 81,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 6: BASE EXPERIMENTAL E DIVISÃO TEMPORAL"
+      },
+      {
+        "index": 13,
+        "execution_count": 6,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315196003,
+          "user_tz": 180,
+          "elapsed": 61,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 7: DEFINIÇÃO DE RAMPA INTENSA"
+      },
+      {
+        "index": 15,
+        "execution_count": 7,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315196029,
+          "user_tz": 180,
+          "elapsed": 25,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 8: NORMALIZAÇÃO DO CENÁRIO C"
+      },
+      {
+        "index": 17,
+        "execution_count": 8,
+        "id": null,
+        "n_outputs": 6,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315196164,
+          "user_tz": 180,
+          "elapsed": 134,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 9: MLP DO CENÁRIO C"
+      },
+      {
+        "index": 18,
+        "execution_count": 9,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315227899,
+          "user_tz": 180,
+          "elapsed": 31733,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 10: TREINAMENTO DO CENÁRIO C"
+      },
+      {
+        "index": 19,
+        "execution_count": 10,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315228843,
+          "user_tz": 180,
+          "elapsed": 942,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 11: CURVA DE APRENDIZAGEM"
+      },
+      {
+        "index": 21,
+        "execution_count": 11,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315229094,
+          "user_tz": 180,
+          "elapsed": 250,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 12: AVALIAÇÃO DO CENÁRIO C"
+      },
+      {
+        "index": 22,
+        "execution_count": 12,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315229143,
+          "user_tz": 180,
+          "elapsed": 48,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 13: COMPARAÇÃO COM O NOTEBOOK 3A"
+      },
+      {
+        "index": 23,
+        "execution_count": 13,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315229174,
+          "user_tz": 180,
+          "elapsed": 29,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 14: COMPARAÇÃO HORA A HORA E VIÉS"
+      },
+      {
+        "index": 24,
+        "execution_count": 14,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315229214,
+          "user_tz": 180,
+          "elapsed": 38,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 15: DESEMPENHO POR CONTEXTO OPERACIONAL"
+      },
+      {
+        "index": 25,
+        "execution_count": 15,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315229264,
+          "user_tz": 180,
+          "elapsed": 43,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 16: DIAGNÓSTICO DE DISTRIBUIÇÃO"
+      },
+      {
+        "index": 28,
+        "execution_count": 16,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315229338,
+          "user_tz": 180,
+          "elapsed": 56,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 17: DIAGNÓSTICO DE SHIFT DAS FEATURES"
+      },
+      {
+        "index": 29,
+        "execution_count": 17,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315230862,
+          "user_tz": 180,
+          "elapsed": 1504,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 18: OBSERVADO x CENÁRIO B x CENÁRIO C"
+      },
+      {
+        "index": 30,
+        "execution_count": 18,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315232854,
+          "user_tz": 180,
+          "elapsed": 1990,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 19: PERSISTÊNCIA DOS RESULTADOS"
+      },
+      {
+        "index": 32,
+        "execution_count": 19,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315233264,
+          "user_tz": 180,
+          "elapsed": 409,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 20: RELATÓRIO E DIAGNÓSTICO DO NOTEBOOK 3A.01"
+      }
+    ],
+    "metadata": {
+      "colab": {
+        "provenance": []
+      },
+      "kernelspec": {
+        "name": "python3",
+        "display_name": "Python 3"
+      },
+      "language_info": {
+        "name": "python"
+      }
+    }
+  },
+  {
+    "name": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+    "bytes": 380182,
+    "code_cells": 22,
+    "executed": 22,
+    "outputs": 41,
+    "errors": [],
+    "counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "cells": [
+      {
+        "index": 2,
+        "execution_count": 1,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315316350,
+          "user_tz": 180,
+          "elapsed": 37863,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 1: CONFIGURAÇÃO DO AMBIENTE"
+      },
+      {
+        "index": 3,
+        "execution_count": 2,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315318937,
+          "user_tz": 180,
+          "elapsed": 2584,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 2: CARREGAMENTO DOS DADOS E DOS BASELINES"
+      },
+      {
+        "index": 5,
+        "execution_count": 3,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315319012,
+          "user_tz": 180,
+          "elapsed": 63,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 4: RECONSTRUÇÃO DAS FEATURES DO CENÁRIO C"
+      },
+      {
+        "index": 6,
+        "execution_count": 4,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315319053,
+          "user_tz": 180,
+          "elapsed": 41,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 5: DEFINIÇÃO DOS CENÁRIOS E BASE EXPERIMENTAL"
+      },
+      {
+        "index": 10,
+        "execution_count": 5,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315319178,
+          "user_tz": 180,
+          "elapsed": 124,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 7: DEFINIÇÃO DOS FOLDS TEMPORAIS"
+      },
+      {
+        "index": 13,
+        "execution_count": 6,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315319197,
+          "user_tz": 180,
+          "elapsed": 10,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 8: CONFIGURAÇÃO DE REFERÊNCIA DO XGBOOST"
+      },
+      {
+        "index": 15,
+        "execution_count": 7,
+        "id": null,
+        "n_outputs": 0,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315319199,
+          "user_tz": 180,
+          "elapsed": 1,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 9: FUNÇÕES DE AVALIAÇÃO"
+      },
+      {
+        "index": 16,
+        "execution_count": 8,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315324601,
+          "user_tz": 180,
+          "elapsed": 5401,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 10: VALIDAÇÃO TEMPORAL PROGRESSIVA"
+      },
+      {
+        "index": 17,
+        "execution_count": 9,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315324689,
+          "user_tz": 180,
+          "elapsed": 67,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 11: RESUMO DA VALIDAÇÃO TEMPORAL"
+      },
+      {
+        "index": 18,
+        "execution_count": 10,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315324710,
+          "user_tz": 180,
+          "elapsed": 18,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 12: COMPARAÇÃO FOLD A FOLD"
+      },
+      {
+        "index": 19,
+        "execution_count": 11,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315324817,
+          "user_tz": 180,
+          "elapsed": 106,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 13: MODELOS FINAIS PARA COMPARAÇÃO HISTÓRICA"
+      },
+      {
+        "index": 20,
+        "execution_count": 12,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315325386,
+          "user_tz": 180,
+          "elapsed": 561,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 14: TREINAMENTO FINAL DOS MODELOS XGBOOST"
+      },
+      {
+        "index": 22,
+        "execution_count": 13,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315325401,
+          "user_tz": 180,
+          "elapsed": 11,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 15: COMPARAÇÃO MLP x XGBOOST"
+      },
+      {
+        "index": 23,
+        "execution_count": 14,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315325407,
+          "user_tz": 180,
+          "elapsed": 5,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 16: VIÉS E COMPARAÇÃO HORA A HORA"
+      },
+      {
+        "index": 24,
+        "execution_count": 15,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315325483,
+          "user_tz": 180,
+          "elapsed": 57,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 17: DESEMPENHO POR CONTEXTO OPERACIONAL"
+      },
+      {
+        "index": 25,
+        "execution_count": 16,
+        "id": null,
+        "n_outputs": 4,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315325546,
+          "user_tz": 180,
+          "elapsed": 62,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 17A: SANITY CHECK DAS FEATURES"
+      },
+      {
+        "index": 26,
+        "execution_count": 17,
+        "id": null,
+        "n_outputs": 7,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315325720,
+          "user_tz": 180,
+          "elapsed": 155,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 17B: SANITY CHECK TEMPORAL E DE COMPARABILIDADE"
+      },
+      {
+        "index": 27,
+        "execution_count": 18,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315326378,
+          "user_tz": 180,
+          "elapsed": 616,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 17C: CONTROLE A-XGBOOST"
+      },
+      {
+        "index": 29,
+        "execution_count": 19,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315326406,
+          "user_tz": 180,
+          "elapsed": 19,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 18: IMPORTÂNCIA DAS FEATURES DO CENÁRIO C"
+      },
+      {
+        "index": 30,
+        "execution_count": 20,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315327305,
+          "user_tz": 180,
+          "elapsed": 887,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 19: GRÁFICO DE IMPORTÂNCIA DAS FEATURES"
+      },
+      {
+        "index": 31,
+        "execution_count": 21,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315328802,
+          "user_tz": 180,
+          "elapsed": 1496,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 20: PERSISTÊNCIA DOS RESULTADOS"
+      },
+      {
+        "index": 32,
+        "execution_count": 22,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315330565,
+          "user_tz": 180,
+          "elapsed": 1759,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 21: RELATÓRIO E DIAGNÓSTICO FINAL"
+      }
+    ],
+    "metadata": {
+      "colab": {
+        "provenance": []
+      },
+      "kernelspec": {
+        "name": "python3",
+        "display_name": "Python 3"
+      },
+      "language_info": {
+        "name": "python"
+      }
+    }
+  },
+  {
+    "name": "03A.03_otimizacao_pareada_xgboost.ipynb",
+    "bytes": 426357,
+    "code_cells": 18,
+    "executed": 18,
+    "outputs": 40,
+    "errors": [],
+    "counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "cells": [
+      {
+        "index": 2,
+        "execution_count": 1,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315367068,
+          "user_tz": 180,
+          "elapsed": 24270,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 1: CONFIGURAÇÃO DO AMBIENTE"
+      },
+      {
+        "index": 3,
+        "execution_count": 2,
+        "id": null,
+        "n_outputs": 4,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315369665,
+          "user_tz": 180,
+          "elapsed": 2599,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 2: CARREGAMENTO DOS DADOS E DOS BASELINES"
+      },
+      {
+        "index": 4,
+        "execution_count": 3,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315369714,
+          "user_tz": 180,
+          "elapsed": 22,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 3: DEFINIÇÃO DOS CENÁRIOS A E B"
+      },
+      {
+        "index": 7,
+        "execution_count": 4,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315369739,
+          "user_tz": 180,
+          "elapsed": 18,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 4: DEFINIÇÃO DA VALIDAÇÃO TEMPORAL"
+      },
+      {
+        "index": 10,
+        "execution_count": 5,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315369794,
+          "user_tz": 180,
+          "elapsed": 48,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 5: ESPAÇO DE BUSCA DOS HIPERPARÂMETROS"
+      },
+      {
+        "index": 12,
+        "execution_count": 6,
+        "id": null,
+        "n_outputs": 0,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315369810,
+          "user_tz": 180,
+          "elapsed": 10,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 6: FUNÇÕES AUXILIARES"
+      },
+      {
+        "index": 15,
+        "execution_count": 7,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315506365,
+          "user_tz": 180,
+          "elapsed": 136546,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 7: OTIMIZAÇÃO PAREADA A x B"
+      },
+      {
+        "index": 16,
+        "execution_count": 8,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315506413,
+          "user_tz": 180,
+          "elapsed": 44,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 8: RESUMO DAS CONFIGURAÇÕES"
+      },
+      {
+        "index": 17,
+        "execution_count": 9,
+        "id": null,
+        "n_outputs": 4,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315506494,
+          "user_tz": 180,
+          "elapsed": 79,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 9: SELEÇÃO DOS MELHORES MODELOS"
+      },
+      {
+        "index": 18,
+        "execution_count": 10,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315506564,
+          "user_tz": 180,
+          "elapsed": 42,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 10: COMPARAÇÃO PAREADA DOS MELHORES MODELOS"
+      },
+      {
+        "index": 19,
+        "execution_count": 11,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315506604,
+          "user_tz": 180,
+          "elapsed": 39,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 11: EFEITO DA OTIMIZAÇÃO"
+      },
+      {
+        "index": 20,
+        "execution_count": 12,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315507067,
+          "user_tz": 180,
+          "elapsed": 465,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 12: REFIT DOS MODELOS OTIMIZADOS"
+      },
+      {
+        "index": 21,
+        "execution_count": 13,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315507081,
+          "user_tz": 180,
+          "elapsed": 13,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 13: AVALIAÇÃO NO HOLDOUT HISTÓRICO"
+      },
+      {
+        "index": 22,
+        "execution_count": 14,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315507147,
+          "user_tz": 180,
+          "elapsed": 41,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 14: DIAGNÓSTICO POR CONTEXTO OPERACIONAL"
+      },
+      {
+        "index": 23,
+        "execution_count": 15,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315507182,
+          "user_tz": 180,
+          "elapsed": 34,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 15: CONSISTÊNCIA ENTRE PROTOCOLOS E DECISÃO"
+      },
+      {
+        "index": 24,
+        "execution_count": 16,
+        "id": null,
+        "n_outputs": 6,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315509654,
+          "user_tz": 180,
+          "elapsed": 2467,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 16: FIGURAS FINAIS"
+      },
+      {
+        "index": 25,
+        "execution_count": 17,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315512091,
+          "user_tz": 180,
+          "elapsed": 2436,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 17: SALVAR RESULTADOS DO NOTEBOOK"
+      },
+      {
+        "index": 26,
+        "execution_count": 18,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315512461,
+          "user_tz": 180,
+          "elapsed": 368,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 18: RELATÓRIO FINAL DO NOTEBOOK 3A.03"
+      }
+    ],
+    "metadata": {
+      "colab": {
+        "provenance": []
+      },
+      "kernelspec": {
+        "name": "python3",
+        "display_name": "Python 3"
+      },
+      "language_info": {
+        "name": "python"
+      }
+    }
+  },
+  {
+    "name": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+    "bytes": 1761168,
+    "code_cells": 10,
+    "executed": 10,
+    "outputs": 74,
+    "errors": [],
+    "counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "cells": [
+      {
+        "index": 2,
+        "execution_count": 1,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315601340,
+          "user_tz": 180,
+          "elapsed": 35629,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 1: CONFIGURAÇÃO DO NOTEBOOK 03A.04"
+      },
+      {
+        "index": 4,
+        "execution_count": 2,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315626639,
+          "user_tz": 180,
+          "elapsed": 25229,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 2: REUSO DOS ANUAIS OU CATÁLOGO HISTÓRICO EPA"
+      },
+      {
+        "index": 5,
+        "execution_count": 3,
+        "id": null,
+        "n_outputs": 3,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315627451,
+          "user_tz": 180,
+          "elapsed": 811,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 4: EXTRAÇÃO HISTÓRICA DA IATAN UNIT 2"
+      },
+      {
+        "index": 6,
+        "execution_count": 4,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315630734,
+          "user_tz": 180,
+          "elapsed": 3278,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 5: AUDITORIA MULTIANUAL E PERFIL OPERACIONAL"
+      },
+      {
+        "index": 8,
+        "execution_count": 5,
+        "id": null,
+        "n_outputs": 18,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315643414,
+          "user_tz": 180,
+          "elapsed": 12662,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 6: DIAGNÓSTICO DE DRIFT DO CENÁRIO A"
+      },
+      {
+        "index": 10,
+        "execution_count": 6,
+        "id": null,
+        "n_outputs": 18,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315664972,
+          "user_tz": 180,
+          "elapsed": 21556,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 7: BACKTEST MULTIANUAL DO VOLUME DE HISTÓRICO"
+      },
+      {
+        "index": 12,
+        "execution_count": 7,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315668854,
+          "user_tz": 180,
+          "elapsed": 3876,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 8: DELIMITAÇÃO DA AMOSTRA PRINCIPAL"
+      },
+      {
+        "index": 13,
+        "execution_count": 8,
+        "id": null,
+        "n_outputs": 10,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315677883,
+          "user_tz": 180,
+          "elapsed": 8971,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 9: GENERALIZAÇÃO HISTÓRICA"
+      },
+      {
+        "index": 15,
+        "execution_count": 9,
+        "id": null,
+        "n_outputs": 8,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315690383,
+          "user_tz": 180,
+          "elapsed": 12504,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 10: VALOR INCREMENTAL DO HISTÓRICO"
+      },
+      {
+        "index": 16,
+        "execution_count": 10,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315691981,
+          "user_tz": 180,
+          "elapsed": 1594,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 11: RELATÓRIO DO VALOR PREDITIVO DO HISTÓRICO"
+      }
+    ],
+    "metadata": {
+      "colab": {
+        "provenance": []
+      },
+      "kernelspec": {
+        "display_name": "Python 3",
+        "name": "python3"
+      },
+      "language_info": {
+        "codemirror_mode": {
+          "name": "ipython",
+          "version": 3
+        },
+        "file_extension": ".py",
+        "mimetype": "text/x-python",
+        "name": "python",
+        "nbconvert_exporter": "python",
+        "pygments_lexer": "ipython3",
+        "version": "3.12.14"
+      },
+      "reproduction": {
+        "code_source_sha256": "b1a753101a89ec27d70533b5d91893c335277cbe2200c6253d38dc9d6672f046",
+        "command": "python scripts/reproduce_history.py",
+        "executed_at_utc": "2026-10-24T14:07:45.580801+00:00",
+        "python_version": "3.12.14",
+        "session_metadata_cleanup": [
+          "executionInfo",
+          "base_uri",
+          "authorship_tag"
+        ]
+      }
+    }
+  },
+  {
+    "name": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+    "bytes": 926821,
+    "code_cells": 12,
+    "executed": 12,
+    "outputs": 86,
+    "errors": [],
+    "counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "cells": [
+      {
+        "index": 2,
+        "execution_count": 1,
+        "id": null,
+        "n_outputs": 3,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315772499,
+          "user_tz": 180,
+          "elapsed": 57358,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 1: CONFIGURAÇÃO E DEFINIÇÃO DO EXPERIMENTO"
+      },
+      {
+        "index": 3,
+        "execution_count": 2,
+        "id": null,
+        "n_outputs": 11,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315785726,
+          "user_tz": 180,
+          "elapsed": 13225,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 2: CARREGAMENTO E AUDITORIA DAS BASES MULTIANUAIS"
+      },
+      {
+        "index": 4,
+        "execution_count": 3,
+        "id": null,
+        "n_outputs": 11,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315786134,
+          "user_tz": 180,
+          "elapsed": 407,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 3: DIAGNÓSTICO DO ÚNICO VALOR DE CARGA AUSENTE"
+      },
+      {
+        "index": 7,
+        "execution_count": 4,
+        "id": null,
+        "n_outputs": 11,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315788847,
+          "user_tz": 180,
+          "elapsed": 2686,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 4: RECONSTRUÇÃO DAS FEATURES DO CENÁRIO B"
+      },
+      {
+        "index": 8,
+        "execution_count": 5,
+        "id": null,
+        "n_outputs": 4,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315789265,
+          "user_tz": 180,
+          "elapsed": 417,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 4A: AUDITORIA DO INÍCIO DO HISTÓRICO"
+      },
+      {
+        "index": 11,
+        "execution_count": 6,
+        "id": null,
+        "n_outputs": 9,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315793671,
+          "user_tz": 180,
+          "elapsed": 4402,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 5: CONSTRUÇÃO DA AMOSTRA COMUM A x B"
+      },
+      {
+        "index": 13,
+        "execution_count": 7,
+        "id": null,
+        "n_outputs": 7,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315793866,
+          "user_tz": 180,
+          "elapsed": 194,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "# Referência metodológica: Zhang et al. (2026).\n# Esta célula é diagnóstica. Não"
+      },
+      {
+        "index": 16,
+        "execution_count": 8,
+        "id": null,
+        "n_outputs": 3,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315802754,
+          "user_tz": 180,
+          "elapsed": 8889,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 6: SELEÇÃO PAREADA DA COMPLEXIDADE"
+      },
+      {
+        "index": 19,
+        "execution_count": 9,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315808335,
+          "user_tz": 180,
+          "elapsed": 5575,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 7: REFIT FINAL E TESTE TEMPORAL PAREADO"
+      },
+      {
+        "index": 22,
+        "execution_count": 10,
+        "id": null,
+        "n_outputs": 13,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315813085,
+          "user_tz": 180,
+          "elapsed": 4745,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 8: DIAGNÓSTICO DO GANHO DA TRAJETÓRIA"
+      },
+      {
+        "index": 24,
+        "execution_count": 11,
+        "id": null,
+        "n_outputs": 4,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315813250,
+          "user_tz": 180,
+          "elapsed": 163,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "DIAGNÓSTICO ADICIONAL: COBERTURA OPERACIONAL DO TESTE"
+      },
+      {
+        "index": 25,
+        "execution_count": 12,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315814321,
+          "user_tz": 180,
+          "elapsed": 1069,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 9: RELATÓRIO FORMAL DO NOTEBOOK 03A.05"
+      }
+    ],
+    "metadata": {
+      "colab": {
+        "provenance": []
+      },
+      "kernelspec": {
+        "display_name": "Python 3",
+        "name": "python3"
+      },
+      "language_info": {
+        "codemirror_mode": {
+          "name": "ipython",
+          "version": 3
+        },
+        "file_extension": ".py",
+        "mimetype": "text/x-python",
+        "name": "python",
+        "nbconvert_exporter": "python",
+        "pygments_lexer": "ipython3",
+        "version": "3.12.14"
+      },
+      "reproduction": {
+        "code_source_sha256": "a092059128595845d0a18dc42fa50a1043599e4e9674882eb14ec12724228ebc",
+        "command": "python scripts/reproduce_history.py",
+        "executed_at_utc": "2026-10-24T14:07:55.454805+00:00",
+        "python_version": "3.12.14",
+        "session_metadata_cleanup": [
+          "executionInfo",
+          "base_uri",
+          "authorship_tag"
+        ]
+      }
+    }
+  },
+  {
+    "name": "03A.06_modelo_hibrido_regime_operacional.ipynb",
+    "bytes": 606229,
+    "code_cells": 8,
+    "executed": 8,
+    "outputs": 41,
+    "errors": [],
+    "counts": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "cells": [
+      {
+        "index": 0,
+        "execution_count": 5,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "elapsed": 1009,
+          "status": "ok",
+          "timestamp": 1792532680692,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          },
+          "user_tz": 180
+        },
+        "title": "\"\\nCÉLULA 1 CONCLUÍDA.\""
+      },
+      {
+        "index": 1,
+        "execution_count": 6,
+        "id": null,
+        "n_outputs": 9,
+        "errors": [],
+        "timing": {
+          "elapsed": 308,
+          "status": "ok",
+          "timestamp": 1792532680999,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          },
+          "user_tz": 180
+        },
+        "title": "CÉLULA 2"
+      },
+      {
+        "index": 2,
+        "execution_count": 7,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "elapsed": 804,
+          "status": "ok",
+          "timestamp": 1792532681805,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          },
+          "user_tz": 180
+        },
+        "title": "CÉLULA 3"
+      },
+      {
+        "index": 3,
+        "execution_count": 8,
+        "id": null,
+        "n_outputs": 5,
+        "errors": [],
+        "timing": {
+          "elapsed": 48370,
+          "status": "ok",
+          "timestamp": 1792532730185,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          },
+          "user_tz": 180
+        },
+        "title": "CÉLULA 4"
+      },
+      {
+        "index": 4,
+        "execution_count": 9,
+        "id": null,
+        "n_outputs": 7,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1792532730589,
+          "user_tz": 180,
+          "elapsed": 398,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 5"
+      },
+      {
+        "index": 5,
+        "execution_count": 10,
+        "id": null,
+        "n_outputs": 8,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1792533069494,
+          "user_tz": 180,
+          "elapsed": 3223,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 6"
+      },
+      {
+        "index": 6,
+        "execution_count": 11,
+        "id": null,
+        "n_outputs": 4,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1792533373505,
+          "user_tz": 180,
+          "elapsed": 2706,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 7"
+      },
+      {
+        "index": 7,
+        "execution_count": 12,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1792534664139,
+          "user_tz": 180,
+          "elapsed": 754,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 8: RELATÓRIO FINAL DO NOTEBOOK 03A.06"
+      }
+    ],
+    "metadata": {
+      "colab": {
+        "provenance": []
+      },
+      "kernelspec": {
+        "display_name": "Python 3",
+        "name": "python3"
+      },
+      "language_info": {
+        "name": "python"
+      }
+    }
+  },
+  {
+    "name": "03A_modelagem_preditiva_co2.ipynb",
+    "bytes": 537081,
+    "code_cells": 15,
+    "executed": 15,
+    "outputs": 37,
+    "errors": [],
+    "counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "cells": [
+      {
+        "index": 2,
+        "execution_count": 1,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315071872,
+          "user_tz": 180,
+          "elapsed": 33675,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 1 — CONFIGURAÇÃO DO AMBIENTE"
+      },
+      {
+        "index": 3,
+        "execution_count": 2,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315074312,
+          "user_tz": 180,
+          "elapsed": 2434,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 2 — CARREGAMENTO E VERIFICAÇÃO DA INTERFACE"
+      },
+      {
+        "index": 4,
+        "execution_count": 3,
+        "id": null,
+        "n_outputs": 3,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315074388,
+          "user_tz": 180,
+          "elapsed": 70,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 3 — AUDITORIA E DEFINIÇÃO DOS CENÁRIOS"
+      },
+      {
+        "index": 6,
+        "execution_count": 4,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315074838,
+          "user_tz": 180,
+          "elapsed": 448,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 4 — DIVISÃO TEMPORAL"
+      },
+      {
+        "index": 8,
+        "execution_count": 5,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315074864,
+          "user_tz": 180,
+          "elapsed": 24,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 5 — NORMALIZAÇÃO MIN–MAX"
+      },
+      {
+        "index": 11,
+        "execution_count": 6,
+        "id": null,
+        "n_outputs": 12,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315075146,
+          "user_tz": 180,
+          "elapsed": 280,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 6 — DEFINIÇÃO DA MLP"
+      },
+      {
+        "index": 12,
+        "execution_count": 7,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315110956,
+          "user_tz": 180,
+          "elapsed": 35808,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 7 — TREINAMENTO DOS DOIS CENÁRIOS"
+      },
+      {
+        "index": 13,
+        "execution_count": 8,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315112515,
+          "user_tz": 180,
+          "elapsed": 1558,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 8 — CURVAS DE VALIDAÇÃO"
+      },
+      {
+        "index": 15,
+        "execution_count": 9,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315113458,
+          "user_tz": 180,
+          "elapsed": 942,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 9 — MÉTRICAS NO CONJUNTO DE TESTE"
+      },
+      {
+        "index": 16,
+        "execution_count": 10,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315113892,
+          "user_tz": 180,
+          "elapsed": 422,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 10 — PREVISÕES E RESÍDUOS"
+      },
+      {
+        "index": 18,
+        "execution_count": 11,
+        "id": null,
+        "n_outputs": 3,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315114289,
+          "user_tz": 180,
+          "elapsed": 386,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 11 — ERRO POR CONTEXTO OPERACIONAL"
+      },
+      {
+        "index": 19,
+        "execution_count": 12,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315115981,
+          "user_tz": 180,
+          "elapsed": 1672,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 12 — OBSERVADO × PREVISTO"
+      },
+      {
+        "index": 20,
+        "execution_count": 13,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315117474,
+          "user_tz": 180,
+          "elapsed": 1491,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 13 — SALVAR MODELOS E SCALERS"
+      },
+      {
+        "index": 21,
+        "execution_count": 14,
+        "id": null,
+        "n_outputs": 2,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315117898,
+          "user_tz": 180,
+          "elapsed": 418,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 14 — GERAR RELATÓRIO"
+      },
+      {
+        "index": 22,
+        "execution_count": 15,
+        "id": null,
+        "n_outputs": 1,
+        "errors": [],
+        "timing": {
+          "status": "ok",
+          "timestamp": 1793315117926,
+          "user_tz": 180,
+          "elapsed": 16,
+          "user": {
+            "displayName": "Guilherme Rodrigues",
+            "userId": "01307289757792709575"
+          }
+        },
+        "title": "CÉLULA 15 — CONCLUSÃO AUTOMÁTICA"
+      }
+    ],
+    "metadata": {
+      "colab": {
+        "provenance": []
+      },
+      "kernelspec": {
+        "name": "python3",
+        "display_name": "Python 3"
+      },
+      "language_info": {
+        "name": "python"
+      }
+    }
+  }
+]

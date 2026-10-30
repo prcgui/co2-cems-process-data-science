@@ -1,0 +1,1624 @@
+{
+  "total_verificacoes": 376,
+  "falhas": 0,
+  "verificacoes": [
+    {
+      "verificacao": "20 ajustes concluídos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Identidade do insumo data/interim/03A05_trajectory_history/03A05_treino_selecao_A_B.parquet",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Identidade do insumo data/interim/03A05_trajectory_history/03A05_validacao_outubro_2025_A_B.parquet",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Identidade do insumo data/interim/03A05_trajectory_history/03A05_teste_nov_dez_2025_A_B.parquet",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Amostras 88475/211/1144",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Cronologia sem sobreposição",
+      "aprovada": true
+    },
+    {
+      "verificacao": "40 linhas de métricas e 22880 previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Chaves de métricas únicas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 scaler X só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 scaler y só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 quantidade de parâmetros",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 época recuperada segundo min_delta",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed42 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 scaler X só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 scaler y só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 quantidade de parâmetros",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 época recuperada segundo min_delta",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed43 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 scaler X só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 scaler y só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 quantidade de parâmetros",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 época recuperada segundo min_delta",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed44 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 scaler X só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 scaler y só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 quantidade de parâmetros",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 época recuperada segundo min_delta",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed45 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 scaler X só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 scaler y só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 quantidade de parâmetros",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 época recuperada segundo min_delta",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_A_seed46 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 scaler X só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 scaler y só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 quantidade de parâmetros",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 época recuperada segundo min_delta",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed42 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 scaler X só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 scaler y só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 quantidade de parâmetros",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 época recuperada segundo min_delta",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed43 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 scaler X só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 scaler y só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 quantidade de parâmetros",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 época recuperada segundo min_delta",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed44 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 scaler X só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 scaler y só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 quantidade de parâmetros",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 época recuperada segundo min_delta",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed45 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 scaler X só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 scaler y só treino",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 quantidade de parâmetros",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 época recuperada segundo min_delta",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "MLP_B_seed46 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 árvores selecionadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 árvores efetivamente treinadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 histórico de seleção",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed42 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 árvores selecionadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 árvores efetivamente treinadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 histórico de seleção",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed43 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 árvores selecionadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 árvores efetivamente treinadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 histórico de seleção",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed44 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 árvores selecionadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 árvores efetivamente treinadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 histórico de seleção",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed45 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 árvores selecionadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 árvores efetivamente treinadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 histórico de seleção",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_A_seed46 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 árvores selecionadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 árvores efetivamente treinadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 histórico de seleção",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed42 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 árvores selecionadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 árvores efetivamente treinadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 histórico de seleção",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed43 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 árvores selecionadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 árvores efetivamente treinadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 histórico de seleção",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed44 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 árvores selecionadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 árvores efetivamente treinadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 histórico de seleção",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed45 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 horários e alvo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 comprimento do histórico",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 árvores selecionadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 árvores efetivamente treinadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 histórico de seleção",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 recarga reproduz previsões",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 validação MAE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 validação RMSE",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 validação R2",
+      "aprovada": true
+    },
+    {
+      "verificacao": "XGBoost_B_seed46 validação vies_observado_menos_pred",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/teste/MAE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/teste/MAE_dp_sementes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/teste/MAE_min",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/teste/MAE_max",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/teste/RMSE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/teste/ajuste_s_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/teste/ajuste_s_total",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/validacao/MAE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/validacao/MAE_dp_sementes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/validacao/MAE_min",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/validacao/MAE_max",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/validacao/RMSE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/validacao/ajuste_s_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/A/validacao/ajuste_s_total",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/teste/MAE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/teste/MAE_dp_sementes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/teste/MAE_min",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/teste/MAE_max",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/teste/RMSE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/teste/ajuste_s_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/teste/ajuste_s_total",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/validacao/MAE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/validacao/MAE_dp_sementes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/validacao/MAE_min",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/validacao/MAE_max",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/validacao/RMSE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/validacao/ajuste_s_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo MLP/B/validacao/ajuste_s_total",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/teste/MAE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/teste/MAE_dp_sementes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/teste/MAE_min",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/teste/MAE_max",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/teste/RMSE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/teste/ajuste_s_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/teste/ajuste_s_total",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/validacao/MAE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/validacao/MAE_dp_sementes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/validacao/MAE_min",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/validacao/MAE_max",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/validacao/RMSE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/validacao/ajuste_s_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/A/validacao/ajuste_s_total",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/teste/MAE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/teste/MAE_dp_sementes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/teste/MAE_min",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/teste/MAE_max",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/teste/RMSE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/teste/ajuste_s_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/teste/ajuste_s_total",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/validacao/MAE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/validacao/MAE_dp_sementes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/validacao/MAE_min",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/validacao/MAE_max",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/validacao/RMSE_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/validacao/ajuste_s_media",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Resumo XGBoost/B/validacao/ajuste_s_total",
+      "aprovada": true
+    },
+    {
+      "verificacao": "B Colab coincide com local metricas_contextos.csv",
+      "aprovada": true
+    },
+    {
+      "verificacao": "B Colab coincide com local sensibilidade_blocos_calendario.csv",
+      "aprovada": true
+    },
+    {
+      "verificacao": "B Colab coincide com local contagens_blocos.csv",
+      "aprovada": true
+    },
+    {
+      "verificacao": "B Colab coincide com local autocorrelacao_calendario.csv",
+      "aprovada": true
+    },
+    {
+      "verificacao": "A conteúdo preservado 03A05A_ablacao_controlada/20261029T235706_270875Z/correlacoes_treino.csv",
+      "aprovada": true
+    },
+    {
+      "verificacao": "A conteúdo preservado 03A05A_ablacao_controlada/20261029T235706_270875Z/baseline_reproduction.json",
+      "aprovada": true
+    },
+    {
+      "verificacao": "A conteúdo preservado 03A05A_ablacao_controlada/20261029T235706_270875Z/ablacao_metricas.csv",
+      "aprovada": true
+    },
+    {
+      "verificacao": "A conteúdo preservado 03A05A_ablacao_controlada/20261029T235706_270875Z/protocolo_ablacao.json",
+      "aprovada": true
+    },
+    {
+      "verificacao": "A conteúdo preservado 03A05A_ablacao_controlada/20261029T235706_270875Z/B_completo.json",
+      "aprovada": true
+    },
+    {
+      "verificacao": "A conteúdo preservado 03A05A_ablacao_controlada/20261029T235706_270875Z/ambiente_e_insumos.json",
+      "aprovada": true
+    },
+    {
+      "verificacao": "A conteúdo preservado 03A05A_ablacao_controlada/20261029T235706_270875Z/B_sem_delta.json",
+      "aprovada": true
+    },
+    {
+      "verificacao": "A conteúdo preservado 03A05A_ablacao_controlada/20261029T235706_270875Z/B_sem_delta_e_absdelta.json",
+      "aprovada": true
+    },
+    {
+      "verificacao": "A conteúdo preservado 03A05A_ablacao_controlada/20261029T235706_270875Z/ablacao_previsoes.csv",
+      "aprovada": true
+    },
+    {
+      "verificacao": "A conteúdo preservado 03A05A_ablacao_controlada/20261029T235706_270875Z/ablacao_previsoes.parquet",
+      "aprovada": true
+    },
+    {
+      "verificacao": "A conteúdo preservado 03A05A_ablacao_controlada/20261029T235706_270875Z/B_sem_media3h.json",
+      "aprovada": true
+    },
+    {
+      "verificacao": "03A_05C_MLP_XGBoost_sementes_protocolo_comum_Colab.ipynb ordem e conclusão",
+      "aprovada": true
+    },
+    {
+      "verificacao": "03A_05C_MLP_XGBoost_sementes_protocolo_comum_Colab.ipynb sem erros salvos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "03A_05B_incerteza_pareada_calendario.ipynb ordem e conclusão",
+      "aprovada": true
+    },
+    {
+      "verificacao": "03A_05B_incerteza_pareada_calendario.ipynb sem erros salvos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "03A.05A_ablacao_controlada_features_Colab.ipynb ordem e conclusão",
+      "aprovada": true
+    },
+    {
+      "verificacao": "03A.05A_ablacao_controlada_features_Colab.ipynb sem erros salvos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Dez diferenças pareadas favorecem XGBoost",
+      "aprovada": true
+    }
+  ],
+  "recarga_modelos": [
+    {
+      "modelo": "MLP_A_seed42",
+      "diferenca_maxima": 0.0001220703125,
+      "tolerancia": 0.001
+    },
+    {
+      "modelo": "MLP_A_seed43",
+      "diferenca_maxima": 6.103515625e-05,
+      "tolerancia": 0.001
+    },
+    {
+      "modelo": "MLP_A_seed44",
+      "diferenca_maxima": 6.103515625e-05,
+      "tolerancia": 0.001
+    },
+    {
+      "modelo": "MLP_A_seed45",
+      "diferenca_maxima": 6.103515625e-05,
+      "tolerancia": 0.001
+    },
+    {
+      "modelo": "MLP_A_seed46",
+      "diferenca_maxima": 6.103515625e-05,
+      "tolerancia": 0.001
+    },
+    {
+      "modelo": "MLP_B_seed42",
+      "diferenca_maxima": 1.52587890625e-05,
+      "tolerancia": 0.001
+    },
+    {
+      "modelo": "MLP_B_seed43",
+      "diferenca_maxima": 6.103515625e-05,
+      "tolerancia": 0.001
+    },
+    {
+      "modelo": "MLP_B_seed44",
+      "diferenca_maxima": 0.0001220703125,
+      "tolerancia": 0.001
+    },
+    {
+      "modelo": "MLP_B_seed45",
+      "diferenca_maxima": 0.0001220703125,
+      "tolerancia": 0.001
+    },
+    {
+      "modelo": "MLP_B_seed46",
+      "diferenca_maxima": 6.103515625e-05,
+      "tolerancia": 0.001
+    },
+    {
+      "modelo": "XGBoost_A_seed42",
+      "diferenca_maxima": 0.0,
+      "tolerancia": 0.0
+    },
+    {
+      "modelo": "XGBoost_A_seed43",
+      "diferenca_maxima": 0.0,
+      "tolerancia": 0.0
+    },
+    {
+      "modelo": "XGBoost_A_seed44",
+      "diferenca_maxima": 0.0,
+      "tolerancia": 0.0
+    },
+    {
+      "modelo": "XGBoost_A_seed45",
+      "diferenca_maxima": 0.0,
+      "tolerancia": 0.0
+    },
+    {
+      "modelo": "XGBoost_A_seed46",
+      "diferenca_maxima": 0.0,
+      "tolerancia": 0.0
+    },
+    {
+      "modelo": "XGBoost_B_seed42",
+      "diferenca_maxima": 0.0,
+      "tolerancia": 0.0
+    },
+    {
+      "modelo": "XGBoost_B_seed43",
+      "diferenca_maxima": 0.0,
+      "tolerancia": 0.0
+    },
+    {
+      "modelo": "XGBoost_B_seed44",
+      "diferenca_maxima": 0.0,
+      "tolerancia": 0.0
+    },
+    {
+      "modelo": "XGBoost_B_seed45",
+      "diferenca_maxima": 0.0,
+      "tolerancia": 0.0
+    },
+    {
+      "modelo": "XGBoost_B_seed46",
+      "diferenca_maxima": 0.0,
+      "tolerancia": 0.0
+    }
+  ],
+  "treinamento_novo_na_auditoria": false,
+  "resultado": "20 ajustes, métricas e modelos conferidos",
+  "tempos_s": {
+    "MLP": 1273.4934159480001,
+    "XGBoost": 45.59155437999971
+  },
+  "notas": [
+    "Métricas calculadas das previsões salvas, sem substituição por inferência local.",
+    "MLP recarregada com tolerância 0,001 short ton entre plataformas; XGB exigiu igualdade exata.",
+    "A/B iniciais e finais têm protocolos diferentes do C; não substituir tabelas anteriores.",
+    "Cinco sementes descrevem estabilidade condicional; não fornecem avaliação externa nem incerteza temporal."
+  ]
+}

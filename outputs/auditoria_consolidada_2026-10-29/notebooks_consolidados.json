@@ -1,0 +1,86 @@
+[
+  {
+    "notebook": "01_selecao_unidade_estudo.ipynb",
+    "celulas_codigo": 17,
+    "executadas": 17,
+    "historico": false,
+    "sha256": "ce81acd2f6a6568c062c85a61e7531cda3776c335d179a28344786f80236f06e"
+  },
+  {
+    "notebook": "02_tratamento_dados.ipynb",
+    "celulas_codigo": 13,
+    "executadas": 13,
+    "historico": false,
+    "sha256": "5ea49e2ef70acad08882541d8dfb66fea8c62abcc4e5533ccb9413addbca85e7"
+  },
+  {
+    "notebook": "03A.01_modelagem_preditiva_co2.ipynb",
+    "celulas_codigo": 19,
+    "executadas": 19,
+    "historico": false,
+    "sha256": "17404c46e9ef542571d3ceee883bad640acb0cb14af06d0e0d7f2fba89131e02"
+  },
+  {
+    "notebook": "03A.02_comparacao_modelos_gradient_boosting.ipynb",
+    "celulas_codigo": 22,
+    "executadas": 22,
+    "historico": false,
+    "sha256": "433626e998f7415fcabfdb574b51d0e520d12d1f0dbf93ad0c1044707541e3b8"
+  },
+  {
+    "notebook": "03A.03_otimizacao_pareada_xgboost.ipynb",
+    "celulas_codigo": 18,
+    "executadas": 18,
+    "historico": false,
+    "sha256": "43194372bd40823430930e931fe8ec0d4ea0bb8aab19831e02dc29de70c838e8"
+  },
+  {
+    "notebook": "03A.04_volume_dados_generalizacao_temporal_iatan.ipynb",
+    "celulas_codigo": 10,
+    "executadas": 10,
+    "historico": false,
+    "sha256": "c527d8eb07d996389bc934b616b554612894910f4aaa2bd350a43decff00404e"
+  },
+  {
+    "notebook": "03A.05_trajetoria_operacional_historico_ampliado.ipynb",
+    "celulas_codigo": 12,
+    "executadas": 12,
+    "historico": false,
+    "sha256": "06e18b544b24477a0f7a5978a844c33915728ac784cd551938d4fa95c1cf561c"
+  },
+  {
+    "notebook": "03A.06_modelo_hibrido_regime_operacional.ipynb",
+    "celulas_codigo": 8,
+    "executadas": 8,
+    "historico": true,
+    "sha256": "023bd65c5e6a9bb9dd8caf5bb44f1d813f34419e73d61de95596aa3d91744dd5"
+  },
+  {
+    "notebook": "03A_05A_ablacao_controlada_features_Colab.ipynb",
+    "celulas_codigo": 3,
+    "executadas": 3,
+    "historico": false,
+    "sha256": "e4a23aebc93be95c765d1f6f9d455734b8456032bc0a8bc5fdf2b292216731a1"
+  },
+  {
+    "notebook": "03A_05B_incerteza_pareada_calendario.ipynb",
+    "celulas_codigo": 5,
+    "executadas": 5,
+    "historico": false,
+    "sha256": "00bf619cd8d72f68150c350bad4db062c796056b0dcedfefb74a701dfd95eb83"
+  },
+  {
+    "notebook": "03A_05C_MLP_XGBoost_sementes_protocolo_comum_Colab.ipynb",
+    "celulas_codigo": 5,
+    "executadas": 5,
+    "historico": false,
+    "sha256": "db12b79a623293dfd505028e7c1e2d1ef07bc1eb840d26cb0a0bcf53edd73a29"
+  },
+  {
+    "notebook": "03A_modelagem_preditiva_co2.ipynb",
+    "celulas_codigo": 15,
+    "executadas": 15,
+    "historico": false,
+    "sha256": "431dbee42644c45fa0a369b7e779642084ec1906198c753079e84d79c7d00630"
+  }
+]

@@ -1,0 +1,11 @@
+column,missing_count,missing_pct
+timestamp,0,0.0
+source_year,0,0.0
+CO2 Mass (short tons),0,0.0
+load_current_mw,0,0.0
+load_lag_1h,0,0.0
+delta_load_1h,0,0.0
+abs_delta_load_1h,0,0.0
+load_mean_previous_3h,0,0.0
+operating_time_lag_1h,0,0.0
+hours_since_startup,0,0.0

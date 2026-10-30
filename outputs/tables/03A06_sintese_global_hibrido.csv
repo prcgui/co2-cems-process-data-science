@@ -1,0 +1,2 @@
+n_predictions,n_years,MAE_pooled_A,MAE_pooled_B,MAE_pooled_H,MAE_year_mean_A,MAE_year_mean_B,MAE_year_mean_H,RMSE_pooled_A,RMSE_pooled_B,RMSE_pooled_H,H_better_than_A_n_years,H_better_than_B_n_years,H_better_than_both_n_years,gain_pooled_H_vs_A_pct,gain_pooled_H_vs_B_pct
+32533,5,21.581856575486626,21.048948775914916,21.048964288885955,21.88972044351098,21.330039246811527,21.362455418362856,28.664974626472716,28.042990547830694,27.87492842191052,5,2,2,2.469167954743741,-7.369950492278463e-05
