@@ -1,0 +1,26 @@
+{
+  "data_local": "2026-10-30",
+  "github": {
+    "co2-cems-thermal-modeling": {
+      "situacao": "publicado_e_conferido",
+      "commit_conteudo": "5276169e1195a17d145babcf6b7ffa43f5dbcd3e",
+      "artigo_sha256": "82e63b6ff94d1fe91ba62cabb87d74e883c44ee16abc34c903625ef1cd43f372",
+      "url": "https://github.com/prcgui/co2-cems-thermal-modeling"
+    },
+    "co2-cems-process-data-science": {
+      "situacao": "publicado_e_conferido",
+      "commit_conteudo": "e73de14a4ace6c96fd7b55e3683d154cc770d536",
+      "artigo_sha256": "82e63b6ff94d1fe91ba62cabb87d74e883c44ee16abc34c903625ef1cd43f372",
+      "url": "https://github.com/prcgui/co2-cems-process-data-science"
+    }
+  },
+  "drive": {
+    "situacao": "envio_pendente",
+    "pasta": "https://drive.google.com/drive/folders/1ONZBhbSfVpuN9TNTstsAmCQSZBZKv0l9",
+    "leitura_e_download_funcionam": true,
+    "selecao_upload_falhou": "browser.user is unavailable",
+    "chrome_alternativo": "controle interrompido por não confirmar a URL no Windows",
+    "pacote_local": "drive_upload/Atualizacao_Modelagem_Matematica_IA_2026-10-30.zip",
+    "pdfs_no_pacote_matematica": 36
+  }
+}
