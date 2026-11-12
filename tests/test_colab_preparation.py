@@ -11,7 +11,7 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 import pytest
 
-from iatan.colab import (PHASE_INPUTS, digest, ensure_dependencies, quarterly_reference, restore_multiyear,
+from iatan.colab import (PHASE_INPUTS, digest, ensure_dependencies, quarterly_reference, restore_2025, restore_multiyear,
                          select_phase_run, synchronize_archive)
 
 
@@ -59,6 +59,61 @@ def test_conflicting_pipeline_is_never_overwritten(tmp_path):
         synchronize_archive(root, package)
     assert old.read_bytes() == b'other preserved selection'
     assert not (root / 'iatan/phase5.py').exists()
+
+
+@pytest.mark.parametrize('inputs_first', [True, False])
+def test_json_formatting_does_not_block_sync_or_change_preserved_bytes(tmp_path, monkeypatch, inputs_first):
+    import iatan.colab as setup
+    unit = {'facility_id': 6065, 'unit_id': '2', 'year': 2025}
+    published = json.dumps(unit, separators=(',', ':')).encode()
+    preserved = (json.dumps(unit, indent=4) + '\n').encode()
+    raw = b'preserved raw observations'
+    code = tmp_path / 'Iatan_codigo_atual.zip'
+    release(code, {'pipeline/selected_unit.json': published,
+                   'pipeline/selected_unit_hourly_raw.parquet': raw})
+    inputs = tmp_path / 'Iatan2025_insumos.zip'
+    observations = {'pipeline/selected_unit.json': preserved,
+                    'pipeline/selected_unit_hourly_raw.parquet': raw}
+    manifest = {'files': [{'path': name, 'sha256': hashlib.sha256(value).hexdigest()}
+                          for name, value in observations.items()]}
+    with ZipFile(inputs, 'w') as archive:
+        archive.writestr('manifesto_insumos.json', json.dumps(manifest))
+        for name, value in observations.items():
+            archive.writestr(name, value)
+    monkeypatch.setattr(setup, 'INPUTS_2025_SHA256', digest(inputs))
+    root = tmp_path / 'execucao'
+    result = root / 'outputs/old/resultados.csv'
+    result.parent.mkdir(parents=True)
+    result.write_bytes(b'previous results')
+    if inputs_first:
+        restore_2025(root, tmp_path)
+        record = synchronize_archive(root, code)
+        expected_bytes = preserved
+    else:
+        record = synchronize_archive(root, code)
+        restore_2025(root, tmp_path)
+        expected_bytes = published
+    for _ in range(2):
+        assert synchronize_archive(root, code) == record
+        restore_2025(root, tmp_path)
+    actual = root / 'pipeline/selected_unit.json'
+    assert actual.read_bytes() == expected_bytes
+    assert (root / 'pipeline/selected_unit_hourly_raw.parquet').read_bytes() == raw
+    assert result.read_bytes() == b'previous results'
+    assert record['files']['pipeline/selected_unit.json'] == digest(actual)
+    if inputs_first:
+        comparison = record['preserved_inputs']['pipeline/selected_unit.json']
+        assert comparison['actual_sha256'] == digest(actual)
+        assert comparison['published_sha256'] == hashlib.sha256(published).hexdigest()
+    verification = json.loads((root / 'outputs/colab_preparacao/insumos2025_conferidos.json').read_text(encoding='utf-8'))
+    entry = next(row for row in verification['files'] if row['path'] == 'pipeline/selected_unit.json')
+    assert entry['actual_sha256'] == digest(actual)
+    assert entry['published_sha256'] == hashlib.sha256(preserved).hexdigest()
+    actual.write_text('{"facility_id": 9999, "unit_id":"2", "year":2025}', encoding='utf-8')
+    with pytest.raises(ValueError, match='Entrada preservada diferente'):
+        synchronize_archive(root, code)
+    with pytest.raises(ValueError, match='Entrada preservada diferente'):
+        restore_2025(root, tmp_path)
 
 
 def test_zip_cannot_write_outside_root(tmp_path):

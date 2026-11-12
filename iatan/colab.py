@@ -20,6 +20,18 @@ PHASE_INPUTS = {
 PHASE_ENV = {'phase2': 'IATAN_PHASE2_RUN_ID', 'phase3': 'IATAN_PHASE3_RUN_ID'}
 SELECTION = 'outputs/colab_preparacao/selecao_execucoes.json'
 MANAGED_TOP = {'iatan', 'configs', 'notebooks', 'scripts', 'reproducibility', 'tests', 'entregas'}
+INPUTS_2025_SHA256 = '32499f1af9789d9df2df4dd1748ded328232cfae6f59a6ac4e8ca769bfd12594'
+
+
+def _same_input(name, actual, published):
+    if actual == published:
+        return True
+    if name != 'pipeline/selected_unit.json':
+        return False
+    try:
+        return json.loads(actual) == json.loads(published)
+    except (ValueError, UnicodeError):
+        return False
 
 
 def synchronize_archive(root, source):
@@ -40,6 +52,7 @@ def synchronize_archive(root, source):
         tops = {PurePosixPath(item.filename).parts[0] for item in files}
         prefix = len(tops) == 1 and next(iter(tops)) not in MANAGED_TOP
         pending = []
+        preserved_inputs = {}
         for item in files:
             original = PurePosixPath(item.filename)
             if original.is_absolute() or '..' in original.parts or '\\' in item.filename:
@@ -62,9 +75,18 @@ def synchronize_archive(root, source):
             if not target.is_relative_to(root):
                 raise ValueError('Destino inválido no pacote de código.')
             data = archive.read(item)
-            if input_file and target.exists() and target.read_bytes() != data:
-                raise ValueError('Entrada preservada diferente do pacote: ' + name
-                                 + '. Nenhum arquivo existente foi substituído.')
+            if input_file and target.exists():
+                actual = target.read_bytes()
+                if not _same_input(name, actual, data):
+                    raise ValueError('Entrada preservada diferente do pacote: ' + name
+                                     + '. Nenhum arquivo existente foi substituído.')
+                if actual != data:
+                    preserved_inputs[name] = {
+                        'comparison': 'json_semantically_equal; existing bytes preserved',
+                        'published_sha256': hashlib.sha256(data).hexdigest(),
+                        'actual_sha256': hashlib.sha256(actual).hexdigest(),
+                    }
+                    data = actual
             pending.append((name, target, data))
         required = {'iatan/colab.py', 'iatan/phase5.py', 'configs/phase5_iatan.json', 'requirements-iatan.txt'}
         if not required.issubset({name for name, _, _ in pending}):
@@ -76,7 +98,8 @@ def synchronize_archive(root, source):
                 target.write_bytes(data)
     record = {'commit': commit, 'archive_sha256': archive_sha,
               'source': 'https://github.com/prcgui/co2-cems-process-data-science',
-              'files': {name: hashlib.sha256(data).hexdigest() for name, _, data in pending}}
+              'files': {name: hashlib.sha256(data).hexdigest() for name, _, data in pending},
+              'preserved_inputs': preserved_inputs}
     record_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return record
 
@@ -209,12 +232,13 @@ def restore_2025(root, delivery=None):
     source = delivery / 'Iatan2025_insumos.zip'
     if not source.is_file():
         return
-    expected = '32499f1af9789d9df2df4dd1748ded328232cfae6f59a6ac4e8ca769bfd12594'
+    expected = INPUTS_2025_SHA256
     if digest(source) != expected:
         raise ValueError('Iatan2025_insumos.zip diverge do pacote preservado; nenhum arquivo foi substituído.')
     with ZipFile(source) as archive:
         manifest = json.loads(archive.read('manifesto_insumos.json'))
         pending = []
+        observations = []
         for row in manifest['files']:
             target = (root / row['path']).resolve()
             if not target.is_relative_to(root):
@@ -224,13 +248,29 @@ def restore_2025(root, delivery=None):
                 raise ValueError('Insumo inválido: ' + Path(row['path']).name)
             # Os processados podem ter sido recalculados. Não restaurar bytes antigos
             # por cima de uma execução nova; cada fase valida e registra suas entradas.
+            comparison = 'byte_identical'
             if target.exists() and digest(target) != row['sha256']:
-                continue
+                if row['path'] in {'pipeline/selected_unit.json', 'pipeline/selected_unit_hourly_raw.parquet'}:
+                    if not _same_input(row['path'], target.read_bytes(), data):
+                        raise ValueError('Entrada preservada diferente do pacote: ' + row['path']
+                                         + '. O arquivo existente foi preservado.')
+                    comparison = 'json_semantically_equal; existing bytes preserved'
+                else:
+                    comparison = 'existing processed input preserved; phase validates its own inputs'
+            observations.append({'path': row['path'], 'published_sha256': row['sha256'],
+                                 'actual_sha256': digest(target) if target.exists() else row['sha256'],
+                                 'comparison': comparison})
             pending.append((target, data))
         for target, data in pending:
             if not target.exists():
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes(data)
+    record = {'source_archive_sha256': expected, 'files': observations}
+    record_path = root / 'outputs/colab_preparacao/insumos2025_conferidos.json'
+    serialized = json.dumps(record, ensure_ascii=False, indent=2) + '\n'
+    if not record_path.is_file() or record_path.read_text(encoding='utf-8') != serialized:
+        record_path.parent.mkdir(parents=True, exist_ok=True)
+        record_path.write_text(serialized, encoding='utf-8')
 
 
 def copy_notebooks(root, delivery=None):
