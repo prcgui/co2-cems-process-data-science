@@ -1,0 +1,15 @@
+# Dependências de reprodução; versões fixadas no arquivo de restrições.
+-c requirements-reproduction.lock
+numpy
+pandas
+matplotlib
+requests
+scikit-learn
+pyarrow
+ipython
+tensorflow
+xgboost
+nbclient
+nbformat
+ipykernel
+tabulate

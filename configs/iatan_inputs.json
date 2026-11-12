@@ -1,0 +1,130 @@
+{
+  "origin": "Acervo local auditado do projeto; EPA/CEMS Iatan 6065/2",
+  "files": [
+    {
+      "path": "data/interim/03A05_trajectory_history/03A05_amostra_comum_A_B.parquet",
+      "sha256": "6aac301db7a1387f6212627e839fd844874516ba45a0b64fdd0c8970f31e3ddb",
+      "bytes": 2146517
+    },
+    {
+      "path": "data/interim/03A05_trajectory_history/03A05_base_features_trajetoria.parquet",
+      "sha256": "d88fd6345057ca09bc47aa2b1a8f0be5b1c0587583ff76389aa47f76f6292b03",
+      "bytes": 2361264
+    },
+    {
+      "path": "data/interim/03A05_trajectory_history/03A05_previsoes_pareadas_A_B_nov_dez_2025.parquet",
+      "sha256": "8d6fcf8e4ada579954ab2c686789a2fde68dd167edea8c03de21415e951a2c0e",
+      "bytes": 84736
+    },
+    {
+      "path": "data/interim/03A05_trajectory_history/03A05_previsoes_pareadas_com_contextos.parquet",
+      "sha256": "eb204d81dae4ccc3f073fbe630bd88283bb8a9c3f774dca5bae5b36ac2c699be",
+      "bytes": 87103
+    },
+    {
+      "path": "data/interim/03A05_trajectory_history/03A05_previsoes_validacao_outubro_A_B.parquet",
+      "sha256": "490043c072c0269514b2e97d0c57a5bdfe06ceee09c1bd23c8078104b4e07751",
+      "bytes": 12126
+    },
+    {
+      "path": "data/interim/03A05_trajectory_history/03A05_teste_nov_dez_2025_A_B.parquet",
+      "sha256": "526c80faafd6bd9f22a53197acb90bf06fd8800cbba0443a05c21bf9b9a32c70",
+      "bytes": 66235
+    },
+    {
+      "path": "data/interim/03A05_trajectory_history/03A05_treino_final_A_B.parquet",
+      "sha256": "e4fbf1fd9c7b7b325943a4e78d370e6b4571dfabbd01f48eabf668bc5da2f4f6",
+      "bytes": 2120745
+    },
+    {
+      "path": "data/interim/03A05_trajectory_history/03A05_treino_selecao_A_B.parquet",
+      "sha256": "7d7aebca5a1d588fe6bff48e25002693724644d0ef5e8836bb408dd1a021080a",
+      "bytes": 2115824
+    },
+    {
+      "path": "data/interim/03A05_trajectory_history/03A05_validacao_outubro_2025_A_B.parquet",
+      "sha256": "aa54c3b08d43f1151244dbd4d83ebf2673a52a6019c6f8f100190aec6552a54b",
+      "bytes": 32260
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2010.parquet",
+      "sha256": "90b16dd1f36a94266dd14487f27a1667eb5c0eba4f77ac6d11660ecddbfc71a5",
+      "bytes": 40335
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2011.parquet",
+      "sha256": "2c4e5a56f27d5e2d8705f3794be8c5c6ad35796603b25cf52db4895732614ceb",
+      "bytes": 121861
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2012.parquet",
+      "sha256": "14ad2841a0a53621376b1c185a10d670b9eaf5586809a86833516c7c3d1efa0d",
+      "bytes": 123611
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2013.parquet",
+      "sha256": "fb9efe3fb26ae2f64cabac992ac15e89697dd5aaa07d7514a2cd7b8a8c8cc8f3",
+      "bytes": 120649
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2014.parquet",
+      "sha256": "a0bb1b7a1aabf2127ec5c719653ec55f03987eb3d13c597b638774d903823b7e",
+      "bytes": 117427
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2015.parquet",
+      "sha256": "993177cedca522727a553333a68596d4aa2d171a8a2a925805513bb623ce929c",
+      "bytes": 121402
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2016.parquet",
+      "sha256": "0f21ef2cdf6c3aaa32c7092d8e923200cf727f47ff770cd2b4b3803541231158",
+      "bytes": 114377
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2017.parquet",
+      "sha256": "bfee86bcce2c16ceea63447ae8e13bb4d4fc67f3c6cf5ce6446937d68a4734fb",
+      "bytes": 123032
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2018.parquet",
+      "sha256": "ba4eeac154de369e28b52a7ac7bd2ff699e131f77a8a4635402db26a83872764",
+      "bytes": 113253
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2019.parquet",
+      "sha256": "d0997abc0c2d5640ae78e476823344ce81e7ac0613cbcdc04bc1eccf09a0ff3b",
+      "bytes": 121141
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2020.parquet",
+      "sha256": "b08fc4ffd2f2cb55cbfed503225c0d847d304ba9a1365bc0d720dd4dc4c6b5bd",
+      "bytes": 119701
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2021.parquet",
+      "sha256": "1ca232f870fe1a7942f71c80d418bacc9ee6eb83c33d352ad450c5cdecdac6d0",
+      "bytes": 123687
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2022.parquet",
+      "sha256": "7b96de2c5c1e8eec4ce0c3cb1b8e46f47de3e14c061639c9cec6c846257b2c58",
+      "bytes": 124136
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2023.parquet",
+      "sha256": "fb361c343f14113cd00b786636fe3eca4f3b1728a0deb89c365bdee71eccb5f8",
+      "bytes": 115591
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2024.parquet",
+      "sha256": "99ba81a43aa3adb49ed5363c6e507ebbe0b7ce5e1452786c12a5c1aeb2893cda",
+      "bytes": 117782
+    },
+    {
+      "path": "data/interim/03A04_multiyear/iatan_unit2_2025.parquet",
+      "sha256": "c200de7a9e1a4d2e1448c3ab4fd092abeae5788ca500ecb47010a952a300b1fb",
+      "bytes": 126401
+    }
+  ]
+}

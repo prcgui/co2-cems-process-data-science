@@ -1,0 +1,8 @@
+# Preserve exact source/configuration bytes used by the SHA-256 experiment records.
+iatan/*.py -text
+configs/*.json -text
+scripts/phase5_multiusinas/coorte_top20_2025.csv -text
+scripts/phase5_multiusinas/protocolo_multiusinas.json -text
+notebooks/01_sem_mineracao_de_processos/03A.05_trajetoria_operacional_historico_ampliado.ipynb text eol=crlf
+notebooks/02_com_mineracao_de_processos/*.ipynb text eol=lf
+entregas/*.pdf binary

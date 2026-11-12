@@ -1,0 +1,30 @@
+{
+  "params": {
+    "objective": "reg:squarederror",
+    "n_estimators": 3000,
+    "learning_rate": 0.03,
+    "max_depth": 4,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "eval_metric": "rmse",
+    "early_stopping_rounds": 50,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "selected_trees": {
+    "A": 498,
+    "B": 721
+  },
+  "expected_n": {
+    "train_selection": 88475,
+    "validation": 211,
+    "train_final": 88686,
+    "test": 1144
+  },
+  "source_notebook_sha256": "5b009722ff088c93ebb8b3673f5e657e7fb9b4d5fed1ef43d353b9b3ebc40777",
+  "prediction_atol": 1e-06,
+  "xgboost_version": "3.4.1"
+}

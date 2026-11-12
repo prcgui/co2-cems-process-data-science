@@ -1,0 +1,3 @@
+scenario,description,n_features,n_train,n_validation,best_iteration,selected_trees,validation_MAE,validation_MedianAE,validation_RMSE,validation_R2,validation_NMAE_pct,validation_Bias
+A,Carga instantânea,1,88475,211,497,498,59.912427360643136,49.939300537109375,75.48362166188026,0.900686551645273,10.823160899641662,-52.36699804051115
+B,Carga + trajetória operacional,7,88475,211,720,721,53.71860700388542,39.289996337890614,67.69900474883117,0.9201146446227404,9.704249227091044,-47.077550689986545

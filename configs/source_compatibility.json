@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "scope": "Audited public-record revisions: portable paths, neutral tracking context, source metadata and strict migration checks. Numerical model definitions and evaluation data are preserved.",
+  "execution_status": "Compatibility permits replay; it does not certify a new fit or a bit-identical historical execution.",
+  "files": {
+    "iatan/__init__.py": {
+      "previous_sha256": [
+        "f87e718cd05022e288026ffbeed2a402db56f97f8bcc21620abf356b42f2ccb6"
+      ],
+      "current_sha256": "df6def2bed9715266d6b3c748cc0322fb83a62441dfb183641345c4dd19cde96"
+    },
+    "iatan/baseline.py": {
+      "previous_sha256": [
+        "30eb75cc22ee6783a5c978663c5c323917bffd6f82d285cde680fefddf8eb49a"
+      ],
+      "current_sha256": "42ad1f6be1df4b7a35eafdcdf59e0439720c1a75d3977b82a8fe5877104a4333"
+    },
+    "iatan/cli.py": {
+      "previous_sha256": [
+        "6240ee410d3585af6d4506a7fbe769a350f6bbda556a560364a4179ef67b3059"
+      ],
+      "current_sha256": "53a62e4a1d58a26accdf1855a74e8093e313d17b3501035fb442b2ceb0e72707"
+    },
+    "iatan/phase5.py": {
+      "previous_sha256": [
+        "abc390e8a745a06d1614f11db36305f8786282412519ca6d0e3a731238b09275"
+      ],
+      "current_sha256": "0184ecc80943001ada7cbf40b1ee976228c772179f3030b678798179b15b4599"
+    },
+    "iatan/phase5_ablation.py": {
+      "previous_sha256": [
+        "12cb2afda41b471b6596c4decf31aaafa8d937bff63cf34b41c96813b9c13c64"
+      ],
+      "current_sha256": "66c848140beca6122b3087654e3ea7728f2b73be3b46619630f3aed29af659ba"
+    },
+    "iatan/phase5_operational_ablation.py": {
+      "previous_sha256": [
+        "22cc62e801cb13ed5fc2f7474366701dae13b70d9f4f93d95ed35118d194eeea"
+      ],
+      "current_sha256": "8d98b721e87d6b2fcf12ed0c117c5c25dc768486411deb7d411ce726fd8ab2c8"
+    },
+    "iatan/phase5_operational_holdout.py": {
+      "previous_sha256": [
+        "1992b499cb4e699aceb54996be7436d0ba88c0a9226e4ef68d054bfaf34d1c4c"
+      ],
+      "current_sha256": "92b3d5b8ad73348cf63b1378106ffcf1fb8331a0b5bfe3bec33562c864585876"
+    },
+    "iatan/phase5_regimes.py": {
+      "previous_sha256": [
+        "a17e66858ac15379b72e0bc299923c594322ec8da01486dd153171d841e06b46"
+      ],
+      "current_sha256": "0e51e315596242087d53240ea0bca8a0cfc680ecadc6e5bdac2aa5f9e0ec0f50"
+    },
+    "iatan/phase5_training_window.py": {
+      "previous_sha256": [
+        "975f4abef7c6393355404721156bec4e61925bc4e02c00c73c1816bbd7ba8d8d"
+      ],
+      "current_sha256": "44c6343cd9766caf744834b97780d7a9ea77f4e9a3f28ff634a45bb3afc55cfa"
+    },
+    "iatan/report.py": {
+      "previous_sha256": [
+        "6010f99a5329dc56af891d29bcef12191c308e8b7e4df6c764526abcfe24fa67"
+      ],
+      "current_sha256": "0ed180283822062a8d147f3b7b8f54e2c1763d89db7715ea1d4a846d98033f16"
+    },
+    "iatan/tracking.py": {
+      "previous_sha256": [
+        "5fe92a1f0061297273df48f075ce2a6ac2793a89d815d3c9c05e09469ef28c6f"
+      ],
+      "current_sha256": "363a2677be18d173df4b66bf6ea14be7aaef4d92393051592195ecaeb9dbc9f5"
+    }
+  }
+}

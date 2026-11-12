@@ -1,0 +1,30 @@
+{
+  "id": "fase5_coorte_exploratoria_v1",
+  "periodo": [2021, 2022, 2023, 2024, 2025],
+  "pergunta": "Como se situa Iatan 2 em relação às outras unidades a carvão da triagem operacional de 2025, ao longo de cinco anos?",
+  "unidade_de_analise": "Uma unidade de geração por instalação, identificada pela dupla Facility ID e Unit ID do CAMPD.",
+  "coorte": "20 unidades das 20 instalações distintas da saída Top 20 do notebook 01 de seleção original de Iatan em 2025. A coorte é fixa nos cinco anos e não se substituem unidades em caso de falta de dados.",
+  "origem_coorte": "01_selecao_unidade_estudo, saída Top 20 da célula 17 no extrato de auditoria. A lista foi transcrita para coorte_top20_2025.csv antes da análise.",
+  "regra_original": "Unidades a carvão, tecnologia compatível e vigência CO₂-CEM em 2025, com filtros de qualidade do notebook original. Ordenação decrescente por transições ON/OFF, amplitude p95–p05 de carga, CV de carga, p95 da variação absoluta horária de carga e horas operacionais.",
+  "aquisicao": "CAMPD emissões horárias apportioned, com todos os horários de cada unidade. Consulta streaming EPA com Facility ID e filtro de Unit ID aplicado localmente; CSV estadual bulk EPA como alternativa equivalente, preservando ETag/intervalos se usado. Preservar os valores originais e os indicadores de medição. Não preencher ausências.",
+  "calendario": "Calendário local do arquivo, com hora inteira de 0 a 23, 8760 horas anuais ou 8784 em ano bissexto. Colisões de timestamp ficam sinalizadas e excluídas do cálculo de indicadores; calendários incompletos não recebem intensidade anual.",
+  "medidas": {
+    "cobertura_horaria": "Horas únicas presentes divididas pelo calendário anual, com faltas e linhas duplicadas reportadas separadamente.",
+    "on": "Operating Time finito, maior que zero e no máximo 1. Reportar contagem ON e soma do Operating Time em horas equivalentes.",
+    "cobertura_operacional": "Participação de horas ON com carga ou CO₂ finito e não negativo, por campo. Fração de CO₂ medido entre horas ON com CO₂ conhecido.",
+    "carga": "Mediana, p05 e p95 da carga bruta em MW entre horas ON válidas.",
+    "co2": "Massa observada durante horas ON em toneladas métricas, somando CO2 Mass (short tons) e multiplicando por 0.90718474. O CAMPD já fornece massa horária. Campos anuais completos somente com calendário e CO₂ ON completos.",
+    "geracao": "Soma em MWh de Gross Load (MW) multiplicada por Operating Time nas horas ON. Carga é taxa média no período operacional. Agregado anual exige calendário e carga ON completos.",
+    "intensidade": "Razão dos totais anuais completos de CO₂ em toneladas métricas e geração bruta MWh, com denominador estritamente positivo. Inclui horas ON com carga zero e CO₂ positivo no numerador.",
+    "classificacao": "Metadados EPA de tipo de unidade e combustível primário observados por ano, inclusive divergências em relação à triagem de 2025. Indicador de medição preservado."
+  },
+  "escopo": "Descrição exploratória da coorte selecionada pela operação em 2025. A coorte não é uma amostra aleatória da frota. Os totais descrevem uma unidade por instalação. O exercício não estima transferência de modelos ou efeitos causais.",
+  "fontes": [
+    "https://www.epa.gov/air-emissions-inventories/where-can-i-download-hourly-emissions-data-continuous-monitoring",
+    "https://www.epa.gov/power-sector/cam-api-portal",
+    "https://api.epa.gov/easey/streaming-services/swagger",
+    "https://campd.epa.gov/data/bulk-data-files",
+    "https://raw.githubusercontent.com/USEPA/cam-api-examples/main/Python/bulk_data_api_demo.py",
+    "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1019ZHX.txt"
+  ]
+}
