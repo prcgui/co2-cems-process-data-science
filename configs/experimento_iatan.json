@@ -1,0 +1,14 @@
+{
+  "name": "Iatan - integracao piloto - retrospectivo",
+  "scenarios": ["CARGA", "B0", "P1", "P2", "MEMORIA117"],
+  "algorithms": ["XGBoost", "ElasticNet"],
+  "seeds": [42],
+  "hmm": {"k": 5, "seed": 42, "n_iter": 100, "ramp_threshold": 10.0},
+  "xgboost": {"n_estimators": 3000, "learning_rate": 0.03, "max_depth": 4, "min_child_weight": 5, "subsample": 0.8, "colsample_bytree": 0.8, "reg_alpha": 0.0, "reg_lambda": 1.0, "early_stopping_rounds": 50, "eval_metric": "rmse", "objective": "reg:squarederror", "n_jobs": 1},
+  "elasticnet": {"alpha": 0.1, "l1_ratio": 0.8, "max_iter": 30000},
+  "correction": false,
+  "automl": false,
+  "test_reused": true,
+  "selection_metric": "validation_RMSE",
+  "protocol": "2011-2022 + jan-set2025 treino; out2025 selecao; refit com out; nov-dez2025 avaliacao retrospectiva. Nenhuma selecao pelo teste."
+}

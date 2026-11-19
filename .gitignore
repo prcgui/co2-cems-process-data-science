@@ -1,0 +1,47 @@
+# Dados grandes
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Arquivos intermediários
+pipeline/*.parquet
+!/pipeline/selected_unit_hourly_raw.parquet
+
+# Temporários
+*.tmp
+*.zip
+
+# Python
+__pycache__/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Ambiente e execuções interrompidas
+.venv/
+venv/
+*.log
+
+# Credenciais
+.env
+*.key
+
+# Armazenamento persistente de experimentos: backup no Drive, fora do Git.
+tracking/
+outputs/
+/reproducibility/methods/
+/reproducibility/monitoring/
+/docs/
+/references/
+*.joblib
+.pytest_cache/
+mlruns/
+mlartifacts/
+*.sqlite
+*.sqlite3
+*.db
+*.bundle
+*.bak
+delivery/
+/*.docx
+/reproducibility/**/README.md

@@ -1,0 +1,9 @@
+{
+  "model_path": "data/interim/frozen_reference/03A05_B.json",
+  "model_sha256": "33ddcc5874f5e9117596605114d9799856d6212a2f3797792fa07dace6274706",
+  "source_archive_sha256": "d0394d25e149e68a67b5743de3fd3d50cf57b0e9b161598677a48372fe818402",
+  "source_member": "03A05A_ablacao_controlada/20261029T235706_270875Z/B_completo.json",
+  "expected_prediction_sha256": "eb204d81dae4ccc3f073fbe630bd88283bb8a9c3f774dca5bae5b36ac2c699be",
+  "retraining_status": "Historical fitted model preserved; bit-identical retraining not established",
+  "scope": "Inference of preserved B model, not new fit"
+}

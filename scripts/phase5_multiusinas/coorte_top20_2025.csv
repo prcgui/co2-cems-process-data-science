@@ -1,0 +1,21 @@
+rank,facility_id,unit_id,state,facility_name,unit_type_2025
+1,1091,3,IA,George Neal North,Dry bottom wall-fired boiler
+2,6065,2,MO,Iatan,Dry bottom wall-fired boiler
+3,6146,2,TX,Martin Lake,Tangentially-fired
+4,2952,6,OK,Muskogee,Tangentially-fired
+5,6095,2,OK,Sooner,Tangentially-fired
+6,6772,1,OK,Hugo,Dry bottom wall-fired boiler
+7,1241,1,KS,La Cygne,Cyclone boiler
+8,889,1,IL,Baldwin Energy Complex,Cyclone boiler
+9,6064,N1,KS,Nearman Creek,Dry bottom wall-fired boiler
+10,7504,1,WY,Neil Simpson II,Dry bottom wall-fired boiler
+11,6823,W1,KY,D B Wilson,Dry bottom wall-fired boiler
+12,50611,31,PA,"Rausch Creek Generation, LLC",Circulating fluidized bed boiler
+13,6204,1,WY,Laramie River,Dry bottom wall-fired boiler
+14,8223,2,AZ,Springerville Generating Station,Tangentially-fired
+15,2079,5A,MO,Hawthorn,Dry bottom wall-fired boiler
+16,1893,3,MN,Boswell Energy Center,Tangentially-fired
+17,160,3,AZ,Apache Station,Dry bottom turbo-fired boiler
+18,1082,3,IA,Walter Scott Jr. Energy Center,Dry bottom wall-fired boiler
+19,4078,3,WI,Weston,Tangentially-fired
+20,6180,1,TX,Oak Grove,Tangentially-fired

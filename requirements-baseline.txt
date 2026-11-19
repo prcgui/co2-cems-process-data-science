@@ -1,0 +1,14 @@
+-c constraints-baseline.txt
+numpy
+pandas
+matplotlib
+requests
+scikit-learn
+pyarrow
+ipython
+tensorflow
+xgboost
+nbclient
+nbformat
+ipykernel
+tabulate
