@@ -25,7 +25,7 @@ PHASE_ENV = {'phase2': 'IATAN_PHASE2_RUN_ID', 'phase3': 'IATAN_PHASE3_RUN_ID'}
 SELECTION = 'outputs/colab_preparacao/selecao_execucoes.json'
 MANAGED_TOP = {'iatan', 'configs', 'notebooks', 'scripts', 'reproducibility', 'tests', 'entregas'}
 INPUTS_2025_SHA256 = '32499f1af9789d9df2df4dd1748ded328232cfae6f59a6ac4e8ca769bfd12594'
-PREPARATION_VERSION = 3
+PREPARATION_VERSION = 4
 
 
 def _same_input(name, actual, published):
@@ -366,7 +366,7 @@ def copy_notebooks(root, delivery=None):
     source = root / 'notebooks/02_com_mineracao_de_processos'
     destination = delivery / 'Notebooks'
     destination.mkdir(parents=True, exist_ok=True)
-    for path in sorted(source.glob('0[0-6]_*.ipynb')):
+    for path in sorted(source.glob('0[0-8]_*.ipynb')):
         target = destination / path.name
         if not target.exists() or target.read_bytes() != path.read_bytes():
             target.write_bytes(path.read_bytes())

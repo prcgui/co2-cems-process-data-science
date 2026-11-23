@@ -1,0 +1,11 @@
+{
+  "facilityId": 6065,
+  "unitId": "2",
+  "year": 2025,
+  "countOpTime": 6249,
+  "sumOpTime": 6216.81,
+  "grossLoad": 4161387.22,
+  "co2Mass": 3633588.138,
+  "source": "https://api.epa.gov/easey/emissions-mgmt/emissions/apportioned/annual?year=2025&facilityId=6065&page=1&perPage=100",
+  "source_sha256": "d53ddc2c0a671c0582a62e031ff1b8653c172a35ce4e1d8e24f307ea759295ae"
+}

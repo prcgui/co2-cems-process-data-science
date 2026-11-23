@@ -436,16 +436,20 @@ def test_dependency_restart_cannot_be_bypassed_by_rerunning_cell(tmp_path, monke
         ensure_dependencies(tmp_path, install=True)
 
 
-@pytest.mark.parametrize('cache_legacy', [False, True])
-def test_bootstrap_fetches_missing_zip_once_and_uses_custom_delivery(tmp_path, cache_legacy):
+@pytest.mark.parametrize(('notebook_name', 'cell_index', 'cache_version'), [
+    ('06_validacao_multianual_iatan.ipynb', 2, None),
+    ('06_validacao_multianual_iatan.ipynb', 2, 2),
+    ('00_PREPARAR_IATAN_2025.ipynb', 1, 3),
+])
+def test_bootstrap_fetches_missing_zip_once_and_uses_custom_delivery(tmp_path, notebook_name, cell_index, cache_version):
     """Uma raiz existente não dispensa a versão verificável; o ZIP fixa as próximas sessões."""
     source = Path(__file__).resolve().parents[1]
-    notebook = json.loads((source / 'notebooks/02_com_mineracao_de_processos/06_validacao_multianual_iatan.ipynb').read_text(encoding='utf-8'))
-    bootstrap = ''.join(notebook['cells'][2]['source']).split('from iatan.colab import prepare_session')[0]
+    notebook = json.loads((source / 'notebooks/02_com_mineracao_de_processos' / notebook_name).read_text(encoding='utf-8'))
+    bootstrap = ''.join(notebook['cells'][cell_index]['source']).split('from iatan.colab import prepare_session')[0]
     fixture = tmp_path / 'fixture.json'
     fixture.write_text(json.dumps({'bootstrap': bootstrap,
                                   'helper': (source / 'iatan/colab.py').read_text(encoding='utf-8'),
-                                  'cache_legacy': cache_legacy}), encoding='utf-8')
+                                  'cache_version': cache_version}), encoding='utf-8')
     program = '''
 from pathlib import Path
 from zipfile import ZipFile
@@ -463,14 +467,18 @@ colab.drive=types.SimpleNamespace(mount=lambda path:None)
 google.colab=colab
 sys.modules['google']=google
 sys.modules['google.colab']=colab
-if fixture['cache_legacy']:
+if fixture['cache_version'] is not None:
     with ZipFile(root.parent/'Iatan_codigo_atual.zip','w') as z:
         z.comment=b'b'*40
-        z.writestr('release/iatan/colab.py','PREPARATION_VERSION = 2')
+        z.writestr('release/iatan/colab.py','PREPARATION_VERSION = ' + str(fixture['cache_version']))
 data=io.BytesIO()
 with ZipFile(data,'w') as z:
     z.comment=b'a'*40
     for name,value in {'iatan/colab.py':fixture['helper'],'iatan/exports.py':'# portable results','iatan/phase5.py':'# models',
+                       'iatan/carbon_tracking.py':'# tracking',
+                       'notebooks/02_com_mineracao_de_processos/07_mudancas_intensidade_carbonica.ipynb':'notebook07',
+                       'notebooks/02_com_mineracao_de_processos/08_avaliacao_correcao_carbonica.ipynb':'notebook08',
+                       'reproducibility/iatan/06_anual_2025/previsoes_pareadas.csv.gz':'reference',
                        'configs/phase5_iatan.json':'{}','requirements-iatan.txt':'numpy==2.3.5'}.items():
         z.writestr('release/'+name,value)
 calls=[]
@@ -487,6 +495,12 @@ assert len(calls)==2
 assert (root/'codigo_publicado.json').is_file()
 exec(fixture['bootstrap'],{})
 assert len(calls)==2
+from iatan.colab import copy_notebooks
+copy_notebooks(root,root.parent)
+for n in [7,8]:
+    notebook=next((root.parent/'Notebooks').glob(f'0{n}_*.ipynb'))
+    assert notebook.read_text()==f'notebook0{n}'
+assert (root/'reproducibility/iatan/06_anual_2025/previsoes_pareadas.csv.gz').read_text()=='reference'
 print('bootstrap_ok')
 '''
     completed = subprocess.run([sys.executable, '-c', program, str(tmp_path)], capture_output=True, text=True)
