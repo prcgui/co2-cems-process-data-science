@@ -59,7 +59,7 @@ Os nomes físicos dos estados não foram assumidos: estados ordenados pela médi
 O retreinamento histórico no Windows divergiu e não foi aprovado; sua causa numérica não foi isolada. Este piloto é um novo experimento controlado no mesmo ambiente.
 Alvos comparados com medições horárias originais;
 HMM/DFG ajustados exclusivamente no treino; filtro forward; mesma interseção amostral para os cenários.
-Os resultados deste piloto não são reprodução das Fases 2–5 do Thiago: são uma adaptação documentada.</p>
+Neste piloto, o grupo adaptou o método das Fases 2–5 e registrou os resultados de uma execução própria.</p>
 <h2>Escolhas feitas na validação</h2>'''
     text += selected[['algorithm', 'seed', 'scenario', 'RMSE']].to_html(index=False)
     text += '<h2>Avaliação retrospectiva comum</h2>' + test.to_html(index=False, float_format=lambda x: f'{x:.5f}')
