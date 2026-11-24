@@ -23,7 +23,7 @@ O HMM (modelo oculto de Markov) infere regimes a partir da série de geração. 
 | Janelas de 2023 a 2025 | Nas mesmas 14.966 horas ON, o RMSE da referência A passou de **57,65** no controle anual a **53,94 t CO₂/h** com reajuste trimestral. Acrescentar o DFG à geração com histórico e HMM (**D − C**) teve diferença de **+0,02 t CO₂/h** (IC de 95% de −0,15 a +0,22). |
 | Período reservado de 2026 | Nas 2.070 horas ON do primeiro semestre, A teve RMSE de **22,89** e RH (geração corrente, rampa, tempo desde o religamento e HMM) de **22,00 t CO₂/h**. O intervalo da diferença (−1,95 a +0,02) inclui zero. A segue como referência e RH fica como candidato. |
 | Sazonalidade | Em 2019–2025, agosto teve mais demanda, menos geração eólica no SPP e mais horas ON em Iatan 2 que outubro nos sete anos. O contraste em horas ON também aparece em 9 de 12 anos após retirar pares com parada de outubro documentada no histórico de 2011–2025. |
-| Correção retrospectiva de 2025 | Nas 6.249 horas ON, o RMSE anual de A passou de **72,98 para 47,56 t CO₂/h**. A correção alterou 4.818 previsões. Os cortes usaram o CO₂ observado do próprio ano. RH permanece candidato no teste separado de 2026. [Resultados de A–D](reproducibility/iatan/resumo_correcao_carbonica_2025.csv) |
+| Correção retrospectiva de 2025 | Na execução do artigo, o RMSE anual de A passou de **72,98 para 47,56 t CO₂/h** nas 6.249 horas ON. A correção alterou 4.818 previsões. Os cortes usaram o CO₂ observado do próprio ano. [Resultados da execução do artigo para A–D](reproducibility/iatan/resumo_correcao_carbonica_2025.csv) |
 
 A validação do estimador se refere a Iatan 2. A comparação das 20 instalações é descritiva. [EIA-930](https://www.eia.gov/electricity/930-content/about.html) · [Validação temporal, FPP3 § 5.10](https://otexts.com/fpp3/toolbox.html#time-series-cross-validation)
 
@@ -32,4 +32,5 @@ A validação do estimador se refere a Iatan 2. A comparação das 20 instalaç�
 ## Reprodução e entrega
 
 - [Ordem de execução e insumos dos notebooks](notebooks/02_com_mineracao_de_processos#reprodução). As [dependências da validação](requirements-iatan.txt), os [protocolos e manifestos](configs) e a [implementação Python](iatan) estão versionados.
+- Para repetir a calibração do 07, o XGBoost usa uma thread de CPU. Essa configuração deu fator histórico de **0,96008118** e RMSE corrigido de **47,50 t CO₂/h** para A no 08. A rodada do artigo usava o número de threads disponível na máquina. As duas avaliações usam as mesmas previsões de partida do 06, horas e datas de corte.
 - [Plano do experimento e log de resultados da Etapa 2](entregas/IND2622_Plano_do_experimento_e_pre_processamento.xlsx).

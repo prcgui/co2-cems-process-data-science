@@ -44,6 +44,11 @@ def log_notebook07(root, output):
     summary = json.loads(report.read_text(encoding="utf-8"))
     parameters = {"historico": "2011-2025", "fator": summary["fator_historico_principal"],
                   "cortes": ", ".join(summary["cortes_2025"]), "unidade": "6065/2"}
+    environment = output / "auditoria/ambiente.json"
+    if environment.is_file():
+        threads = json.loads(environment.read_text(encoding="utf-8")).get("xgboost_n_jobs")
+        if threads is not None:
+            parameters["xgboost_n_jobs"] = threads
     metrics = {"n_horas": summary["n_horas_2025"], "rmse_m0": summary["rmse_m0"],
                "rmse_m2": summary["rmse_m2"], "ganho_rmse_pct": summary["ganho_rmse_pct"]}
     sources = [Path(root) / "configs/iatan_inputs.json", output / "dados/22C_previsoes_2025.parquet",
@@ -55,8 +60,8 @@ def log_notebook07(root, output):
 
 def log_notebook08(root, output, pred06, factor07, dates07, parent_run06, source07):
     tables = output / "tabelas"
-    path = tables / "metricas_globais.csv"
-    df = pd.read_csv(path)
+    metrics_path = tables / "metricas_globais.csv"
+    df = pd.read_csv(metrics_path)
     recorded07 = json.loads((source07 / "registro_mlflow.json").read_text(encoding="utf-8"))
     for path in (factor07, dates07, source07 / "dados/22C_previsoes_2025.parquet"):
         if hashlib.sha256(path.read_bytes()).hexdigest() != recorded07.get("sha256", {}).get(path.name):
@@ -65,5 +70,5 @@ def log_notebook08(root, output, pred06, factor07, dates07, parent_run06, source
                   "cenario": "M0/M1/M2", "algoritmos_06": "A/B/C/D", "ano": 2025}
     metrics = {f"{r.populacao}_{r.modelo}_{r.cenario}_{metric}": getattr(r, metric)
                for r in df.itertuples() for metric in ("rmse", "mae", "vies", "n")}
-    files = [path, tables / "bootstrap_pareado_7dias.csv", output / "metadados/parametros_experimento.json"]
+    files = [metrics_path, tables / "bootstrap_pareado_7dias.csv", output / "metadados/parametros_experimento.json"]
     return log_carbon_result(root, "08", output, [pred06, factor07, dates07], parameters, metrics, files)
